@@ -171,4 +171,5 @@ layout:
     order:
       - work
       - education
+      - certificates
       - skills

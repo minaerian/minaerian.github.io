@@ -113,18 +113,6 @@
                 <div class="flex justify-between font-bold text-xl">{{ .institution }}<span class="text-right">{{ .url }}</span></div>
                 <div class="flex justify-between italic job-row">
                   {{ .degree }}, {{ .area }}{{ with .score }}, Score: {{ . }}{{ end }}
-                  <span>
-                    {{ $sd := cond (eq (len (split .startDate "-")) 2) (printf "%s-01" .startDate) .startDate }}
-                    {{ $st := time $sd }}
-                    {{ time.Format "Jan 2006" $st }} -
-                    {{ with .endDate }}
-                      {{ $ed := cond (eq (len (split . "-")) 2) (printf "%s-01" .) . }}
-                      {{ $et := time $ed }}
-                      {{ time.Format "Jan 2006" $et }}
-                    {{ else }}
-                      Current
-                    {{ end }}
-                  </span>
                 </div>  
                 <div style="padding-left:1rem">
                   <ul style="list-style-position: outside; list-style-type:circle;">
@@ -199,7 +187,12 @@
                 </div>
                 <div class="flex justify-between italic">
                   <span class="flex content-start">{{ .issuer }}</span>
-                  <span class="flex content-end">{{ .date }}</span>
+                  <span class="flex content-end">
+                    {{ with .date }}
+                      {{ $cd := cond (eq (len (split . "-")) 2) (printf "%s-01" .) . }}
+                      {{ time.Format "Jan 2006" (time $cd) }}
+                    {{ end }}
+                  </span>
                 </div> 
                 <div>{{ .summary }}</div>
               {{ end }}
