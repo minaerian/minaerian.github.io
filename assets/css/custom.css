@@ -1,3 +1,86 @@
-.resume {
-  font-family: serif
+/* Custom look and feel tweaks to bring the site closer to the resume style */
+
+/* Headings font (optional: Poppins) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+/* Global tweaks */
+:root {
+  /* Slightly darker default theme color for address bar on mobile */
+  --brand-bg: #0f0f10;
+}
+
+/* Page container width tightening for better readability */
+body {
+  letter-spacing: 0.1px;
+}
+
+h1, h2, h3, .section-title {
+  font-family: 'Poppins', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* Accent rules used on the resume page */
+.resume hr {
+  border: 0;
+  height: 3px;
+  margin: 0.5rem 0 1rem;
+  background: rgb(var(--color-primary-600));
+  width: 80px;
+  border-radius: 3px;
+}
+
+.resume .section-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+/* Orange square bullets */
+.resume ul {
+  padding-left: 1rem;
+}
+.resume ul li {
+  list-style: none;
+  position: relative;
+  margin: 0.25rem 0;
+}
+.resume ul li::before {
+  content: "";
+  position: absolute;
+  left: -1rem;
+  top: 0.55rem;
+  width: 7px;
+  height: 7px;
+  background: rgb(var(--color-primary-600));
+  border-radius: 1px;
+}
+
+/* Company / role rows */
+.resume .job-row {
+  margin-top: 0.25rem;
+}
+.resume .job-row .position {
+  font-style: italic;
+}
+.resume .job-row .dates {
+  color: rgb(var(--color-neutral-500));
+}
+
+/* Subtle card look for the top summary */
+.resume .summary-card {
+  background: rgba(var(--color-neutral-100), 0.35);
+  border: 1px solid rgba(var(--color-neutral-300), 0.35);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem 0 1rem;
+}
+
+/* Home profile hero: tighten spacing */
+.profile .author .title {
+  font-size: 2rem;
+}
+.profile .author .headline {
+  color: rgb(var(--color-primary-500));
 }
