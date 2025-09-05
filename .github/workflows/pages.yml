@@ -1,0 +1,57 @@
+name: Build site (Hugo) and deploy to GitHub Pages
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Install Hugo (extended) – change version if you need to pin another
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.126.1'
+          extended: true
+
+      # Build the site into ./public
+      - name: Build
+        run: hugo --minify --gc --relativeURLs --baseURL "/"
+
+      # (Optional) also export a PDF of /resume using wkhtmltopdf
+      # - name: Export resume to PDF
+      #   run: |
+      #     sudo apt-get update && sudo apt-get install -y wkhtmltopdf
+      #     mkdir -p public/resume/versions
+      #     wkhtmltopdf --enable-local-file-access \
+      #       public/resume/index.html public/resume/resume.pdf
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
