@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <section class="prose dark:prose-invert">
+    {{ with .Title }}<h1 class="mb-4">{{ . }}</h1>{{ end }}
+    <ul>
+      {{ range .Pages }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}
+

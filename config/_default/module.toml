@@ -1,2 +1,8 @@
 [[imports]]
 path = "github.com/jpanther/congo/v2"
+
+[module]
+  # Use the vendored theme to avoid needing Go during builds
+  [[module.replacements]]
+    source = "github.com/jpanther/congo/v2"
+    target = "../../_vendor/github.com/jpanther/congo/v2"
