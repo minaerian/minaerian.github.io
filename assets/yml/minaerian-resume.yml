@@ -1,0 +1,173 @@
+# https://yamlresume.dev/docs
+---
+content:
+  basics:
+    name: Mina N. Erian
+    email: mina.info.tech@gmail.com
+    summary: |
+      - Technical leader (14+ years) aligning cloud and infrastructure with business objectives in regulated environments (HIPAA/NIST/PCI).
+      - Deep Azure experience: IaC (Bicep/ARM), Front Door, Application Gateway, Load Balancer, Firewall, vWAN/BGP, AVD, Azure AD/IAM, Policy, Private Link.
+      - Proven in DR/BCP design meeting RPO/RTO targets; large app & data center migrations with minimal downtime.
+      - Strong communicator to technical and executive audiences; customer-focused and delivery-oriented.
+
+  location:
+    city: Los Angeles
+    region: California
+    country: United States
+
+  profiles: []  # (Add LinkedIn/GitHub if you want them shown)
+
+  education:
+    - institution: United States International University
+      degree: Bachelor
+      area: Information Systems & Technology
+    - institution: United States International University
+      degree: Master
+      area: Health Leadership & Management
+
+  certificates:
+    - name: Azure Virtual Desktop Specialty
+      issuer: Microsoft
+      date: 2022-01
+
+  work:
+    - name: Global Music Rights
+      position: Principal Cloud Solutions Architect
+      startDate: 2022-04
+      endDate:
+      summary: |
+        - Designed and deployed Azure hub-and-spoke architecture with Firewall, VPN, Front Door, Application Gateway, and Load Balancer for secure, scalable operations.
+        - Built IaC with Bicep/ARM and Azure DevOps; managed dependencies across Azure resources to improve efficiency and repeatability.
+        - Led large application/data-center migrations with minimal downtime; planned and tested DR to RPO/RTO targets.
+        - Implemented SIEM and security posture with Microsoft Sentinel & Defender for Cloud; Azure AD/AD Connect, IAM, Policy, and Private Link.
+        - Presented complex technical content to technical teams and C-level stakeholders.
+      keywords:
+        - Azure
+        - Bicep/ARM (IaC)
+        - Front Door / App Gateway / Load Balancer
+        - Azure Firewall
+        - vWAN / BGP
+        - DR/BCP
+        - Sentinel / Defender for Cloud
+        - Azure AD / IAM / Policy / Private Link
+
+    - name: Orange Crew MSP
+      position: IT Solutions Architect
+      startDate: 2020-07
+      endDate: 2021-07
+      summary: |
+        - Designed complex network architectures; improved connectivity and performance.
+        - Ran risk assessments/audits; streamlined IT service delivery and vendor management.
+        - Implemented Azure Virtual Desktop globally; migrated server workloads to Azure, reducing costs ~25%.
+        - Automated AVD deployments with ARM; implemented IAM/SSO via Azure AD.
+        - Built storage with Azure NetApp Files & Azure Files; enforced governance via Management Groups; forecasted Azure budgets.
+        - Delivered Wi-Fi 6 across ~50,000 sq ft and improved security posture.
+      keywords:
+        - Azure Virtual Desktop
+        - ARM Templates
+        - Azure AD / SSO
+        - Azure NetApp Files / Azure Files
+        - Governance / Management Groups
+        - Wi-Fi 6
+        - Cost Optimization
+
+    - name: Sycom
+      position: Director of Information Technology
+      startDate: 2014-08
+      endDate: 2020-03
+      summary: |
+        - Managed a global health information & revenue systems organization; championed QA and customer support.
+        - 24/7 project monitoring; established SOPs and preventive maintenance.
+        - Grew revenue +20% via new accounts; improved client satisfaction ~60%.
+        - Saved ~$8.25M replacing fingerprint biometrics with voice biometrics.
+        - Budgeting, security policy implementation, recruitment/retention, and cross-department alignment.
+      keywords:
+        - QA / SOPs
+        - Customer Success
+        - Cost Savings / Voice Biometrics
+        - IT Governance
+        - Team Leadership
+
+    - name: TELE-APPS FZC
+      position: Project Manager / Business Development Manager
+      startDate: 2013-01
+      endDate: 2014-08
+      summary: |
+        - Set up and co-led Avaya Contact Center for Airtel across Nigeria, Burkina Faso, Zambia, and Sierra Leone.
+        - Procured resources; handled sensitive issues professionally; communicated status to senior leadership.
+        - Increased first-time pass rates ~30% via offshore transition; reduced operating costs ~25% with automation.
+      keywords:
+        - Avaya Contact Center
+        - Offshore Transition
+        - Cost Reduction
+        - Stakeholder Management
+
+    - name: Coptic Hospital & Hope Center for Infectious Diseases
+      position: IT Manager
+      startDate: 2009-09
+      endDate: 2011-09
+      summary: |
+        - Directed technology strategy, compliance, asset management, budgeting, and forecasting.
+        - Led multi-site projects with vendors/consultants/internal IT; on-time and on-budget delivery.
+        - Drove QA automation; trained and onboarded staff; supported three physical sites.
+        - Conducted process audits; reduced non-conformances through preparation.
+      keywords:
+        - IT Strategy
+        - Compliance
+        - Multi-site Operations
+        - QA Automation
+        - Vendor Management
+
+  skills:
+    - name: Cloud & Azure
+      keywords:
+        - Azure (Front Door, App Gateway, Load Balancer, Firewall)
+        - Azure Virtual WAN (BGP), VPN
+        - ARM / Bicep, Azure DevOps
+        - Azure AD / IAM / Policy / Private Link
+        - Azure Virtual Desktop
+    - name: Security & Compliance
+      keywords:
+        - Microsoft Sentinel / Defender for Cloud
+        - HIPAA / NIST / PCI
+        - DR/BCP, High Availability
+    - name: Networking & Infrastructure
+      keywords:
+        - Hub-and-Spoke Architecture
+        - Storage (Azure NetApp Files, Azure Files)
+        - Wi-Fi 6
+    - name: Leadership & Delivery
+      keywords:
+        - Strategic Planning
+        - Project Management
+        - Process Improvement
+        - Vendor Management
+        - Executive Communication
+    - name: Tooling
+      keywords:
+        - Kaseya
+        - ConnectWise
+        - ITGlue
+
+layout:
+  locale:
+    language: en
+  margins:
+    top: 2.5cm
+    left: 1.5cm
+    right: 1.5cm
+    bottom: 2.5cm
+  page:
+    showPageNumbers: true
+  template: moderncv-banking
+  typography:
+    fontSize: 12pt
+  sections:
+    aliases:
+      work: "Professional Experience"
+      education: "Education"
+      skills: "Core Competencies"
+    order:
+      - work
+      - education
+      - skills
