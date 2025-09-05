@@ -62,11 +62,11 @@
                 <div class="flex justify-between italic">{{ .position }}
                   <span>
                     {{ $sd := cond (eq (len (split .startDate "-")) 2) (printf "%s-01" .startDate) .startDate }}
-                    {{ $st := time.Parse "2006-01-02" $sd }}
+                    {{ $st := time $sd }}
                     {{ time.Format "Jan 2006" $st }} -
                     {{ with .endDate }}
                       {{ $ed := cond (eq (len (split . "-")) 2) (printf "%s-01" .) . }}
-                      {{ $et := time.Parse "2006-01-02" $ed }}
+                      {{ $et := time $ed }}
                       {{ time.Format "Jan 2006" $et }}
                     {{ else }}
                       Current
@@ -99,11 +99,11 @@
                   {{ .degree }}, {{ .area }}{{ with .score }}, Score: {{ . }}{{ end }}
                   <span>
                     {{ $sd := cond (eq (len (split .startDate "-")) 2) (printf "%s-01" .startDate) .startDate }}
-                    {{ $st := time.Parse "2006-01-02" $sd }}
+                    {{ $st := time $sd }}
                     {{ time.Format "Jan 2006" $st }} -
                     {{ with .endDate }}
                       {{ $ed := cond (eq (len (split . "-")) 2) (printf "%s-01" .) . }}
-                      {{ $et := time.Parse "2006-01-02" $ed }}
+                      {{ $et := time $ed }}
                       {{ time.Format "Jan 2006" $et }}
                     {{ else }}
                       Current
