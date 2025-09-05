@@ -5,6 +5,7 @@ content:
     name: Mina Erian
     email: mina.info.tech@gmail.com
     summary: |
+      Professional Summary
       - Technical leader (14+ years) aligning cloud and infrastructure with business objectives in regulated environments (HIPAA/NIST/PCI).
       - Deep Azure experience: IaC (Bicep/ARM), Front Door, Application Gateway, Load Balancer, Firewall, vWAN/BGP, AVD, Azure AD/IAM, Policy, Private Link.
       - Proven in DR/BCP design meeting RPO/RTO targets; large app & data center migrations with minimal downtime.

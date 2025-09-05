@@ -48,11 +48,14 @@
       </div>
 
       {{ with $contentroot.basics.summary }}
+        <div class="text-2xl font-bold section-title">Professional Summary</div>
+        <hr>
         <div style="padding-left:1rem" class="mt-4 summary-card">
           <ul style="list-style-position: outside; list-style-type:circle;">
-            {{ range ((apply (split . "- ") "strings.TrimPrefix" "- " ".")) }}
-              {{ with . }}
-                <li>{{ . }}</li>
+            {{ range (split . "\n") }}
+              {{ $t := replaceRE "^\\s*-\\s*" "" . }}
+              {{ if ne $t . }}
+                <li>{{ $t }}</li>
               {{ end }}
             {{ end }}
           </ul>
@@ -87,9 +90,10 @@
                 </div>
                 <div style="padding-left:1rem">
                   <ul style="list-style-position: outside; list-style-type:circle;">
-                  {{ range ((apply (split .summary "- ") "strings.TrimPrefix" "- " ".")) }}
-                    {{ with . }}
-                      <li>{{ . }}</li>
+                  {{ range (split .summary "\n") }}
+                    {{ $t := replaceRE "^\\s*-\\s*" "" . }}
+                    {{ if ne $t . }}
+                      <li>{{ $t }}</li>
                     {{ end }}
                   {{ end }}
                   </ul>
@@ -124,9 +128,10 @@
                 </div>  
                 <div style="padding-left:1rem">
                   <ul style="list-style-position: outside; list-style-type:circle;">
-                  {{ range ((apply (split .summary "- ") "strings.TrimPrefix" "- " ".")) }}
-                    {{ with . }}
-                      <li>{{ . }}</li>
+                  {{ range (split .summary "\n") }}
+                    {{ $t := replaceRE "^\\s*-\\s*" "" . }}
+                    {{ if ne $t . }}
+                      <li>{{ $t }}</li>
                     {{ end }}
                   {{ end }}
                   </ul>
@@ -216,9 +221,10 @@
                 </div> 
                 <div style="padding-left:1rem">
                   <ul style="list-style-position: outside; list-style-type:circle;">
-                  {{ range ((apply (split .summary "- ") "strings.TrimPrefix" "- " ".")) }}
-                    {{ with . }}
-                      <li>{{ . }}</li>
+                  {{ range (split .summary "\n") }}
+                    {{ $t := replaceRE "^\\s*-\\s*" "" . }}
+                    {{ if ne $t . }}
+                      <li>{{ $t }}</li>
                     {{ end }}
                   {{ end }}
                   </ul>
@@ -245,9 +251,10 @@
                 </div>
                 <div style="padding-left:1rem">
                   <ul style="list-style-position: outside; list-style-type:circle;">
-                  {{ range ((apply (split .summary "- ") "strings.TrimPrefix" "- " ".")) }}
-                    {{ with . }}
-                      <li>{{ . }}</li>
+                  {{ range (split .summary "\n") }}
+                    {{ $t := replaceRE "^\\s*-\\s*" "" . }}
+                    {{ if ne $t . }}
+                      <li>{{ $t }}</li>
                     {{ end }}
                   {{ end }}
                   </ul>
