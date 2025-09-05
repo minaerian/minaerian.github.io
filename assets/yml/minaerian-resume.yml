@@ -2,7 +2,7 @@
 ---
 content:
   basics:
-    name: Mina N. Erian
+    name: Mina Erian
     email: mina.info.tech@gmail.com
     summary: |
       - Technical leader (14+ years) aligning cloud and infrastructure with business objectives in regulated environments (HIPAA/NIST/PCI).
@@ -11,8 +11,8 @@ content:
       - Strong communicator to technical and executive audiences; customer-focused and delivery-oriented.
 
   location:
-    city: Los Angeles
-    region: California
+    city: Phoenix
+    region: Arizona
     country: United States
 
   profiles: []  # (Add LinkedIn/GitHub if you want them shown)

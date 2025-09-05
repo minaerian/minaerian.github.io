@@ -47,6 +47,18 @@
         </div>
       </div>
 
+      {{ with $contentroot.basics.summary }}
+        <div style="padding-left:1rem" class="mt-4">
+          <ul style="list-style-position: outside; list-style-type:circle;">
+            {{ range ((apply (split . "- ") "strings.TrimPrefix" "- " ".")) }}
+              {{ with . }}
+                <li>{{ . }}</li>
+              {{ end }}
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+
       {{/* Body */}}
       {{ range .layout.sections.order }}
         {{ if index $contentroot . }}
