@@ -28,7 +28,7 @@ jobs:
 
       # Build the site into ./public
       - name: Build
-        run: hugo --minify --gc --relativeURLs --baseURL "/"
+        run: hugo --minify --gc #--relativeURLs --baseURL "/"
 
       # (Optional) also export a PDF of /resume using wkhtmltopdf
       # - name: Export resume to PDF
