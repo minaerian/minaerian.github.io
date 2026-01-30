@@ -39,8 +39,8 @@ param(
 
 # Explicitly allowed subscriptions
 $allowedSubscriptionIds = @(
-    '10d75c52-6c31-4c96-af43-ca0806e178bc',  # Platform-Dev-Hub
-    'b099030c-42de-41ce-be79-4de77761255a'   # Platform-Sub-Dev-Spokes
+    'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',  # Azure-Dev-Hub
+    'yyyyyyyy-yyyy-yyyy-yyyy-yyyyyyyyyyyy'   # Azure-Dev-Spokes
 )
 
 # Get current subscription
@@ -64,7 +64,7 @@ Write-Host "✅ Subscription ID check passed: $subscriptionName"
 
 ```powershell
 # Check 2: Subscription name (redundant check)
-$expectedNames = @('Platform-Dev-Hub', 'Platform-Sub-Dev-Spokes')
+$expectedNames = @('Azure-Dev-Hub', 'Azure-Dev-Spokes')
 
 if ($subscriptionName -notin $expectedNames) {
     Write-Error "❌ SAFETY CHECK FAILED: Subscription name mismatch"
@@ -124,7 +124,7 @@ jobs:
   displayName: 'Cleanup Dev Resources'
   environment: 'dev-cleanup'  # Requires approval if misconfigured
   variables:
-    allowedSubscription: '10d75c52-6c31-4c96-af43-ca0806e178bc'
+    allowedSubscription: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
 
   strategy:
     runOnce:
@@ -133,7 +133,7 @@ jobs:
         - task: AzureCLI@2
           displayName: 'Validate Subscription'
           inputs:
-            azureSubscription: 'Platform-Dev-ServiceConnection'
+            azureSubscription: 'Azure-Dev-ServiceConnection'
             scriptType: 'bash'
             scriptLocation: 'inlineScript'
             inlineScript: |
@@ -151,7 +151,7 @@ jobs:
         - task: AzureCLI@2
           displayName: 'Cleanup Resources'
           inputs:
-            azureSubscription: 'Platform-Dev-ServiceConnection'
+            azureSubscription: 'Azure-Dev-ServiceConnection'
             scriptType: 'bash'
             scriptLocation: 'scriptPath'
             scriptPath: 'scripts/cleanup-dev.sh'

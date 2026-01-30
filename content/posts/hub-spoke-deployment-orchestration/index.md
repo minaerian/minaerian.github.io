@@ -49,7 +49,7 @@ stages:
           - task: AzureCLI@2
             displayName: 'Deploy Hub'
             inputs:
-              azureSubscription: 'Platform-Prod-Hub'
+              azureSubscription: 'Azure-Prod-Hub'
               scriptType: 'bash'
               scriptLocation: 'inlineScript'
               inlineScript: |
@@ -83,7 +83,7 @@ stages:
           - task: AzureCLI@2
             displayName: 'Deploy GMR'
             inputs:
-              azureSubscription: 'Platform-Prod-Spokes'
+              azureSubscription: 'Azure-Prod-Spokes'
               scriptType: 'bash'
               scriptLocation: 'inlineScript'
               inlineScript: |
@@ -103,7 +103,7 @@ stages:
           - task: AzureCLI@2
             displayName: 'Deploy IAG'
             inputs:
-              azureSubscription: 'Platform-Prod-Spokes'
+              azureSubscription: 'Azure-Prod-Spokes'
               scriptType: 'bash'
               scriptLocation: 'inlineScript'
               inlineScript: |

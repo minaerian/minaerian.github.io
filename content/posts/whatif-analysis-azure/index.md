@@ -84,7 +84,7 @@ stages:
     - task: AzureCLI@2
       displayName: 'What-If: Hub Infrastructure'
       inputs:
-        azureSubscription: 'Platform-Prod-ServiceConnection'
+        azureSubscription: 'Azure-Prod-ServiceConnection'
         scriptType: 'bash'
         scriptLocation: 'inlineScript'
         inlineScript: |
@@ -129,7 +129,7 @@ stages:
     steps:
     - task: ManualValidation@0
       inputs:
-        notifyUsers: 'cloud-team@company.com'
+        notifyUsers: 'cloud-team@example.com'
         instructions: 'Please review the what-if analysis and approve if changes look correct.'
 
 - stage: Deploy
@@ -146,7 +146,7 @@ stages:
           - task: AzureCLI@2
             displayName: 'Deploy Infrastructure'
             inputs:
-              azureSubscription: 'Platform-Prod-ServiceConnection'
+              azureSubscription: 'Azure-Prod-ServiceConnection'
               scriptType: 'bash'
               scriptLocation: 'inlineScript'
               inlineScript: |

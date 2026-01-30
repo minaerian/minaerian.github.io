@@ -59,7 +59,7 @@ trigger: none  # Only run on schedule
 variables:
   - group: platform-dev-credentials
   - name: subscriptionId
-    value: '10d75c52-6c31-4c96-af43-ca0806e178bc'
+    value: 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
 
 jobs:
 - job: DeallocateExpensiveResources
@@ -71,7 +71,7 @@ jobs:
   - task: AzureCLI@2
     displayName: 'Deallocate Azure Firewall'
     inputs:
-      azureSubscription: 'Platform-Dev-ServiceConnection'
+      azureSubscription: 'Azure-Dev-ServiceConnection'
       scriptType: 'bash'
       scriptLocation: 'inlineScript'
       inlineScript: |
@@ -87,7 +87,7 @@ jobs:
   - task: AzureCLI@2
     displayName: 'Deallocate VPN Gateways'
     inputs:
-      azureSubscription: 'Platform-Dev-ServiceConnection'
+      azureSubscription: 'Azure-Dev-ServiceConnection'
       scriptType: 'bash'
       scriptLocation: 'inlineScript'
       inlineScript: |
@@ -101,7 +101,7 @@ jobs:
   - task: AzureCLI@2
     displayName: 'Deallocate ExpressRoute Gateway'
     inputs:
-      azureSubscription: 'Platform-Dev-ServiceConnection'
+      azureSubscription: 'Azure-Dev-ServiceConnection'
       scriptType: 'bash'
       scriptLocation: 'inlineScript'
       inlineScript: |
@@ -152,7 +152,7 @@ schedules:
 
 ```bash
 CURRENT_SUB=$(az account show --query id -o tsv)
-ALLOWED_SUB="10d75c52-6c31-4c96-af43-ca0806e178bc"  # Platform-Dev
+ALLOWED_SUB="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"  # Azure-Dev
 
 if [ "$CURRENT_SUB" != "$ALLOWED_SUB" ]; then
     echo "❌ ERROR: Not running in Dev subscription!"
