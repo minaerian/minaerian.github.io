@@ -119,49 +119,49 @@ content:
         - Team Development
         - Vendor Management
 
-    - name: TELE-APPS FZC
-      position: Project Manager / Business Development Manager
-      startDate: 2013-01
-      endDate: 2014-08
-      summary: |
-        - Led deployment of enterprise Avaya Contact Center solution for Airtel across 4 African countries (Nigeria, Burkina Faso, Zambia, Sierra Leone), supporting 500+ agents and processing 1M+ customer interactions monthly.
-        - Managed $4M project budget and cross-functional team of 25 engineers, delivering on-time implementation within 2% of budget across all four regional sites.
-        - Architected offshore transition strategy, increasing first-call resolution rates by 30% (from 65% to 85%) and reducing average handle time by 22% through process standardization.
-        - Implemented automation for tier-1 support workflows, reducing operating costs by 25% ($800K annually) and improving customer satisfaction scores by 18%.
-        - Negotiated vendor contracts and managed procurement of telecom infrastructure, achieving 15% cost savings ($220K) through competitive bidding and volume discounts.
-      keywords:
-        - Avaya Contact Center
-        - Project Management
-        - Offshore Operations
-        - Process Automation
-        - Cost Optimization
-        - Vendor Management
-        - Stakeholder Communication
-        - Multi-site Deployment
-        - Budget Management
+    # - name: TELE-APPS FZC
+    #   position: Project Manager / Business Development Manager
+    #   startDate: 2013-01
+    #   endDate: 2014-08
+    #   summary: |
+    #     - Led deployment of enterprise Avaya Contact Center solution for Airtel across 4 African countries (Nigeria, Burkina Faso, Zambia, Sierra Leone), supporting 500+ agents and processing 1M+ customer interactions monthly.
+    #     - Managed $4M project budget and cross-functional team of 25 engineers, delivering on-time implementation within 2% of budget across all four regional sites.
+    #     - Architected offshore transition strategy, increasing first-call resolution rates by 30% (from 65% to 85%) and reducing average handle time by 22% through process standardization.
+    #     - Implemented automation for tier-1 support workflows, reducing operating costs by 25% ($800K annually) and improving customer satisfaction scores by 18%.
+    #     - Negotiated vendor contracts and managed procurement of telecom infrastructure, achieving 15% cost savings ($220K) through competitive bidding and volume discounts.
+    #   keywords:
+    #     - Avaya Contact Center
+    #     - Project Management
+    #     - Offshore Operations
+    #     - Process Automation
+    #     - Cost Optimization
+    #     - Vendor Management
+    #     - Stakeholder Communication
+    #     - Multi-site Deployment
+    #     - Budget Management
 
-    - name: Coptic Hospital & Hope Center for Infectious Diseases
-      position: IT Manager
-      startDate: 2009-09
-      endDate: 2011-09
-      summary: |
-        - Directed IT strategy and operations for 3-site healthcare organization serving 15,000+ patients annually, managing $850K technology budget and 8-person IT team.
-        - Led implementation of Electronic Health Records (EHR) system across all sites, completing 6-month deployment on-time and 5% under budget with 99% user adoption within 90 days.
-        - Established HIPAA compliance program including security risk assessments, access controls, and audit logging, achieving 100% compliance during state health department audits with zero findings.
-        - Implemented Quality Assurance (QA) automation framework, reducing manual testing time by 65% and decreasing software defects in production by 45%.
-        - Managed multi-site network infrastructure supporting 150+ workstations and medical devices, maintaining 99.7% uptime for mission-critical clinical systems.
-        - Conducted IT asset lifecycle management and procurement, reducing hardware costs by 20% through standardization and volume purchasing agreements.
-      keywords:
-        - Healthcare IT
-        - Electronic Health Records (EHR)
-        - HIPAA Compliance
-        - IT Strategy
-        - Multi-site Operations
-        - Quality Assurance (QA)
-        - IT Asset Management
-        - Budget Management
-        - Network Infrastructure
-        - Vendor Management
+    # - name: Coptic Hospital & Hope Center for Infectious Diseases
+    #   position: IT Manager
+    #   startDate: 2009-09
+    #   endDate: 2011-09
+    #   summary: |
+    #     - Directed IT strategy and operations for 3-site healthcare organization serving 15,000+ patients annually, managing $850K technology budget and 8-person IT team.
+    #     - Led implementation of Electronic Health Records (EHR) system across all sites, completing 6-month deployment on-time and 5% under budget with 99% user adoption within 90 days.
+    #     - Established HIPAA compliance program including security risk assessments, access controls, and audit logging, achieving 100% compliance during state health department audits with zero findings.
+    #     - Implemented Quality Assurance (QA) automation framework, reducing manual testing time by 65% and decreasing software defects in production by 45%.
+    #     - Managed multi-site network infrastructure supporting 150+ workstations and medical devices, maintaining 99.7% uptime for mission-critical clinical systems.
+    #     - Conducted IT asset lifecycle management and procurement, reducing hardware costs by 20% through standardization and volume purchasing agreements.
+    #   keywords:
+    #     - Healthcare IT
+    #     - Electronic Health Records (EHR)
+    #     - HIPAA Compliance
+    #     - IT Strategy
+    #     - Multi-site Operations
+    #     - Quality Assurance (QA)
+    #     - IT Asset Management
+    #     - Budget Management
+    #     - Network Infrastructure
+    #     - Vendor Management
 
   skills:
     - name: Cloud Platforms
