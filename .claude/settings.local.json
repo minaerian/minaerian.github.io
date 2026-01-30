@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tree:*)",
+      "Bash(git -C \"d:\\\\Mina-Github\\\\minaerian.github.io\" log --oneline -20)",
+      "Bash(git -C \"d:\\\\Mina-Github\\\\minaerian.github.io\" remote -v)",
+      "Bash(gh repo view:*)"
+    ]
+  }
+}
