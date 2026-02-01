@@ -3,237 +3,440 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles — Mina Erian</title>
+    <title>Transmissions — Mina Erian</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <style>
         .posts-header {
-            padding: 120px 0 60px;
-            background: var(--bg-secondary);
+            padding: 150px 60px 80px;
+            position: relative;
         }
+        
+        .posts-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at 50% 0%, rgba(0, 229, 255, 0.08) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 40px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            letter-spacing: 1px;
+            color: var(--cyan);
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            background: rgba(0, 229, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .back-link:hover {
+            background: rgba(0, 229, 255, 0.15);
+            border-color: var(--cyan);
+            box-shadow: 0 0 20px rgba(0, 229, 255, 0.2);
+        }
+        
         .posts-header h1 {
-            font-size: 48px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: clamp(36px, 6vw, 56px);
             font-weight: 700;
-            margin-bottom: 16px;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            color: var(--cyan);
+            text-shadow: 0 0 30px rgba(0, 229, 255, 0.3);
         }
+        
         .posts-header p {
+            font-family: 'Rajdhani', sans-serif;
             font-size: 20px;
             color: var(--text-secondary);
         }
-        .posts-list {
-            padding: 80px 0;
+        
+        .transmission-count {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: var(--text-muted);
+            letter-spacing: 2px;
+            margin-top: 20px;
         }
+        
+        .posts-list {
+            padding: 60px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
         .post-item {
             display: block;
-            padding: 32px;
-            background: var(--bg-secondary);
-            border: 1px solid var(--border-color);
-            border-radius: 12px;
-            margin-bottom: 24px;
+            padding: 35px;
+            background: var(--bg-panel);
+            border: 1px solid var(--border);
+            margin-bottom: 20px;
             transition: all 0.3s ease;
             color: inherit;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
         }
+        
+        .post-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 3px;
+            height: 100%;
+            background: var(--cyan);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .post-item::after {
+            content: '→';
+            position: absolute;
+            right: 35px;
+            top: 50%;
+            transform: translateY(-50%) translateX(-10px);
+            font-size: 24px;
+            color: var(--cyan);
+            opacity: 0;
+            transition: all 0.3s ease;
+        }
+        
         .post-item:hover {
-            border-color: var(--accent-primary);
-            transform: translateX(8px);
-            box-shadow: 0 0 30px rgba(57, 255, 20, 0.1);
+            border-color: var(--cyan);
+            transform: translateX(10px);
+            box-shadow: 0 0 30px rgba(0, 229, 255, 0.15);
         }
+        
+        .post-item:hover::before {
+            opacity: 1;
+        }
+        
+        .post-item:hover::after {
+            opacity: 1;
+            transform: translateY(-50%) translateX(0);
+        }
+        
         .post-meta {
             display: flex;
-            gap: 16px;
-            margin-bottom: 12px;
+            gap: 20px;
+            margin-bottom: 15px;
+            align-items: center;
         }
+        
         .post-date {
-            font-family: var(--font-mono);
-            font-size: 13px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
             color: var(--text-muted);
+            letter-spacing: 1px;
         }
+        
         .post-type {
-            font-family: var(--font-mono);
-            font-size: 11px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: var(--accent-orange);
+            color: var(--cyan);
+            padding: 4px 12px;
+            background: rgba(0, 229, 255, 0.1);
+            border: 1px solid rgba(0, 229, 255, 0.3);
         }
+        
         .post-item h2 {
-            font-size: 24px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 20px;
             font-weight: 600;
             margin-bottom: 12px;
             color: var(--text-primary);
+            letter-spacing: 1px;
+            padding-right: 50px;
         }
+        
         .post-item p {
-            font-size: 15px;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 16px;
             color: var(--text-secondary);
             line-height: 1.7;
+            padding-right: 50px;
         }
-        .back-link {
-            display: inline-block;
-            margin-bottom: 40px;
-            font-family: var(--font-mono);
+        
+        .featured-badge {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: var(--cyan);
+            color: var(--bg-void);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9px;
+            letter-spacing: 2px;
+            padding: 8px 15px;
+        }
+        
+        .section-divider {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin: 50px 0 30px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            letter-spacing: 3px;
+            color: var(--text-muted);
+        }
+        
+        .section-divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(to right, var(--border), transparent);
+        }
+        
+        .footer {
+            padding: 80px 60px;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            background: var(--bg-secondary);
+        }
+        
+        .footer-tagline {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 25px;
+        }
+        
+        .footer-contact {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        
+        .footer-contact a {
+            font-family: 'JetBrains Mono', monospace;
             font-size: 14px;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-contact a:hover {
+            color: var(--cyan);
+            text-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+        }
+        
+        @media (max-width: 768px) {
+            .posts-header,
+            .posts-list,
+            .footer {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+            
+            .post-item {
+                padding: 25px;
+            }
+            
+            .post-item h2 {
+                font-size: 18px;
+                padding-right: 0;
+            }
+            
+            .post-item p {
+                padding-right: 0;
+            }
+            
+            .post-item::after {
+                display: none;
+            }
+            
+            .footer-contact {
+                flex-direction: column;
+                gap: 15px;
+            }
         }
     </style>
 </head>
 <body>
+    <canvas id="starfield"></canvas>
+    <div class="scan-lines"></div>
+
     <section class="posts-header">
-        <div class="section-container">
-            <a href="../" class="back-link">← Back to Resume</a>
-            <h1>Technical Articles</h1>
+        <div class="header-content">
+            <a href="../" class="back-link">← RETURN TO BASE</a>
+            <h1>TRANSMISSIONS</h1>
             <p>Production lessons from building enterprise Azure infrastructure</p>
+            <div class="transmission-count">// 15 ENTRIES IN ARCHIVE</div>
         </div>
     </section>
 
     <section class="posts-list">
-        <div class="section-container">
-            <!-- Featured Series -->
-            <a href="azure-infrastructure-at-scale/" class="post-item">
-                <div class="post-meta">
-                    <span class="post-type">7-Part Series</span>
-                    <span class="post-date">Jan 2026</span>
-                </div>
-                <h2>Building Enterprise-Scale Azure Infrastructure</h2>
-                <p>Complete series on lessons learned building and maintaining enterprise Azure hub-and-spoke architecture with 1,258 files of Bicep IaC across 6 spoke networks, 4 environments, and multiple Azure subscriptions.</p>
-            </a>
+        <div class="section-divider">FEATURED SERIES</div>
+        
+        <a href="azure-infrastructure-at-scale/" class="post-item">
+            <span class="featured-badge">FEATURED</span>
+            <div class="post-meta">
+                <span class="post-type">7-Part Series</span>
+                <span class="post-date">JAN 2026</span>
+            </div>
+            <h2>Building Enterprise-Scale Azure Infrastructure</h2>
+            <p>Complete series on lessons learned building and maintaining enterprise Azure hub-and-spoke architecture with 1,258 files of Bicep IaC across 6 spoke networks, 4 environments, and multiple Azure subscriptions.</p>
+        </a>
 
-            <a href="azure-iac-patterns-series/" class="post-item">
-                <div class="post-meta">
-                    <span class="post-type">13-Part Series</span>
-                    <span class="post-date">Jan 2026</span>
-                </div>
-                <h2>Critical Azure IaC Patterns: What the Documentation Doesn't Tell You</h2>
-                <p>Advanced Bicep patterns learned from managing 1,258 files of Azure hub-and-spoke infrastructure—the knowledge that only comes from debugging production failures.</p>
-            </a>
+        <a href="azure-iac-patterns-series/" class="post-item">
+            <span class="featured-badge">FEATURED</span>
+            <div class="post-meta">
+                <span class="post-type">13-Part Series</span>
+                <span class="post-date">JAN 2026</span>
+            </div>
+            <h2>Critical Azure IaC Patterns: What the Documentation Doesn't Tell You</h2>
+            <p>Advanced Bicep patterns learned from managing 1,258 files of Azure hub-and-spoke infrastructure—the knowledge that only comes from debugging production failures.</p>
+        </a>
 
-            <a href="safety-guardrails-production/" class="post-item">
-                <div class="post-meta">
-                    <span class="post-type">War Story</span>
-                    <span class="post-date">Jan 2026</span>
-                </div>
-                <h2>I Ran a Cleanup Script Against Production Once</h2>
-                <p>Production-grade safety guardrails that prevent 2 AM incidents by failing safely instead of catastrophically. How I built multi-layer protection to ensure it never happens again.</p>
-            </a>
+        <a href="safety-guardrails-production/" class="post-item">
+            <div class="post-meta">
+                <span class="post-type">War Story</span>
+                <span class="post-date">JAN 2026</span>
+            </div>
+            <h2>I Ran a Cleanup Script Against Production Once</h2>
+            <p>Production-grade safety guardrails that prevent 2 AM incidents by failing safely instead of catastrophically. How I built multi-layer protection to ensure it never happens again.</p>
+        </a>
 
-            <!-- Individual Posts -->
-            <a href="hub-spoke-deployment-orchestration/" class="post-item">
-                <div class="post-meta">
-                    <span class="post-type">Deep Dive</span>
-                    <span class="post-date">Jan 2026</span>
-                </div>
-                <h2>Hub-Spoke Deployment Orchestration</h2>
-                <p>Managing deployment order and dependencies in complex hub-and-spoke Azure architectures.</p>
-            </a>
+        <div class="section-divider">ALL TRANSMISSIONS</div>
 
-            <a href="token-expiration-azure-deployments/" class="post-item">
-                <div class="post-meta">
-                    <span class="post-type">Problem & Solution</span>
-                    <span class="post-date">Jan 2026</span>
-                </div>
-                <h2>When Your Azure Deployment Fails at Minute 61</h2>
-                <p>Solving token expiration issues in long-running Azure deployments.</p>
-            </a>
+        <a href="hub-spoke-deployment-orchestration/" class="post-item">
+            <div class="post-meta">
+                <span class="post-type">Deep Dive</span>
+                <span class="post-date">JAN 2026</span>
+            </div>
+            <h2>Hub-Spoke Deployment Orchestration</h2>
+            <p>Managing deployment order and dependencies in complex hub-and-spoke Azure architectures.</p>
+        </a>
 
-            <a href="dnat-circular-dependency/" class="post-item">
-                <div class="post-meta">
-                    <span class="post-type">Pattern</span>
-                    <span class="post-date">Jan 2026</span>
-                </div>
-                <h2>Breaking DNAT Circular Dependencies</h2>
-                <p>Resolving circular dependencies when DNAT rules need the firewall's runtime-assigned IP.</p>
-            </a>
+        <a href="token-expiration-azure-deployments/" class="post-item">
+            <div class="post-meta">
+                <span class="post-type">Problem & Solution</span>
+                <span class="post-date">JAN 2026</span>
+            </div>
+            <h2>When Your Azure Deployment Fails at Minute 61</h2>
+            <p>Solving token expiration issues in long-running Azure deployments.</p>
+        </a>
 
-            <a href="bicep-wrapper-pattern/" class="post-item">
-                <div class="post-meta">
-                    <span class="post-type">Pattern</span>
-                    <span class="post-date">Jan 2026</span>
-                </div>
-                <h2>The Bicep Wrapper Pattern</h2>
-                <p>Creating maintainable abstraction layers over Azure Verified Modules.</p>
-            </a>
+        <a href="dnat-circular-dependency/" class="post-item">
+            <div class="post-meta">
+                <span class="post-type">Pattern</span>
+                <span class="post-date">JAN 2026</span>
+            </div>
+            <h2>Breaking DNAT Circular Dependencies</h2>
+            <p>Resolving circular dependencies when DNAT rules need the firewall's runtime-assigned IP.</p>
+        </a>
 
-            <a href="bicep-batchsize-pattern/" class="post-item">
-                <div class="post-meta">
-                    <span class="post-type">Pattern</span>
-                    <span class="post-date">Jan 2026</span>
-                </div>
-                <h2>The @batchSize Pattern in Bicep</h2>
-                <p>Controlling deployment parallelism to avoid race conditions and throttling.</p>
-            </a>
+        <a href="bicep-wrapper-pattern/" class="post-item">
+            <div class="post-meta">
+                <span class="post-type">Pattern</span>
+                <span class="post-date">JAN 2026</span>
+            </div>
+            <h2>The Bicep Wrapper Pattern</h2>
+            <p>Creating maintainable abstraction layers over Azure Verified Modules.</p>
+        </a>
 
-            <a href="environment-separation-azure/" class="post-item">
-                <div class="post-meta">
-                    <span class="post-type">Architecture</span>
-                    <span class="post-date">Jan 2026</span>
-                </div>
-                <h2>Environment Separation in Azure</h2>
-                <p>Subscription-scoped deployment strategies for true environment isolation.</p>
-            </a>
+        <a href="bicep-batchsize-pattern/" class="post-item">
+            <div class="post-meta">
+                <span class="post-type">Pattern</span>
+                <span class="post-date">JAN 2026</span>
+            </div>
+            <h2>The @batchSize Pattern in Bicep</h2>
+            <p>Controlling deployment parallelism to avoid race conditions and throttling.</p>
+        </a>
 
-            <a href="whatif-analysis-azure/" class="post-item">
-                <div class="post-meta">
-                    <span class="post-type">Practice</span>
-                    <span class="post-date">Jan 2026</span>
-                </div>
-                <h2>What-If Analysis for Azure Deployments</h2>
-                <p>Preview infrastructure changes before they happen.</p>
-            </a>
+        <a href="environment-separation-azure/" class="post-item">
+            <div class="post-meta">
+                <span class="post-type">Architecture</span>
+                <span class="post-date">JAN 2026</span>
+            </div>
+            <h2>Environment Separation in Azure</h2>
+            <p>Subscription-scoped deployment strategies for true environment isolation.</p>
+        </a>
 
-            <a href="observability-long-running-deployments/" class="post-item">
-                <div class="post-meta">
-                    <span class="post-type">Operations</span>
-                    <span class="post-date">Jan 2026</span>
-                </div>
-                <h2>Observability for Long-Running Deployments</h2>
-                <p>Monitoring and debugging multi-hour infrastructure deployments.</p>
-            </a>
+        <a href="whatif-analysis-azure/" class="post-item">
+            <div class="post-meta">
+                <span class="post-type">Practice</span>
+                <span class="post-date">JAN 2026</span>
+            </div>
+            <h2>What-If Analysis for Azure Deployments</h2>
+            <p>Preview infrastructure changes before they happen.</p>
+        </a>
 
-            <a href="gateway-orchestration-azure/" class="post-item">
-                <div class="post-meta">
-                    <span class="post-type">Pattern</span>
-                    <span class="post-date">Jan 2026</span>
-                </div>
-                <h2>Gateway Orchestration in Azure</h2>
-                <p>Coordinating ExpressRoute, VPN Gateway, and Routing Intent deployments.</p>
-            </a>
+        <a href="observability-long-running-deployments/" class="post-item">
+            <div class="post-meta">
+                <span class="post-type">Operations</span>
+                <span class="post-date">JAN 2026</span>
+            </div>
+            <h2>Observability for Long-Running Deployments</h2>
+            <p>Monitoring and debugging multi-hour infrastructure deployments.</p>
+        </a>
 
-            <a href="parameterization-infrastructure-code/" class="post-item">
-                <div class="post-meta">
-                    <span class="post-type">Best Practice</span>
-                    <span class="post-date">Jan 2026</span>
-                </div>
-                <h2>Parameterization in Infrastructure Code</h2>
-                <p>Building flexible, environment-aware IaC templates.</p>
-            </a>
+        <a href="gateway-orchestration-azure/" class="post-item">
+            <div class="post-meta">
+                <span class="post-type">Pattern</span>
+                <span class="post-date">JAN 2026</span>
+            </div>
+            <h2>Gateway Orchestration in Azure</h2>
+            <p>Coordinating ExpressRoute, VPN Gateway, and Routing Intent deployments.</p>
+        </a>
 
-            <a href="operational-excellence-azure-iac/" class="post-item">
-                <div class="post-meta">
-                    <span class="post-type">Framework</span>
-                    <span class="post-date">Jan 2026</span>
-                </div>
-                <h2>Operational Excellence in Azure IaC</h2>
-                <p>Building for day-2 operations from day-1.</p>
-            </a>
+        <a href="parameterization-infrastructure-code/" class="post-item">
+            <div class="post-meta">
+                <span class="post-type">Best Practice</span>
+                <span class="post-date">JAN 2026</span>
+            </div>
+            <h2>Parameterization in Infrastructure Code</h2>
+            <p>Building flexible, environment-aware IaC templates.</p>
+        </a>
 
-            <a href="cost-optimization-automation/" class="post-item">
-                <div class="post-meta">
-                    <span class="post-type">FinOps</span>
-                    <span class="post-date">Jan 2026</span>
-                </div>
-                <h2>Cost Optimization Through Automation</h2>
-                <p>Automated cost controls and environment-aware resource sizing.</p>
-            </a>
-        </div>
+        <a href="operational-excellence-azure-iac/" class="post-item">
+            <div class="post-meta">
+                <span class="post-type">Framework</span>
+                <span class="post-date">JAN 2026</span>
+            </div>
+            <h2>Operational Excellence in Azure IaC</h2>
+            <p>Building for day-2 operations from day-1.</p>
+        </a>
+
+        <a href="cost-optimization-automation/" class="post-item">
+            <div class="post-meta">
+                <span class="post-type">FinOps</span>
+                <span class="post-date">JAN 2026</span>
+            </div>
+            <h2>Cost Optimization Through Automation</h2>
+            <p>Automated cost controls and environment-aware resource sizing.</p>
+        </a>
     </section>
 
     <footer class="footer">
-        <div class="section-container">
-            <p class="footer-tagline">Let's build something that scales.</p>
-            <div class="footer-contact">
-                <a href="mailto:mina.info.tech@gmail.com">mina.info.tech@gmail.com</a>
-                <a href="https://minaerian.com">minaerian.com</a>
-            </div>
+        <p class="footer-tagline">Let's build something that scales.</p>
+        <div class="footer-contact">
+            <a href="mailto:mina.info.tech@gmail.com">mina.info.tech@gmail.com</a>
+            <a href="https://minaerian.com">minaerian.com</a>
         </div>
     </footer>
+
+    <script src="../script.js"></script>
 </body>
 </html>
