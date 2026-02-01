@@ -167,6 +167,20 @@
             font-weight: 600;
         }
         
+        .job h4 {
+            font-size: 8pt;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            margin-top: 8px;
+            margin-bottom: 4px;
+        }
+        
+        .job h4:first-of-type {
+            margin-top: 0;
+        }
+        
         /* Skills */
         .skills-grid {
             display: grid;
@@ -374,13 +388,24 @@
                 <span class="job-date">Apr 2022 — Present</span>
             </div>
             <p class="job-company">Global Music Rights</p>
+            
+            <h4>Network & Infrastructure</h4>
             <ul>
-                <li>Sole architect for entire Azure infrastructure — designed <strong>hub-and-spoke across 8 regions</strong> with Virtual WAN, Firewall Premium (IDPS, TLS inspection), dual 10Gbps ExpressRoute</li>
+                <li>Sole architect — designed <strong>hub-and-spoke across 8 Azure regions</strong> with Virtual WAN, Firewall Premium (IDPS, TLS inspection), dual 10Gbps ExpressRoute</li>
                 <li>Built <strong>200+ private endpoints</strong> eliminating public exposure; Front Door Premium with WAF achieving <strong>45% global latency reduction</strong></li>
+                <li>Led migration of <strong>150+ workloads</strong> — 3 months ahead of schedule, zero unplanned downtime, modernized to App Service and AKS</li>
+            </ul>
+            
+            <h4>Infrastructure as Code</h4>
+            <ul>
                 <li>Enterprise IaC platform: <strong>1,200+ Bicep files</strong> across 4 environments, 8 subscriptions using Azure Verified Modules with custom wrapper patterns</li>
                 <li>Engineered deployment orchestration for complex dependency chains — optimized pipelines <strong>6h → 2.25h</strong> (63% faster) via parallel spoke deployment</li>
-                <li>Led migration of <strong>150+ workloads</strong> — 3 months ahead of schedule, zero unplanned downtime, modernized to App Service and AKS</li>
-                <li>Zero-trust with Entra ID, Sentinel, Defender — <strong>60% reduction</strong> in security incidents, 98% PCI-DSS compliance</li>
+                <li>Implemented drift detection via scheduled what-if deployments — automatic alerts when infrastructure deviates from code</li>
+            </ul>
+            
+            <h4>Security, DR & Cost</h4>
+            <ul>
+                <li>Zero-trust with Entra ID, Sentinel, Defender — <strong>60% reduction</strong> in security incidents, 98% PCI-DSS compliance, 150+ Azure Policies</li>
                 <li>Multi-region DR: <strong>RPO &lt;1h, RTO &lt;4h</strong> with Site Recovery, SQL Always-On — validated through 6 DR drills</li>
                 <li>Cut Azure spend by <strong>$320K annually</strong> via Reserved Instances, automated scheduling, right-sizing 200+ VMs</li>
             </ul>
@@ -392,11 +417,17 @@
                 <span class="job-date">Jul 2020 — Jul 2021</span>
             </div>
             <p class="job-company">Orange Crew MSP</p>
+            
+            <h4>Azure Virtual Desktop</h4>
             <ul>
-                <li>Architected Azure Virtual Desktop for <strong>800+ users across 15 countries</strong> — FSLogix on NetApp Files, scaling automation, 40% productivity gain</li>
-                <li>Built ARM Template library reducing AVD provisioning <strong>3 days → 2 hours</strong>; golden image pipelines with Azure Image Builder</li>
+                <li>Architected AVD for <strong>800+ users across 15 countries</strong> — FSLogix on NetApp Files, scaling automation, 40% productivity gain</li>
+                <li>Built ARM Template library reducing provisioning <strong>3 days → 2 hours</strong>; golden image pipelines with Azure Image Builder</li>
+            </ul>
+            
+            <h4>Multi-Tenant Operations</h4>
+            <ul>
                 <li>Managed <strong>40+ client subscriptions</strong> via Azure Lighthouse — centralized monitoring, policy enforcement, 95% compliance in 90 days</li>
-                <li>Migrated <strong>75+ workloads</strong> saving <strong>$180K annually</strong>; deployed Azure Arc for hybrid management across client portfolio</li>
+                <li>Migrated <strong>75+ workloads</strong> saving <strong>$180K annually</strong>; deployed Azure Arc for hybrid management across portfolio</li>
             </ul>
         </div>
 
@@ -406,11 +437,18 @@
                 <span class="job-date">Aug 2014 — Mar 2020</span>
             </div>
             <p class="job-company">Sycom</p>
+            
+            <h4>Leadership & Innovation</h4>
             <ul>
                 <li>Led <strong>12-person team</strong> supporting 200+ healthcare clients across 5 countries — $3.5M budget, 24/7 operations</li>
                 <li>Architected voice biometrics replacing fingerprint scanners — <strong>$8.25M savings</strong> over 3 years, 85% hardware cost reduction</li>
-                <li>Early Azure adopter (2016): Azure AD, Exchange Online for 2,000+ users, Azure Backup — before most healthcare orgs considered cloud</li>
-                <li>Drove <strong>20% revenue growth ($2.4M)</strong>; reduced turnover 40% → 8%; improved NPS 65% → 95%; maintained HIPAA compliance with zero critical findings</li>
+                <li>Drove <strong>20% revenue growth ($2.4M)</strong>; reduced turnover 40% → 8%; improved NPS 65% → 95%</li>
+            </ul>
+            
+            <h4>Early Azure Adoption</h4>
+            <ul>
+                <li>Cloud pioneer (2016): Azure AD, Exchange Online for 2,000+ users, Azure Backup — before most healthcare orgs considered cloud</li>
+                <li>Maintained <strong>HIPAA/HITECH compliance</strong> with zero critical findings across 6 years; reduced downtime 70%</li>
             </ul>
         </div>
     </section>
