@@ -9,15 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-primary: #0a0e14;
-            --bg-secondary: #0d1219;
-            --bg-card: #0f151d;
-            --text-primary: #c5e4f3;
-            --text-secondary: #6b8a9e;
-            --text-muted: #3d5567;
-            --accent: #00e5ff;
-            --accent-dim: #00b8d4;
-            --border: #1a3040;
+            --bg-primary: #000000;
+            --bg-card: #0d0d0d;
+            --text-primary: #f5f5f7;
+            --text-secondary: #86868b;
+            --text-muted: #6e6e73;
+            --green: #32d74b;
+            --green-soft: rgba(50, 215, 75, 0.15);
+            --border: rgba(255, 255, 255, 0.1);
         }
         
         * {
@@ -27,7 +26,7 @@
         }
         
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
             font-size: 9.5pt;
             line-height: 1.5;
             color: var(--text-primary);
@@ -35,38 +34,61 @@
             max-width: 8.5in;
             margin: 0 auto;
             padding: 0.4in;
+            -webkit-font-smoothing: antialiased;
         }
         
         /* Header */
         header {
             text-align: center;
-            margin-bottom: 20px;
-            padding-bottom: 16px;
-            border-bottom: 2px solid var(--accent);
+            margin-bottom: 24px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 12px;
+            background: var(--green-soft);
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+        
+        .status-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--green);
+            border-radius: 50%;
+        }
+        
+        .status-text {
+            font-size: 9pt;
+            font-weight: 500;
+            color: var(--green);
         }
         
         .title-label {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 9pt;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: var(--accent);
+            font-size: 10pt;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: var(--text-muted);
             margin-bottom: 8px;
+            text-transform: uppercase;
         }
         
         h1 {
-            font-size: 28pt;
-            font-weight: 800;
+            font-size: 32pt;
+            font-weight: 700;
             letter-spacing: -1px;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
             color: var(--text-primary);
         }
         
         .tagline {
             font-size: 11pt;
-            font-style: italic;
             color: var(--text-secondary);
-            margin-bottom: 12px;
+            margin-bottom: 14px;
         }
         
         .contact {
@@ -75,38 +97,57 @@
         }
         
         .contact a {
-            color: var(--accent);
+            color: var(--green);
             text-decoration: none;
         }
         
         .contact span {
-            margin: 0 8px;
-            opacity: 0.5;
+            margin: 0 10px;
+            opacity: 0.3;
+        }
+        
+        /* Metrics Bar */
+        .metrics-bar {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .metric-item {
+            text-align: center;
+            padding: 12px 8px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+        
+        .metric-num {
+            font-size: 16pt;
+            font-weight: 700;
+            color: var(--green);
+        }
+        
+        .metric-label {
+            font-size: 7pt;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 2px;
         }
         
         /* Sections */
         section {
-            margin-bottom: 16px;
+            margin-bottom: 18px;
         }
         
         h2 {
-            font-family: 'JetBrains Mono', monospace;
             font-size: 9pt;
-            font-weight: 500;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: var(--green);
+            margin-bottom: 12px;
             text-transform: uppercase;
-            letter-spacing: 2px;
-            color: var(--accent);
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-        
-        h2::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background: linear-gradient(to right, var(--accent), transparent);
         }
         
         /* Summary */
@@ -116,20 +157,20 @@
             line-height: 1.6;
         }
         
-        /* Experience */
+        /* Jobs */
         .job {
-            margin-bottom: 14px;
-            padding: 12px;
-            background: var(--bg-secondary);
+            margin-bottom: 16px;
+            padding: 16px;
+            background: var(--bg-card);
             border: 1px solid var(--border);
-            border-radius: 6px;
+            border-radius: 12px;
         }
         
         .job-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 2px;
+            margin-bottom: 4px;
         }
         
         .job-title {
@@ -139,15 +180,29 @@
         }
         
         .job-date {
-            font-family: 'JetBrains Mono', monospace;
+            font-family: 'SF Mono', 'JetBrains Mono', monospace;
             font-size: 8pt;
             color: var(--text-muted);
         }
         
         .job-company {
             font-size: 10pt;
-            color: var(--accent);
-            margin-bottom: 8px;
+            color: var(--green);
+            margin-bottom: 12px;
+        }
+        
+        .job h4 {
+            font-size: 8pt;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-top: 10px;
+            margin-bottom: 6px;
+        }
+        
+        .job h4:first-of-type {
+            margin-top: 0;
         }
         
         .job ul {
@@ -158,7 +213,7 @@
         .job li {
             font-size: 8.5pt;
             color: var(--text-secondary);
-            margin-bottom: 3px;
+            margin-bottom: 4px;
             line-height: 1.5;
         }
         
@@ -167,44 +222,30 @@
             font-weight: 600;
         }
         
-        .job h4 {
-            font-size: 8pt;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: var(--accent);
-            margin-top: 8px;
-            margin-bottom: 4px;
-        }
-        
-        .job h4:first-of-type {
-            margin-top: 0;
-        }
-        
         .job.page-break {
             page-break-before: always;
             break-before: page;
         }
         
-        /* Skills */
+        /* Skills Grid */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 8px;
+            gap: 10px;
         }
         
         .skill-card {
-            padding: 10px;
-            background: var(--bg-secondary);
+            padding: 12px;
+            background: var(--bg-card);
             border: 1px solid var(--border);
-            border-radius: 6px;
+            border-radius: 12px;
         }
         
         .skill-card h3 {
             font-size: 8pt;
             font-weight: 600;
-            color: var(--accent);
-            margin-bottom: 4px;
+            color: var(--green);
+            margin-bottom: 6px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
@@ -212,32 +253,32 @@
         .skill-card p {
             font-size: 7.5pt;
             color: var(--text-secondary);
-            line-height: 1.4;
+            line-height: 1.5;
         }
         
         /* Education */
         .education-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 8px;
+            gap: 10px;
         }
         
         .edu-card {
-            padding: 10px;
-            background: var(--bg-secondary);
+            padding: 12px;
+            background: var(--bg-card);
             border: 1px solid var(--border);
-            border-radius: 6px;
+            border-radius: 12px;
         }
         
         .edu-card.cert {
-            border-color: var(--accent);
+            border-color: var(--green);
         }
         
         .edu-card h3 {
             font-size: 9pt;
             font-weight: 600;
             color: var(--text-primary);
-            margin-bottom: 2px;
+            margin-bottom: 3px;
         }
         
         .edu-card p {
@@ -250,63 +291,29 @@
             color: var(--text-muted);
         }
         
-        /* Metrics bar */
-        .metrics-bar {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 8px;
-            margin-bottom: 16px;
-        }
-        
-        .metric-item {
-            text-align: center;
-            padding: 8px;
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 6px;
-        }
-        
-        .metric-num {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 14pt;
-            font-weight: 700;
-            color: var(--accent);
-        }
-        
-        .metric-label {
-            font-size: 7pt;
-            color: var(--text-secondary);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        
-        /* Print button */
+        /* Print Button */
         .print-btn {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: var(--accent);
-            color: var(--bg-primary);
+            bottom: 24px;
+            right: 24px;
+            background: var(--green);
+            color: #000;
             border: none;
-            padding: 12px 24px;
-            border-radius: 6px;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 12px;
+            padding: 14px 28px;
+            border-radius: 980px;
+            font-family: inherit;
+            font-size: 14px;
             font-weight: 600;
             cursor: pointer;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            box-shadow: 0 4px 20px rgba(34, 197, 94, 0.3);
             transition: all 0.2s;
         }
         
         .print-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 24px rgba(34, 197, 94, 0.4);
+            transform: scale(1.02);
+            box-shadow: 0 10px 40px rgba(50, 215, 75, 0.3);
         }
         
-        /* Print styles */
+        /* Print Styles */
         @media print {
             body {
                 padding: 0;
@@ -328,24 +335,14 @@
                 print-color-adjust: exact !important;
             }
         }
-        
-        /* Light mode print fallback */
-        @media print and (prefers-color-scheme: light) {
-            :root {
-                --bg-primary: #ffffff;
-                --bg-secondary: #f8f9fa;
-                --bg-card: #ffffff;
-                --text-primary: #1a1a1a;
-                --text-secondary: #4a4a4a;
-                --text-muted: #6a6a6a;
-                --accent: #16a34a;
-                --border: #e5e5e5;
-            }
-        }
     </style>
 </head>
 <body>
     <header>
+        <div class="status-badge">
+            <span class="status-dot"></span>
+            <span class="status-text">Available for hire</span>
+        </div>
         <p class="title-label">Principal Cloud Solutions Architect</p>
         <h1>Mina Erian</h1>
         <p class="tagline">I don't deploy resources. I build platforms.</p>
@@ -396,25 +393,23 @@
             
             <h4>Network & Infrastructure</h4>
             <ul>
-                <li>Sole architect — designed <strong>hub-and-spoke across 8 Azure regions</strong> with Virtual WAN, Firewall Premium (IDPS, TLS inspection, URL filtering)</li>
-                <li>Engineered hybrid connectivity: <strong>dual 10Gbps ExpressRoute</strong> + VPN failover; <strong>200+ private endpoints</strong> eliminating public exposure</li>
-                <li>Deployed <strong>Front Door Premium with WAF</strong> — <strong>45% global latency reduction</strong>, automatic failover across regions</li>
-                <li>Led migration of <strong>150+ workloads</strong> — 3 months ahead of schedule, zero unplanned downtime, modernized to <strong>App Service and AKS</strong></li>
+                <li>Sole architect — designed <strong>hub-and-spoke across 8 Azure regions</strong> with Virtual WAN, Firewall Premium (IDPS, TLS inspection), dual 10Gbps ExpressRoute</li>
+                <li>Built <strong>200+ private endpoints</strong> eliminating public exposure; Front Door Premium with WAF achieving <strong>45% global latency reduction</strong></li>
+                <li>Led migration of <strong>150+ workloads</strong> — 3 months ahead of schedule, zero unplanned downtime, modernized to App Service and AKS</li>
             </ul>
             
             <h4>Infrastructure as Code</h4>
             <ul>
-                <li>Built enterprise IaC platform: <strong>1,200+ Bicep files</strong> across 4 environments, 8 subscriptions using Azure Verified Modules with custom wrappers</li>
-                <li>Designed module hierarchy enabling <strong>single-command deployment</strong>; solved complex dependency chains with automatic retry/rollback</li>
-                <li>Optimized pipeline parallelization: <strong>6h → 2.25h</strong> (63% faster); implemented <strong>drift detection</strong> via scheduled what-if deployments</li>
+                <li>Enterprise IaC platform: <strong>1,200+ Bicep files</strong> across 4 environments, 8 subscriptions using Azure Verified Modules with custom wrapper patterns</li>
+                <li>Engineered deployment orchestration for complex dependency chains — optimized pipelines <strong>6h → 2.25h</strong> (63% faster) via parallel spoke deployment</li>
+                <li>Implemented drift detection via scheduled what-if deployments — automatic alerts when infrastructure deviates from code</li>
             </ul>
             
             <h4>Security, DR & Cost</h4>
             <ul>
-                <li>Zero-trust with <strong>Entra ID, Sentinel, Defender</strong> — Conditional Access, PIM, automated playbooks, 95%+ Secure Score</li>
-                <li><strong>150+ Azure Policies</strong> as code; achieved <strong>98% PCI-DSS compliance</strong>, <strong>60% reduction</strong> in security incidents</li>
-                <li>Multi-region DR: <strong>RPO &lt;1h, RTO &lt;4h</strong> — Site Recovery, SQL Always-On, validated through <strong>6 DR drills</strong></li>
-                <li>Cut spend by <strong>$320K annually</strong> — Reserved Instances, automated scheduling, right-sized <strong>200+ VMs</strong></li>
+                <li>Zero-trust with Entra ID, Sentinel, Defender — <strong>60% reduction</strong> in security incidents, 98% PCI-DSS compliance, 150+ Azure Policies</li>
+                <li>Multi-region DR: <strong>RPO &lt;1h, RTO &lt;4h</strong> with Site Recovery, SQL Always-On — validated through 6 DR drills</li>
+                <li>Cut Azure spend by <strong>$320K annually</strong> via Reserved Instances, automated scheduling, right-sizing 200+ VMs</li>
             </ul>
         </div>
 
@@ -512,7 +507,7 @@
     </section>
 
     <button class="print-btn" onclick="window.print()">
-        ↓ Save as PDF
+        Save as PDF
     </button>
 </body>
 </html>
