@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles — Mina Erian</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .posts-header {
+            padding: 120px 0 60px;
+            background: var(--bg-secondary);
+        }
+        .posts-header h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        .posts-header p {
+            font-size: 20px;
+            color: var(--text-secondary);
+        }
+        .posts-list {
+            padding: 80px 0;
+        }
+        .post-item {
+            display: block;
+            padding: 32px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            margin-bottom: 24px;
+            transition: all 0.3s ease;
+            color: inherit;
+        }
+        .post-item:hover {
+            border-color: var(--accent-primary);
+            transform: translateX(8px);
+            box-shadow: 0 0 30px rgba(57, 255, 20, 0.1);
+        }
+        .post-meta {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 12px;
+        }
+        .post-date {
+            font-family: var(--font-mono);
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+        .post-type {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--accent-orange);
+        }
+        .post-item h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-primary);
+        }
+        .post-item p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 40px;
+            font-family: var(--font-mono);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <section class="posts-header">
+        <div class="section-container">
+            <a href="../" class="back-link">← Back to Resume</a>
+            <h1>Technical Articles</h1>
+            <p>Production lessons from building enterprise Azure infrastructure</p>
+        </div>
+    </section>
+
+    <section class="posts-list">
+        <div class="section-container">
+            <!-- Featured Series -->
+            <a href="azure-infrastructure-at-scale/" class="post-item">
+                <div class="post-meta">
+                    <span class="post-type">7-Part Series</span>
+                    <span class="post-date">Jan 2026</span>
+                </div>
+                <h2>Building Enterprise-Scale Azure Infrastructure</h2>
+                <p>Complete series on lessons learned building and maintaining enterprise Azure hub-and-spoke architecture with 1,258 files of Bicep IaC across 6 spoke networks, 4 environments, and multiple Azure subscriptions.</p>
+            </a>
+
+            <a href="azure-iac-patterns-series/" class="post-item">
+                <div class="post-meta">
+                    <span class="post-type">13-Part Series</span>
+                    <span class="post-date">Jan 2026</span>
+                </div>
+                <h2>Critical Azure IaC Patterns: What the Documentation Doesn't Tell You</h2>
+                <p>Advanced Bicep patterns learned from managing 1,258 files of Azure hub-and-spoke infrastructure—the knowledge that only comes from debugging production failures.</p>
+            </a>
+
+            <a href="safety-guardrails-production/" class="post-item">
+                <div class="post-meta">
+                    <span class="post-type">War Story</span>
+                    <span class="post-date">Jan 2026</span>
+                </div>
+                <h2>I Ran a Cleanup Script Against Production Once</h2>
+                <p>Production-grade safety guardrails that prevent 2 AM incidents by failing safely instead of catastrophically. How I built multi-layer protection to ensure it never happens again.</p>
+            </a>
+
+            <!-- Individual Posts -->
+            <a href="hub-spoke-deployment-orchestration/" class="post-item">
+                <div class="post-meta">
+                    <span class="post-type">Deep Dive</span>
+                    <span class="post-date">Jan 2026</span>
+                </div>
+                <h2>Hub-Spoke Deployment Orchestration</h2>
+                <p>Managing deployment order and dependencies in complex hub-and-spoke Azure architectures.</p>
+            </a>
+
+            <a href="token-expiration-azure-deployments/" class="post-item">
+                <div class="post-meta">
+                    <span class="post-type">Problem & Solution</span>
+                    <span class="post-date">Jan 2026</span>
+                </div>
+                <h2>When Your Azure Deployment Fails at Minute 61</h2>
+                <p>Solving token expiration issues in long-running Azure deployments.</p>
+            </a>
+
+            <a href="dnat-circular-dependency/" class="post-item">
+                <div class="post-meta">
+                    <span class="post-type">Pattern</span>
+                    <span class="post-date">Jan 2026</span>
+                </div>
+                <h2>Breaking DNAT Circular Dependencies</h2>
+                <p>Resolving circular dependencies when DNAT rules need the firewall's runtime-assigned IP.</p>
+            </a>
+
+            <a href="bicep-wrapper-pattern/" class="post-item">
+                <div class="post-meta">
+                    <span class="post-type">Pattern</span>
+                    <span class="post-date">Jan 2026</span>
+                </div>
+                <h2>The Bicep Wrapper Pattern</h2>
+                <p>Creating maintainable abstraction layers over Azure Verified Modules.</p>
+            </a>
+
+            <a href="bicep-batchsize-pattern/" class="post-item">
+                <div class="post-meta">
+                    <span class="post-type">Pattern</span>
+                    <span class="post-date">Jan 2026</span>
+                </div>
+                <h2>The @batchSize Pattern in Bicep</h2>
+                <p>Controlling deployment parallelism to avoid race conditions and throttling.</p>
+            </a>
+
+            <a href="environment-separation-azure/" class="post-item">
+                <div class="post-meta">
+                    <span class="post-type">Architecture</span>
+                    <span class="post-date">Jan 2026</span>
+                </div>
+                <h2>Environment Separation in Azure</h2>
+                <p>Subscription-scoped deployment strategies for true environment isolation.</p>
+            </a>
+
+            <a href="whatif-analysis-azure/" class="post-item">
+                <div class="post-meta">
+                    <span class="post-type">Practice</span>
+                    <span class="post-date">Jan 2026</span>
+                </div>
+                <h2>What-If Analysis for Azure Deployments</h2>
+                <p>Preview infrastructure changes before they happen.</p>
+            </a>
+
+            <a href="observability-long-running-deployments/" class="post-item">
+                <div class="post-meta">
+                    <span class="post-type">Operations</span>
+                    <span class="post-date">Jan 2026</span>
+                </div>
+                <h2>Observability for Long-Running Deployments</h2>
+                <p>Monitoring and debugging multi-hour infrastructure deployments.</p>
+            </a>
+
+            <a href="gateway-orchestration-azure/" class="post-item">
+                <div class="post-meta">
+                    <span class="post-type">Pattern</span>
+                    <span class="post-date">Jan 2026</span>
+                </div>
+                <h2>Gateway Orchestration in Azure</h2>
+                <p>Coordinating ExpressRoute, VPN Gateway, and Routing Intent deployments.</p>
+            </a>
+
+            <a href="parameterization-infrastructure-code/" class="post-item">
+                <div class="post-meta">
+                    <span class="post-type">Best Practice</span>
+                    <span class="post-date">Jan 2026</span>
+                </div>
+                <h2>Parameterization in Infrastructure Code</h2>
+                <p>Building flexible, environment-aware IaC templates.</p>
+            </a>
+
+            <a href="operational-excellence-azure-iac/" class="post-item">
+                <div class="post-meta">
+                    <span class="post-type">Framework</span>
+                    <span class="post-date">Jan 2026</span>
+                </div>
+                <h2>Operational Excellence in Azure IaC</h2>
+                <p>Building for day-2 operations from day-1.</p>
+            </a>
+
+            <a href="cost-optimization-automation/" class="post-item">
+                <div class="post-meta">
+                    <span class="post-type">FinOps</span>
+                    <span class="post-date">Jan 2026</span>
+                </div>
+                <h2>Cost Optimization Through Automation</h2>
+                <p>Automated cost controls and environment-aware resource sizing.</p>
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section-container">
+            <p class="footer-tagline">Let's build something that scales.</p>
+            <div class="footer-contact">
+                <a href="mailto:mina.info.tech@gmail.com">mina.info.tech@gmail.com</a>
+                <a href="https://minaerian.com">minaerian.com</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

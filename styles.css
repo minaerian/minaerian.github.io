@@ -1,6 +1,7 @@
 /* ==========================================================================
    Mina Erian — Resume Styles
    Design: Money Heist inspired — Dark, bold, elegant
+   Theme: Neon Green
    ========================================================================== */
 
 /* CSS Variables */
@@ -15,10 +16,11 @@
     --text-secondary: #7d8590;
     --text-muted: #484f58;
     
-    --accent-blue: #0078d4;
-    --accent-blue-light: #00a4ef;
+    /* Neon Green Theme */
+    --accent-primary: #39ff14;
+    --accent-primary-dim: #2ed60f;
+    --accent-secondary: #00ff88;
     --accent-orange: #f59e0b;
-    --accent-green: #10b981;
     
     --border-color: #30363d;
     
@@ -53,13 +55,14 @@ body {
 }
 
 a {
-    color: var(--accent-blue-light);
+    color: var(--accent-primary);
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 a:hover {
-    color: var(--accent-blue);
+    color: var(--accent-secondary);
+    text-shadow: 0 0 8px rgba(57, 255, 20, 0.4);
 }
 
 /* Container */
@@ -76,7 +79,7 @@ a:hover {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: var(--accent-blue);
+    color: var(--accent-primary);
     margin-bottom: 40px;
     display: flex;
     align-items: center;
@@ -87,7 +90,7 @@ a:hover {
     content: '';
     flex: 1;
     height: 1px;
-    background: linear-gradient(to right, var(--accent-blue), transparent);
+    background: linear-gradient(to right, var(--accent-primary), transparent);
     max-width: 200px;
 }
 
@@ -105,7 +108,7 @@ a:hover {
     padding: 40px;
     position: relative;
     background: 
-        radial-gradient(ellipse at 50% 0%, rgba(0, 120, 212, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 0%, rgba(57, 255, 20, 0.1) 0%, transparent 50%),
         var(--bg-primary);
 }
 
@@ -119,8 +122,9 @@ a:hover {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: var(--accent-blue);
+    color: var(--accent-primary);
     margin-bottom: 24px;
+    text-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
 }
 
 .hero-name {
@@ -150,6 +154,7 @@ a:hover {
     gap: 8px;
     font-size: 14px;
     color: var(--text-secondary);
+    margin-bottom: 32px;
 }
 
 .hero-contact a {
@@ -157,7 +162,38 @@ a:hover {
 }
 
 .hero-contact a:hover {
-    color: var(--accent-blue-light);
+    color: var(--accent-primary);
+}
+
+.hero-actions {
+    margin-top: 24px;
+}
+
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    background: transparent;
+    border: 2px solid var(--accent-primary);
+    color: var(--accent-primary);
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background: var(--accent-primary);
+    color: var(--bg-primary);
+    box-shadow: 0 0 30px rgba(57, 255, 20, 0.4);
+    text-shadow: none;
+}
+
+.download-icon {
+    font-size: 18px;
 }
 
 .separator {
@@ -229,7 +265,7 @@ a:hover {
     color: var(--text-primary);
     font-style: italic;
     padding-left: 24px;
-    border-left: 3px solid var(--accent-blue);
+    border-left: 3px solid var(--accent-primary);
     margin-top: 40px;
 }
 
@@ -257,7 +293,8 @@ a:hover {
 }
 
 .discovery-main .highlight {
-    color: var(--accent-blue);
+    color: var(--accent-primary);
+    text-shadow: 0 0 30px rgba(57, 255, 20, 0.3);
 }
 
 .discovery-main p {
@@ -293,16 +330,17 @@ a:hover {
 }
 
 .layer:hover {
-    border-color: var(--accent-blue);
+    border-color: var(--accent-primary);
     transform: translateX(8px);
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.1);
 }
 
 .layer-num {
     font-family: var(--font-mono);
     font-size: 14px;
     font-weight: 600;
-    color: var(--accent-blue);
-    background: rgba(0, 120, 212, 0.1);
+    color: var(--accent-primary);
+    background: rgba(57, 255, 20, 0.1);
     padding: 4px 10px;
     border-radius: 4px;
 }
@@ -319,15 +357,15 @@ a:hover {
     height: 12px;
     background: var(--accent-orange);
     border-radius: 50%;
-    animation: packetMove 3s ease-in-out infinite;
+    animation: packetMove 4s ease-in-out infinite;
     box-shadow: 0 0 20px var(--accent-orange);
 }
 
 @keyframes packetMove {
-    0% { top: 100%; opacity: 0; }
+    0% { top: 0%; opacity: 0; }
     10% { opacity: 1; }
     90% { opacity: 1; }
-    100% { top: 0%; opacity: 0; }
+    100% { top: 100%; opacity: 0; }
 }
 
 /* ==========================================================================
@@ -354,8 +392,9 @@ a:hover {
 }
 
 .philosophy-card:hover {
-    border-color: var(--accent-blue);
+    border-color: var(--accent-primary);
     transform: translateY(-4px);
+    box-shadow: 0 0 30px rgba(57, 255, 20, 0.1);
 }
 
 .philosophy-icon {
@@ -409,16 +448,18 @@ a:hover {
 }
 
 .metric:hover {
-    border-color: var(--accent-blue);
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.1);
 }
 
 .metric-number {
     font-size: 48px;
     font-weight: 800;
-    color: var(--accent-blue);
+    color: var(--accent-primary);
     line-height: 1;
     margin-bottom: 12px;
     font-family: var(--font-mono);
+    text-shadow: 0 0 30px rgba(57, 255, 20, 0.3);
 }
 
 .metric-label {
@@ -457,7 +498,7 @@ a:hover {
     top: 0;
     bottom: 0;
     width: 2px;
-    background: linear-gradient(to bottom, var(--accent-blue), var(--border-color));
+    background: linear-gradient(to bottom, var(--accent-primary), var(--border-color));
 }
 
 .timeline-item {
@@ -481,13 +522,13 @@ a:hover {
 }
 
 .timeline-item.current::before {
-    border-color: var(--accent-blue);
-    background: var(--accent-blue);
-    box-shadow: 0 0 20px rgba(0, 120, 212, 0.4);
+    border-color: var(--accent-primary);
+    background: var(--accent-primary);
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
 }
 
 .timeline-item:hover::before {
-    border-color: var(--accent-blue);
+    border-color: var(--accent-primary);
 }
 
 .timeline-date {
@@ -506,15 +547,38 @@ a:hover {
 
 .timeline-company {
     font-size: 16px;
-    color: var(--accent-blue);
+    color: var(--accent-primary);
     margin-bottom: 16px;
 }
 
-.timeline-achievement {
+.timeline-achievements {
+    margin-bottom: 20px;
+}
+
+.timeline-achievements ul {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline-achievements li {
     font-size: 15px;
     color: var(--text-secondary);
-    line-height: 1.8;
-    margin-bottom: 20px;
+    line-height: 1.7;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-achievements li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--accent-primary);
+}
+
+.timeline-achievements li strong {
+    color: var(--text-primary);
+    font-weight: 600;
 }
 
 .timeline-tech {
@@ -558,7 +622,7 @@ a:hover {
 .toolkit-category h3 {
     font-size: 16px;
     font-weight: 600;
-    color: var(--accent-blue);
+    color: var(--accent-primary);
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -620,7 +684,8 @@ a:hover {
 }
 
 .education-item.cert {
-    border-color: var(--accent-blue);
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.1);
 }
 
 /* ==========================================================================
@@ -655,8 +720,9 @@ a:hover {
 }
 
 .writing-card:hover {
-    border-color: var(--accent-blue);
+    border-color: var(--accent-primary);
     transform: translateY(-4px);
+    box-shadow: 0 0 30px rgba(57, 255, 20, 0.1);
 }
 
 .writing-type {
@@ -680,6 +746,22 @@ a:hover {
 .writing-card p {
     font-size: 14px;
     color: var(--text-secondary);
+}
+
+.writing-more {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.view-all-link {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    color: var(--accent-primary);
+    letter-spacing: 1px;
+}
+
+.view-all-link:hover {
+    text-decoration: underline;
 }
 
 /* ==========================================================================
@@ -713,7 +795,7 @@ a:hover {
 }
 
 .footer-contact a:hover {
-    color: var(--accent-blue);
+    color: var(--accent-primary);
 }
 
 /* ==========================================================================
@@ -788,15 +870,26 @@ a:hover {
     .hero {
         min-height: auto;
         padding: 40px 0;
+        background: white;
     }
     
-    .scroll-indicator {
+    .scroll-indicator,
+    .download-btn {
         display: none;
     }
     
     section {
         break-inside: avoid;
         padding: 40px 0;
+        background: white !important;
+    }
+    
+    .section-label {
+        color: #333;
+    }
+    
+    .section-label::after {
+        background: linear-gradient(to right, #333, transparent);
     }
     
     .philosophy-card,
@@ -806,5 +899,21 @@ a:hover {
     .writing-card {
         border: 1px solid #ddd;
         background: white;
+    }
+    
+    .metric-number,
+    .highlight,
+    .timeline-company,
+    .toolkit-category h3 {
+        color: #333;
+        text-shadow: none;
+    }
+    
+    .timeline-achievements li::before {
+        color: #333;
+    }
+    
+    a {
+        color: #333;
     }
 }

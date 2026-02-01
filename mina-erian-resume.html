@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mina Erian — Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --text-primary: #1a1a1a;
+            --text-secondary: #4a4a4a;
+            --text-muted: #6a6a6a;
+            --accent: #2563eb;
+            --border: #e5e5e5;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 10pt;
+            line-height: 1.5;
+            color: var(--text-primary);
+            background: white;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.5in;
+        }
+        
+        /* Header */
+        header {
+            text-align: center;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 2px solid var(--text-primary);
+        }
+        
+        h1 {
+            font-size: 24pt;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        
+        .title {
+            font-size: 12pt;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+        
+        .contact {
+            font-size: 9pt;
+            color: var(--text-muted);
+        }
+        
+        .contact a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        .contact span {
+            margin: 0 8px;
+        }
+        
+        /* Sections */
+        section {
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 11pt;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 4px;
+            margin-bottom: 12px;
+        }
+        
+        /* Summary */
+        .summary p {
+            font-size: 10pt;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+        
+        /* Experience */
+        .job {
+            margin-bottom: 16px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+        
+        .job-title {
+            font-size: 11pt;
+            font-weight: 600;
+        }
+        
+        .job-date {
+            font-size: 9pt;
+            color: var(--text-muted);
+        }
+        
+        .job-company {
+            font-size: 10pt;
+            color: var(--accent);
+            margin-bottom: 8px;
+        }
+        
+        .job ul {
+            padding-left: 16px;
+        }
+        
+        .job li {
+            font-size: 9.5pt;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+        
+        .job li strong {
+            color: var(--text-primary);
+        }
+        
+        /* Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+        
+        .skill-category h3 {
+            font-size: 9pt;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+        
+        .skill-category p {
+            font-size: 8.5pt;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+        
+        /* Education */
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+        
+        .edu-item h3 {
+            font-size: 10pt;
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        
+        .edu-item p {
+            font-size: 9pt;
+            color: var(--text-secondary);
+        }
+        
+        .edu-item .school {
+            font-size: 8.5pt;
+            color: var(--text-muted);
+        }
+        
+        /* Print styles */
+        @media print {
+            body {
+                padding: 0;
+            }
+            
+            @page {
+                margin: 0.5in;
+                size: letter;
+            }
+        }
+        
+        /* PDF link notice */
+        .pdf-notice {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--accent);
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 12px;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .pdf-notice:hover {
+            background: #1d4ed8;
+        }
+        
+        @media print {
+            .pdf-notice { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mina Erian</h1>
+        <p class="title">Principal Cloud Solutions Architect</p>
+        <p class="contact">
+            <a href="mailto:mina.info.tech@gmail.com">mina.info.tech@gmail.com</a>
+            <span>•</span>
+            Phoenix, Arizona
+            <span>•</span>
+            <a href="https://minaerian.com">minaerian.com</a>
+        </p>
+    </header>
+
+    <section class="summary">
+        <h2>Summary</h2>
+        <p>Principal Cloud Solutions Architect with 14+ years designing enterprise Azure infrastructure across healthcare, entertainment, and financial services. Specialized in Azure platform engineering, building reusable IaC frameworks with Azure Verified Modules (AVM), multi-environment deployment architectures, and production-grade safety guardrails.</p>
+        <p>Led migration of 200+ workloads to Azure with 99.9%+ uptime, managing 1,200+ Bicep files across 4 environments and 8 subscriptions while reducing infrastructure costs by 25-40%.</p>
+    </section>
+
+    <section>
+        <h2>Professional Experience</h2>
+        
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Principal Cloud Solutions Architect</span>
+                <span class="job-date">Apr 2022 — Present</span>
+            </div>
+            <p class="job-company">Global Music Rights</p>
+            <ul>
+                <li>Architected enterprise hub-and-spoke network topology spanning <strong>8 Azure regions</strong> with Azure Virtual WAN, Firewall Premium, ExpressRoute, and dual VPN gateways — reducing network latency by 45%</li>
+                <li>Developed enterprise IaC platform: <strong>1,200+ Bicep files</strong> across 4 environments, 6 spoke networks, 8 subscriptions using Azure Verified Modules (AVM) with custom wrapper patterns</li>
+                <li>Optimized CI/CD pipeline orchestration achieving <strong>63% faster deployments</strong> (6 hours → 2.25 hours) through explicit dependency management and parallel spoke strategies</li>
+                <li>Led cloud migration of <strong>150+ workloads</strong> — completed 3 months ahead of schedule with 99.95% availability</li>
+                <li>Designed multi-region DR architecture meeting <strong>RPO &lt;1 hour, RTO &lt;4 hours</strong> — validated through 6 DR drills</li>
+                <li>Implemented zero-trust security framework with Sentinel, Defender, Entra ID — <strong>60% reduction</strong> in security incidents</li>
+                <li>Optimized Azure costs by <strong>$320K annually</strong> through Reserved Instances, VM right-sizing, and automated schedules</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">IT Solutions Architect</span>
+                <span class="job-date">Jul 2020 — Jul 2021</span>
+            </div>
+            <p class="job-company">Orange Crew MSP</p>
+            <ul>
+                <li>Architected multi-region Azure Virtual Desktop serving <strong>800+ users across 15 countries</strong> — 40% productivity improvement, 50% reduction in desktop management overhead</li>
+                <li>Automated AVD infrastructure with ARM Templates: <strong>3 days → 2 hours</strong> provisioning, 95% fewer config errors</li>
+                <li>Migrated <strong>75+ workloads</strong> to Azure, saving <strong>$180K annually</strong> through reserved instances and right-sizing</li>
+                <li>Established governance across <strong>40+ subscriptions</strong> — achieved 95% policy compliance in 90 days</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="job-title">Director of Information Technology</span>
+                <span class="job-date">Aug 2014 — Mar 2020</span>
+            </div>
+            <p class="job-company">Sycom</p>
+            <ul>
+                <li>Led IT for <strong>200+ healthcare clients across 5 countries</strong> — 12-person team, $3.5M annual budget, 24/7 operations</li>
+                <li>Architected voice biometrics system: <strong>$8.25M savings over 3 years</strong>, 85% hardware cost reduction</li>
+                <li>Drove <strong>20% revenue growth ($2.4M)</strong> through strategic account acquisition; improved NPS from 65% to 95%</li>
+                <li>Reduced system downtime by <strong>70%</strong>, improved MTTR from 4 hours to 45 minutes</li>
+                <li>Built and retained team: reduced turnover from <strong>40% to 8%</strong> through career development programs</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Core Competencies</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Cloud & Infrastructure</h3>
+                <p>Azure Virtual WAN, Hub-Spoke, ExpressRoute, VPN Gateway, Firewall Premium, Front Door, App Gateway, Private Link</p>
+            </div>
+            <div class="skill-category">
+                <h3>Infrastructure as Code</h3>
+                <p>Bicep, ARM Templates, Azure Verified Modules (AVM), Azure DevOps, CI/CD Pipelines, GitOps, Multi-Environment Architecture</p>
+            </div>
+            <div class="skill-category">
+                <h3>Security & Compliance</h3>
+                <p>Zero Trust, Microsoft Sentinel, Defender for Cloud, Entra ID, Azure Policy, HIPAA, PCI-DSS, SOC 2</p>
+            </div>
+            <div class="skill-category">
+                <h3>Disaster Recovery</h3>
+                <p>Azure Site Recovery, Multi-region failover, Business Continuity Planning, RPO/RTO Architecture, High Availability</p>
+            </div>
+            <div class="skill-category">
+                <h3>Operations & FinOps</h3>
+                <p>Azure Monitor, Log Analytics, Cost Management, Reserved Instances, Production Safety Guardrails</p>
+            </div>
+            <div class="skill-category">
+                <h3>Leadership</h3>
+                <p>Enterprise Architecture, Team Development, Budget Management ($3.5M+), Stakeholder Communication, Technical Writing</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education & Certifications</h2>
+        <div class="education-grid">
+            <div class="edu-item">
+                <h3>Master's Degree</h3>
+                <p>Health Leadership & Management</p>
+                <p class="school">United States International University</p>
+            </div>
+            <div class="edu-item">
+                <h3>Bachelor's Degree</h3>
+                <p>Information Systems & Technology</p>
+                <p class="school">United States International University</p>
+            </div>
+            <div class="edu-item">
+                <h3>Certification</h3>
+                <p>Azure Virtual Desktop Specialty</p>
+                <p class="school">Microsoft — 2022</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="pdf-notice" onclick="window.print()">
+        ⬇️ Print / Save as PDF
+    </div>
+</body>
+</html>

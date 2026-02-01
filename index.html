@@ -23,9 +23,12 @@
                 <span class="separator">•</span>
                 <span>Phoenix, Arizona</span>
                 <span class="separator">•</span>
-                <a href="https://linkedin.com/in/minaerian">LinkedIn</a>
-                <span class="separator">•</span>
                 <a href="https://minaerian.com">minaerian.com</a>
+            </div>
+            <div class="hero-actions">
+                <a href="mina-erian-resume.html" class="download-btn">
+                    <span class="download-icon">↓</span> Download Resume (PDF)
+                </a>
             </div>
         </div>
         <div class="scroll-indicator">
@@ -65,8 +68,8 @@
                         For me, a revelation.
                     </p>
                     <p>
-                        While others memorized protocols, I visualized them — a packet of data 
-                        traversing routers, working through the TCP/IP stack from Layer 1 to Layer 4. 
+                        While others memorized protocols, I visualized them — watching a packet of data 
+                        traverse routers, descending through the TCP/IP stack from Application to Physical.
                     </p>
                     <p>
                         This wasn't a limitation. It was a different operating system. 
@@ -76,17 +79,21 @@
                 </div>
                 <div class="discovery-visual">
                     <div class="layer-stack">
+                        <div class="layer layer-5">
+                            <span class="layer-num">L5</span>
+                            <span class="layer-name">Application</span>
+                        </div>
                         <div class="layer layer-4">
                             <span class="layer-num">L4</span>
-                            <span class="layer-name">Application</span>
+                            <span class="layer-name">Transport</span>
                         </div>
                         <div class="layer layer-3">
                             <span class="layer-num">L3</span>
-                            <span class="layer-name">Transport</span>
+                            <span class="layer-name">Network</span>
                         </div>
                         <div class="layer layer-2">
                             <span class="layer-num">L2</span>
-                            <span class="layer-name">Network</span>
+                            <span class="layer-name">Data Link</span>
                         </div>
                         <div class="layer layer-1">
                             <span class="layer-num">L1</span>
@@ -155,9 +162,9 @@
                     <span class="metric-detail">Across production workloads</span>
                 </div>
                 <div class="metric">
-                    <span class="metric-number">15</span>
-                    <span class="metric-label">HIPAA audits passed</span>
-                    <span class="metric-detail">Zero critical findings</span>
+                    <span class="metric-number">18</span>
+                    <span class="metric-label">Months zero production incidents</span>
+                    <span class="metric-detail">Multi-layer safety guardrails</span>
                 </div>
             </div>
         </div>
@@ -173,17 +180,24 @@
                     <div class="timeline-content">
                         <h3>Principal Cloud Solutions Architect</h3>
                         <p class="timeline-company">Global Music Rights</p>
-                        <p class="timeline-achievement">
-                            Architected enterprise hub-and-spoke network across 8 Azure regions. 
-                            Automated infrastructure provisioning with Bicep — reduced deployment time from 2 weeks to 4 hours.
-                            Led cloud migration of 150+ workloads, completing 3 months ahead of schedule.
-                        </p>
+                        <div class="timeline-achievements">
+                            <ul>
+                                <li>Architected enterprise hub-and-spoke network spanning <strong>8 Azure regions</strong> with Virtual WAN, Firewall Premium, ExpressRoute, and dual VPN gateways — reducing network latency by 45%</li>
+                                <li>Built enterprise IaC platform: <strong>1,200+ Bicep files</strong> across 4 environments, 6 spoke networks, 8 subscriptions using Azure Verified Modules (AVM) with custom wrapper patterns</li>
+                                <li>Optimized CI/CD pipeline orchestration: <strong>63% faster deployments</strong> (6 hours → 2.25 hours) through explicit dependency management and parallel spoke strategies</li>
+                                <li>Led migration of <strong>150+ workloads</strong> to Azure — completed 3 months ahead of schedule with 99.95% availability</li>
+                                <li>Designed multi-region DR architecture: <strong>RPO &lt;1 hour, RTO &lt;4 hours</strong> — validated through 6 DR drills</li>
+                                <li>Implemented zero-trust framework with Sentinel, Defender, Entra ID — <strong>60% reduction</strong> in security incidents, 98% PCI-DSS compliance</li>
+                                <li>Cut Azure spend by <strong>$320K annually</strong> via Reserved Instances, right-sizing, automated shutdown schedules</li>
+                            </ul>
+                        </div>
                         <div class="timeline-tech">
-                            <span>Azure</span>
-                            <span>Bicep</span>
+                            <span>Azure Virtual WAN</span>
+                            <span>Bicep/AVM</span>
                             <span>Hub-Spoke</span>
                             <span>Azure DevOps</span>
                             <span>Sentinel</span>
+                            <span>Zero Trust</span>
                         </div>
                     </div>
                 </div>
@@ -192,16 +206,21 @@
                     <div class="timeline-content">
                         <h3>IT Solutions Architect</h3>
                         <p class="timeline-company">Orange Crew MSP</p>
-                        <p class="timeline-achievement">
-                            Built multi-region Azure Virtual Desktop for 800+ global users across 15 countries.
-                            Migrated 75+ workloads, reducing infrastructure costs by $180K annually.
-                            Established governance framework across 40+ subscriptions — 95% policy compliance in 90 days.
-                        </p>
+                        <div class="timeline-achievements">
+                            <ul>
+                                <li>Architected multi-region Azure Virtual Desktop serving <strong>800+ users across 15 countries</strong> — 40% productivity improvement, 50% reduction in desktop management overhead</li>
+                                <li>Automated AVD infrastructure with ARM Templates: <strong>3 days → 2 hours</strong> provisioning, 95% fewer config errors</li>
+                                <li>Migrated <strong>75+ workloads</strong> to Azure, saving <strong>$180K annually</strong> through reserved instances and right-sizing</li>
+                                <li>Deployed 50TB enterprise storage (NetApp Files + Azure Files) — <strong>99.99% availability</strong>, 30% cost reduction vs on-prem SAN</li>
+                                <li>Established governance across <strong>40+ subscriptions</strong> — achieved 95% policy compliance in 90 days</li>
+                            </ul>
+                        </div>
                         <div class="timeline-tech">
                             <span>AVD</span>
                             <span>ARM Templates</span>
                             <span>Azure Policy</span>
                             <span>NetApp Files</span>
+                            <span>RBAC</span>
                         </div>
                     </div>
                 </div>
@@ -210,17 +229,22 @@
                     <div class="timeline-content">
                         <h3>Director of Information Technology</h3>
                         <p class="timeline-company">Sycom</p>
-                        <p class="timeline-achievement">
-                            Led IT for 200+ healthcare clients across 5 countries. 
-                            Architected voice biometrics system saving $8.25M over 3 years.
-                            Reduced system downtime by 70%, improved MTTR from 4 hours to 45 minutes.
-                            Built and mentored team of 12 — reduced turnover from 40% to 8%.
-                        </p>
+                        <div class="timeline-achievements">
+                            <ul>
+                                <li>Led IT for <strong>200+ healthcare clients across 5 countries</strong> — 12-person team, $3.5M annual budget, 24/7 operations</li>
+                                <li>Architected voice biometrics system replacing fingerprint scanners: <strong>$8.25M savings over 3 years</strong>, 85% hardware cost reduction, 60% faster authentication</li>
+                                <li>Drove <strong>20% revenue growth ($2.4M)</strong> through strategic account acquisition while improving NPS from 65% to 95%</li>
+                                <li>Reduced system downtime by <strong>70%</strong>, improved MTTR from 4 hours to 45 minutes through SOPs and preventive maintenance</li>
+                                <li>Built and retained team: reduced turnover from <strong>40% to 8%</strong> through career development and technical training programs</li>
+                                <li>Maintained <strong>HIPAA/HITECH compliance</strong> across all clients with zero critical audit findings</li>
+                            </ul>
+                        </div>
                         <div class="timeline-tech">
-                            <span>HIPAA</span>
                             <span>Healthcare IT</span>
+                            <span>HIPAA</span>
                             <span>Voice Biometrics</span>
                             <span>Team Leadership</span>
+                            <span>Budget Mgmt</span>
                         </div>
                     </div>
                 </div>
@@ -246,9 +270,9 @@
                     <h3>Infrastructure as Code</h3>
                     <ul>
                         <li>Bicep / ARM Templates</li>
+                        <li>Azure Verified Modules (AVM)</li>
                         <li>Azure DevOps Pipelines</li>
                         <li>GitOps workflows</li>
-                        <li>1,200+ files under management</li>
                     </ul>
                 </div>
                 <div class="toolkit-category">
@@ -263,10 +287,10 @@
                 <div class="toolkit-category">
                     <h3>Networking</h3>
                     <ul>
-                        <li>VNets / Peering / Private Link</li>
+                        <li>Virtual WAN / ExpressRoute</li>
                         <li>Azure Firewall / WAF</li>
-                        <li>ExpressRoute / Virtual WAN</li>
-                        <li>Front Door / Application Gateway</li>
+                        <li>Private Link / Endpoints</li>
+                        <li>Front Door / App Gateway</li>
                     </ul>
                 </div>
                 <div class="toolkit-category">
@@ -275,7 +299,7 @@
                         <li>Azure Site Recovery</li>
                         <li>RPO/RTO architecture</li>
                         <li>Business continuity planning</li>
-                        <li>99.95%+ availability design</li>
+                        <li>Multi-region failover</li>
                     </ul>
                 </div>
                 <div class="toolkit-category">
@@ -284,7 +308,7 @@
                         <li>$3.5M+ budget management</li>
                         <li>Team building (12+ engineers)</li>
                         <li>Stakeholder communication</li>
-                        <li>Vendor management</li>
+                        <li>Technical writing</li>
                     </ul>
                 </div>
             </div>
@@ -321,21 +345,24 @@
             <div class="section-label">The Writing</div>
             <p class="writing-intro">I write about what I learn in production.</p>
             <div class="writing-grid">
-                <a href="https://minaerian.com/posts/azure-infrastructure-at-scale/" class="writing-card">
-                    <span class="writing-type">Series</span>
+                <a href="posts/azure-infrastructure-at-scale/" class="writing-card">
+                    <span class="writing-type">7-Part Series</span>
                     <h3>Building Enterprise-Scale Azure Infrastructure</h3>
-                    <p>A 7-part series on managing 1,200+ files of IaC</p>
+                    <p>Lessons from managing 1,200+ files of Bicep IaC across 6 spoke networks and 4 environments</p>
                 </a>
-                <a href="https://minaerian.com/posts/safety-guardrails-production/" class="writing-card">
+                <a href="posts/safety-guardrails-production/" class="writing-card">
                     <span class="writing-type">War Story</span>
                     <h3>I Ran a Cleanup Script Against Production Once</h3>
-                    <p>Here's how I made sure it never happens again</p>
+                    <p>How I built multi-layer safety guardrails to ensure it never happens again</p>
                 </a>
-                <a href="https://minaerian.com/posts/azure-iac-patterns-series/" class="writing-card">
-                    <span class="writing-type">Deep Dive</span>
-                    <h3>13 Critical Azure IaC Patterns</h3>
-                    <p>What the documentation doesn't tell you</p>
+                <a href="posts/azure-iac-patterns-series/" class="writing-card">
+                    <span class="writing-type">13-Part Deep Dive</span>
+                    <h3>Critical Azure IaC Patterns</h3>
+                    <p>What the documentation doesn't tell you about deployment order, race conditions, and circular dependencies</p>
                 </a>
+            </div>
+            <div class="writing-more">
+                <a href="posts/" class="view-all-link">View all articles →</a>
             </div>
         </div>
     </section>
@@ -346,8 +373,8 @@
             <p class="footer-tagline">Let's build something that scales.</p>
             <div class="footer-contact">
                 <a href="mailto:mina.info.tech@gmail.com">mina.info.tech@gmail.com</a>
-                <a href="https://linkedin.com/in/minaerian">LinkedIn</a>
                 <a href="https://minaerian.com">minaerian.com</a>
+                <a href="mina-erian-resume.html">Download Resume</a>
             </div>
         </div>
     </footer>
