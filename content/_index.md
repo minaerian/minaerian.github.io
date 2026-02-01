@@ -1,5 +1,5 @@
 ---
-title: "Mina N. Erian"
+title: "Mina Erian"
 description: "Principal Cloud Solutions Architect | Infrastructure Security"
 ---
 
