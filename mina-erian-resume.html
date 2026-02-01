@@ -9,15 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-primary: #ffffff;
-            --bg-card: #f5f5f7;
-            --text-primary: #1d1d1f;
-            --text-secondary: #6e6e73;
-            --text-muted: #86868b;
+            --bg-primary: #000000;
+            --bg-card: #0d0d0d;
+            --text-primary: #f5f5f7;
+            --text-secondary: #86868b;
+            --text-muted: #6e6e73;
             --green: #32d74b;
-            --green-dark: #28a745;
-            --green-soft: rgba(50, 215, 75, 0.1);
-            --border: rgba(0, 0, 0, 0.08);
+            --green-soft: rgba(50, 215, 75, 0.15);
+            --border: rgba(255, 255, 255, 0.1);
         }
         
         * {
@@ -104,7 +103,7 @@
         
         .contact span {
             margin: 0 10px;
-            color: var(--text-muted);
+            opacity: 0.3;
         }
         
         /* Metrics Bar */
@@ -273,7 +272,6 @@
         
         .edu-card.cert {
             border-color: var(--green);
-            background: var(--green-soft);
         }
         
         .edu-card h3 {
@@ -315,10 +313,23 @@
             box-shadow: 0 10px 40px rgba(50, 215, 75, 0.3);
         }
         
-        /* Print Styles */
+        /* Print Styles - White background for PDF export */
         @media print {
+            :root {
+                --bg-primary: #ffffff;
+                --bg-card: #f5f5f7;
+                --text-primary: #1d1d1f;
+                --text-secondary: #6e6e73;
+                --text-muted: #86868b;
+                --green: #22a046;
+                --green-soft: rgba(50, 215, 75, 0.1);
+                --border: rgba(0, 0, 0, 0.1);
+            }
+            
             body {
                 padding: 0;
+                background: #ffffff;
+                color: #1d1d1f;
                 -webkit-print-color-adjust: exact !important;
                 print-color-adjust: exact !important;
             }
@@ -332,9 +343,31 @@
                 display: none;
             }
             
-            .job, .skill-card, .edu-card, .metric-item {
-                -webkit-print-color-adjust: exact !important;
-                print-color-adjust: exact !important;
+            .status-badge {
+                background: rgba(50, 215, 75, 0.1);
+            }
+            
+            .metric-item, .job, .skill-card, .edu-card {
+                background: #f5f5f7;
+                border-color: rgba(0, 0, 0, 0.1);
+            }
+            
+            .edu-card.cert {
+                background: rgba(50, 215, 75, 0.1);
+                border-color: #22a046;
+            }
+            
+            header {
+                border-bottom-color: rgba(0, 0, 0, 0.1);
+            }
+            
+            h1, .job-title, .text-primary {
+                color: #1d1d1f;
+            }
+            
+            .title-label, .tagline, .contact, .summary-text, 
+            .job li, .skill-card p, .edu-card p, .metric-label {
+                color: #6e6e73;
             }
         }
     </style>
