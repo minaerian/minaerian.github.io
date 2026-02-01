@@ -6,14 +6,18 @@
     <title>Mina Erian — Resume</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --text-primary: #1a1a1a;
-            --text-secondary: #4a4a4a;
-            --text-muted: #6a6a6a;
-            --accent: #2563eb;
-            --border: #e5e5e5;
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-card: #1a1f26;
+            --text-primary: #e6edf3;
+            --text-secondary: #7d8590;
+            --text-muted: #484f58;
+            --accent: #22c55e;
+            --accent-dim: #16a34a;
+            --border: #30363d;
         }
         
         * {
@@ -24,38 +28,50 @@
         
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-            font-size: 10pt;
+            font-size: 9.5pt;
             line-height: 1.5;
             color: var(--text-primary);
-            background: white;
+            background: var(--bg-primary);
             max-width: 8.5in;
             margin: 0 auto;
-            padding: 0.5in;
+            padding: 0.4in;
         }
         
         /* Header */
         header {
             text-align: center;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
             padding-bottom: 16px;
-            border-bottom: 2px solid var(--text-primary);
+            border-bottom: 2px solid var(--accent);
+        }
+        
+        .title-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9pt;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--accent);
+            margin-bottom: 8px;
         }
         
         h1 {
-            font-size: 24pt;
-            font-weight: 700;
+            font-size: 28pt;
+            font-weight: 800;
+            letter-spacing: -1px;
             margin-bottom: 4px;
+            color: var(--text-primary);
         }
         
-        .title {
-            font-size: 12pt;
+        .tagline {
+            font-size: 11pt;
+            font-style: italic;
             color: var(--text-secondary);
             margin-bottom: 12px;
         }
         
         .contact {
             font-size: 9pt;
-            color: var(--text-muted);
+            color: var(--text-secondary);
         }
         
         .contact a {
@@ -65,50 +81,66 @@
         
         .contact span {
             margin: 0 8px;
+            opacity: 0.5;
         }
         
         /* Sections */
         section {
-            margin-bottom: 20px;
+            margin-bottom: 16px;
         }
         
         h2 {
-            font-size: 11pt;
-            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 9pt;
+            font-weight: 500;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             color: var(--accent);
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 4px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        h2::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(to right, var(--accent), transparent);
         }
         
         /* Summary */
-        .summary p {
-            font-size: 10pt;
+        .summary-text {
+            font-size: 9.5pt;
             color: var(--text-secondary);
-            margin-bottom: 6px;
+            line-height: 1.6;
         }
         
         /* Experience */
         .job {
-            margin-bottom: 16px;
+            margin-bottom: 14px;
+            padding: 12px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 6px;
         }
         
         .job-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
-            margin-bottom: 4px;
+            margin-bottom: 2px;
         }
         
         .job-title {
             font-size: 11pt;
             font-weight: 600;
+            color: var(--text-primary);
         }
         
         .job-date {
-            font-size: 9pt;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 8pt;
             color: var(--text-muted);
         }
         
@@ -119,35 +151,47 @@
         }
         
         .job ul {
-            padding-left: 16px;
+            padding-left: 14px;
+            margin: 0;
         }
         
         .job li {
-            font-size: 9.5pt;
+            font-size: 8.5pt;
             color: var(--text-secondary);
-            margin-bottom: 4px;
+            margin-bottom: 3px;
+            line-height: 1.5;
         }
         
         .job li strong {
             color: var(--text-primary);
+            font-weight: 600;
         }
         
         /* Skills */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 12px;
+            gap: 8px;
         }
         
-        .skill-category h3 {
-            font-size: 9pt;
+        .skill-card {
+            padding: 10px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+        }
+        
+        .skill-card h3 {
+            font-size: 8pt;
             font-weight: 600;
-            color: var(--text-primary);
+            color: var(--accent);
             margin-bottom: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
         
-        .skill-category p {
-            font-size: 8.5pt;
+        .skill-card p {
+            font-size: 7.5pt;
             color: var(--text-secondary);
             line-height: 1.4;
         }
@@ -156,64 +200,136 @@
         .education-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
+            gap: 8px;
         }
         
-        .edu-item h3 {
-            font-size: 10pt;
+        .edu-card {
+            padding: 10px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+        }
+        
+        .edu-card.cert {
+            border-color: var(--accent);
+        }
+        
+        .edu-card h3 {
+            font-size: 9pt;
             font-weight: 600;
+            color: var(--text-primary);
             margin-bottom: 2px;
         }
         
-        .edu-item p {
-            font-size: 9pt;
+        .edu-card p {
+            font-size: 8pt;
             color: var(--text-secondary);
         }
         
-        .edu-item .school {
-            font-size: 8.5pt;
+        .edu-card .school {
+            font-size: 7.5pt;
             color: var(--text-muted);
+        }
+        
+        /* Metrics bar */
+        .metrics-bar {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+        
+        .metric-item {
+            text-align: center;
+            padding: 8px;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+        }
+        
+        .metric-num {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 14pt;
+            font-weight: 700;
+            color: var(--accent);
+        }
+        
+        .metric-label {
+            font-size: 7pt;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Print button */
+        .print-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--accent);
+            color: var(--bg-primary);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: 0 4px 20px rgba(34, 197, 94, 0.3);
+            transition: all 0.2s;
+        }
+        
+        .print-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(34, 197, 94, 0.4);
         }
         
         /* Print styles */
         @media print {
             body {
                 padding: 0;
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
             }
             
             @page {
-                margin: 0.5in;
+                margin: 0.4in;
                 size: letter;
+            }
+            
+            .print-btn {
+                display: none;
+            }
+            
+            .job, .skill-card, .edu-card, .metric-item {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
             }
         }
         
-        /* PDF link notice */
-        .pdf-notice {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: var(--accent);
-            color: white;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-size: 12px;
-            cursor: pointer;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-        
-        .pdf-notice:hover {
-            background: #1d4ed8;
-        }
-        
-        @media print {
-            .pdf-notice { display: none; }
+        /* Light mode print fallback */
+        @media print and (prefers-color-scheme: light) {
+            :root {
+                --bg-primary: #ffffff;
+                --bg-secondary: #f8f9fa;
+                --bg-card: #ffffff;
+                --text-primary: #1a1a1a;
+                --text-secondary: #4a4a4a;
+                --text-muted: #6a6a6a;
+                --accent: #16a34a;
+                --border: #e5e5e5;
+            }
         }
     </style>
 </head>
 <body>
     <header>
+        <p class="title-label">Principal Cloud Solutions Architect</p>
         <h1>Mina Erian</h1>
-        <p class="title">Principal Cloud Solutions Architect</p>
+        <p class="tagline">I don't manage clouds. I architect them.</p>
         <p class="contact">
             <a href="mailto:mina.info.tech@gmail.com">mina.info.tech@gmail.com</a>
             <span>•</span>
@@ -223,14 +339,34 @@
         </p>
     </header>
 
-    <section class="summary">
+    <div class="metrics-bar">
+        <div class="metric-item">
+            <div class="metric-num">200+</div>
+            <div class="metric-label">Workloads Migrated</div>
+        </div>
+        <div class="metric-item">
+            <div class="metric-num">1,200+</div>
+            <div class="metric-label">IaC Files</div>
+        </div>
+        <div class="metric-item">
+            <div class="metric-num">$8.25M</div>
+            <div class="metric-label">Cost Savings</div>
+        </div>
+        <div class="metric-item">
+            <div class="metric-num">99.95%</div>
+            <div class="metric-label">Availability</div>
+        </div>
+    </div>
+
+    <section>
         <h2>Summary</h2>
-        <p>Principal Cloud Solutions Architect with 14+ years designing enterprise Azure infrastructure across healthcare, entertainment, and financial services. Specialized in Azure platform engineering, building reusable IaC frameworks with Azure Verified Modules (AVM), multi-environment deployment architectures, and production-grade safety guardrails.</p>
-        <p>Led migration of 200+ workloads to Azure with 99.9%+ uptime, managing 1,200+ Bicep files across 4 environments and 8 subscriptions while reducing infrastructure costs by 25-40%.</p>
+        <p class="summary-text">
+            14+ years designing enterprise Azure infrastructure across healthcare, entertainment, and financial services. Specialized in Azure platform engineering, building reusable IaC frameworks with Azure Verified Modules (AVM), multi-environment deployment architectures, and production-grade safety guardrails. Led migration of 200+ workloads to Azure with 99.9%+ uptime, managing 1,200+ Bicep files across 4 environments and 8 subscriptions while reducing infrastructure costs by 25-40%.
+        </p>
     </section>
 
     <section>
-        <h2>Professional Experience</h2>
+        <h2>Experience</h2>
         
         <div class="job">
             <div class="job-header">
@@ -239,13 +375,13 @@
             </div>
             <p class="job-company">Global Music Rights</p>
             <ul>
-                <li>Architected enterprise hub-and-spoke network topology spanning <strong>8 Azure regions</strong> with Azure Virtual WAN, Firewall Premium, ExpressRoute, and dual VPN gateways — reducing network latency by 45%</li>
-                <li>Developed enterprise IaC platform: <strong>1,200+ Bicep files</strong> across 4 environments, 6 spoke networks, 8 subscriptions using Azure Verified Modules (AVM) with custom wrapper patterns</li>
-                <li>Optimized CI/CD pipeline orchestration achieving <strong>63% faster deployments</strong> (6 hours → 2.25 hours) through explicit dependency management and parallel spoke strategies</li>
-                <li>Led cloud migration of <strong>150+ workloads</strong> — completed 3 months ahead of schedule with 99.95% availability</li>
-                <li>Designed multi-region DR architecture meeting <strong>RPO &lt;1 hour, RTO &lt;4 hours</strong> — validated through 6 DR drills</li>
-                <li>Implemented zero-trust security framework with Sentinel, Defender, Entra ID — <strong>60% reduction</strong> in security incidents</li>
-                <li>Optimized Azure costs by <strong>$320K annually</strong> through Reserved Instances, VM right-sizing, and automated schedules</li>
+                <li>Architected enterprise hub-and-spoke network spanning <strong>8 Azure regions</strong> with Virtual WAN, Firewall Premium, ExpressRoute — reducing network latency by 45%</li>
+                <li>Built enterprise IaC platform: <strong>1,200+ Bicep files</strong> across 4 environments, 6 spoke networks, 8 subscriptions with Azure Verified Modules</li>
+                <li>Optimized CI/CD achieving <strong>63% faster deployments</strong> (6h → 2.25h) through dependency management and parallel spoke strategies</li>
+                <li>Led migration of <strong>150+ workloads</strong> — completed 3 months ahead of schedule with 99.95% availability</li>
+                <li>Designed multi-region DR: <strong>RPO &lt;1h, RTO &lt;4h</strong> — validated through 6 DR drills</li>
+                <li>Zero-trust framework with Sentinel, Defender, Entra ID — <strong>60% reduction</strong> in security incidents, 98% PCI-DSS compliance</li>
+                <li>Cut Azure costs by <strong>$320K annually</strong> via Reserved Instances, right-sizing, automated schedules</li>
             </ul>
         </div>
 
@@ -256,10 +392,9 @@
             </div>
             <p class="job-company">Orange Crew MSP</p>
             <ul>
-                <li>Architected multi-region Azure Virtual Desktop serving <strong>800+ users across 15 countries</strong> — 40% productivity improvement, 50% reduction in desktop management overhead</li>
-                <li>Automated AVD infrastructure with ARM Templates: <strong>3 days → 2 hours</strong> provisioning, 95% fewer config errors</li>
-                <li>Migrated <strong>75+ workloads</strong> to Azure, saving <strong>$180K annually</strong> through reserved instances and right-sizing</li>
-                <li>Established governance across <strong>40+ subscriptions</strong> — achieved 95% policy compliance in 90 days</li>
+                <li>Architected Azure Virtual Desktop for <strong>800+ users across 15 countries</strong> — 40% productivity improvement</li>
+                <li>Automated AVD provisioning: <strong>3 days → 2 hours</strong>, 95% fewer configuration errors</li>
+                <li>Migrated <strong>75+ workloads</strong> saving <strong>$180K annually</strong>; governance across 40+ subscriptions — 95% compliance in 90 days</li>
             </ul>
         </div>
 
@@ -270,11 +405,10 @@
             </div>
             <p class="job-company">Sycom</p>
             <ul>
-                <li>Led IT for <strong>200+ healthcare clients across 5 countries</strong> — 12-person team, $3.5M annual budget, 24/7 operations</li>
-                <li>Architected voice biometrics system: <strong>$8.25M savings over 3 years</strong>, 85% hardware cost reduction</li>
-                <li>Drove <strong>20% revenue growth ($2.4M)</strong> through strategic account acquisition; improved NPS from 65% to 95%</li>
-                <li>Reduced system downtime by <strong>70%</strong>, improved MTTR from 4 hours to 45 minutes</li>
-                <li>Built and retained team: reduced turnover from <strong>40% to 8%</strong> through career development programs</li>
+                <li>Led IT for <strong>200+ healthcare clients across 5 countries</strong> — 12-person team, $3.5M budget, 24/7 operations</li>
+                <li>Voice biometrics architecture: <strong>$8.25M savings over 3 years</strong>, 85% hardware cost reduction</li>
+                <li>Drove <strong>20% revenue growth ($2.4M)</strong>; improved NPS 65% → 95%; reduced downtime 70%, MTTR 4h → 45min</li>
+                <li>Built team with <strong>40% → 8% turnover</strong> through career development; maintained HIPAA/HITECH compliance</li>
             </ul>
         </div>
     </section>
@@ -282,29 +416,29 @@
     <section>
         <h2>Core Competencies</h2>
         <div class="skills-grid">
-            <div class="skill-category">
+            <div class="skill-card">
                 <h3>Cloud & Infrastructure</h3>
-                <p>Azure Virtual WAN, Hub-Spoke, ExpressRoute, VPN Gateway, Firewall Premium, Front Door, App Gateway, Private Link</p>
+                <p>Azure Virtual WAN, Hub-Spoke, ExpressRoute, VPN Gateway, Firewall Premium, Front Door, Private Link</p>
             </div>
-            <div class="skill-category">
+            <div class="skill-card">
                 <h3>Infrastructure as Code</h3>
-                <p>Bicep, ARM Templates, Azure Verified Modules (AVM), Azure DevOps, CI/CD Pipelines, GitOps, Multi-Environment Architecture</p>
+                <p>Bicep, ARM Templates, Azure Verified Modules, Azure DevOps, CI/CD, GitOps, Multi-Environment</p>
             </div>
-            <div class="skill-category">
+            <div class="skill-card">
                 <h3>Security & Compliance</h3>
-                <p>Zero Trust, Microsoft Sentinel, Defender for Cloud, Entra ID, Azure Policy, HIPAA, PCI-DSS, SOC 2</p>
+                <p>Zero Trust, Sentinel, Defender, Entra ID, Azure Policy, HIPAA, PCI-DSS, SOC 2</p>
             </div>
-            <div class="skill-category">
+            <div class="skill-card">
                 <h3>Disaster Recovery</h3>
-                <p>Azure Site Recovery, Multi-region failover, Business Continuity Planning, RPO/RTO Architecture, High Availability</p>
+                <p>Site Recovery, Multi-region failover, BCP, RPO/RTO Architecture, High Availability</p>
             </div>
-            <div class="skill-category">
+            <div class="skill-card">
                 <h3>Operations & FinOps</h3>
-                <p>Azure Monitor, Log Analytics, Cost Management, Reserved Instances, Production Safety Guardrails</p>
+                <p>Azure Monitor, Log Analytics, Cost Management, Reserved Instances, Safety Guardrails</p>
             </div>
-            <div class="skill-category">
+            <div class="skill-card">
                 <h3>Leadership</h3>
-                <p>Enterprise Architecture, Team Development, Budget Management ($3.5M+), Stakeholder Communication, Technical Writing</p>
+                <p>Enterprise Architecture, Team Development, $3.5M+ Budget, Stakeholder Communication</p>
             </div>
         </div>
     </section>
@@ -312,26 +446,26 @@
     <section>
         <h2>Education & Certifications</h2>
         <div class="education-grid">
-            <div class="edu-item">
+            <div class="edu-card">
                 <h3>Master's Degree</h3>
                 <p>Health Leadership & Management</p>
-                <p class="school">United States International University</p>
+                <p class="school">US International University</p>
             </div>
-            <div class="edu-item">
+            <div class="edu-card">
                 <h3>Bachelor's Degree</h3>
                 <p>Information Systems & Technology</p>
-                <p class="school">United States International University</p>
+                <p class="school">US International University</p>
             </div>
-            <div class="edu-item">
-                <h3>Certification</h3>
-                <p>Azure Virtual Desktop Specialty</p>
-                <p class="school">Microsoft — 2022</p>
+            <div class="edu-card cert">
+                <h3>Azure Virtual Desktop</h3>
+                <p>Microsoft Specialty</p>
+                <p class="school">2022</p>
             </div>
         </div>
     </section>
 
-    <div class="pdf-notice" onclick="window.print()">
-        ⬇️ Print / Save as PDF
-    </div>
+    <button class="print-btn" onclick="window.print()">
+        ↓ Save as PDF
+    </button>
 </body>
 </html>

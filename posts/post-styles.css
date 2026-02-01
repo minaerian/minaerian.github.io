@@ -121,7 +121,7 @@
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    padding: 24px;
+    padding: 20px;
     margin: 24px 0;
     overflow-x: auto;
 }
@@ -129,9 +129,9 @@
 .post-body pre code {
     background: none;
     padding: 0;
-    color: var(--text-primary);
-    font-size: 14px;
-    line-height: 1.6;
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.5;
 }
 
 .post-body hr {

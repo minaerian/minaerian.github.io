@@ -16,10 +16,10 @@
     --text-secondary: #7d8590;
     --text-muted: #484f58;
     
-    /* Neon Green Theme */
-    --accent-primary: #39ff14;
-    --accent-primary-dim: #2ed60f;
-    --accent-secondary: #00ff88;
+    /* Green Theme (softened neon) */
+    --accent-primary: #22c55e;
+    --accent-primary-dim: #16a34a;
+    --accent-secondary: #4ade80;
     --accent-orange: #f59e0b;
     
     --border-color: #30363d;
