@@ -3,7 +3,7 @@ languageName = "English"
 languageDirection = "ltr"
 weight = 1
 
-title = "minaerian"
+title = "Mina N. Erian"
 # copyright = "Copy, _right?_ :thinking_face:"
 
 [params]
@@ -20,6 +20,7 @@ title = "minaerian"
   links = [
     { email = "mailto:mina+website@minaerian.com" },
     { github = "https://github.com/minaerian" },
+    { linkedin = "https://linkedin.com/in/minaerian" },
   #   { link = "https://link-to-some-website.com/" },
   #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
   #   { apple = "https://www.apple.com" },

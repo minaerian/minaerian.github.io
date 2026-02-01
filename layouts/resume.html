@@ -1,4 +1,48 @@
 {{ define "main" }}
+  <style>
+    /* Hide ATS keywords from human readers but keep them for screen readers and ATS bots */
+    .ats-keywords {
+      position: absolute;
+      left: -9999px;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    /* Show keywords when printing for ATS scanning */
+    @media print {
+      .ats-keywords {
+        position: static;
+        width: auto;
+        height: auto;
+        overflow: visible;
+      }
+    }
+    /* Visual hierarchy improvements */
+    .resume .section-title {
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .resume hr {
+      border-color: rgba(128, 128, 128, 0.3);
+      margin-bottom: 1rem;
+    }
+    .resume .job-entry {
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(128, 128, 128, 0.15);
+    }
+    .resume .job-entry:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+    .resume .company-name {
+      font-size: 1.25rem;
+      color: var(--color-primary-600);
+    }
+    .dark .resume .company-name {
+      color: var(--color-primary-400);
+    }
+  </style>
   <div class="resume">
   {{ with resources.Get .Params.resumeTemplate }}
     {{ with .Content | transform.Unmarshal }}
@@ -71,37 +115,38 @@
 
             {{/* Work */}}
             {{ if eq . "work" }}
-              <div>
+              <div class="mt-4">
               {{ range index $contentroot . }}
-                <div class="flex justify-between font-bold text-xl">{{ .name }}<span class="text-right">{{ .url }}</span></div>
-                <div class="flex justify-between italic job-row"><span class="position">{{ .position }}</span>
-                  <span>
-                    {{ $sd := cond (eq (len (split .startDate "-")) 2) (printf "%s-01" .startDate) .startDate }}
-                    {{ $st := time $sd }}
-                    {{ time.Format "Jan 2006" $st }} -
-                    {{ with .endDate }}
-                      {{ $ed := cond (eq (len (split . "-")) 2) (printf "%s-01" .) . }}
-                      {{ $et := time $ed }}
-                      {{ time.Format "Jan 2006" $et }}
-                    {{ else }}
-                      Current
+                <div class="job-entry">
+                  <div class="flex justify-between font-bold text-xl company-name">{{ .name }}<span class="text-right">{{ .url }}</span></div>
+                  <div class="flex justify-between italic mt-1"><span class="position">{{ .position }}</span>
+                    <span>
+                      {{ $sd := cond (eq (len (split .startDate "-")) 2) (printf "%s-01" .startDate) .startDate }}
+                      {{ $st := time $sd }}
+                      {{ time.Format "Jan 2006" $st }} -
+                      {{ with .endDate }}
+                        {{ $ed := cond (eq (len (split . "-")) 2) (printf "%s-01" .) . }}
+                        {{ $et := time $ed }}
+                        {{ time.Format "Jan 2006" $et }}
+                      {{ else }}
+                        Current
+                      {{ end }}
+                    </span>
+                  </div>
+                  <div class="pl-4 mt-3">
+                    <ul style="list-style-position: outside; list-style-type:disc;" class="space-y-1">
+                    {{ range (split .summary "\n") }}
+                      {{ $t := replaceRE "^\\s*-\\s*" "" . }}
+                      {{ if ne $t . }}
+                        <li>{{ $t }}</li>
+                      {{ end }}
                     {{ end }}
-                  </span>
-                </div>
-                <div style="padding-left:1rem">
-                  <ul style="list-style-position: outside; list-style-type:circle;">
-                  {{ range (split .summary "\n") }}
-                    {{ $t := replaceRE "^\\s*-\\s*" "" . }}
-                    {{ if ne $t . }}
-                      <li>{{ $t }}</li>
-                    {{ end }}
+                    </ul>
+                  </div>
+                  {{ with .keywords }}
+                    <div class="ats-keywords"><span class="font-bold">Keywords: </span>{{ delimit . ", " }}</div>
                   {{ end }}
-                  </ul>
                 </div>
-                {{ with .keywords }}
-                  <div><span class="font-bold">Keywords: </span>{{ delimit . ", " }}</div>
-                {{ end }}
-                </br>
               {{ end }}
               </div>
             {{ end }}
@@ -136,12 +181,12 @@
             {{ if eq . "skills" }}
               <div>
                 {{ range index $contentroot . }}
-                  <div class="flex justify-between">
-                    <div class="flex content-start"><span><b>{{ .name }}:</b> {{ .level }}</span></div>
+                  <div class="mb-2">
+                    <div><span><b>{{ .name }}:</b> {{ .level }}</span></div>
                     {{ with .keywords }}
-                      <div><span class="font-bold">Keywords: </span>{{ delimit . ", " }}</div>
+                      <div class="text-sm text-neutral-500 dark:text-neutral-400 pl-4">{{ delimit . " • " }}</div>
                     {{ end }}
-                  </div> 
+                  </div>
                 {{ end }}
               </br>
               </div>
@@ -154,11 +199,11 @@
                 <div class="flex justify-between">
                   <div class="flex content-start"><span><b>{{ .language }}:</b> {{ .fluency }}</span></div>
                   {{ with .keywords }}
-                    <div><span class="font-bold">Keywords: </span>{{ delimit . ", " }}</div>
+                    <div class="ats-keywords"><span class="font-bold">Keywords: </span>{{ delimit . ", " }}</div>
                   {{ end }}
-                </div> 
+                </div>
               {{ end }}
-              </br>  
+              </br>
               </div>
             {{ end }}
 
@@ -223,10 +268,10 @@
                   </ul>
                 </div>
                 {{ with .keywords }}
-                  <div><span class="font-bold">Keywords: </span>{{ delimit . ", " }}</div>
+                  <div class="ats-keywords"><span class="font-bold">Keywords: </span>{{ delimit . ", " }}</div>
                 {{ end }}
               {{ end }}
-              </br>  
+              </br>
               </div>
             {{ end }}
 
@@ -253,10 +298,10 @@
                   </ul>
                 </div>
                 {{ with .keywords }}
-                  <div><span class="font-bold">Keywords: </span>{{ delimit . ", " }}</div>
+                  <div class="ats-keywords"><span class="font-bold">Keywords: </span>{{ delimit . ", " }}</div>
                 {{ end }}
               {{ end }}
-              </br>  
+              </br>
               </div>
             {{ end }}
 

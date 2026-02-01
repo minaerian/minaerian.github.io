@@ -5,7 +5,9 @@ content:
     name: Mina Erian
     email: mina.info.tech@gmail.com
     summary: |
-      Principal Cloud Solutions Architect with 14+ years designing enterprise Azure infrastructure across healthcare, entertainment, and financial services. Specialized in zero-trust security architectures, Infrastructure as Code (IaC), and hybrid cloud connectivity. Led migration of 200+ workloads to Azure with 99.9%+ uptime, reducing infrastructure costs by 25-40% through architectural optimization and automation.
+      - Principal Cloud Solutions Architect with 14+ years designing enterprise Azure infrastructure across healthcare, entertainment, and financial services.
+      - Specialized in Azure platform engineering, building reusable IaC frameworks with Azure Verified Modules (AVM), multi-environment deployment architectures, and production-grade safety guardrails.
+      - Led migration of 200+ workloads to Azure with 99.9%+ uptime, managing 1,200+ Bicep files across 4 environments and 8 subscriptions while reducing infrastructure costs by 25-40%.
 
   location:
     city: Phoenix
@@ -33,25 +35,31 @@ content:
       startDate: 2022-04
       endDate:
       summary: |
-        - Architected enterprise hub-and-spoke network topology spanning 8 Azure regions with Azure Firewall, Azure Front Door, Application Gateway, and VPN Gateway, enabling secure connectivity for 500+ users while reducing network latency by 45%.
-        - Automated infrastructure provisioning using Bicep Infrastructure as Code (IaC) and Azure DevOps CI/CD pipelines, reducing environment deployment time from 2 weeks to 4 hours and achieving 100% infrastructure consistency across dev/staging/production.
+        - Architected enterprise hub-and-spoke network topology spanning 8 Azure regions with Azure Virtual WAN, Firewall Premium, ExpressRoute, and dual VPN gateways, enabling secure connectivity for 500+ users while reducing network latency by 45%.
+        - Developed enterprise IaC platform spanning 1,200+ Bicep files across 4 environments (dev, prod, DR-dev, DR-prod), 6 spoke networks, and 8 Azure subscriptions, using Azure Verified Modules (AVM) with custom wrapper patterns for maintainable module consumption.
+        - Architected deployment scope strategy enabling single-template deployments across 4 isolated environments with guaranteed IP range isolation, subscription-scoped RBAC boundaries, and branch-based deployment gates preventing cross-environment contamination.
+        - Optimized CI/CD pipeline orchestration achieving 63% faster deployments (6 hours to 2.25 hours) through explicit dependency management and parallel spoke deployment strategies in Azure DevOps.
         - Led cloud migration of 150+ on-premises workloads to Azure using Azure Migrate and Azure Site Recovery (ASR), completing 3 months ahead of schedule with zero unplanned downtime and 99.95% availability.
-        - Designed and implemented disaster recovery (DR) architecture meeting RPO <1 hour and RTO <4 hours using Azure Site Recovery, Traffic Manager, and geo-redundant storage, successfully tested through 6 DR drills.
-        - Implemented zero-trust security framework using Microsoft Sentinel, Microsoft Defender for Cloud, Microsoft Entra ID (formerly Azure AD), Azure Policy, and Private Link, reducing security incidents by 60% and achieving 98% compliance with PCI-DSS requirements.
-        - Optimized Azure cloud costs by $320K annually through Reserved Instances, VM right-sizing, automated shutdown schedules, and Azure Cost Management governance policies.
-        - Presented cloud architecture roadmaps and security strategies to C-level executives and technical teams, securing $1.2M budget approval for multi-year cloud transformation initiative.
+        - Designed and implemented multi-region disaster recovery architecture meeting RPO <1 hour and RTO <4 hours using Azure Site Recovery, Traffic Manager, and geo-redundant storage, successfully tested through 6 DR drills.
+        - Implemented multi-layer production safety guardrails including subscription allowlists, environment tag validation, resource locks, and mandatory dry-run modes, achieving zero accidental production incidents across 18 months of operations.
+        - Implemented zero-trust security framework using Microsoft Sentinel, Microsoft Defender for Cloud, Microsoft Entra ID, Azure Policy, and Private Link, reducing security incidents by 60% and achieving 98% compliance with PCI-DSS requirements.
+        - Optimized Azure cloud costs by $320K annually through Reserved Instances, VM right-sizing, automated shutdown schedules, and environment-aware SKU selection (Premium for prod, Standard for dev).
+        - Authored 13-part technical series on enterprise Azure IaC patterns, documenting production-grade deployment orchestration, circular dependency resolution, and multi-environment architecture patterns.
       keywords:
-        - Azure Virtual Network (VNet)
+        - Azure Virtual WAN
         - Hub-Spoke Architecture
-        - Azure Firewall
+        - Azure Firewall Premium
         - Azure Front Door
         - Application Gateway
+        - ExpressRoute
         - VPN Gateway
         - Bicep
-        - ARM Templates
+        - Azure Verified Modules (AVM)
         - Infrastructure as Code (IaC)
         - Azure DevOps
-        - CI/CD Pipelines
+        - CI/CD Pipeline Orchestration
+        - Multi-Environment Architecture
+        - Deployment Scopes
         - Azure Migrate
         - Azure Site Recovery (ASR)
         - Disaster Recovery (DR)
@@ -63,6 +71,8 @@ content:
         - Private Link
         - Azure Cost Management
         - Zero Trust Security
+        - Production Safety Guardrails
+        - Technical Writing
 
     - name: Orange Crew MSP
       position: IT Solutions Architect
@@ -175,12 +185,13 @@ content:
       keywords:
         - Azure Virtual Network (VNet), VNet Peering
         - Hub-and-Spoke Architecture, Azure Landing Zones
-        - Azure ExpressRoute, VPN Gateway, Virtual WAN (vWAN)
-        - Azure Firewall, Network Security Groups (NSG), Application Security Groups (ASG)
+        - Azure Virtual WAN, Virtual Hub
+        - Azure ExpressRoute, Site-to-Site VPN, Point-to-Site VPN
+        - Azure Firewall Premium, Network Security Groups (NSG), Application Security Groups (ASG)
         - Azure Front Door, Application Gateway, Azure Load Balancer, Traffic Manager
         - Private Endpoints, Private Link, Service Endpoints
-        - Azure DNS, Azure Bastion
-        - Border Gateway Protocol (BGP)
+        - Azure DNS, Private DNS Resolver, Azure Bastion
+        - Border Gateway Protocol (BGP), Routing Intent
     - name: Compute & Containers
       keywords:
         - Azure Virtual Machines (VMs), VM Scale Sets (VMSS)
@@ -211,10 +222,14 @@ content:
         - Geo-Redundant Storage (GRS), Zone-Redundant Storage (ZRS)
     - name: DevOps & Infrastructure as Code (IaC)
       keywords:
-        - Bicep, ARM Templates
+        - Bicep (advanced: @batchSize, readEnvironmentVariable, filter functions)
+        - Azure Verified Modules (AVM)
+        - ARM Templates
         - Azure DevOps (Pipelines, Repos, Boards)
         - GitHub Actions
-        - CI/CD Pipelines
+        - CI/CD Pipeline Orchestration
+        - Multi-Environment Deployment Architecture
+        - Deployment Scopes & Subscription-Scoped Deployments
         - Infrastructure as Code (IaC)
         - GitOps
         - Azure Resource Manager (ARM) APIs
@@ -224,8 +239,10 @@ content:
         - Application Insights
         - Azure Cost Management & Billing
         - Azure Advisor
+        - What-If Analysis for Infrastructure Changes
         - Tagging Strategies, Cloud Governance
         - Reserved Instances, Savings Plans
+        - Production Safety Guardrails
         - Azure Service Health, Azure Resource Health
     - name: Disaster Recovery & Business Continuity
       keywords:
@@ -244,6 +261,15 @@ content:
         - SOC 2
         - Azure Compliance Center
         - Security Assessments, Vulnerability Management
+    - name: Platform Engineering
+      keywords:
+        - Internal Developer Platforms
+        - Reusable IaC Frameworks
+        - Wrapper/Adapter Patterns for IaC
+        - Module Abstraction Layers
+        - Multi-Subscription Architecture
+        - Environment Isolation Patterns
+        - Technical Writing & Documentation
     - name: Leadership & Delivery
       keywords:
         - Enterprise Architecture
