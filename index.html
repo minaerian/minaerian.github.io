@@ -181,24 +181,77 @@
                     <div class="timeline-content">
                         <h3>Principal Cloud Solutions Architect</h3>
                         <p class="timeline-company">Global Music Rights</p>
+                        <p class="timeline-summary">Sole architect responsible for designing, building, and operating the entire Azure infrastructure for a global music rights organization. Every network path, every firewall rule, every deployment pipeline — I built it.</p>
                         <div class="timeline-achievements">
+                            <h4>Enterprise Network Architecture</h4>
                             <ul>
-                                <li>Architected enterprise hub-and-spoke network spanning <strong>8 Azure regions</strong> with Virtual WAN, Firewall Premium, ExpressRoute, and dual VPN gateways — reducing network latency by 45%</li>
-                                <li>Built enterprise IaC platform: <strong>1,200+ Bicep files</strong> across 4 environments, 6 spoke networks, 8 subscriptions using Azure Verified Modules (AVM) with custom wrapper patterns</li>
-                                <li>Optimized CI/CD pipeline orchestration: <strong>63% faster deployments</strong> (6 hours → 2.25 hours) through explicit dependency management and parallel spoke strategies</li>
-                                <li>Led migration of <strong>150+ workloads</strong> to Azure — completed 3 months ahead of schedule with 99.95% availability</li>
-                                <li>Designed multi-region DR architecture: <strong>RPO &lt;1 hour, RTO &lt;4 hours</strong> — validated through 6 DR drills</li>
-                                <li>Implemented zero-trust framework with Sentinel, Defender, Entra ID — <strong>60% reduction</strong> in security incidents, 98% PCI-DSS compliance</li>
-                                <li>Cut Azure spend by <strong>$320K annually</strong> via Reserved Instances, right-sizing, automated shutdown schedules</li>
+                                <li>Designed and deployed <strong>enterprise hub-and-spoke topology across 8 Azure regions</strong> — US East, US West, UK South, West Europe, Australia East, Southeast Asia, Brazil South, Canada Central</li>
+                                <li>Implemented Azure Virtual WAN with <strong>Firewall Premium in secured hub configuration</strong> — IDPS, TLS inspection, URL filtering, web categories across all east-west and north-south traffic</li>
+                                <li>Engineered hybrid connectivity: <strong>dual 10Gbps ExpressRoute circuits</strong> (primary + failover) with Microsoft peering for O365 optimization, plus site-to-site VPN as tertiary backup</li>
+                                <li>Architected Private Link ecosystem: <strong>200+ private endpoints</strong> eliminating public internet exposure for storage, SQL, Key Vault, ACR, and App Services</li>
+                                <li>Deployed Azure Front Door Premium with WAF policies, custom rules, and geo-filtering — <strong>45% latency reduction</strong> for global users, automatic failover across regions</li>
+                            </ul>
+                            
+                            <h4>Infrastructure as Code at Scale</h4>
+                            <ul>
+                                <li>Built enterprise IaC platform from scratch: <strong>1,200+ Bicep files</strong> organized across 4 environments (dev/test/staging/prod), 6 spoke networks, 8 subscriptions</li>
+                                <li>Pioneered <strong>Azure Verified Modules (AVM) adoption</strong> with custom wrapper pattern — standardized resource deployment while maintaining flexibility for environment-specific config</li>
+                                <li>Designed module hierarchy: base modules → composite modules → environment orchestrators — enabling <strong>single-command deployment of entire environments</strong></li>
+                                <li>Engineered deployment orchestration solving <strong>complex dependency chains</strong>: hub resources → peerings → spoke resources → app workloads — with automatic retry and rollback</li>
+                                <li>Optimized pipeline parallelization: <strong>6 hours → 2.25 hours</strong> (63% faster) through dependency graph analysis and parallel spoke deployment strategy</li>
+                                <li>Implemented <strong>drift detection</strong> via scheduled what-if deployments — automatic alerts when infrastructure deviates from code</li>
+                            </ul>
+                            
+                            <h4>Cloud Migration & Modernization</h4>
+                            <ul>
+                                <li>Led migration of <strong>150+ workloads</strong> from on-premises VMware to Azure — completed 3 months ahead of 18-month schedule</li>
+                                <li>Zero unplanned downtime during migration — achieved through <strong>Azure Migrate appliance</strong>, dependency mapping, and staged cutover windows</li>
+                                <li>Modernized legacy .NET Framework apps to <strong>Azure App Service with deployment slots</strong> — blue-green deployments, auto-scaling, 99.95% SLA</li>
+                                <li>Containerized stateless services to <strong>Azure Kubernetes Service (AKS)</strong> — implemented Helm charts, Flux GitOps, horizontal pod autoscaling</li>
+                                <li>Migrated on-prem SQL Server to <strong>Azure SQL Managed Instance</strong> with near-zero downtime using transactional replication and DNS cutover</li>
+                            </ul>
+                            
+                            <h4>Security & Compliance</h4>
+                            <ul>
+                                <li>Architected zero-trust framework: <strong>Entra ID Conditional Access</strong> with device compliance, MFA enforcement, risk-based policies, Privileged Identity Management (PIM)</li>
+                                <li>Deployed <strong>Microsoft Sentinel</strong> as cloud-native SIEM — custom analytics rules, automated playbooks, integration with Defender for Cloud, 24/7 SOC visibility</li>
+                                <li>Implemented <strong>Defender for Cloud</strong> across all subscriptions — achieved 95%+ Secure Score through continuous posture management</li>
+                                <li>Built <strong>Azure Policy as Code</strong>: 150+ custom policies enforcing naming conventions, required tags, allowed SKUs, network restrictions, encryption requirements</li>
+                                <li>Achieved <strong>98% PCI-DSS compliance</strong> for payment processing workloads — implemented cardholder data environment isolation, encryption at rest/transit, audit logging</li>
+                                <li>Delivered <strong>60% reduction in security incidents</strong> within first year through defense-in-depth strategy</li>
+                            </ul>
+                            
+                            <h4>Disaster Recovery & Business Continuity</h4>
+                            <ul>
+                                <li>Designed multi-region DR architecture: <strong>RPO &lt;1 hour, RTO &lt;4 hours</strong> — primary East US, failover West US with automated traffic manager failover</li>
+                                <li>Implemented <strong>Azure Site Recovery</strong> for VM replication with custom recovery plans and automation runbooks for startup sequencing</li>
+                                <li>Built geo-redundant data tier: <strong>SQL Always-On availability groups</strong> spanning regions, Storage Account GRS with failover procedures</li>
+                                <li>Conducted <strong>6 full DR drills</strong> with documented results — continuously improved RTO from 8 hours to under 4 hours</li>
+                            </ul>
+                            
+                            <h4>Cost Optimization</h4>
+                            <ul>
+                                <li>Reduced Azure spend by <strong>$320K annually</strong> through Reserved Instances (3-year commits on stable workloads), Savings Plans for compute, Spot VMs for batch processing</li>
+                                <li>Implemented <strong>automated resource scheduling</strong> — dev/test environments shut down nights/weekends, saving 65% on non-prod compute</li>
+                                <li>Right-sized 200+ VMs using <strong>Azure Advisor recommendations</strong> and custom utilization analysis — 40% reduction in over-provisioned resources</li>
+                                <li>Designed <strong>cost allocation model</strong> with resource tagging and Azure Cost Management — chargeback reporting by business unit, project, environment</li>
                             </ul>
                         </div>
                         <div class="timeline-tech">
-                            <span>Azure Virtual WAN</span>
+                            <span>Virtual WAN</span>
+                            <span>Firewall Premium</span>
+                            <span>ExpressRoute</span>
+                            <span>Front Door</span>
+                            <span>Private Link</span>
                             <span>Bicep/AVM</span>
-                            <span>Hub-Spoke</span>
                             <span>Azure DevOps</span>
+                            <span>AKS</span>
+                            <span>SQL MI</span>
                             <span>Sentinel</span>
-                            <span>Zero Trust</span>
+                            <span>Defender</span>
+                            <span>Entra ID</span>
+                            <span>Site Recovery</span>
+                            <span>Policy as Code</span>
                         </div>
                     </div>
                 </div>
@@ -207,21 +260,58 @@
                     <div class="timeline-content">
                         <h3>IT Solutions Architect</h3>
                         <p class="timeline-company">Orange Crew MSP</p>
+                        <p class="timeline-summary">Lead architect for managed services provider serving mid-market enterprises. Designed and delivered Azure solutions across dozens of clients — VDI, hybrid infrastructure, cloud migrations.</p>
                         <div class="timeline-achievements">
+                            <h4>Azure Virtual Desktop (AVD) Expertise</h4>
                             <ul>
-                                <li>Architected multi-region Azure Virtual Desktop serving <strong>800+ users across 15 countries</strong> — 40% productivity improvement, 50% reduction in desktop management overhead</li>
-                                <li>Automated AVD infrastructure with ARM Templates: <strong>3 days → 2 hours</strong> provisioning, 95% fewer config errors</li>
-                                <li>Migrated <strong>75+ workloads</strong> to Azure, saving <strong>$180K annually</strong> through reserved instances and right-sizing</li>
-                                <li>Deployed 50TB enterprise storage (NetApp Files + Azure Files) — <strong>99.99% availability</strong>, 30% cost reduction vs on-prem SAN</li>
-                                <li>Established governance across <strong>40+ subscriptions</strong> — achieved 95% policy compliance in 90 days</li>
+                                <li>Architected enterprise AVD deployment serving <strong>800+ concurrent users across 15 countries</strong> — multi-region host pools with traffic manager load balancing</li>
+                                <li>Designed <strong>FSLogix profile container strategy</strong> with Azure NetApp Files — sub-second login times, seamless roaming profiles, 99.99% availability</li>
+                                <li>Implemented <strong>image management pipeline</strong>: golden image automation with Azure Image Builder, monthly patching cycles, automatic host pool refresh</li>
+                                <li>Configured <strong>AVD scaling automation</strong> — peak/off-peak schedules, depth-first load balancing, auto-shutdown of idle hosts saving 40% on compute</li>
+                                <li>Integrated <strong>Conditional Access + MFA</strong> for AVD sessions — device compliance checks, session timeouts, restricted clipboard/drive redirection for sensitive users</li>
+                                <li>Achieved <strong>40% productivity improvement</strong> measured by user satisfaction surveys, 50% reduction in desktop support tickets</li>
+                            </ul>
+                            
+                            <h4>Infrastructure as Code & Automation</h4>
+                            <ul>
+                                <li>Built <strong>ARM Template library</strong> for repeatable client deployments — complete AVD environments provisioned in 2 hours vs 3 days manual (95% time reduction)</li>
+                                <li>Developed <strong>Azure Automation runbooks</strong> for routine operations — user provisioning, host pool management, backup verification, cost reporting</li>
+                                <li>Created <strong>client onboarding automation</strong>: subscription scaffolding, RBAC assignments, policy deployment, monitoring setup — consistent baseline across 40+ tenants</li>
+                            </ul>
+                            
+                            <h4>Cloud Migration Practice</h4>
+                            <ul>
+                                <li>Migrated <strong>75+ workloads</strong> across 12 clients from on-premises to Azure — mix of lift-and-shift (Azure Migrate) and re-platform (App Services, Azure SQL)</li>
+                                <li>Implemented <strong>Azure Arc</strong> for hybrid management — on-prem servers managed alongside Azure VMs, consistent policy enforcement, single pane monitoring</li>
+                                <li>Delivered <strong>$180K annual savings</strong> across client portfolio through Reserved Instances, hybrid benefit licensing, right-sizing exercises</li>
+                            </ul>
+                            
+                            <h4>Enterprise Storage & Data</h4>
+                            <ul>
+                                <li>Deployed <strong>50TB Azure NetApp Files</strong> for enterprise file services — SMB/NFS multi-protocol, snapshot policies, cross-region replication for DR</li>
+                                <li>Architected <strong>Azure Files with Private Endpoints</strong> for clients with strict network requirements — AD DS integration, RBAC permissions, soft delete protection</li>
+                                <li>Migrated on-prem file servers using <strong>Azure File Sync</strong> — cloud tiering enabled, 30% reduction in on-prem storage costs while maintaining local cache performance</li>
+                            </ul>
+                            
+                            <h4>Governance & Multi-Tenant Management</h4>
+                            <ul>
+                                <li>Established <strong>Azure Lighthouse</strong> for centralized MSP management — delegated access to 40+ client subscriptions with least-privilege RBAC</li>
+                                <li>Implemented <strong>Azure Policy initiatives</strong> across all clients — required tags, allowed regions, SKU restrictions, diagnostic settings enforcement</li>
+                                <li>Built <strong>centralized monitoring</strong> with Azure Monitor and Log Analytics workspaces — custom dashboards, alert rules, monthly health reports per client</li>
+                                <li>Achieved <strong>95% policy compliance</strong> across managed subscriptions within 90 days of engagement</li>
                             </ul>
                         </div>
                         <div class="timeline-tech">
                             <span>AVD</span>
+                            <span>FSLogix</span>
+                            <span>Azure NetApp Files</span>
                             <span>ARM Templates</span>
+                            <span>Azure Automation</span>
+                            <span>Azure Arc</span>
+                            <span>Azure Lighthouse</span>
                             <span>Azure Policy</span>
-                            <span>NetApp Files</span>
-                            <span>RBAC</span>
+                            <span>Log Analytics</span>
+                            <span>Azure Migrate</span>
                         </div>
                     </div>
                 </div>
@@ -230,22 +320,61 @@
                     <div class="timeline-content">
                         <h3>Director of Information Technology</h3>
                         <p class="timeline-company">Sycom</p>
+                        <p class="timeline-summary">Built and led the entire IT organization for a healthcare technology company. This is where I learned that infrastructure isn't about servers — it's about reliability, compliance, and enabling the business. The foundation for everything I do in Azure today.</p>
                         <div class="timeline-achievements">
+                            <h4>IT Leadership & Operations</h4>
                             <ul>
-                                <li>Led IT for <strong>200+ healthcare clients across 5 countries</strong> — 12-person team, $3.5M annual budget, 24/7 operations</li>
-                                <li>Architected voice biometrics system replacing fingerprint scanners: <strong>$8.25M savings over 3 years</strong>, 85% hardware cost reduction, 60% faster authentication</li>
-                                <li>Drove <strong>20% revenue growth ($2.4M)</strong> through strategic account acquisition while improving NPS from 65% to 95%</li>
-                                <li>Reduced system downtime by <strong>70%</strong>, improved MTTR from 4 hours to 45 minutes through SOPs and preventive maintenance</li>
-                                <li>Built and retained team: reduced turnover from <strong>40% to 8%</strong> through career development and technical training programs</li>
-                                <li>Maintained <strong>HIPAA/HITECH compliance</strong> across all clients with zero critical audit findings</li>
+                                <li>Built and led <strong>12-person IT team</strong> supporting 200+ healthcare clients across 5 countries — US, Canada, UK, Australia, Philippines</li>
+                                <li>Managed <strong>$3.5M annual IT budget</strong> — infrastructure, software licensing, vendor contracts, staffing — consistently delivered under budget while expanding capabilities</li>
+                                <li>Established <strong>24/7 operations center</strong> with tiered support model — L1/L2/L3 escalation paths, on-call rotations, SLA-driven response times</li>
+                                <li>Reduced team turnover from <strong>40% to 8%</strong> through career development programs, technical certifications sponsorship, clear advancement paths</li>
+                                <li>Drove <strong>20% revenue growth ($2.4M)</strong> by expanding managed services offerings and landing strategic enterprise accounts</li>
+                            </ul>
+                            
+                            <h4>Early Cloud Adoption (2016-2020)</h4>
+                            <ul>
+                                <li>Led <strong>early Azure adoption</strong> starting 2016 — piloted Azure AD, Office 365, Azure Backup before most healthcare orgs considered cloud</li>
+                                <li>Migrated email infrastructure to <strong>Exchange Online</strong> for 2,000+ users — implemented hybrid coexistence, staged migration, zero mail loss</li>
+                                <li>Deployed <strong>Azure Site Recovery</strong> for critical on-prem workloads — first step toward hybrid DR strategy</li>
+                                <li>Implemented <strong>Azure AD Connect</strong> with password hash sync — foundation for hybrid identity that I'd later evolve into full zero-trust architectures</li>
+                                <li>Built business case for cloud migration that would later inform my approach: <strong>TCO analysis, risk assessment, compliance mapping, executive storytelling</strong></li>
+                            </ul>
+                            
+                            <h4>Infrastructure Innovation</h4>
+                            <ul>
+                                <li>Architected <strong>voice biometrics authentication system</strong> replacing fingerprint scanners across healthcare facilities — revolutionary approach to HIPAA-compliant user verification</li>
+                                <li>Delivered <strong>$8.25M savings over 3 years</strong>: 85% hardware cost reduction (no more fingerprint readers), 60% faster authentication, eliminated hygiene concerns in clinical settings</li>
+                                <li>Designed <strong>multi-site WAN architecture</strong> using MPLS + internet failover — 99.9% uptime across 50+ client locations</li>
+                                <li>Implemented <strong>centralized monitoring</strong> with PRTG and custom dashboards — proactive alerting reduced incidents by catching issues before users noticed</li>
+                            </ul>
+                            
+                            <h4>Healthcare Compliance & Security</h4>
+                            <ul>
+                                <li>Maintained <strong>HIPAA/HITECH compliance</strong> across entire client portfolio — zero critical findings across 6 years of audits</li>
+                                <li>Developed <strong>security policies and procedures</strong>: access controls, encryption standards, audit logging, incident response — templates I still reference today</li>
+                                <li>Led <strong>breach response</strong> for client incident (not our systems) — coordinated forensics, notifications, remediation, regulatory reporting</li>
+                                <li>Implemented <strong>endpoint protection</strong> with managed AV, patch management, USB device control — before EDR was mainstream</li>
+                            </ul>
+                            
+                            <h4>Operational Excellence</h4>
+                            <ul>
+                                <li>Reduced system downtime by <strong>70%</strong> through preventive maintenance programs, change management processes, and runbook automation</li>
+                                <li>Improved MTTR from <strong>4 hours to 45 minutes</strong> through better monitoring, documented troubleshooting procedures, and on-call escalation improvements</li>
+                                <li>Increased NPS from <strong>65% to 95%</strong> by establishing service level expectations, regular business reviews, and proactive communication</li>
+                                <li>Built <strong>documentation culture</strong> — every system, every process, every runbook documented in wiki — foundation for the IaC discipline I practice today</li>
                             </ul>
                         </div>
                         <div class="timeline-tech">
                             <span>Healthcare IT</span>
-                            <span>HIPAA</span>
+                            <span>HIPAA/HITECH</span>
+                            <span>Azure AD</span>
+                            <span>Office 365</span>
                             <span>Voice Biometrics</span>
                             <span>Team Leadership</span>
-                            <span>Budget Mgmt</span>
+                            <span>Budget Management</span>
+                            <span>Vendor Relations</span>
+                            <span>Change Management</span>
+                            <span>Incident Response</span>
                         </div>
                     </div>
                 </div>

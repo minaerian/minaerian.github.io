@@ -576,11 +576,37 @@ a:hover {
 .timeline-company {
     font-size: 16px;
     color: var(--accent-primary);
-    margin-bottom: 16px;
+    margin-bottom: 12px;
+}
+
+.timeline-summary {
+    font-size: 16px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 24px;
+    font-style: italic;
+    padding-left: 16px;
+    border-left: 2px solid var(--border-color);
 }
 
 .timeline-achievements {
     margin-bottom: 20px;
+}
+
+.timeline-achievements h4 {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--accent-primary);
+    margin-top: 24px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.timeline-achievements h4:first-child {
+    margin-top: 0;
 }
 
 .timeline-achievements ul {
