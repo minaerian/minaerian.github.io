@@ -2,13 +2,13 @@
 // Star Wars Hologram Theme - Interactive Scripts
 // ==========================================================================
 
-// Star Field Animation
+// Star Field Animation - Subtle Apple-style
 class StarField {
     constructor(canvas) {
         this.canvas = canvas;
         this.ctx = canvas.getContext('2d');
         this.stars = [];
-        this.numStars = 200;
+        this.numStars = 100;
         this.resize();
         this.init();
         this.animate();
@@ -27,9 +27,9 @@ class StarField {
             this.stars.push({
                 x: Math.random() * this.canvas.width,
                 y: Math.random() * this.canvas.height,
-                size: Math.random() * 2,
-                speed: Math.random() * 0.5 + 0.1,
-                opacity: Math.random() * 0.8 + 0.2,
+                size: Math.random() * 1.5,
+                speed: Math.random() * 0.2 + 0.05,
+                opacity: Math.random() * 0.5 + 0.1,
                 twinkle: Math.random() * Math.PI * 2
             });
         }
@@ -39,25 +39,17 @@ class StarField {
         this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
         
         this.stars.forEach(star => {
-            // Twinkle effect
-            star.twinkle += 0.02;
-            const opacity = star.opacity * (0.5 + Math.sin(star.twinkle) * 0.5);
+            // Subtle twinkle
+            star.twinkle += 0.01;
+            const opacity = star.opacity * (0.6 + Math.sin(star.twinkle) * 0.4);
             
-            // Draw star
+            // Draw star - white/gray for Apple feel
             this.ctx.beginPath();
             this.ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
-            this.ctx.fillStyle = `rgba(0, 229, 255, ${opacity})`;
+            this.ctx.fillStyle = `rgba(255, 255, 255, ${opacity})`;
             this.ctx.fill();
             
-            // Add glow for larger stars
-            if (star.size > 1.5) {
-                this.ctx.beginPath();
-                this.ctx.arc(star.x, star.y, star.size * 3, 0, Math.PI * 2);
-                this.ctx.fillStyle = `rgba(0, 229, 255, ${opacity * 0.1})`;
-                this.ctx.fill();
-            }
-            
-            // Slow drift
+            // Very slow drift
             star.y += star.speed;
             if (star.y > this.canvas.height) {
                 star.y = 0;
