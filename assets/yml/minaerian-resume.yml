@@ -222,7 +222,7 @@ content:
         - Geo-Redundant Storage (GRS), Zone-Redundant Storage (ZRS)
     - name: DevOps & Infrastructure as Code (IaC)
       keywords:
-        - Bicep (advanced: @batchSize, readEnvironmentVariable, filter functions)
+        - "Bicep (advanced: @batchSize, readEnvironmentVariable, filter functions)"
         - Azure Verified Modules (AVM)
         - ARM Templates
         - Azure DevOps (Pipelines, Repos, Boards)
