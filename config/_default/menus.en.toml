@@ -17,7 +17,7 @@
 
 [[main]]
   name = "Topics"
-  pageRef = "topics"
+  pageRef = "tags"
   weight = 20
 
 [[main]]
