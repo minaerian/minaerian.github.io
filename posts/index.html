@@ -4,11 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Articles — Mina Erian</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <style>
+        .site-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .nav-logo {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--green);
+            text-decoration: none;
+            letter-spacing: 2px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 32px;
+        }
+        
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--green);
+        }
+        
+        @media (max-width: 768px) {
+            .site-nav {
+                padding: 16px 24px;
+            }
+            
+            .nav-links {
+                gap: 20px;
+            }
+            
+            .nav-links a {
+                font-size: 13px;
+            }
+        }
+        
         .posts-header {
             padding: 150px 40px 80px;
             max-width: 1200px;
@@ -187,6 +244,17 @@
 <body>
     <canvas id="starfield"></canvas>
 
+    <!-- Navigation Bar -->
+    <nav class="site-nav">
+        <a href="../" class="nav-logo">ME</a>
+        <div class="nav-links">
+            <a href="../">Home</a>
+            <a href="../#journey">Experience</a>
+            <a href="./" class="active">Articles</a>
+            <a href="../mina-erian-resume.html">Resume</a>
+        </div>
+    </nav>
+
     <section class="posts-header">
         <a href="../" class="back-link">← Back home</a>
         <h1>Articles</h1>
@@ -339,7 +407,7 @@
     <footer class="footer">
         <p class="footer-tagline">Let's build something that scales.</p>
         <div class="footer-links">
-            <a href="mailto:mina.info.tech@gmail.com">mina.info.tech@gmail.com</a>
+            <a href="mailto:me@minaerian.com">me@minaerian.com</a>
             <a href="https://minaerian.com">minaerian.com</a>
         </div>
     </footer>
