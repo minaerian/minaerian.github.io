@@ -174,19 +174,23 @@ body {
     letter-spacing: -3px;
     line-height: 0.95;
     margin-bottom: 24px;
+    color: var(--text-primary);
+    -webkit-text-fill-color: var(--text-primary);
+    transition: color 0.3s var(--ease-out), -webkit-text-fill-color 0.3s var(--ease-out);
+}
+
+.hero-name:hover {
     color: var(--green);
     -webkit-text-fill-color: var(--green);
 }
 
 .name-char {
     display: inline-block;
-    transition: transform 0.3s var(--ease-out), color 0.3s var(--ease-out), -webkit-text-fill-color 0.3s var(--ease-out);
+    transition: transform 0.3s var(--ease-out);
 }
 
-.name-char:hover {
+.hero-name:hover .name-char {
     transform: translateY(-5px);
-    color: var(--text-primary);
-    -webkit-text-fill-color: var(--text-primary);
 }
 
 .name-space {
