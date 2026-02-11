@@ -174,21 +174,19 @@ body {
     letter-spacing: -3px;
     line-height: 0.95;
     margin-bottom: 24px;
-    background: linear-gradient(to bottom, var(--text-primary) 0%, var(--text-secondary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--green);
+    -webkit-text-fill-color: var(--green);
 }
 
 .name-char {
     display: inline-block;
-    transition: transform 0.3s var(--ease-out);
+    transition: transform 0.3s var(--ease-out), color 0.3s var(--ease-out), -webkit-text-fill-color 0.3s var(--ease-out);
 }
 
 .name-char:hover {
     transform: translateY(-5px);
-    color: var(--green);
-    -webkit-text-fill-color: var(--green);
+    color: var(--text-primary);
+    -webkit-text-fill-color: var(--text-primary);
 }
 
 .name-space {
