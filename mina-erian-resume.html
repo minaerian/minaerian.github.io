@@ -314,6 +314,28 @@
             box-shadow: 0 10px 40px rgba(50, 215, 75, 0.3);
         }
         
+        .back-link {
+            position: fixed;
+            bottom: 24px;
+            left: 24px;
+            background: var(--bg-card);
+            color: var(--green);
+            border: 1px solid var(--border);
+            padding: 14px 28px;
+            border-radius: 980px;
+            font-family: inherit;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        
+        .back-link:hover {
+            background: var(--green);
+            color: #000;
+            border-color: var(--green);
+        }
+        
         /* Print Styles - White background for PDF export */
         @media print {
             :root {
@@ -340,7 +362,8 @@
                 size: letter;
             }
             
-            .print-btn {
+            .print-btn,
+            .back-link {
                 display: none;
             }
             
@@ -542,6 +565,7 @@
         </div>
     </section>
 
+    <a href="./" class="back-link">← Home</a>
     <button class="print-btn" onclick="window.print()">
         Save as PDF
     </button>
