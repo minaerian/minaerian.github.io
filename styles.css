@@ -176,10 +176,14 @@ body {
     margin-bottom: 24px;
     color: var(--text-primary);
     -webkit-text-fill-color: var(--text-primary);
+}
+
+.name-part {
+    display: inline-block;
     transition: color 0.3s var(--ease-out), -webkit-text-fill-color 0.3s var(--ease-out);
 }
 
-.hero-name:hover {
+.name-part:hover {
     color: var(--green);
     -webkit-text-fill-color: var(--green);
 }
@@ -189,7 +193,7 @@ body {
     transition: transform 0.3s var(--ease-out);
 }
 
-.hero-name:hover .name-char {
+.name-part:hover .name-char {
     transform: translateY(-5px);
 }
 
