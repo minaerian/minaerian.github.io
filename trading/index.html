@@ -1032,9 +1032,10 @@ document.addEventListener('DOMContentLoaded', function() {
     'use strict';
 
     // =====================================================================
-    // Auth
+    // Constants
     // =====================================================================
 
+    const DATA_URL = new URL('dashboard-data.json', window.location.href).href;
     const HASH = '9840c6b0bd8230939f586332a1f4795391e0df17bf280c483fa6ed4024a02909';
     const AUTH_KEY = 'pm_dash_auth';
 
@@ -1089,8 +1090,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let lastFetch = null;
     let refreshInterval = null;
     let tickInterval = null;
-
-    const DATA_URL = new URL('dashboard-data.json', window.location.href).href;
 
     async function loadData(retries) {
         retries = retries || 0;
