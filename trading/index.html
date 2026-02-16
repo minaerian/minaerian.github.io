@@ -1162,8 +1162,8 @@
         const pnlPct = initialBalance ? ((totalPnl / initialBalance) * 100).toFixed(2) : '0.00';
         pnlPctEl.textContent = pnlSign + pnlPct + '%';
 
-        // Win rate
-        document.getElementById('s-winrate').textContent = totalTrades > 0 ? (winRate * 100).toFixed(1) + '%' : '—';
+        // Win rate — metrics.winRate is already 0-100 (percentage)
+        document.getElementById('s-winrate').textContent = totalTrades > 0 ? winRate.toFixed(1) + '%' : '—';
         document.getElementById('s-wl').textContent = wins + 'W / ' + losses + 'L';
 
         // Positions
