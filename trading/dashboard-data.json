@@ -1,0 +1,392 @@
+{
+  "lastUpdated": "2026-02-16T05:31:51.292005+00:00",
+  "metrics": {
+    "balance": 32.994832,
+    "initialBalance": 33.0,
+    "totalPnl": -0.0052,
+    "totalPnlPct": -0.02,
+    "daysActive": 1,
+    "totalTrades": 0,
+    "wins": 0,
+    "losses": 0,
+    "winRate": 0,
+    "avgEstimatedEdge": 0,
+    "avgActualReturn": 0,
+    "edgeCalibration": 0,
+    "bestTrade": null,
+    "worstTrade": null,
+    "currentStreak": 0,
+    "avgHoldingHours": 0,
+    "openPositions": 0,
+    "maxPositions": 3,
+    "targetBalance": 500.0,
+    "progressToTarget": 6.6
+  },
+  "positions": [],
+  "tradeHistory": [],
+  "equityCurve": [
+    {
+      "timestamp": "2026-02-16T05:31:30.503181+00:00",
+      "balance": 32.9948
+    }
+  ],
+  "alertLog": [
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Bitcoin reach $160,000 by December 31, 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Bitcoin reach $150,000 by December 31, 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Bitcoin reach $140,000 by December 31, 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Bitcoin reach $130,000 by December 31, 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Bitcoin dip to $25,000 by December 31, 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Ethereum reach $8,000 by December 31, 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Ethereum reach $7,500 by December 31, 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Ethereum reach $7,000 by December 31, 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Ethereum reach $6,500 by December 31, 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Ethereum reach $6,000 by December 31, 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Ethereum reach $5,500 by December 31, 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Ethereum reach $5,000 by December 31, 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Ethereum reach $4,500 by December 31, 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Hyperliquid reach $100 by December 31, 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Hyperliquid dip to $8 by December 31, 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Wesley Hunt come in 2nd in the 2026 Texas Republican Primary?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will John Cornyn come in 3rd in the 2026 Texas Republican Primary?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Wesley Hunt come in 3rd in the 2026 Texas Republican Primary?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Democratic Party of Korea (DP) win the 2026 South Korean local elections?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Tempo launch a token by March 31 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "2k+ container ship transits of Suez Canal in H1 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will James Fishback be the Republican nominee for Florida Governor?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Justin Aguiar convicted of sexual assault before 2027?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Robinhood launches prediction market through MIAXdx by March 31?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Trump visit China by April 30?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will turnout in the 2025 Honduran general election be less than 55%?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will turnout in the 2025 Honduran general election be between 60% and 65%?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Ukraine election called by March 31, 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Fomo launch a token by June 30 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Timothy Chalamet confirmed to be EsDeeKid by June 30?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "New pandemic in 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Yoon Suk Yeol be sentenced to at least 30 years in prison?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Paradex launch a token by February 28, 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will OpenAI have the best AI model at the end of March 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:15:58.941693+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will xAI have the best AI model at the end of March 2026?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:16:37.243400+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will Trump deport 250,000-500,000 people?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:16:37.243400+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will Harvey Weinstein be sentenced to no prison time?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:16:37.243400+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will the Los Angeles Kings win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:16:37.243400+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will Luka Doncic win the 2025\u20132026 NBA MVP?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:16:37.243400+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will the Golden State Warriors win the NBA Western Conference Finals?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:16:37.243400+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Trump deport 750,000 or more people in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:16:37.243400+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Elon cut the budget by at least 5% in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:16:37.243400+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the U.S. collect between $200b and $500b in revenue in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:16:37.243400+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Edmonton Oilers win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:16:37.243400+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Dallas Stars win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:16:37.243400+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Vegas Golden Knights win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:16:37.243400+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Tampa Bay Lightning win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:16:37.243400+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Wesley Hunt win the 2026 Texas Republican Primary?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:16:37.243400+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "2026 Balance of Power: R Senate, R House",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T05:16:37.243400+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Philadelphia 76ers win the NBA Eastern Conference Finals?",
+      "priceChange": 0,
+      "ledToTrade": false
+    }
+  ],
+  "config": {
+    "maxTradeSize": 3.3,
+    "minEdge": 0.05,
+    "maxPositions": 3,
+    "circuitBreaker": 20.0,
+    "scanInterval": "10min"
+  }
+}
