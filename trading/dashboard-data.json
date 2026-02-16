@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-16T07:31:51.659252+00:00",
+  "lastUpdated": "2026-02-16T08:31:58.995886+00:00",
   "metrics": {
     "balance": 32.994832,
     "initialBalance": 33.0,
@@ -36,356 +36,360 @@
     {
       "timestamp": "2026-02-16T07:31:51.657930+00:00",
       "balance": 32.9948
+    },
+    {
+      "timestamp": "2026-02-16T08:31:58.994590+00:00",
+      "balance": 32.9948
     }
   ],
   "alertLog": [
     {
-      "timestamp": "2026-02-16T07:03:34.579241+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will the Golden State Warriors win the NBA Western Conference Finals?",
-      "priceChange": 0,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:03:34.579241+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will Trump deport 750,000 or more people in 2025?",
-      "priceChange": 0,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:03:34.579241+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will Elon cut the budget by at least 5% in 2025?",
-      "priceChange": 0,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:03:34.579241+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the U.S. collect between $200b and $500b in revenue in 2025?",
-      "priceChange": 0,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:03:34.579241+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Edmonton Oilers win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:03:34.579241+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Dallas Stars win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:03:34.579241+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Vegas Golden Knights win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:03:34.579241+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Tampa Bay Lightning win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:03:34.579241+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will Wesley Hunt win the 2026 Texas Republican Primary?",
-      "priceChange": 0,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:03:34.579241+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "2026 Balance of Power: R Senate, R House",
-      "priceChange": 0,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:03:34.579241+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Philadelphia 76ers win the NBA Eastern Conference Finals?",
-      "priceChange": 0,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:14:12.728300+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Mark Baisley be the Republican nominee for Senate in Colorado?",
-      "priceChange": 0.185,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:14:12.728300+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will US GDP growth in 2026 be greater than 2.5%?",
-      "priceChange": 0.125,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:14:12.728300+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will Trump deport 250,000-500,000 people?",
-      "priceChange": 0,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:14:12.728300+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will Harvey Weinstein be sentenced to between 10 and 20 years in prison?",
-      "priceChange": 0,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:14:12.728300+00:00",
+      "timestamp": "2026-02-16T08:07:40.977543+00:00",
       "type": "VOLUME_SPIKE",
       "market": "Will the Los Angeles Kings win the 2026 NHL Stanley Cup?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:14:12.728300+00:00",
+      "timestamp": "2026-02-16T08:07:40.977543+00:00",
       "type": "VOLUME_SPIKE",
       "market": "Will Luka Doncic win the 2025\u20132026 NBA MVP?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:14:12.728300+00:00",
+      "timestamp": "2026-02-16T08:07:40.977543+00:00",
       "type": "VOLUME_SPIKE",
       "market": "Will the Golden State Warriors win the NBA Western Conference Finals?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:14:12.728300+00:00",
+      "timestamp": "2026-02-16T08:07:40.977543+00:00",
       "type": "NICHE_MISPRICING",
       "market": "Will Trump deport 750,000 or more people in 2025?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:14:12.728300+00:00",
+      "timestamp": "2026-02-16T08:07:40.977543+00:00",
       "type": "NICHE_MISPRICING",
       "market": "Will Elon cut the budget by at least 5% in 2025?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:14:12.728300+00:00",
+      "timestamp": "2026-02-16T08:07:40.977543+00:00",
       "type": "NICHE_MISPRICING",
       "market": "Will the U.S. collect between $200b and $500b in revenue in 2025?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:14:12.728300+00:00",
+      "timestamp": "2026-02-16T08:07:40.977543+00:00",
       "type": "NICHE_MISPRICING",
       "market": "Will the Edmonton Oilers win the 2026 NHL Stanley Cup?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:14:12.728300+00:00",
+      "timestamp": "2026-02-16T08:07:40.977543+00:00",
       "type": "NICHE_MISPRICING",
       "market": "Will the Dallas Stars win the 2026 NHL Stanley Cup?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:14:12.728300+00:00",
+      "timestamp": "2026-02-16T08:07:40.977543+00:00",
       "type": "NICHE_MISPRICING",
       "market": "Will the Vegas Golden Knights win the 2026 NHL Stanley Cup?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:14:12.728300+00:00",
+      "timestamp": "2026-02-16T08:07:40.977543+00:00",
       "type": "NICHE_MISPRICING",
       "market": "Will the Tampa Bay Lightning win the 2026 NHL Stanley Cup?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:14:12.728300+00:00",
+      "timestamp": "2026-02-16T08:07:40.977543+00:00",
       "type": "NICHE_MISPRICING",
       "market": "Will Wesley Hunt win the 2026 Texas Republican Primary?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:14:12.728300+00:00",
+      "timestamp": "2026-02-16T08:07:40.977543+00:00",
       "type": "NICHE_MISPRICING",
       "market": "2026 Balance of Power: R Senate, R House",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:14:12.728300+00:00",
+      "timestamp": "2026-02-16T08:07:40.977543+00:00",
       "type": "NICHE_MISPRICING",
       "market": "Will the Philadelphia 76ers win the NBA Eastern Conference Finals?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
+      "timestamp": "2026-02-16T08:18:54.967108+00:00",
       "type": "PRICE_SWING_LARGE",
-      "market": "Will SZA release a new song in 2026?",
-      "priceChange": 0.215,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will US GDP growth in 2026 be greater than 2.5%?",
-      "priceChange": 0.135,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Pump.fun reach $0.0062 by December 31, 2026?",
-      "priceChange": 0.125,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Kraken IPO closing market cap above $22B?",
-      "priceChange": 0.11,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will the Small Exchange self-certify sports event contracts by March 31, 2026?",
-      "priceChange": 0.11,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will XRP dip to $1.00 by December 31, 2026?",
+      "market": "Will Portsmouth FC win on 2025-12-06?",
       "priceChange": 0.105,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
+      "timestamp": "2026-02-16T08:18:54.967108+00:00",
       "type": "PRICE_SWING_LARGE",
-      "market": "Will XRP dip to $0.60 by December 31, 2026?",
-      "priceChange": 0.105,
+      "market": "Will Bo Horvat win the 2025\u20132026 NHL Frank J. Selke Trophy?",
+      "priceChange": 0.1045,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
+      "timestamp": "2026-02-16T08:18:54.967108+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will the 10-year Treasury yield hit 4.5% before 2027?",
+      "priceChange": 0.1,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:18:54.967108+00:00",
       "type": "VOLUME_SPIKE",
       "market": "Will Trump deport 250,000-500,000 people?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will Harvey Weinstein be sentenced to between 10 and 20 years in prison?",
-      "priceChange": 0,
-      "ledToTrade": false
-    },
-    {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
+      "timestamp": "2026-02-16T08:18:54.967108+00:00",
       "type": "VOLUME_SPIKE",
       "market": "Will the Los Angeles Kings win the 2026 NHL Stanley Cup?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
+      "timestamp": "2026-02-16T08:18:54.967108+00:00",
       "type": "VOLUME_SPIKE",
       "market": "Will Luka Doncic win the 2025\u20132026 NBA MVP?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
+      "timestamp": "2026-02-16T08:18:54.967108+00:00",
       "type": "VOLUME_SPIKE",
       "market": "Will the Golden State Warriors win the NBA Western Conference Finals?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
+      "timestamp": "2026-02-16T08:18:54.967108+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will Lens win the 2025\u201326 French Ligue 1?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:18:54.967108+00:00",
       "type": "NICHE_MISPRICING",
       "market": "Will Trump deport 750,000 or more people in 2025?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
+      "timestamp": "2026-02-16T08:18:54.967108+00:00",
       "type": "NICHE_MISPRICING",
       "market": "Will Elon cut the budget by at least 5% in 2025?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
+      "timestamp": "2026-02-16T08:18:54.967108+00:00",
       "type": "NICHE_MISPRICING",
       "market": "Will the U.S. collect between $200b and $500b in revenue in 2025?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
+      "timestamp": "2026-02-16T08:18:54.967108+00:00",
       "type": "NICHE_MISPRICING",
       "market": "Will the Edmonton Oilers win the 2026 NHL Stanley Cup?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
+      "timestamp": "2026-02-16T08:18:54.967108+00:00",
       "type": "NICHE_MISPRICING",
       "market": "Will the Dallas Stars win the 2026 NHL Stanley Cup?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
+      "timestamp": "2026-02-16T08:18:54.967108+00:00",
       "type": "NICHE_MISPRICING",
       "market": "Will the Vegas Golden Knights win the 2026 NHL Stanley Cup?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
+      "timestamp": "2026-02-16T08:18:54.967108+00:00",
       "type": "NICHE_MISPRICING",
       "market": "Will the Tampa Bay Lightning win the 2026 NHL Stanley Cup?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
+      "timestamp": "2026-02-16T08:18:54.967108+00:00",
       "type": "NICHE_MISPRICING",
       "market": "Will Wesley Hunt win the 2026 Texas Republican Primary?",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
+      "timestamp": "2026-02-16T08:18:54.967108+00:00",
       "type": "NICHE_MISPRICING",
       "market": "2026 Balance of Power: R Senate, R House",
       "priceChange": 0,
       "ledToTrade": false
     },
     {
-      "timestamp": "2026-02-16T07:25:03.812644+00:00",
+      "timestamp": "2026-02-16T08:18:54.967108+00:00",
       "type": "NICHE_MISPRICING",
       "market": "Will the Philadelphia 76ers win the NBA Eastern Conference Finals?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:30:00.179445+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Intercontinental Exchange self-certify sports event contracts by March 31, 2026?",
+      "priceChange": 0.155,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:30:00.179445+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Bo Horvat win the 2025\u20132026 NHL Frank J. Selke Trophy?",
+      "priceChange": 0.1295,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:30:00.179445+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Portsmouth FC win on 2025-12-06?",
+      "priceChange": 0.115,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:30:00.179445+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will the 10-year Treasury yield hit 4.5% before 2027?",
+      "priceChange": 0.105,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:30:00.179445+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will Trump deport 250,000-500,000 people?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:30:00.179445+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will the Golden State Warriors win the NBA Western Conference Finals?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:30:00.179445+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will Lens win the 2025\u201326 French Ligue 1?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:30:00.179445+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will the next Prime Minister of Hungary be L\u00e1szl\u00f3 Toroczkai?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:30:00.179445+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will the next Prime Minister of Hungary be Istv\u00e1n Kapit\u00e1ny?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:30:00.179445+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Trump deport 750,000 or more people in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:30:00.179445+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Elon cut the budget by at least 5% in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:30:00.179445+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the U.S. collect between $200b and $500b in revenue in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:30:00.179445+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Carolina Hurricanes win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:30:00.179445+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Edmonton Oilers win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:30:00.179445+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Dallas Stars win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:30:00.179445+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Vegas Golden Knights win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:30:00.179445+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Tampa Bay Lightning win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:30:00.179445+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Wesley Hunt win the 2026 Texas Republican Primary?",
+      "priceChange": 0,
+      "ledToTrade": false
+    },
+    {
+      "timestamp": "2026-02-16T08:30:00.179445+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "2026 Balance of Power: R Senate, R House",
       "priceChange": 0,
       "ledToTrade": false
     }
