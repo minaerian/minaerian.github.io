@@ -1039,6 +1039,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const HASH = '9840c6b0bd8230939f586332a1f4795391e0df17bf280c483fa6ed4024a02909';
     const AUTH_KEY = 'pm_dash_auth';
 
+    // State — must be declared before any function calls
+    var dashData = null;
+    var equityChart = null;
+    var lastFetch = null;
+    var refreshInterval = null;
+    var tickInterval = null;
+    var tradeSort = { key: 'date', asc: false };
+
     async function sha256(text) {
         const enc = new TextEncoder().encode(text);
         const buf = await crypto.subtle.digest('SHA-256', enc);
@@ -1084,12 +1092,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // =====================================================================
     // Data
     // =====================================================================
-
-    let dashData = null;
-    let equityChart = null;
-    let lastFetch = null;
-    let refreshInterval = null;
-    let tickInterval = null;
 
     async function loadData(retries) {
         retries = retries || 0;
@@ -1330,8 +1332,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // --- Trades ---
-    let tradeSort = { key: 'date', asc: false };
-
     function renderTrades() {
         const trades = dashData.tradeHistory || [];
         document.getElementById('trades-count').textContent = trades.length;
