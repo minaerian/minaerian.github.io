@@ -1028,7 +1028,7 @@
      ======================================================================== -->
 
 <script>
-(function() {
+document.addEventListener('DOMContentLoaded', function() {
     'use strict';
 
     // =====================================================================
@@ -1203,6 +1203,7 @@
     function renderChart() {
         const curve = dashData.equityCurve || [];
         if (curve.length === 0) return;
+        if (typeof Chart === 'undefined') return; // Chart.js not loaded yet
 
         const labels = curve.map(p => {
             const d = new Date(p.timestamp);
@@ -1512,7 +1513,7 @@
         return mins + 'm';
     }
 
-})();
+});
 </script>
 
 </body>
