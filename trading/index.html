@@ -1465,10 +1465,13 @@
             if (a.detail) detailParts.push(a.detail);
             if (a.edge) detailParts.push('Edge: ' + (a.edge * 100).toFixed(1) + '%');
             if (a.priceChange) detailParts.push('Δ ' + (a.priceChange > 0 ? '+' : '') + (a.priceChange * 100).toFixed(1) + '%');
+            const marketHtml = a.url
+                ? `<a href="${esc(a.url)}" target="_blank" rel="noopener" style="color:var(--green);text-decoration:none">${esc(a.market)}</a>`
+                : esc(a.market);
             return `<div class="alert-item">
                 <div class="alert-dot ${dotClass}"></div>
                 <div class="alert-content">
-                    <div class="alert-market">${esc(a.market)}</div>
+                    <div class="alert-market">${marketHtml}</div>
                     <div class="alert-detail">${esc(detailParts.join(' · '))}</div>
                 </div>
                 <span class="alert-badge ${badgeClass}">${status.toUpperCase()}</span>
