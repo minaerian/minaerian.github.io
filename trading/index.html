@@ -1093,11 +1093,21 @@
     async function loadData() {
         try {
             const resp = await fetch('dashboard-data.json?t=' + Date.now());
+            if (!resp.ok) {
+                document.getElementById('last-updated').textContent = 'Error: ' + resp.status;
+                return;
+            }
             dashData = await resp.json();
             lastFetch = new Date();
-            render();
+            try {
+                render();
+            } catch (renderErr) {
+                console.error('Render error:', renderErr);
+                document.getElementById('last-updated').textContent = 'Render error — see console';
+            }
         } catch (err) {
             console.error('Failed to load data:', err);
+            document.getElementById('last-updated').textContent = 'Fetch failed — see console';
         }
     }
 
@@ -1411,8 +1421,10 @@
         document.getElementById('m-avg-size').textContent = m.avgTradeSize ? '$' + m.avgTradeSize.toFixed(2) : '—';
         document.getElementById('m-avg-hold').textContent = m.avgHoldingHours ? m.avgHoldingHours.toFixed(1) + 'h' : '—';
 
-        document.getElementById('m-best').textContent = m.bestTrade !== null ? '+$' + m.bestTrade.toFixed(4) : '—';
-        document.getElementById('m-worst').textContent = m.worstTrade !== null ? '-$' + Math.abs(m.worstTrade).toFixed(4) : '—';
+        const bestPnl = m.bestTrade && typeof m.bestTrade === 'object' ? m.bestTrade.pnl : m.bestTrade;
+        document.getElementById('m-best').textContent = bestPnl ? '+$' + Number(bestPnl).toFixed(4) : '—';
+        const worstPnl = m.worstTrade && typeof m.worstTrade === 'object' ? m.worstTrade.pnl : m.worstTrade;
+        document.getElementById('m-worst').textContent = worstPnl ? '-$' + Math.abs(Number(worstPnl)).toFixed(4) : '—';
         document.getElementById('m-sharpe').textContent = (m.sharpeRatio || m.sharpe) ? (m.sharpeRatio || m.sharpe).toFixed(2) : '—';
 
         const streak = m.currentStreak || 0;
