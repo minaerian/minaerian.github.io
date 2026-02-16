@@ -1090,24 +1090,30 @@ document.addEventListener('DOMContentLoaded', function() {
     let refreshInterval = null;
     let tickInterval = null;
 
-    async function loadData() {
+    const DATA_URL = new URL('dashboard-data.json', window.location.href).href;
+
+    async function loadData(retries) {
+        retries = retries || 0;
         try {
-            const resp = await fetch('dashboard-data.json?t=' + Date.now());
+            const resp = await fetch(DATA_URL, { cache: 'no-store' });
             if (!resp.ok) {
-                document.getElementById('last-updated').textContent = 'Error: ' + resp.status;
+                if (retries < 2) { setTimeout(function() { loadData(retries + 1); }, 2000); return; }
+                document.getElementById('last-updated').textContent = 'Error ' + resp.status;
                 return;
             }
-            dashData = await resp.json();
+            const text = await resp.text();
+            dashData = JSON.parse(text);
             lastFetch = new Date();
             try {
                 render();
             } catch (renderErr) {
-                console.error('Render error:', renderErr);
-                document.getElementById('last-updated').textContent = 'Render error — see console';
+                console.error('Render error:', renderErr, renderErr.stack);
+                document.getElementById('last-updated').textContent = 'Render error: ' + renderErr.message;
             }
         } catch (err) {
-            console.error('Failed to load data:', err);
-            document.getElementById('last-updated').textContent = 'Fetch failed — see console';
+            console.error('Fetch failed:', err);
+            if (retries < 2) { setTimeout(function() { loadData(retries + 1); }, 2000); return; }
+            document.getElementById('last-updated').textContent = 'Load failed: ' + err.message;
         }
     }
 
