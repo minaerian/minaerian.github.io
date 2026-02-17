@@ -929,7 +929,7 @@
         .inventory-heavy { color: var(--red); font-weight: 600; }
 
         .mm-side-bid { color: var(--green); font-weight: 600; font-size: 12px; }
-        .mm-side-ask { color: var(--red); font-weight: 600; font-size: 12px; }
+        .mm-side-ask { color: var(--blue); font-weight: 600; font-size: 12px; }
 
         .mm-uptime-badge {
             font-size: 11px;
@@ -1630,7 +1630,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             marketsBody.innerHTML = markets.map(function(m) {
                 var invAbs = Math.abs(m.inventory || 0);
-                var invClass = invAbs === 0 ? 'inventory-balanced' : invAbs <= 50 ? 'inventory-moderate' : 'inventory-heavy';
+                var invClass = invAbs < 5 ? 'inventory-balanced' : invAbs < 15 ? 'inventory-moderate' : 'inventory-heavy';
                 var invSign = (m.inventory || 0) > 0 ? '+' : '';
                 var mPnlClass = (m.pnl || 0) >= 0 ? 'pnl-positive' : 'pnl-negative';
                 var mPnlSign = (m.pnl || 0) >= 0 ? '+' : '';
