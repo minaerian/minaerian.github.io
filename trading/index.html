@@ -33,6 +33,9 @@
             --yellow: #ffd60a;
             --yellow-soft: rgba(255, 214, 10, 0.2);
             --border: rgba(255, 255, 255, 0.1);
+            --blue: #0a84ff;
+            --blue-soft: rgba(10, 132, 255, 0.2);
+            --blue-subtle: rgba(10, 132, 255, 0.1);
             --border-hover: rgba(255, 255, 255, 0.2);
             --font-main: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
             --font-mono: 'SF Mono', 'JetBrains Mono', monospace;
@@ -810,6 +813,157 @@
         .fade-in-delay-4 { animation-delay: 0.2s; opacity: 0; }
         .fade-in-delay-5 { animation-delay: 0.25s; opacity: 0; }
         .fade-in-delay-6 { animation-delay: 0.3s; opacity: 0; }
+
+        /* ==========================================================================
+           Market Making Section
+           ========================================================================== */
+
+        #mm-section { display: none; }
+        #mm-section.active { display: block; }
+
+        .mm-summary-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .mm-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 20px;
+            transition: all 0.3s var(--ease-smooth);
+        }
+
+        .mm-card:hover {
+            border-color: var(--blue-soft);
+            background: var(--bg-card-hover);
+        }
+
+        .mm-card .summary-label {
+            color: var(--blue);
+        }
+
+        .mm-status-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 6px;
+            vertical-align: middle;
+        }
+
+        .mm-status-dot.active { background: var(--green); animation: pulse 2s ease-in-out infinite; }
+        .mm-status-dot.paused { background: var(--yellow); }
+        .mm-status-dot.stopped { background: var(--red); }
+
+        .mm-section-head {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .mm-section-head h2 {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .mm-section-head .mm-icon {
+            font-size: 18px;
+        }
+
+        .mm-section-head .count {
+            font-size: 12px;
+            font-weight: 500;
+            padding: 2px 8px;
+            border-radius: 6px;
+            background: var(--blue-subtle);
+            color: var(--blue);
+            font-family: var(--font-mono);
+        }
+
+        .mm-sub-head {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+            margin-top: 8px;
+        }
+
+        .mm-sub-head h3 {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .mm-sub-head .count {
+            font-size: 11px;
+            font-weight: 500;
+            padding: 2px 7px;
+            border-radius: 5px;
+            background: var(--blue-subtle);
+            color: var(--blue);
+            font-family: var(--font-mono);
+        }
+
+        .mm-table-container {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 24px;
+        }
+
+        .mm-table-container table {
+            min-width: 750px;
+        }
+
+        .mm-fill-table table {
+            min-width: 650px;
+        }
+
+        .inventory-balanced { color: var(--green); font-weight: 600; }
+        .inventory-moderate { color: var(--yellow); font-weight: 600; }
+        .inventory-heavy { color: var(--red); font-weight: 600; }
+
+        .mm-side-bid { color: var(--green); font-weight: 600; font-size: 12px; }
+        .mm-side-ask { color: var(--red); font-weight: 600; font-size: 12px; }
+
+        .mm-uptime-badge {
+            font-size: 11px;
+            font-weight: 500;
+            padding: 2px 8px;
+            border-radius: 6px;
+            background: var(--blue-subtle);
+            color: var(--blue);
+            font-family: var(--font-mono);
+            margin-left: auto;
+        }
+
+        @media (max-width: 1024px) {
+            .mm-summary-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .mm-summary-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+
+            .mm-card {
+                padding: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .mm-summary-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -921,6 +1075,97 @@
                 </thead>
                 <tbody id="positions-body"></tbody>
             </table>
+        </div>
+    </div>
+
+    <!-- Market Making Section -->
+    <div id="mm-section">
+        <div class="mm-section-head fade-in">
+            <span class="mm-icon">🤖</span>
+            <h2>Market Making</h2>
+            <span class="count" id="mm-markets-count">0</span>
+            <span class="mm-uptime-badge" id="mm-uptime"></span>
+        </div>
+
+        <!-- MM Summary Cards -->
+        <div class="mm-summary-grid">
+            <div class="mm-card fade-in fade-in-delay-1">
+                <div class="summary-label">MM Status</div>
+                <div class="summary-value neutral" id="mm-status">—</div>
+                <div class="summary-sub" id="mm-cycles"></div>
+            </div>
+            <div class="mm-card fade-in fade-in-delay-2">
+                <div class="summary-label">MM P&L</div>
+                <div class="summary-value" id="mm-pnl">—</div>
+                <div class="summary-sub">total</div>
+            </div>
+            <div class="mm-card fade-in fade-in-delay-3">
+                <div class="summary-label">Open Orders</div>
+                <div class="summary-value neutral" id="mm-open-orders">—</div>
+                <div class="summary-sub">live</div>
+            </div>
+            <div class="mm-card fade-in fade-in-delay-4">
+                <div class="summary-label">Fills Today</div>
+                <div class="summary-value neutral" id="mm-fills-today">—</div>
+                <div class="summary-sub">24h</div>
+            </div>
+            <div class="mm-card fade-in fade-in-delay-5">
+                <div class="summary-label">Spread Captured</div>
+                <div class="summary-value neutral" id="mm-spread">—</div>
+                <div class="summary-sub">avg per round-trip</div>
+            </div>
+            <div class="mm-card fade-in fade-in-delay-6">
+                <div class="summary-label">Capital Deployed</div>
+                <div class="summary-value neutral" id="mm-capital">—</div>
+                <div class="summary-sub">USDC</div>
+            </div>
+        </div>
+
+        <!-- Active Markets Table -->
+        <div class="mm-sub-head fade-in">
+            <h3>Active Markets</h3>
+            <span class="count" id="mm-active-count">0</span>
+        </div>
+        <div class="mm-table-container fade-in">
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Market</th>
+                            <th>Our Bid</th>
+                            <th>Our Ask</th>
+                            <th>Spread</th>
+                            <th>Fills (Bid/Ask)</th>
+                            <th>Inventory</th>
+                            <th>P&L</th>
+                        </tr>
+                    </thead>
+                    <tbody id="mm-markets-body"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- MM Fill History -->
+        <div class="mm-sub-head fade-in">
+            <h3>Recent Fills</h3>
+            <span class="count" id="mm-fills-count">0</span>
+        </div>
+        <div class="mm-table-container mm-fill-table fade-in">
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Market</th>
+                            <th>Side</th>
+                            <th>Price</th>
+                            <th>Size</th>
+                            <th>Running P&L</th>
+                        </tr>
+                    </thead>
+                    <tbody id="mm-fills-body"></tbody>
+                </table>
+            </div>
         </div>
     </div>
 
@@ -1147,6 +1392,7 @@ document.addEventListener('DOMContentLoaded', function() {
         renderSummary();
         renderChart();
         renderPositions();
+        renderMarketMaking();
         renderTrades();
         renderMetrics();
         renderAlerts();
@@ -1329,6 +1575,106 @@ document.addEventListener('DOMContentLoaded', function() {
                 <td>${held}</td>
             </tr>`;
         }).join('');
+    }
+
+    // --- Market Making ---
+    function renderMarketMaking() {
+        var mmSection = document.getElementById('mm-section');
+        var mm = dashData.marketMaking;
+        if (!mm) {
+            mmSection.classList.remove('active');
+            return;
+        }
+        mmSection.classList.add('active');
+
+        // Status card
+        var statusEl = document.getElementById('mm-status');
+        var statusText = (mm.status || 'stopped').toUpperCase();
+        var statusClass = mm.status === 'active' ? 'active' : mm.status === 'paused' ? 'paused' : 'stopped';
+        statusEl.innerHTML = '<span class="mm-status-dot ' + statusClass + '"></span>' + esc(statusText);
+
+        // Cycles
+        document.getElementById('mm-cycles').textContent = mm.cycleCount ? mm.cycleCount + ' cycles' : '';
+
+        // Uptime
+        document.getElementById('mm-uptime').textContent = mm.uptime ? '⏱ ' + mm.uptime : '';
+
+        // P&L
+        var pnlEl = document.getElementById('mm-pnl');
+        var pnl = mm.totalPnl || 0;
+        var pnlSign = pnl >= 0 ? '+' : '';
+        pnlEl.textContent = pnlSign + '$' + pnl.toFixed(2);
+        pnlEl.className = 'summary-value ' + (pnl >= 0 ? 'positive' : 'negative');
+
+        // Open orders
+        document.getElementById('mm-open-orders').textContent = mm.openOrders || 0;
+
+        // Fills today
+        document.getElementById('mm-fills-today').textContent = mm.fillsToday || 0;
+
+        // Spread captured
+        var spread = mm.avgSpreadCaptured || 0;
+        document.getElementById('mm-spread').textContent = (spread * 100).toFixed(1) + '¢';
+
+        // Capital deployed
+        document.getElementById('mm-capital').textContent = '$' + (mm.capitalDeployed || 0).toFixed(2);
+
+        // Active Markets Table
+        var markets = mm.activeMarkets || [];
+        document.getElementById('mm-markets-count').textContent = markets.length;
+        document.getElementById('mm-active-count').textContent = markets.length;
+        var marketsBody = document.getElementById('mm-markets-body');
+
+        if (markets.length === 0) {
+            marketsBody.innerHTML = '<tr><td colspan="7"><div class="empty-state"><div class="empty-icon">🤖</div>No active markets</div></td></tr>';
+        } else {
+            marketsBody.innerHTML = markets.map(function(m) {
+                var invAbs = Math.abs(m.inventory || 0);
+                var invClass = invAbs === 0 ? 'inventory-balanced' : invAbs <= 50 ? 'inventory-moderate' : 'inventory-heavy';
+                var invSign = (m.inventory || 0) > 0 ? '+' : '';
+                var mPnlClass = (m.pnl || 0) >= 0 ? 'pnl-positive' : 'pnl-negative';
+                var mPnlSign = (m.pnl || 0) >= 0 ? '+' : '';
+                var marketHtml = m.url
+                    ? '<a href="' + esc(m.url) + '" target="_blank" rel="noopener" style="color:var(--blue);text-decoration:none">' + esc(m.market) + '</a>'
+                    : esc(m.market);
+                return '<tr>' +
+                    '<td class="market-name">' + marketHtml + '</td>' +
+                    '<td style="font-family:var(--font-mono)">' + (m.bid != null ? m.bid.toFixed(3) : '—') + '</td>' +
+                    '<td style="font-family:var(--font-mono)">' + (m.ask != null ? m.ask.toFixed(3) : '—') + '</td>' +
+                    '<td style="font-family:var(--font-mono)">' + ((m.spread || 0) * 100).toFixed(1) + '¢</td>' +
+                    '<td style="font-family:var(--font-mono)">' + (m.bidFills || 0) + ' / ' + (m.askFills || 0) + '</td>' +
+                    '<td class="' + invClass + '" style="font-family:var(--font-mono)">' + invSign + (m.inventory || 0) + '</td>' +
+                    '<td class="' + mPnlClass + '">' + mPnlSign + '$' + (m.pnl || 0).toFixed(2) + '</td>' +
+                    '</tr>';
+            }).join('');
+        }
+
+        // Recent Fills Table
+        var fills = mm.recentFills || [];
+        var recentFills = fills.slice(-20).reverse();
+        document.getElementById('mm-fills-count').textContent = recentFills.length;
+        var fillsBody = document.getElementById('mm-fills-body');
+
+        if (recentFills.length === 0) {
+            fillsBody.innerHTML = '<tr><td colspan="6"><div class="empty-state"><div class="empty-icon">📋</div>No fills yet</div></td></tr>';
+        } else {
+            fillsBody.innerHTML = recentFills.map(function(f) {
+                var time = new Date(f.time);
+                var timeStr = time.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + ' ' +
+                              time.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
+                var sideClass = f.side === 'BID' ? 'mm-side-bid' : 'mm-side-ask';
+                var rpClass = (f.runningPnl || 0) >= 0 ? 'pnl-positive' : 'pnl-negative';
+                var rpSign = (f.runningPnl || 0) >= 0 ? '+' : '';
+                return '<tr>' +
+                    '<td style="font-family:var(--font-mono);font-size:12px">' + timeStr + '</td>' +
+                    '<td class="market-name">' + esc(f.market) + '</td>' +
+                    '<td><span class="' + sideClass + '">' + esc(f.side) + '</span></td>' +
+                    '<td style="font-family:var(--font-mono)">' + (f.price != null ? f.price.toFixed(3) : '—') + '</td>' +
+                    '<td style="font-family:var(--font-mono)">$' + (f.size || 0).toFixed(2) + '</td>' +
+                    '<td class="' + rpClass + '">' + rpSign + '$' + (f.runningPnl || 0).toFixed(2) + '</td>' +
+                    '</tr>';
+            }).join('');
+        }
     }
 
     // --- Trades ---
