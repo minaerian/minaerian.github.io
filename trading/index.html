@@ -1054,6 +1054,17 @@
         </div>
     </div>
 
+    <!-- P&L Chart -->
+    <div class="chart-container fade-in">
+        <div class="chart-header">
+            <h2 class="chart-title">Profit & Loss</h2>
+            <span class="chart-value" id="pnl-chart-current">$0.00</span>
+        </div>
+        <div class="chart-canvas-wrap">
+            <canvas id="pnl-chart"></canvas>
+        </div>
+    </div>
+
     <!-- Open Positions -->
     <div class="section-head fade-in">
         <h2>Open Positions</h2>
@@ -1291,6 +1302,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var refreshInterval = null;
     var tickInterval = null;
     var tradeSort = { key: 'date', asc: false };
+    var pnlChart = null;
 
     async function sha256(text) {
         const enc = new TextEncoder().encode(text);
@@ -1391,6 +1403,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!dashData) return;
         renderSummary();
         renderChart();
+        renderPnlChart();
         renderPositions();
         renderMarketMaking();
         renderTrades();
@@ -1541,6 +1554,146 @@ document.addEventListener('DOMContentLoaded', function() {
                             color: '#6e6e73',
                             font: { family: "'SF Mono', monospace", size: 10 },
                             callback: function(val) { return '$' + val.toFixed(0); }
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    // --- P&L Chart ---
+    function renderPnlChart() {
+        const curve = dashData.equityCurve || [];
+        if (curve.length === 0) return;
+        if (typeof Chart === 'undefined') return;
+
+        // Deposit timeline: calculate cumulative deposits at each point
+        // $33 initial, then $100 deposited on Feb 18 ~14:00 UTC
+        var deposits = [
+            { date: new Date('2026-02-16T05:00:00Z'), amount: 33.00 },
+            { date: new Date('2026-02-18T14:00:00Z'), amount: 100.00 }
+        ];
+
+        var labels = [];
+        var pnlData = [];
+
+        for (var i = 0; i < curve.length; i++) {
+            var pt = curve[i];
+            var ts = new Date(pt.timestamp);
+            labels.push(ts.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + ' ' +
+                        ts.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false }));
+
+            // Sum deposits up to this timestamp
+            var totalDeposited = 0;
+            for (var j = 0; j < deposits.length; j++) {
+                if (ts >= deposits[j].date) totalDeposited += deposits[j].amount;
+            }
+            pnlData.push(parseFloat((pt.balance - totalDeposited).toFixed(4)));
+        }
+
+        var currentPnl = pnlData[pnlData.length - 1];
+        var pnlEl = document.getElementById('pnl-chart-current');
+        var pnlSign = currentPnl >= 0 ? '+' : '';
+        pnlEl.textContent = pnlSign + '$' + currentPnl.toFixed(2);
+        pnlEl.style.color = currentPnl >= 0 ? 'var(--green)' : 'var(--red)';
+
+        var ctx = document.getElementById('pnl-chart').getContext('2d');
+
+        if (pnlChart) {
+            pnlChart.data.labels = labels;
+            pnlChart.data.datasets[0].data = pnlData;
+            pnlChart.update('none');
+            return;
+        }
+
+        // Create gradient that goes green above zero, red below
+        var gradientGreen = ctx.createLinearGradient(0, 0, 0, 280);
+        gradientGreen.addColorStop(0, 'rgba(50, 215, 75, 0.3)');
+        gradientGreen.addColorStop(1, 'rgba(50, 215, 75, 0)');
+
+        pnlChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: pnlData,
+                    borderColor: function(context) {
+                        var value = context.parsed ? context.parsed.y : 0;
+                        return value >= 0 ? '#32d74b' : '#ff453a';
+                    },
+                    borderWidth: 2,
+                    backgroundColor: gradientGreen,
+                    fill: true,
+                    tension: 0.3,
+                    pointRadius: 0,
+                    pointHitRadius: 8,
+                    pointHoverRadius: 4,
+                    pointHoverBackgroundColor: '#32d74b',
+                    pointHoverBorderColor: '#000',
+                    pointHoverBorderWidth: 2,
+                    segment: {
+                        borderColor: function(ctx) {
+                            return ctx.p0.parsed.y < 0 || ctx.p1.parsed.y < 0 ? '#ff453a' : '#32d74b';
+                        }
+                    }
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                interaction: { mode: 'index', intersect: false },
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        backgroundColor: '#1a1a1a',
+                        titleColor: '#86868b',
+                        bodyColor: '#f5f5f7',
+                        borderColor: 'rgba(255,255,255,0.1)',
+                        borderWidth: 1,
+                        padding: 12,
+                        displayColors: false,
+                        titleFont: { family: "'SF Mono', monospace", size: 11 },
+                        bodyFont: { family: "'SF Mono', monospace", size: 13, weight: '600' },
+                        callbacks: {
+                            label: function(ctx) {
+                                var v = ctx.parsed.y;
+                                var sign = v >= 0 ? '+' : '';
+                                return sign + '$' + v.toFixed(2);
+                            }
+                        }
+                    },
+                    annotation: {
+                        annotations: {
+                            zeroLine: {
+                                type: 'line',
+                                yMin: 0,
+                                yMax: 0,
+                                borderColor: 'rgba(255,255,255,0.2)',
+                                borderWidth: 1,
+                                borderDash: [4, 4]
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        grid: { color: 'rgba(255,255,255,0.04)', drawBorder: false },
+                        ticks: {
+                            color: '#6e6e73',
+                            font: { family: "'SF Mono', monospace", size: 10 },
+                            maxTicksLimit: 8,
+                            maxRotation: 0
+                        }
+                    },
+                    y: {
+                        grid: { color: 'rgba(255,255,255,0.04)', drawBorder: false },
+                        ticks: {
+                            color: '#6e6e73',
+                            font: { family: "'SF Mono', monospace", size: 10 },
+                            callback: function(val) {
+                                var sign = val >= 0 ? '+' : '';
+                                return sign + '$' + val.toFixed(0);
+                            }
                         }
                     }
                 }
