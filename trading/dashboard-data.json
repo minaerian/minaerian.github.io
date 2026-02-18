@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-18T19:07:26.745727+00:00",
+  "lastUpdated": "2026-02-18T19:10:10.255274+00:00",
   "metrics": {
-    "balance": 97.961959,
+    "balance": 91.902599,
     "initialBalance": 133.0,
-    "totalPnl": -35.038,
-    "totalPnlPct": -26.34,
+    "totalPnl": -41.0974,
+    "totalPnlPct": -30.9,
     "daysActive": 2,
-    "totalTrades": 8,
+    "totalTrades": 9,
     "wins": 0,
     "losses": 0,
     "winRate": 0.0,
@@ -20,19 +20,9 @@
     "openPositions": 7,
     "maxPositions": 7,
     "targetBalance": 500.0,
-    "progressToTarget": 19.6
+    "progressToTarget": 18.4
   },
   "positions": [
-    {
-      "market": "Israel-Iran ceasefire holds through Mar 31 (NO on break)",
-      "side": "BUY",
-      "entryPrice": 0.55,
-      "currentPrice": 0.37,
-      "amount": 3.3,
-      "edge": 0.13,
-      "openedAt": "2026-02-18T07:01:05.409901+00:00",
-      "unrealizedPnl": -1.08
-    },
     {
       "market": "US collect less than $100b tariff revenue FY2025 (YES)",
       "side": "BUY",
@@ -92,6 +82,16 @@
       "edge": "146% annualized, same thesis as existing <$100B YES position",
       "openedAt": "2026-02-18T18:25:01.233103+00:00",
       "unrealizedPnl": -0.0567
+    },
+    {
+      "market": "Wesley Hunt 2nd in TX GOP Primary (NO) \u2014 polling 3rd at 17%, behind Paxton 38% and Cornyn 31%",
+      "side": "BUY",
+      "entryPrice": 0.91,
+      "currentPrice": 0.898,
+      "amount": 6.11,
+      "edge": "332% annualized, 12 days to resolve",
+      "openedAt": "2026-02-18T19:10:03.503093+00:00",
+      "unrealizedPnl": -0.0806
     }
   ],
   "tradeHistory": [
@@ -188,6 +188,18 @@
       "amount": 6.11,
       "pnl": 0,
       "edge": "146% annualized, same thesis as existing <$100B YES position",
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-18T19:10:03.502056+00:00",
+      "market": "Wesley Hunt 2nd in TX GOP Primary (NO) \u2014 polling 3rd at 17%, behind Paxton 38% and Cornyn 31%",
+      "side": "BUY",
+      "entryPrice": 0.91,
+      "exitPrice": 0,
+      "amount": 6.11,
+      "pnl": 0,
+      "edge": "332% annualized, 12 days to resolve",
       "status": "executed",
       "outcome": "-"
     }
