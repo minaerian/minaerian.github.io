@@ -57,7 +57,6 @@ Here's what the system looks like:
 │   ┌────────────────────────────────┐                 │
 │   │     Trade Execution Layer      │                 │
 │   │  (py-clob-client → Polygon)   │                 │
-│   │        via SOCKS5 proxy        │                 │
 │   └────────────────────────────────┘                 │
 │                                                       │
 └─────────────────────────────────────────────────────┘
@@ -311,16 +310,6 @@ def execute_trade(market_id, side, size, price):
 ```
 
 The notification part is non-negotiable. The bot is autonomous — it decides and executes on its own — but I see every trade within seconds. Trust but verify.
-
-## The Proxy Problem
-
-Polymarket's API is geoblocked in certain regions. The solution: a SOCKS5 tunnel through a Sweden-based proxy. All API calls route through the tunnel:
-
-```
-Local Agent → SOCKS5 Tunnel → Sweden Proxy → Polymarket API
-```
-
-This is the same pattern anyone uses to access region-restricted services. The proxy is stable, the latency is acceptable (we're not doing HFT), and it's been running without issues.
 
 ## The Philosophy
 
