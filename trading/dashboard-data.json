@@ -1,26 +1,26 @@
 {
-  "lastUpdated": "2026-02-18T16:22:27.107749+00:00",
+  "lastUpdated": "2026-02-18T16:23:56.078732+00:00",
   "metrics": {
-    "balance": 110.064229,
+    "balance": 104.019229,
     "initialBalance": 133.0,
-    "totalPnl": -22.9358,
-    "totalPnlPct": -17.24,
+    "totalPnl": -28.9808,
+    "totalPnlPct": -21.79,
     "daysActive": 2,
-    "totalTrades": 6,
+    "totalTrades": 7,
     "wins": 0,
     "losses": 0,
     "winRate": 0.0,
-    "avgEstimatedEdge": 8.12,
+    "avgEstimatedEdge": 7.98,
     "avgActualReturn": 0.0,
-    "edgeCalibration": -8.12,
+    "edgeCalibration": -7.98,
     "bestTrade": null,
     "worstTrade": null,
     "currentStreak": 0,
     "avgHoldingHours": 0,
-    "openPositions": 6,
+    "openPositions": 7,
     "maxPositions": 6,
     "targetBalance": 500.0,
-    "progressToTarget": 22.0
+    "progressToTarget": 20.8
   },
   "positions": [
     {
@@ -82,6 +82,16 @@
       "edge": 0.085,
       "openedAt": "2026-02-18T14:39:31.588403+00:00",
       "unrealizedPnl": -0.1002
+    },
+    {
+      "market": "US tariff <$100B FY2025 YES (adding to position \u2014 structural certainty, report can't publish by Feb 28)",
+      "side": "BUY",
+      "entryPrice": 0.939,
+      "currentPrice": 0.929,
+      "amount": 6.11,
+      "edge": 0.071,
+      "openedAt": "2026-02-18T16:23:45.331667+00:00",
+      "unrealizedPnl": -0.0651
     }
   ],
   "tradeHistory": [
@@ -154,6 +164,18 @@
       "amount": 6.11,
       "pnl": 0,
       "edge": 0.085,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-18T16:23:45.330706+00:00",
+      "market": "US tariff <$100B FY2025 YES (adding to position \u2014 structural certainty, report can't publish by Feb 28)",
+      "side": "BUY",
+      "entryPrice": 0.939,
+      "exitPrice": 0,
+      "amount": 6.11,
+      "pnl": 0,
+      "edge": 0.071,
       "status": "executed",
       "outcome": "-"
     }
