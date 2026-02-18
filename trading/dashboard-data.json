@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-18T14:24:41.329569+00:00",
+  "lastUpdated": "2026-02-18T14:25:55.272640+00:00",
   "metrics": {
     "balance": 122.206829,
-    "initialBalance": 33.0,
-    "totalPnl": 89.2068,
-    "totalPnlPct": 270.32,
+    "initialBalance": 133.0,
+    "totalPnl": -10.7932,
+    "totalPnlPct": -8.12,
     "daysActive": 2,
     "totalTrades": 3,
     "wins": 0,
@@ -18,7 +18,7 @@
     "currentStreak": 0,
     "avgHoldingHours": 0,
     "openPositions": 3,
-    "maxPositions": 3,
+    "maxPositions": 6,
     "targetBalance": 500.0,
     "progressToTarget": 24.4
   },
@@ -27,31 +27,31 @@
       "market": "Israel-Iran ceasefire holds through Mar 31 (NO on break)",
       "side": "BUY",
       "entryPrice": 0.55,
-      "currentPrice": 0.55,
+      "currentPrice": 0.38,
       "amount": 3.3,
       "edge": 0.13,
       "openedAt": "2026-02-18T07:01:05.409901+00:00",
-      "unrealizedPnl": 0
+      "unrealizedPnl": -1.02
     },
     {
       "market": "US collect less than $100b tariff revenue FY2025 (YES)",
       "side": "BUY",
       "entryPrice": 0.929,
-      "currentPrice": 0.929,
+      "currentPrice": 0.927,
       "amount": 3.3,
       "edge": 0.071,
       "openedAt": "2026-02-18T09:32:53.611854+00:00",
-      "unrealizedPnl": 0
+      "unrealizedPnl": -0.0071
     },
     {
       "market": "Wesley Hunt wins TX Republican Primary (NO)",
       "side": "BUY",
       "entryPrice": 0.966,
-      "currentPrice": 0.966,
+      "currentPrice": 0.947,
       "amount": 3.3,
       "edge": 0.034,
       "openedAt": "2026-02-18T09:32:56.236850+00:00",
-      "unrealizedPnl": 0
+      "unrealizedPnl": -0.0649
     }
   ],
   "tradeHistory": [
@@ -655,7 +655,7 @@
   "config": {
     "maxTradeSize": 3.3,
     "minEdge": 0.05,
-    "maxPositions": 3,
+    "maxPositions": 6,
     "circuitBreaker": 20.0,
     "scanInterval": "10min"
   }
