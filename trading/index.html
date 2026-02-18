@@ -1845,7 +1845,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const sorted = [...trades].sort((a, b) => {
             let va, vb;
             switch (tradeSort.key) {
-                case 'date': va = new Date(a.date); vb = new Date(b.date); break;
+                case 'date': va = new Date(a.date || a.timestamp); vb = new Date(b.date || b.timestamp); break;
                 case 'market': va = a.market; vb = b.market; break;
                 case 'side': va = a.side; vb = b.side; break;
                 case 'entry': va = a.entryPrice; vb = b.entryPrice; break;
@@ -1867,7 +1867,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const pnlSign = t.pnl >= 0 ? '+' : '';
             const sideClass = t.side.toUpperCase() === 'YES' ? 'side-yes' : 'side-no';
             const outcomeClass = t.outcome === 'W' ? 'outcome-win' : 'outcome-loss';
-            const date = new Date(t.date);
+            const date = new Date(t.date || t.timestamp);
             const dateStr = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + ' ' +
                            date.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
             return `<tr>
