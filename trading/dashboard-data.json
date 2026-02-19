@@ -1,26 +1,26 @@
 {
-  "lastUpdated": "2026-02-19T00:37:27.721604+00:00",
+  "lastUpdated": "2026-02-19T00:39:17.907563+00:00",
   "metrics": {
-    "balance": 91.902599,
+    "balance": 85.832899,
     "initialBalance": 133.0,
-    "totalPnl": -0.2774,
-    "totalPnlPct": -0.21,
+    "totalPnl": -0.2371,
+    "totalPnlPct": -0.18,
     "daysActive": 2,
-    "totalTrades": 9,
+    "totalTrades": 10,
     "wins": 0,
     "losses": 0,
     "winRate": 0.0,
-    "avgEstimatedEdge": 7.98,
+    "avgEstimatedEdge": 125.73,
     "avgActualReturn": 0.0,
-    "edgeCalibration": -7.98,
+    "edgeCalibration": -125.73,
     "bestTrade": null,
     "worstTrade": null,
     "currentStreak": 0,
     "avgHoldingHours": 0,
-    "openPositions": 8,
+    "openPositions": 9,
     "maxPositions": 7,
     "targetBalance": 500.0,
-    "progressToTarget": 18.4
+    "progressToTarget": 17.2
   },
   "positions": [
     {
@@ -87,7 +87,7 @@
       "market": "Israel x Iran ceasefire broken by March 31, 2026?",
       "side": "BUY",
       "entryPrice": 0,
-      "currentPrice": 0.45,
+      "currentPrice": 0.48,
       "amount": 0,
       "edge": 0,
       "openedAt": "",
@@ -102,6 +102,16 @@
       "edge": 0,
       "openedAt": "",
       "unrealizedPnl": 0.0
+    },
+    {
+      "market": "NVIDIA largest company by market cap March 31 \u2014 YES",
+      "side": "BUY",
+      "entryPrice": 0.915,
+      "currentPrice": 0.9,
+      "amount": 6.11,
+      "edge": 9.5,
+      "openedAt": "2026-02-19T00:39:09.065630+00:00",
+      "unrealizedPnl": -0.1002
     }
   ],
   "tradeHistory": [
@@ -210,6 +220,18 @@
       "amount": 6.11,
       "pnl": 0,
       "edge": "332% annualized, 12 days to resolve",
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-19T00:39:09.064488+00:00",
+      "market": "NVIDIA largest company by market cap March 31 \u2014 YES",
+      "side": "BUY",
+      "entryPrice": 0.915,
+      "exitPrice": 0,
+      "amount": 6.11,
+      "pnl": 0,
+      "edge": 9.5,
       "status": "executed",
       "outcome": "-"
     }
