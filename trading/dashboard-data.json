@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-19T02:37:27.702870+00:00",
+  "lastUpdated": "2026-02-19T02:40:03.386448+00:00",
   "metrics": {
-    "balance": 79.762399,
+    "balance": 67.597409,
     "initialBalance": 133.0,
-    "totalPnl": -0.1976,
-    "totalPnlPct": -0.15,
+    "totalPnl": -0.1426,
+    "totalPnlPct": -0.11,
     "daysActive": 2,
-    "totalTrades": 11,
+    "totalTrades": 13,
     "wins": 0,
     "losses": 0,
     "winRate": 0.0,
@@ -17,10 +17,10 @@
     "worstTrade": null,
     "currentStreak": 0,
     "avgHoldingHours": 0,
-    "openPositions": 10,
+    "openPositions": 12,
     "maxPositions": 7,
     "targetBalance": 500.0,
-    "progressToTarget": 16.0
+    "progressToTarget": 13.5
   },
   "positions": [
     {
@@ -47,7 +47,7 @@
       "market": "Will Wesley Hunt come in 2nd in the 2026 Texas Republican Primary?",
       "side": "BUY",
       "entryPrice": 0,
-      "currentPrice": 0.894,
+      "currentPrice": 0.886,
       "amount": 0,
       "edge": 0,
       "openedAt": "",
@@ -122,6 +122,26 @@
       "edge": 0.045,
       "openedAt": "2026-02-19T01:09:30.449984+00:00",
       "unrealizedPnl": -0.096
+    },
+    {
+      "market": "Robinhood MIAXdx launch by March 31 \u2014 NO",
+      "side": "BUY",
+      "entryPrice": 0.86,
+      "currentPrice": 0.84,
+      "amount": 6.11,
+      "edge": "Acquired Jan 2026, building exchange+clearinghouse from scratch, no chance by March 31",
+      "openedAt": "2026-02-19T02:39:47.017934+00:00",
+      "unrealizedPnl": -0.1421
+    },
+    {
+      "market": "Polymarket mindshare hit 90% \u2014 NO",
+      "side": "BUY",
+      "entryPrice": 0.8635,
+      "currentPrice": 0.85,
+      "amount": 6.11,
+      "edge": "Current mindshare ~47%, Kalshi at 34%, Robinhood entering. 90% is impossible by March 31",
+      "openedAt": "2026-02-19T02:39:56.543416+00:00",
+      "unrealizedPnl": -0.0955
     }
   ],
   "tradeHistory": [
@@ -254,6 +274,30 @@
       "amount": 6.11,
       "pnl": 0,
       "edge": 0.045,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-19T02:39:47.016803+00:00",
+      "market": "Robinhood MIAXdx launch by March 31 \u2014 NO",
+      "side": "BUY",
+      "entryPrice": 0.86,
+      "exitPrice": 0,
+      "amount": 6.11,
+      "pnl": 0,
+      "edge": "Acquired Jan 2026, building exchange+clearinghouse from scratch, no chance by March 31",
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-19T02:39:56.542486+00:00",
+      "market": "Polymarket mindshare hit 90% \u2014 NO",
+      "side": "BUY",
+      "entryPrice": 0.8635,
+      "exitPrice": 0,
+      "amount": 6.11,
+      "pnl": 0,
+      "edge": "Current mindshare ~47%, Kalshi at 34%, Robinhood entering. 90% is impossible by March 31",
       "status": "executed",
       "outcome": "-"
     }
