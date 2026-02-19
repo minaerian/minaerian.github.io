@@ -1076,7 +1076,7 @@
                 <thead>
                     <tr>
                         <th>Market</th>
-                        <th>Side</th>
+                        <th>Bet</th>
                         <th>Shares</th>
                         <th>Entry</th>
                         <th>Current</th>
@@ -1733,7 +1733,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const posPnlSign = positionPnl >= 0 ? '+' : '';
             return `<tr>
                 <td class="market-name">${marketHtml}</td>
-                <td><span class="${sideClass}">${esc(p.side.toUpperCase())}</span></td>
+                <td><span class="${sideClass}">${p.outcome ? esc(p.outcome.toUpperCase()) : esc(p.side.toUpperCase())}</span></td>
                 <td>${shares > 0 ? shares.toFixed(1) : '—'}</td>
                 <td>${p.entryPrice.toFixed(2)}¢</td>
                 <td>${p.currentPrice.toFixed(2)}¢</td>
