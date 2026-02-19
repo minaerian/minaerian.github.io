@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-19T06:51:46.571499+00:00",
+  "lastUpdated": "2026-02-19T06:55:17.715602+00:00",
   "metrics": {
     "balance": 49.414579,
     "initialBalance": 133.0,
-    "totalPnl": 5.7446,
-    "totalPnlPct": 4.32,
+    "totalPnl": 4.0667,
+    "totalPnlPct": 3.06,
     "daysActive": 3,
     "totalTrades": 16,
     "wins": 0,
@@ -770,6 +770,10 @@
     {
       "timestamp": "2026-02-19T06:48:50.073833+00:00",
       "balance": 138.7446
+    },
+    {
+      "timestamp": "2026-02-19T06:55:15.691159+00:00",
+      "balance": 137.0667
     }
   ],
   "alertLog": [
