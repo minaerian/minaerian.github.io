@@ -1726,7 +1726,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const costStr = p.cost ? `$${p.cost.toFixed(2)}` : '—';
             const shares = p.size || p.shares || 0;
             const currentValue = shares * (p.currentPrice || 0);
-            const positionPnl = currentValue - (p.cost || 0);
+            const positionPnl = (p.currentPrice - p.entryPrice) * shares;
             const posPnlClass = positionPnl >= 0 ? 'pnl-positive' : 'pnl-negative';
             const posPnlSign = positionPnl >= 0 ? '+' : '';
             return `<tr>
@@ -1744,14 +1744,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Add totals row
         if (positions.length > 0) {
-            let totalCost = 0, totalValue = 0, totalShares = 0;
+            let totalCost = 0, totalValue = 0, totalShares = 0, totalPnl = 0;
             positions.forEach(p => {
                 const shares = p.size || p.shares || 0;
                 totalShares += shares;
                 totalCost += (p.cost || 0);
                 totalValue += shares * (p.currentPrice || 0);
+                totalPnl += (p.currentPrice - p.entryPrice) * shares;
             });
-            const totalPnl = totalValue - totalCost;
             const tPnlClass = totalPnl >= 0 ? 'pnl-positive' : 'pnl-negative';
             const tPnlSign = totalPnl >= 0 ? '+' : '';
             tbody.innerHTML += `<tr style="border-top:2px solid #333;font-weight:bold">
