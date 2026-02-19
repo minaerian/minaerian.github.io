@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-19T07:15:06.603286+00:00",
+  "lastUpdated": "2026-02-19T07:16:01.870523+00:00",
   "metrics": {
     "balance": 49.414579,
     "initialBalance": 133.0,
-    "totalPnl": 5.7446,
-    "totalPnlPct": 4.32,
+    "totalPnl": 3.6985,
+    "totalPnlPct": 2.78,
     "daysActive": 3,
     "totalTrades": 16,
     "wins": 0,
@@ -39,12 +39,12 @@
       "market": "Will the U.S. collect less than $100b in revenue in 2025?",
       "side": "BUY",
       "entryPrice": 0.9354,
-      "currentPrice": 0.945,
+      "currentPrice": 0.912,
       "cost": 9.41,
       "size": 10.06,
       "edge": 0,
       "openedAt": "2026-02-18T09:32:53.610774+00:00",
-      "unrealizedPnl": 0.0966,
+      "unrealizedPnl": -0.2354,
       "url": "https://polymarket.com/market/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     },
     {
