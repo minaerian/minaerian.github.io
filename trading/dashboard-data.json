@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-19T16:39:53.211351+00:00",
+  "lastUpdated": "2026-02-19T16:40:31.218427+00:00",
   "metrics": {
     "balance": 69.569319,
     "initialBalance": 133.0,
-    "totalPnl": -2.9027,
-    "totalPnlPct": -2.18,
+    "totalPnl": -2.9096,
+    "totalPnlPct": -2.19,
     "daysActive": 3,
     "totalTrades": 21,
     "wins": 0,
@@ -17,7 +17,7 @@
     "worstTrade": null,
     "currentStreak": 0,
     "avgHoldingHours": 0,
-    "openPositions": 11,
+    "openPositions": 9,
     "maxPositions": 10,
     "targetBalance": 500.08,
     "progressToTarget": 13.9
@@ -100,32 +100,6 @@
       "openedAt": "2026-02-18T14:39:31.587870+00:00",
       "unrealizedPnl": -0.2318,
       "url": "https://polymarket.com/market/foreign-intervention-in-gaza-by-march-31"
-    },
-    {
-      "market": "Will the U.S. collect between $200b and $500b in revenue in 2025?",
-      "side": "BUY",
-      "outcome": "No",
-      "entryPrice": 0.9698,
-      "currentPrice": 0.958,
-      "cost": 0.0,
-      "size": 0.0,
-      "edge": 0,
-      "openedAt": "2026-02-18T18:25:01.231072+00:00",
-      "unrealizedPnl": -0.0,
-      "url": "https://polymarket.com/market/will-the-us-collect-between-200b-and-500b-in-revenue-in-2025"
-    },
-    {
-      "market": "NVIDIA largest company by market cap March 31 \u2014 YES",
-      "side": "BUY",
-      "outcome": "Yes",
-      "entryPrice": 0.9126,
-      "currentPrice": 0.88,
-      "cost": 0.0,
-      "size": 0.0,
-      "edge": 0,
-      "openedAt": "2026-02-19T00:39:09.064488+00:00",
-      "unrealizedPnl": -0.0,
-      "url": "https://polymarket.com/market/will-nvidia-be-the-largest-company-in-the-world-by-market-cap-on-march-31-323"
     },
     {
       "market": "Ukraine peace deal by March 31 NO",
