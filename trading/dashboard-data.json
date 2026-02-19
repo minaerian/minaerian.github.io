@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-19T16:06:51.620421+00:00",
+  "lastUpdated": "2026-02-19T16:08:52.228851+00:00",
   "metrics": {
     "balance": 82.560019,
     "initialBalance": 133.0,
-    "totalPnl": 30.5994,
-    "totalPnlPct": 23.01,
+    "totalPnl": -2.7512,
+    "totalPnlPct": -2.07,
     "daysActive": 3,
     "totalTrades": 17,
     "wins": 0,
@@ -28,12 +28,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.55,
-      "currentPrice": 0.41,
+      "currentPrice": 0.4,
       "cost": 3.3,
       "size": 6.0,
       "edge": 0,
       "openedAt": "2026-02-18T07:01:05.409452+00:00",
-      "unrealizedPnl": -0.84,
+      "unrealizedPnl": -0.9,
       "url": "https://polymarket.com/market/israel-x-iran-ceasefire-broken-by-march-31-2026-312-682"
     },
     {
@@ -42,11 +42,11 @@
       "outcome": "Yes",
       "entryPrice": 0.9354,
       "currentPrice": 0.926,
-      "cost": 9.41,
-      "size": 10.06,
+      "cost": 0.0,
+      "size": 0.0,
       "edge": 0,
       "openedAt": "2026-02-18T09:32:53.610774+00:00",
-      "unrealizedPnl": -0.0946,
+      "unrealizedPnl": -0.0,
       "url": "https://polymarket.com/market/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     },
     {
@@ -68,11 +68,11 @@
       "outcome": "No",
       "entryPrice": 0.9056,
       "currentPrice": 0.884,
-      "cost": 18.33,
-      "size": 20.24,
+      "cost": 12.15,
+      "size": 13.42,
       "edge": 0,
       "openedAt": "2026-02-18T14:39:25.388665+00:00",
-      "unrealizedPnl": -0.4372,
+      "unrealizedPnl": -0.2899,
       "url": "https://polymarket.com/market/will-wesley-hunt-come-in-2nd-in-the-2026-texas-republican-primary"
     },
     {
@@ -106,12 +106,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.9698,
-      "currentPrice": 0.957,
-      "cost": 6.11,
-      "size": 6.3,
+      "currentPrice": 0.958,
+      "cost": 0.0,
+      "size": 0.0,
       "edge": 0,
       "openedAt": "2026-02-18T18:25:01.231072+00:00",
-      "unrealizedPnl": -0.0806,
+      "unrealizedPnl": -0.0,
       "url": "https://polymarket.com/market/will-the-us-collect-between-200b-and-500b-in-revenue-in-2025"
     },
     {
@@ -120,11 +120,11 @@
       "outcome": "Yes",
       "entryPrice": 0.9126,
       "currentPrice": 0.89,
-      "cost": 12.22,
-      "size": 13.39,
+      "cost": 0.0,
+      "size": 0.0,
       "edge": 0,
       "openedAt": "2026-02-19T00:39:09.064488+00:00",
-      "unrealizedPnl": -0.3026,
+      "unrealizedPnl": -0.0,
       "url": "https://polymarket.com/market/will-nvidia-be-the-largest-company-in-the-world-by-market-cap-on-march-31-323"
     },
     {
