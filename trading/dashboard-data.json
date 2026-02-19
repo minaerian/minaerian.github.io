@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-19T06:41:46.757925+00:00",
+  "lastUpdated": "2026-02-19T06:42:27.683506+00:00",
   "metrics": {
     "balance": 49.414579,
     "initialBalance": 133.0,
@@ -33,7 +33,7 @@
       "edge": 0,
       "openedAt": "2026-02-18T07:01:05.409452+00:00",
       "unrealizedPnl": -0.48,
-      "url": ""
+      "url": "https://polymarket.com/event/israel-x-iran-ceasefire-broken-by-march-31-2026-312-682"
     },
     {
       "market": "Will the U.S. collect less than $100b in revenue in 2025?",
@@ -45,7 +45,7 @@
       "edge": 0,
       "openedAt": "2026-02-18T09:32:53.610774+00:00",
       "unrealizedPnl": 0.0966,
-      "url": ""
+      "url": "https://polymarket.com/event/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     },
     {
       "market": "Will Wesley Hunt win the 2026 Texas Republican Primary?",
@@ -57,7 +57,7 @@
       "edge": 0,
       "openedAt": "2026-02-18T09:32:56.236134+00:00",
       "unrealizedPnl": -0.0202,
-      "url": ""
+      "url": "https://polymarket.com/event/will-wesley-hunt-win-the-2026-republican-primary"
     },
     {
       "market": "Will Wesley Hunt come in 2nd in the 2026 Texas Republican Primary?",
@@ -69,7 +69,7 @@
       "edge": 0,
       "openedAt": "2026-02-18T14:39:25.388665+00:00",
       "unrealizedPnl": -0.4372,
-      "url": ""
+      "url": "https://polymarket.com/event/will-wesley-hunt-come-in-2nd-in-the-2026-texas-republican-primary"
     },
     {
       "market": "Will there be no change in Fed interest rates after the March 2026 meeting?",
@@ -81,7 +81,7 @@
       "edge": 0,
       "openedAt": "2026-02-18T14:39:28.565063+00:00",
       "unrealizedPnl": -0.1025,
-      "url": ""
+      "url": "https://polymarket.com/event/will-there-be-no-change-in-fed-interest-rates-after-the-march-2026-meeting"
     },
     {
       "market": "Foreign intervention in Gaza by March 31?",
@@ -93,7 +93,7 @@
       "edge": 0,
       "openedAt": "2026-02-18T14:39:31.587870+00:00",
       "unrealizedPnl": -0.2318,
-      "url": ""
+      "url": "https://polymarket.com/event/foreign-intervention-in-gaza-by-march-31"
     },
     {
       "market": "Will the U.S. collect between $200b and $500b in revenue in 2025?",
@@ -105,7 +105,7 @@
       "edge": 0,
       "openedAt": "2026-02-18T18:25:01.231072+00:00",
       "unrealizedPnl": -0.0113,
-      "url": ""
+      "url": "https://polymarket.com/event/will-the-us-collect-between-200b-and-500b-in-revenue-in-2025"
     },
     {
       "market": "NVIDIA largest company by market cap March 31 \u2014 YES",
@@ -117,7 +117,7 @@
       "edge": 0,
       "openedAt": "2026-02-19T00:39:09.064488+00:00",
       "unrealizedPnl": -0.1687,
-      "url": ""
+      "url": "https://polymarket.com/event/will-nvidia-be-the-largest-company-in-the-world-by-market-cap-on-march-31-323"
     },
     {
       "market": "Ukraine peace deal by March 31 NO",
@@ -129,7 +129,7 @@
       "edge": 0,
       "openedAt": "2026-02-19T01:09:30.448919+00:00",
       "unrealizedPnl": -0.0941,
-      "url": ""
+      "url": "https://polymarket.com/event/ukraine-signs-peace-deal-with-russia-by-march-31"
     },
     {
       "market": "Robinhood MIAXdx launch by March 31 \u2014 NO",
@@ -141,7 +141,7 @@
       "edge": 0,
       "openedAt": "2026-02-19T02:39:47.016803+00:00",
       "unrealizedPnl": -0.1463,
-      "url": ""
+      "url": "https://polymarket.com/event/robinhood-launches-prediction-market-through-miaxdx-by-march-31"
     },
     {
       "market": "Polymarket mindshare hit 90% \u2014 NO",
@@ -153,7 +153,7 @@
       "edge": 0,
       "openedAt": "2026-02-19T02:39:56.542486+00:00",
       "unrealizedPnl": -0.0822,
-      "url": ""
+      "url": "https://polymarket.com/event/will-polymarket-mindshare-hit-90"
     }
   ],
   "tradeHistory": [
@@ -761,6 +761,10 @@
     },
     {
       "timestamp": "2026-02-19T06:36:49.091013+00:00",
+      "balance": 138.7446
+    },
+    {
+      "timestamp": "2026-02-19T06:42:25.728492+00:00",
       "balance": 138.7446
     }
   ],
