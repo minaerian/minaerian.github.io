@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-19T03:07:27.657283+00:00",
+  "lastUpdated": "2026-02-19T03:09:49.553416+00:00",
   "metrics": {
-    "balance": 67.597409,
+    "balance": 49.414579,
     "initialBalance": 133.0,
-    "totalPnl": -0.1426,
-    "totalPnlPct": -0.11,
+    "totalPnl": 0.0046,
+    "totalPnlPct": 0.0,
     "daysActive": 2,
-    "totalTrades": 13,
+    "totalTrades": 16,
     "wins": 0,
     "losses": 0,
     "winRate": 0.0,
@@ -17,10 +17,10 @@
     "worstTrade": null,
     "currentStreak": 0,
     "avgHoldingHours": 0,
-    "openPositions": 12,
+    "openPositions": 15,
     "maxPositions": 7,
     "targetBalance": 500.0,
-    "progressToTarget": 13.5
+    "progressToTarget": 9.9
   },
   "positions": [
     {
@@ -37,7 +37,7 @@
       "market": "Will the U.S. collect less than $100b in revenue in 2025?",
       "side": "BUY",
       "entryPrice": 0,
-      "currentPrice": 0.921,
+      "currentPrice": 0.92,
       "amount": 0,
       "edge": 0,
       "openedAt": "",
@@ -77,7 +77,7 @@
       "market": "Will the U.S. collect between $200b and $500b in revenue in 2025?",
       "side": "BUY",
       "entryPrice": 0,
-      "currentPrice": 0.951,
+      "currentPrice": 0.95,
       "amount": 0,
       "edge": 0,
       "openedAt": "",
@@ -142,6 +142,36 @@
       "edge": "Current mindshare ~47%, Kalshi at 34%, Robinhood entering. 90% is impossible by March 31",
       "openedAt": "2026-02-19T02:39:56.543416+00:00",
       "unrealizedPnl": -0.0955
+    },
+    {
+      "market": "Wesley Hunt 2nd in TX Primary NO (adding to position)",
+      "side": "BUY",
+      "entryPrice": 0.91,
+      "currentPrice": 0.894,
+      "amount": 6.11,
+      "edge": "Hunt polling 17% (3rd place). Cornyn 31%, Paxton 38%. >95% confident NO.",
+      "openedAt": "2026-02-19T03:09:35.591833+00:00",
+      "unrealizedPnl": -0.1074
+    },
+    {
+      "market": "Polymarket mindshare 90% NO (filling empty slot)",
+      "side": "BUY",
+      "entryPrice": 0.86,
+      "currentPrice": 0.85,
+      "amount": 6.11,
+      "edge": "Polymarket at ~47% volume share. Kalshi 60% US regulated. Robinhood/Fanatics entering. 90% impossible. >95% confident NO.",
+      "openedAt": "2026-02-19T03:09:37.650889+00:00",
+      "unrealizedPnl": -0.071
+    },
+    {
+      "market": "NVIDIA largest company by market cap March 31 YES (filling empty slot)",
+      "side": "BUY",
+      "entryPrice": 0.91,
+      "currentPrice": 0.89,
+      "amount": 6.11,
+      "edge": "NVIDIA at $4.5T, Apple at $3.7T. $900B+ lead. Blowout earnings expected Feb 25. >90% confident YES.",
+      "openedAt": "2026-02-19T03:09:39.956345+00:00",
+      "unrealizedPnl": -0.1343
     }
   ],
   "tradeHistory": [
@@ -298,6 +328,42 @@
       "amount": 6.11,
       "pnl": 0,
       "edge": "Current mindshare ~47%, Kalshi at 34%, Robinhood entering. 90% is impossible by March 31",
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-19T03:09:35.585925+00:00",
+      "market": "Wesley Hunt 2nd in TX Primary NO (adding to position)",
+      "side": "BUY",
+      "entryPrice": 0.91,
+      "exitPrice": 0,
+      "amount": 6.11,
+      "pnl": 0,
+      "edge": "Hunt polling 17% (3rd place). Cornyn 31%, Paxton 38%. >95% confident NO.",
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-19T03:09:37.650020+00:00",
+      "market": "Polymarket mindshare 90% NO (filling empty slot)",
+      "side": "BUY",
+      "entryPrice": 0.86,
+      "exitPrice": 0,
+      "amount": 6.11,
+      "pnl": 0,
+      "edge": "Polymarket at ~47% volume share. Kalshi 60% US regulated. Robinhood/Fanatics entering. 90% impossible. >95% confident NO.",
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-19T03:09:39.955514+00:00",
+      "market": "NVIDIA largest company by market cap March 31 YES (filling empty slot)",
+      "side": "BUY",
+      "entryPrice": 0.91,
+      "exitPrice": 0,
+      "amount": 6.11,
+      "pnl": 0,
+      "edge": "NVIDIA at $4.5T, Apple at $3.7T. $900B+ lead. Blowout earnings expected Feb 25. >90% confident YES.",
       "status": "executed",
       "outcome": "-"
     }
