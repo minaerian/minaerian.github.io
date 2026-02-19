@@ -1080,8 +1080,9 @@
                         <th>Shares</th>
                         <th>Entry</th>
                         <th>Current</th>
-                        <th>Unrealized P&L</th>
                         <th>Cost</th>
+                        <th>Value</th>
+                        <th>P&L</th>
                         <th>Time Held</th>
                     </tr>
                 </thead>
@@ -1709,7 +1710,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const tbody = document.getElementById('positions-body');
 
         if (positions.length === 0) {
-            tbody.innerHTML = '<tr><td colspan="8"><div class="empty-state"><div class="empty-icon">📭</div>No open positions</div></td></tr>';
+            tbody.innerHTML = '<tr><td colspan="9"><div class="empty-state"><div class="empty-icon">📭</div>No open positions</div></td></tr>';
             return;
         }
 
@@ -1724,17 +1725,47 @@ document.addEventListener('DOMContentLoaded', function() {
                 : esc(p.market);
             const costStr = p.cost ? `$${p.cost.toFixed(2)}` : '—';
             const shares = p.size || p.shares || 0;
+            const currentValue = shares * (p.currentPrice || 0);
+            const positionPnl = currentValue - (p.cost || 0);
+            const posPnlClass = positionPnl >= 0 ? 'pnl-positive' : 'pnl-negative';
+            const posPnlSign = positionPnl >= 0 ? '+' : '';
             return `<tr>
                 <td class="market-name">${marketHtml}</td>
                 <td><span class="${sideClass}">${esc(p.side.toUpperCase())}</span></td>
                 <td>${shares > 0 ? shares.toFixed(1) : '—'}</td>
                 <td>${p.entryPrice.toFixed(2)}¢</td>
                 <td>${p.currentPrice.toFixed(2)}¢</td>
-                <td class="${pnlClass}">${pnlSign}$${unrealizedPnl.toFixed(4)}</td>
                 <td>${costStr}</td>
+                <td>$${currentValue.toFixed(2)}</td>
+                <td class="${posPnlClass}">${posPnlSign}$${positionPnl.toFixed(2)}</td>
                 <td>${held}</td>
             </tr>`;
         }).join('');
+
+        // Add totals row
+        if (positions.length > 0) {
+            let totalCost = 0, totalValue = 0, totalShares = 0;
+            positions.forEach(p => {
+                const shares = p.size || p.shares || 0;
+                totalShares += shares;
+                totalCost += (p.cost || 0);
+                totalValue += shares * (p.currentPrice || 0);
+            });
+            const totalPnl = totalValue - totalCost;
+            const tPnlClass = totalPnl >= 0 ? 'pnl-positive' : 'pnl-negative';
+            const tPnlSign = totalPnl >= 0 ? '+' : '';
+            tbody.innerHTML += `<tr style="border-top:2px solid #333;font-weight:bold">
+                <td>If closed now →</td>
+                <td></td>
+                <td>${totalShares.toFixed(1)}</td>
+                <td></td>
+                <td></td>
+                <td>$${totalCost.toFixed(2)}</td>
+                <td>$${totalValue.toFixed(2)}</td>
+                <td class="${tPnlClass}">${tPnlSign}$${totalPnl.toFixed(2)}</td>
+                <td></td>
+            </tr>`;
+        }
     }
 
     // --- Market Making ---
