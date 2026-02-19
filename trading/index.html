@@ -1077,10 +1077,11 @@
                     <tr>
                         <th>Market</th>
                         <th>Side</th>
+                        <th>Shares</th>
                         <th>Entry</th>
                         <th>Current</th>
                         <th>Unrealized P&L</th>
-                        <th>Edge Est.</th>
+                        <th>Cost</th>
                         <th>Time Held</th>
                     </tr>
                 </thead>
@@ -1708,7 +1709,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const tbody = document.getElementById('positions-body');
 
         if (positions.length === 0) {
-            tbody.innerHTML = '<tr><td colspan="7"><div class="empty-state"><div class="empty-icon">📭</div>No open positions</div></td></tr>';
+            tbody.innerHTML = '<tr><td colspan="8"><div class="empty-state"><div class="empty-icon">📭</div>No open positions</div></td></tr>';
             return;
         }
 
@@ -1722,9 +1723,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 ? `<a href="${esc(p.url)}" target="_blank" rel="noopener" style="color:#32d74b;text-decoration:none">${esc(p.market)}</a>`
                 : esc(p.market);
             const costStr = p.cost ? `$${p.cost.toFixed(2)}` : '—';
+            const shares = p.size || p.shares || 0;
             return `<tr>
                 <td class="market-name">${marketHtml}</td>
                 <td><span class="${sideClass}">${esc(p.side.toUpperCase())}</span></td>
+                <td>${shares > 0 ? shares.toFixed(1) : '—'}</td>
                 <td>${p.entryPrice.toFixed(2)}¢</td>
                 <td>${p.currentPrice.toFixed(2)}¢</td>
                 <td class="${pnlClass}">${pnlSign}$${unrealizedPnl.toFixed(4)}</td>
