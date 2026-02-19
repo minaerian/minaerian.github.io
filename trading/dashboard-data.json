@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-19T07:11:46.301506+00:00",
+  "lastUpdated": "2026-02-19T07:15:06.603286+00:00",
   "metrics": {
     "balance": 49.414579,
     "initialBalance": 133.0,
@@ -99,12 +99,12 @@
       "market": "Will the U.S. collect between $200b and $500b in revenue in 2025?",
       "side": "BUY",
       "entryPrice": 0.9698,
-      "currentPrice": 0.959,
+      "currentPrice": 0.96,
       "cost": 6.11,
       "size": 6.3,
       "edge": 0,
       "openedAt": "2026-02-18T18:25:01.231072+00:00",
-      "unrealizedPnl": -0.068,
+      "unrealizedPnl": -0.0617,
       "url": "https://polymarket.com/market/will-the-us-collect-between-200b-and-500b-in-revenue-in-2025"
     },
     {
@@ -782,6 +782,10 @@
     {
       "timestamp": "2026-02-19T07:06:51.833474+00:00",
       "balance": 137.0305
+    },
+    {
+      "timestamp": "2026-02-19T07:15:04.555855+00:00",
+      "balance": 138.7446
     }
   ],
   "alertLog": [
