@@ -1,26 +1,26 @@
 {
-  "lastUpdated": "2026-02-19T18:01:48.486655+00:00",
+  "lastUpdated": "2026-02-19T18:14:43.389274+00:00",
   "metrics": {
-    "balance": 69.569319,
+    "balance": 56.327019,
     "initialBalance": 133.0,
-    "totalPnl": -2.778,
-    "totalPnlPct": -2.09,
+    "totalPnl": 2.2966,
+    "totalPnlPct": 1.73,
     "daysActive": 3,
-    "totalTrades": 21,
+    "totalTrades": 25,
     "wins": 0,
     "losses": 0,
     "winRate": 0.0,
-    "avgEstimatedEdge": 86.03,
+    "avgEstimatedEdge": 73.33,
     "avgActualReturn": 0.0,
-    "edgeCalibration": -86.03,
+    "edgeCalibration": -73.33,
     "bestTrade": null,
     "worstTrade": null,
     "currentStreak": 0,
     "avgHoldingHours": 0,
-    "openPositions": 9,
+    "openPositions": 13,
     "maxPositions": 10,
     "targetBalance": 500.08,
-    "progressToTarget": 13.9
+    "progressToTarget": 11.3
   },
   "positions": [
     {
@@ -28,12 +28,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.55,
-      "currentPrice": 0.43,
+      "currentPrice": 0.44,
       "cost": 3.3,
       "size": 6.0,
       "edge": 0,
       "openedAt": "2026-02-18T07:01:05.409452+00:00",
-      "unrealizedPnl": -0.72,
+      "unrealizedPnl": -0.66,
       "url": "https://polymarket.com/market/israel-x-iran-ceasefire-broken-by-march-31-2026-312-682"
     },
     {
@@ -41,12 +41,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.9354,
-      "currentPrice": 0.927,
+      "currentPrice": 0.928,
       "cost": 6.5,
       "size": 6.91,
       "edge": 0,
       "openedAt": "2026-02-18T09:32:53.610774+00:00",
-      "unrealizedPnl": -0.0581,
+      "unrealizedPnl": -0.0512,
       "url": "https://polymarket.com/market/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     },
     {
@@ -54,12 +54,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.9649,
-      "currentPrice": 0.953,
+      "currentPrice": 0.952,
       "cost": 3.3,
       "size": 3.42,
       "edge": 0,
       "openedAt": "2026-02-18T09:32:56.236134+00:00",
-      "unrealizedPnl": -0.0407,
+      "unrealizedPnl": -0.0441,
       "url": "https://polymarket.com/market/will-wesley-hunt-win-the-2026-republican-primary"
     },
     {
@@ -67,12 +67,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.9056,
-      "currentPrice": 0.885,
+      "currentPrice": 0.886,
       "cost": 12.15,
       "size": 13.42,
       "edge": 0,
       "openedAt": "2026-02-18T14:39:25.388665+00:00",
-      "unrealizedPnl": -0.2765,
+      "unrealizedPnl": -0.263,
       "url": "https://polymarket.com/market/will-wesley-hunt-come-in-2nd-in-the-2026-texas-republican-primary"
     },
     {
@@ -138,6 +138,58 @@
       "edge": 0.1,
       "openedAt": "2026-02-19T16:27:18.604977+00:00",
       "unrealizedPnl": -0.1512,
+      "url": ""
+    },
+    {
+      "market": "London Feb 20 \u2014 13\u00b0C or higher YES",
+      "side": "BUY",
+      "outcome": "YES",
+      "entryPrice": 0.1,
+      "currentPrice": 0.08,
+      "cost": 10.0,
+      "size": 100.0,
+      "edge": 0,
+      "openedAt": "",
+      "unrealizedPnl": -2.0,
+      "url": ""
+    },
+    {
+      "market": "Seoul Feb 21 \u2014 14\u00b0C or higher YES",
+      "side": "BUY",
+      "outcome": "YES",
+      "entryPrice": 0.11,
+      "currentPrice": 0.11,
+      "cost": 3.85,
+      "size": 35.0,
+      "edge": 0,
+      "openedAt": "",
+      "unrealizedPnl": 0.0,
+      "url": ""
+    },
+    {
+      "market": "Seoul Feb 20 \u2014 11\u00b0C or higher YES",
+      "side": "BUY",
+      "outcome": "YES",
+      "entryPrice": 0.17,
+      "currentPrice": 0.18,
+      "cost": 3.06,
+      "size": 18.0,
+      "edge": 0,
+      "openedAt": "",
+      "unrealizedPnl": 0.18,
+      "url": ""
+    },
+    {
+      "market": "Miami Feb 20 \u2014 79\u00b0F or below YES",
+      "side": "BUY",
+      "outcome": "YES",
+      "entryPrice": 0.09,
+      "currentPrice": 0.09,
+      "cost": 3.15,
+      "size": 35.0,
+      "edge": 0,
+      "openedAt": "",
+      "unrealizedPnl": 0.0,
       "url": ""
     }
   ],
@@ -403,6 +455,54 @@
       "amount": 6.2118,
       "pnl": 0,
       "edge": 0,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-19T18:14:33.350554+00:00",
+      "market": "London Feb 20 \u2014 13\u00b0C or higher YES",
+      "side": "BUY",
+      "entryPrice": 0.1,
+      "exitPrice": 0,
+      "amount": 10.0,
+      "pnl": 0,
+      "edge": 0.3,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-19T18:14:33.350554+00:00",
+      "market": "Seoul Feb 21 \u2014 14\u00b0C or higher YES",
+      "side": "BUY",
+      "entryPrice": 0.11,
+      "exitPrice": 0,
+      "amount": 3.85,
+      "pnl": 0,
+      "edge": 0.33,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-19T18:14:33.350554+00:00",
+      "market": "Seoul Feb 20 \u2014 11\u00b0C or higher YES",
+      "side": "BUY",
+      "entryPrice": 0.17,
+      "exitPrice": 0,
+      "amount": 3.06,
+      "pnl": 0,
+      "edge": 0.51,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-19T18:14:33.350554+00:00",
+      "market": "Miami Feb 20 \u2014 79\u00b0F or below YES",
+      "side": "BUY",
+      "entryPrice": 0.09,
+      "exitPrice": 0,
+      "amount": 3.15,
+      "pnl": 0,
+      "edge": 0.27,
       "status": "executed",
       "outcome": "-"
     }
@@ -1131,6 +1231,10 @@
     {
       "timestamp": "2026-02-19T18:01:46.657800+00:00",
       "balance": 130.222
+    },
+    {
+      "timestamp": "2026-02-19T18:14:40.827298+00:00",
+      "balance": 135.2966
     }
   ],
   "alertLog": [
@@ -1537,7 +1641,7 @@
   ],
   "config": {
     "maxTradeFraction": 0.05,
-    "maxTradeSize": 3.48,
+    "maxTradeSize": 2.82,
     "minEdge": 0.05,
     "maxPositions": 10,
     "circuitBreakerFraction": 0.5,
