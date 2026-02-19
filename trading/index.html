@@ -1196,7 +1196,7 @@
                         <th data-sort="entry">Entry <span class="sort-icon">↕</span></th>
                         <th data-sort="exit">Exit <span class="sort-icon">↕</span></th>
                         <th data-sort="pnl">P&L <span class="sort-icon">↕</span></th>
-                        <th data-sort="edge">Edge <span class="sort-icon">↕</span></th>
+                        <th data-sort="cost">Cost <span class="sort-icon">↕</span></th>
                         <th data-sort="outcome">Outcome <span class="sort-icon">↕</span></th>
                         <th>Running</th>
                     </tr>
@@ -1713,18 +1713,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         tbody.innerHTML = positions.map(p => {
-            const unrealizedPnl = p.unrealizedPnl || ((p.currentPrice - p.entryPrice) * (p.shares || 1));
+            const unrealizedPnl = p.unrealizedPnl || ((p.currentPrice - p.entryPrice) * (p.shares || p.size || 1));
             const pnlClass = unrealizedPnl >= 0 ? 'pnl-positive' : 'pnl-negative';
             const pnlSign = unrealizedPnl >= 0 ? '+' : '';
             const sideClass = p.side.toUpperCase() === 'YES' ? 'side-yes' : 'side-no';
-            const held = p.entryTime ? formatTimeSince(p.entryTime) : '—';
+            const held = p.openedAt ? formatTimeSince(p.openedAt) : (p.entryTime ? formatTimeSince(p.entryTime) : '—');
+            const marketHtml = p.url
+                ? `<a href="${esc(p.url)}" target="_blank" rel="noopener" style="color:#32d74b;text-decoration:none">${esc(p.market)}</a>`
+                : esc(p.market);
+            const costStr = p.cost ? `$${p.cost.toFixed(2)}` : '—';
             return `<tr>
-                <td class="market-name">${esc(p.market)}</td>
+                <td class="market-name">${marketHtml}</td>
                 <td><span class="${sideClass}">${esc(p.side.toUpperCase())}</span></td>
                 <td>${p.entryPrice.toFixed(2)}¢</td>
                 <td>${p.currentPrice.toFixed(2)}¢</td>
                 <td class="${pnlClass}">${pnlSign}$${unrealizedPnl.toFixed(4)}</td>
-                <td>${p.edgeEstimate ? (p.edgeEstimate * 100).toFixed(1) + '%' : '—'}</td>
+                <td>${costStr}</td>
                 <td>${held}</td>
             </tr>`;
         }).join('');
@@ -1851,7 +1855,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 case 'entry': va = a.entryPrice; vb = b.entryPrice; break;
                 case 'exit': va = a.exitPrice; vb = b.exitPrice; break;
                 case 'pnl': va = a.pnl; vb = b.pnl; break;
-                case 'edge': va = a.edge || 0; vb = b.edge || 0; break;
+                case 'cost': va = a.cost || 0; vb = b.cost || 0; break;
                 case 'outcome': va = a.outcome; vb = b.outcome; break;
                 default: va = 0; vb = 0;
             }
