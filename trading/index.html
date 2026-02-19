@@ -1445,7 +1445,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('s-wl').textContent = wins + 'W / ' + losses + 'L';
 
         // Positions
-        const positions = d.positions || [];
+        const positions = (d.positions || []).filter(p => (p.size || p.shares || 0) > 0);
         document.getElementById('s-positions').textContent = m.openPositions !== undefined ? m.openPositions : positions.length;
 
         // Days active
@@ -1705,7 +1705,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- Positions ---
     function renderPositions() {
-        const positions = dashData.positions || [];
+        const positions = (dashData.positions || []).filter(p => (p.size || p.shares || 0) > 0);
         document.getElementById('positions-count').textContent = positions.length;
         const tbody = document.getElementById('positions-body');
 
