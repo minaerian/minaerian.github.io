@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-19T16:36:51.591749+00:00",
+  "lastUpdated": "2026-02-19T16:39:36.282933+00:00",
   "metrics": {
-    "balance": 63.286119,
+    "balance": 69.569319,
     "initialBalance": 133.0,
     "totalPnl": -2.9001,
     "totalPnlPct": -2.18,
     "daysActive": 3,
-    "totalTrades": 20,
+    "totalTrades": 21,
     "wins": 0,
     "losses": 0,
     "winRate": 0.0,
@@ -20,7 +20,7 @@
     "openPositions": 11,
     "maxPositions": 10,
     "targetBalance": 500.08,
-    "progressToTarget": 12.7
+    "progressToTarget": 13.9
   },
   "positions": [
     {
@@ -120,11 +120,11 @@
       "outcome": "Yes",
       "entryPrice": 0.9126,
       "currentPrice": 0.88,
-      "cost": 6.5,
-      "size": 7.14,
+      "cost": 0.0,
+      "size": 0.0,
       "edge": 0,
       "openedAt": "2026-02-19T00:39:09.064488+00:00",
-      "unrealizedPnl": -0.2329,
+      "unrealizedPnl": -0.0001,
       "url": "https://polymarket.com/market/will-nvidia-be-the-largest-company-in-the-world-by-market-cap-on-march-31-323"
     },
     {
@@ -417,6 +417,18 @@
       "amount": 6.5,
       "pnl": 0,
       "edge": 0.1,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-19T16:39:24.864462+00:00",
+      "market": "NVIDIA YES \u2014 closing re-buy, no edge per research",
+      "side": "SELL",
+      "entryPrice": 0.87,
+      "exitPrice": 0,
+      "amount": 6.2118,
+      "pnl": 0,
+      "edge": 0,
       "status": "executed",
       "outcome": "-"
     }
@@ -1535,7 +1547,7 @@
   ],
   "config": {
     "maxTradeFraction": 0.05,
-    "maxTradeSize": 3.16,
+    "maxTradeSize": 3.48,
     "minEdge": 0.05,
     "maxPositions": 10,
     "circuitBreakerFraction": 0.5,
