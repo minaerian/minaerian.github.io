@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2026-02-19T16:39:36.282933+00:00",
+  "lastUpdated": "2026-02-19T16:39:53.211351+00:00",
   "metrics": {
     "balance": 69.569319,
     "initialBalance": 133.0,
-    "totalPnl": -2.9001,
+    "totalPnl": -2.9027,
     "totalPnlPct": -2.18,
     "daysActive": 3,
     "totalTrades": 21,
@@ -41,12 +41,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.9354,
-      "currentPrice": 0.928,
+      "currentPrice": 0.927,
       "cost": 6.5,
       "size": 6.91,
       "edge": 0,
       "openedAt": "2026-02-18T09:32:53.610774+00:00",
-      "unrealizedPnl": -0.0512,
+      "unrealizedPnl": -0.0581,
       "url": "https://polymarket.com/market/will-the-us-collect-less-than-100b-in-revenue-in-2025"
     },
     {
@@ -124,7 +124,7 @@
       "size": 0.0,
       "edge": 0,
       "openedAt": "2026-02-19T00:39:09.064488+00:00",
-      "unrealizedPnl": -0.0001,
+      "unrealizedPnl": -0.0,
       "url": "https://polymarket.com/market/will-nvidia-be-the-largest-company-in-the-world-by-market-cap-on-march-31-323"
     },
     {
