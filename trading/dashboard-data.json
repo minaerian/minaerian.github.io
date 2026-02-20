@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-20T21:35:45.174958+00:00",
+  "lastUpdated": "2026-02-20T21:37:48.514175+00:00",
   "metrics": {
     "balance": 58.852961,
     "initialBalance": 133.0,
-    "totalPnl": 11.8456,
-    "totalPnlPct": 8.91,
+    "totalPnl": 10.3402,
+    "totalPnlPct": 7.77,
     "daysActive": 4,
     "totalTrades": 47,
     "wins": 0,
@@ -21,7 +21,7 @@
     "openPositions": 12,
     "maxPositions": 15,
     "targetBalance": 500.08,
-    "progressToTarget": 29.0
+    "progressToTarget": 28.7
   },
   "positions": [
     {
@@ -159,12 +159,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.055,
-      "currentPrice": 0.08,
+      "currentPrice": 0.07,
       "cost": 8.28,
       "size": 150.55,
       "edge": 0.2454,
       "openedAt": "2026-02-20T20:32:28.376181+00:00",
-      "unrealizedPnl": 3.7636,
+      "unrealizedPnl": 2.2582,
       "url": ""
     },
     {
@@ -1811,6 +1811,10 @@
     {
       "timestamp": "2026-02-20T21:31:51.240414+00:00",
       "balance": 145.1872
+    },
+    {
+      "timestamp": "2026-02-20T21:37:45.839428+00:00",
+      "balance": 143.3402
     }
   ],
   "alertLog": [
