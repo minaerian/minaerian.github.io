@@ -1,27 +1,27 @@
 {
-  "lastUpdated": "2026-02-20T22:08:47.723909+00:00",
+  "lastUpdated": "2026-02-20T22:31:51.889127+00:00",
   "metrics": {
-    "balance": 54.372961,
+    "balance": 46.364161,
     "initialBalance": 133.0,
-    "totalPnl": 9.1482,
-    "totalPnlPct": 6.88,
+    "totalPnl": 18.7048,
+    "totalPnlPct": 14.06,
     "daysActive": 4,
-    "totalTrades": 47,
+    "totalTrades": 49,
     "wins": 0,
     "losses": 0,
     "winRate": 0.0,
-    "avgEstimatedEdge": 21.27,
+    "avgEstimatedEdge": 23.17,
     "avgActualReturn": 0.0,
-    "edgeCalibration": -21.27,
+    "edgeCalibration": -23.17,
     "bestTrade": null,
     "worstTrade": null,
     "currentStreak": 0,
-    "avgTradeSize": 6.08,
+    "avgTradeSize": 6.15,
     "avgHoldingHours": 0,
     "openPositions": 12,
     "maxPositions": 15,
     "targetBalance": 500.08,
-    "progressToTarget": 28.4
+    "progressToTarget": 30.3
   },
   "positions": [
     {
@@ -29,12 +29,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.55,
-      "currentPrice": 0.44,
+      "currentPrice": 0.43,
       "cost": 3.3,
       "size": 6.0,
       "edge": 0,
       "openedAt": "2026-02-18T07:01:05.409452+00:00",
-      "unrealizedPnl": -0.66,
+      "unrealizedPnl": -0.72,
       "url": "https://polymarket.com/market/israel-x-iran-ceasefire-broken-by-march-31-2026-312-682"
     },
     {
@@ -95,11 +95,11 @@
       "outcome": "Yes",
       "entryPrice": 0.065,
       "currentPrice": 0.025,
-      "cost": 14.01,
-      "size": 341.58,
+      "cost": 21.64,
+      "size": 723.08,
       "edge": 0.379,
       "openedAt": "2026-02-20T03:02:09.637270+00:00",
-      "unrealizedPnl": -13.6633,
+      "unrealizedPnl": -28.9233,
       "url": "https://polymarket.com/event/highest-temperature-in-buenos-aires-on-february-21-2026/highest-temperature-in-buenos-aires-on-february-21-2026-27corbelow"
     },
     {
@@ -133,12 +133,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.435,
-      "currentPrice": 0.47,
-      "cost": 15.39,
-      "size": 31.72,
+      "currentPrice": 0.46,
+      "cost": 23.4,
+      "size": 48.77,
       "edge": 0.382,
       "openedAt": "2026-02-20T09:32:58.089088+00:00",
-      "unrealizedPnl": 1.1103,
+      "unrealizedPnl": 1.2191,
       "url": "https://polymarket.com/event/highest-temperature-in-seoul-on-february-21-2026/highest-temperature-in-seoul-on-february-21-2026-14corhigher"
     },
     {
@@ -146,12 +146,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.035,
-      "currentPrice": 0.039,
+      "currentPrice": 0.04,
       "cost": 7.51,
       "size": 214.57,
       "edge": 0.3094,
       "openedAt": "2026-02-20T20:32:02.097104+00:00",
-      "unrealizedPnl": 0.8583,
+      "unrealizedPnl": 1.0729,
       "url": "https://polymarket.com/event/highest-temperature-in-ankara-on-february-21-2026/highest-temperature-in-ankara-on-february-21-2026-15corhigher"
     },
     {
@@ -172,12 +172,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.063,
-      "currentPrice": 0.06,
+      "currentPrice": 0.059,
       "cost": 8.61,
       "size": 136.67,
       "edge": 0.4248,
       "openedAt": "2026-02-20T20:32:41.658717+00:00",
-      "unrealizedPnl": -0.41,
+      "unrealizedPnl": -0.5467,
       "url": "https://polymarket.com/event/highest-temperature-in-buenos-aires-on-february-22-2026/highest-temperature-in-buenos-aires-on-february-22-2026-27corbelow"
     }
   ],
@@ -864,6 +864,90 @@
       "pnl": 0,
       "edge": 0.4248,
       "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-20T22:28:17.447437+00:00",
+      "market": "Buenos Aires <=27C Feb 21",
+      "side": "BUY",
+      "entryPrice": 0.02,
+      "exitPrice": 0,
+      "amount": 7.63,
+      "pnl": 0,
+      "edge": 0.615,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-20T22:28:41.506034+00:00",
+      "market": "Seoul >=14C Feb 21",
+      "side": "BUY",
+      "entryPrice": 0.47,
+      "exitPrice": 0,
+      "amount": 8.01,
+      "pnl": 0,
+      "edge": 0.38,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-20T22:28:59.210454+00:00",
+      "market": "Buenos Aires <=27C Feb 22",
+      "side": "BUY",
+      "entryPrice": 0,
+      "exitPrice": 0,
+      "amount": 0,
+      "pnl": 0,
+      "edge": 0,
+      "status": "failed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-20T22:29:00.352091+00:00",
+      "market": "Seoul >=12C Feb 22",
+      "side": "BUY",
+      "entryPrice": 0,
+      "exitPrice": 0,
+      "amount": 0,
+      "pnl": 0,
+      "edge": 0,
+      "status": "failed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-20T22:29:01.447013+00:00",
+      "market": "Atlanta <=47F Feb 22",
+      "side": "BUY",
+      "entryPrice": 0,
+      "exitPrice": 0,
+      "amount": 0,
+      "pnl": 0,
+      "edge": 0,
+      "status": "failed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-20T22:29:15.330872+00:00",
+      "market": "Ankara >=15C Feb 21",
+      "side": "BUY",
+      "entryPrice": 0,
+      "exitPrice": 0,
+      "amount": 0,
+      "pnl": 0,
+      "edge": 0,
+      "status": "failed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-20T22:29:16.247565+00:00",
+      "market": "Toronto >=4C Feb 21",
+      "side": "BUY",
+      "entryPrice": 0,
+      "exitPrice": 0,
+      "amount": 0,
+      "pnl": 0,
+      "edge": 0,
+      "status": "failed",
       "outcome": "-"
     }
   ],
@@ -1823,201 +1907,13 @@
     {
       "timestamp": "2026-02-20T22:08:45.426277+00:00",
       "balance": 142.1482
+    },
+    {
+      "timestamp": "2026-02-20T22:31:49.553376+00:00",
+      "balance": 151.7048
     }
   ],
   "alertLog": [
-    {
-      "timestamp": "2026-02-20T21:01:36.387361+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will the Colorado Avalanche win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-colorado-avalanche-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-20T21:01:36.387361+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will Luka Doncic win the 2025\u20132026 NBA MVP?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-mvp-694/will-luka-doncic-win-the-20252026-nba-mvp"
-    },
-    {
-      "timestamp": "2026-02-20T21:01:36.387361+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will the Toronto Raptors win the NBA Eastern Conference Finals?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-eastern-conference-champion-442/will-the-toronto-raptors-win-the-nba-eastern-conference-finals"
-    },
-    {
-      "timestamp": "2026-02-20T21:01:36.387361+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Carolina Hurricanes win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-carolina-hurricanes-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-20T21:01:36.387361+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Edmonton Oilers win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-edmonton-oilers-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-20T21:01:36.387361+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Dallas Stars win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-dallas-stars-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-20T21:01:36.387361+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Vegas Golden Knights win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-vegas-golden-knights-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-20T21:01:36.387361+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Tampa Bay Lightning win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-tampa-bay-lightning-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-20T21:01:36.387361+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "2026 Balance of Power: R Senate, R House",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/balance-of-power-2026-midterms/2026-balance-of-power-r-senate-r-house-537"
-    },
-    {
-      "timestamp": "2026-02-20T21:01:36.387361+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the New York Knicks win the NBA Eastern Conference Finals?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-eastern-conference-champion-442/will-the-new-york-knicks-win-the-nba-eastern-conference-finals"
-    },
-    {
-      "timestamp": "2026-02-20T21:01:36.387361+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Philadelphia 76ers win the NBA Eastern Conference Finals?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-eastern-conference-champion-442/will-the-philadelphia-76ers-win-the-nba-eastern-conference-finals"
-    },
-    {
-      "timestamp": "2026-02-20T21:01:36.387361+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Houston Rockets win the NBA Western Conference Finals?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-western-conference-champion-933/will-the-houston-rockets-win-the-nba-western-conference-finals"
-    },
-    {
-      "timestamp": "2026-02-20T21:01:36.387361+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will Trump pardon Ghislaine Maxwell by end of 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/will-trump-pardon-ghislaine-maxwell/will-trump-pardon-ghislaine-maxwell"
-    },
-    {
-      "timestamp": "2026-02-20T21:31:36.741073+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Jack Doherty be sentenced to 2 to 5 years in prison?",
-      "priceChange": 0.153,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/jack-doherty-prison-time/will-jack-doherty-be-sentenced-to-2-to-5-years-in-prison"
-    },
-    {
-      "timestamp": "2026-02-20T21:31:36.741073+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will the minimum Arctic sea ice extent this summer be less than 4m square kilometers?",
-      "priceChange": 0.125,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/min-arctic-sea-ice-extent-this-summer/will-the-minimum-arctic-sea-ice-extent-this-summer-be-less-than-4m-square-kilometers"
-    },
-    {
-      "timestamp": "2026-02-20T21:31:36.741073+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Kraken IPO closing market cap above $18B?",
-      "priceChange": 0.12,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/kraken-ipo-closing-market-cap-above/kraken-ipo-closing-market-cap-above-18b"
-    },
-    {
-      "timestamp": "2026-02-20T21:31:36.741073+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "GTA VI released before June 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/gta-vi-released-before-june-2026/gta-vi-released-before-june-2026"
-    },
-    {
-      "timestamp": "2026-02-20T21:31:36.741073+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will Harvey Weinstein be sentenced to between 20 and 30 years in prison?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/harvey-weinstein-prison-time/will-harvey-weinstein-be-sentenced-to-between-20-and-30-years-in-prison"
-    },
-    {
-      "timestamp": "2026-02-20T21:31:36.741073+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will the Colorado Avalanche win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-colorado-avalanche-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-20T21:31:36.741073+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will Luka Doncic win the 2025\u20132026 NBA MVP?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-mvp-694/will-luka-doncic-win-the-20252026-nba-mvp"
-    },
-    {
-      "timestamp": "2026-02-20T21:31:36.741073+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will the Toronto Raptors win the NBA Eastern Conference Finals?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-eastern-conference-champion-442/will-the-toronto-raptors-win-the-nba-eastern-conference-finals"
-    },
-    {
-      "timestamp": "2026-02-20T21:31:36.741073+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Carolina Hurricanes win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-carolina-hurricanes-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-20T21:31:36.741073+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Edmonton Oilers win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-edmonton-oilers-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-20T21:31:36.741073+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Dallas Stars win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-dallas-stars-win-the-2026-nhl-stanley-cup"
-    },
     {
       "timestamp": "2026-02-20T21:31:36.741073+00:00",
       "type": "NICHE_MISPRICING",
@@ -2225,11 +2121,203 @@
       "priceChange": 0,
       "ledToTrade": false,
       "url": "https://polymarket.com/event/erdoan-out-before-2027/erdoan-out-before-2027"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Consensys IPO by June 30 2026?",
+      "priceChange": 0.2,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/will-consensys-ipo-by-december-31-2025/will-consensys-ipo-by-june-30-2026-144"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Keldon Johnson win the 2025\u20132026 NBA Sixth Man of the Year?",
+      "priceChange": 0.1765,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-2025-26-sixth-man-of-the-year/nba-2025-26-sixth-man-of-the-year-keldon-johnson"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will BYU win the 2025-2026 Big 12 Men's Basketball regular season championship?",
+      "priceChange": 0.1565,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/big-12-mens-college-basketball-2025-2026-regular-season-champion/will-byu-win-the-2025-2026-big-12-mens-basketball-regular-season-championship"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will PT win the most seats in the 2025 Guinea-Bissau National People\u2019s Assembly election?",
+      "priceChange": 0.138,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/guinea-bissau-national-peoples-assembly-election-winner/will-pt-win-the-most-seats-in-the-2025-guinea-bissau-national-peoples-assembly-election"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Metz finish in the top 4 of the Ligue 1 2025\u201326 standings?",
+      "priceChange": 0.135,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/ligue-1-top-4-finish/will-metz-finish-in-the-top-4-of-the-ligue-1-202526-standings"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will the Memphis Grizzlies have the worst record in the NBA?",
+      "priceChange": 0.12,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-worst-record-846/will-the-memphis-grizzlies-have-the-worst-record-in-the-nba"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will the Dallas Mavericks have the worst record in the NBA?",
+      "priceChange": 0.115,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-worst-record-846/will-the-dallas-mavericks-have-the-worst-record-in-the-nba"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Andy Barr be the Republican nominee for Senate in Kentucky?",
+      "priceChange": 0.11,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/kentucky-republican-senate-primary-winner/will-andy-barr-be-the-republican-nominee-for-senate-in-kentucky"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will the Utah Jazz have the worst record in the NBA?",
+      "priceChange": 0.108,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-worst-record-846/will-the-utah-jazz-have-the-worst-record-in-the-nba"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "GTA VI released before June 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/gta-vi-released-before-june-2026/gta-vi-released-before-june-2026"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will Harvey Weinstein be sentenced to between 20 and 30 years in prison?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/harvey-weinstein-prison-time/will-harvey-weinstein-be-sentenced-to-between-20-and-30-years-in-prison"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will the Colorado Avalanche win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-colorado-avalanche-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will Luka Doncic win the 2025\u20132026 NBA MVP?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-mvp-694/will-luka-doncic-win-the-20252026-nba-mvp"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will the Toronto Raptors win the NBA Eastern Conference Finals?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-eastern-conference-champion-442/will-the-toronto-raptors-win-the-nba-eastern-conference-finals"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Carolina Hurricanes win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-carolina-hurricanes-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Edmonton Oilers win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-edmonton-oilers-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Dallas Stars win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-dallas-stars-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Vegas Golden Knights win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-vegas-golden-knights-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Tampa Bay Lightning win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-tampa-bay-lightning-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "2026 Balance of Power: R Senate, R House",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/balance-of-power-2026-midterms/2026-balance-of-power-r-senate-r-house-537"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Philadelphia 76ers win the NBA Eastern Conference Finals?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-eastern-conference-champion-442/will-the-philadelphia-76ers-win-the-nba-eastern-conference-finals"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Houston Rockets win the NBA Western Conference Finals?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-western-conference-champion-933/will-the-houston-rockets-win-the-nba-western-conference-finals"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Trump pardon Ghislaine Maxwell by end of 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/will-trump-pardon-ghislaine-maxwell/will-trump-pardon-ghislaine-maxwell"
+    },
+    {
+      "timestamp": "2026-02-20T22:31:36.874857+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Erdo\u011fan out by end of 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/erdoan-out-before-2027/erdoan-out-before-2027"
     }
   ],
   "config": {
     "maxTradeFraction": 0.05,
-    "maxTradeSize": 7.63,
+    "maxTradeSize": 8.01,
     "minEdge": 0.05,
     "maxPositions": 15,
     "circuitBreakerFraction": 0.5,
