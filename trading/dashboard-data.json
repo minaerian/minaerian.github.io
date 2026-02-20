@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-20T08:31:49.313859+00:00",
+  "lastUpdated": "2026-02-20T09:30:24.620588+00:00",
   "metrics": {
-    "balance": 92.541544,
+    "balance": 98.808044,
     "initialBalance": 133.0,
-    "totalPnl": 5.1633,
-    "totalPnlPct": 3.88,
+    "totalPnl": 4.1676,
+    "totalPnlPct": 3.13,
     "daysActive": 4,
-    "totalTrades": 38,
+    "totalTrades": 39,
     "wins": 0,
     "losses": 0,
     "winRate": 0.0,
@@ -17,10 +17,10 @@
     "worstTrade": null,
     "currentStreak": 0,
     "avgHoldingHours": 0,
-    "openPositions": 10,
+    "openPositions": 9,
     "maxPositions": 10,
     "targetBalance": 500.08,
-    "progressToTarget": 18.5
+    "progressToTarget": 19.8
   },
   "positions": [
     {
@@ -93,12 +93,12 @@
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.065,
-      "currentPrice": 0.045,
+      "currentPrice": 0.032,
       "cost": 6.54,
       "size": 100.62,
       "edge": 0.379,
       "openedAt": "2026-02-20T03:02:09.637270+00:00",
-      "unrealizedPnl": -2.0123,
+      "unrealizedPnl": -3.3203,
       "url": ""
     },
     {
@@ -106,12 +106,12 @@
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.135,
-      "currentPrice": 0.034,
+      "currentPrice": 0.042,
       "cost": 6.66,
       "size": 49.33,
       "edge": 0.32,
       "openedAt": "2026-02-20T03:02:22.425737+00:00",
-      "unrealizedPnl": -4.9827,
+      "unrealizedPnl": -4.588,
       "url": ""
     },
     {
@@ -138,19 +138,6 @@
       "edge": 0.224,
       "openedAt": "2026-02-20T03:02:48.423726+00:00",
       "unrealizedPnl": -4.3676,
-      "url": ""
-    },
-    {
-      "market": "Robinhood launches prediction market through MIAXdx by March 31? \u2014 NO",
-      "side": "BUY",
-      "outcome": "BUY",
-      "entryPrice": 0.86,
-      "currentPrice": 0.84,
-      "cost": 6.5,
-      "size": 7.56,
-      "edge": 0.11,
-      "openedAt": "2026-02-20T04:02:30.376013+00:00",
-      "unrealizedPnl": -0.1512,
       "url": ""
     }
   ],
@@ -644,6 +631,18 @@
       "amount": 6.5,
       "pnl": 0,
       "edge": 0.11,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-20T09:30:15.770955+00:00",
+      "market": "Robinhood launches prediction market through MIAXdx by March 31? \u2014 NO",
+      "side": "SELL",
+      "entryPrice": 0.8258,
+      "exitPrice": 0,
+      "amount": 6.2415,
+      "pnl": 0,
+      "edge": 0,
       "status": "executed",
       "outcome": "-"
     }
@@ -1488,6 +1487,10 @@
     {
       "timestamp": "2026-02-20T08:31:47.490364+00:00",
       "balance": 138.1633
+    },
+    {
+      "timestamp": "2026-02-20T09:30:22.849703+00:00",
+      "balance": 137.1676
     }
   ],
   "alertLog": [
@@ -1894,7 +1897,7 @@
   ],
   "config": {
     "maxTradeFraction": 0.05,
-    "maxTradeSize": 4.63,
+    "maxTradeSize": 4.94,
     "minEdge": 0.05,
     "maxPositions": 10,
     "circuitBreakerFraction": 0.5,
