@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-20T16:31:57.892274+00:00",
+  "lastUpdated": "2026-02-20T17:30:23.099913+00:00",
   "metrics": {
-    "balance": 83.731644,
+    "balance": 90.955644,
     "initialBalance": 133.0,
-    "totalPnl": 0.1516,
-    "totalPnlPct": 0.11,
+    "totalPnl": 3.9528,
+    "totalPnlPct": 2.97,
     "daysActive": 4,
-    "totalTrades": 41,
+    "totalTrades": 42,
     "wins": 0,
     "losses": 0,
     "winRate": 0.0,
@@ -17,10 +17,10 @@
     "worstTrade": null,
     "currentStreak": 0,
     "avgHoldingHours": 0,
-    "openPositions": 10,
+    "openPositions": 9,
     "maxPositions": 10,
     "targetBalance": 500.08,
-    "progressToTarget": 16.7
+    "progressToTarget": 18.2
   },
   "positions": [
     {
@@ -28,12 +28,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.55,
-      "currentPrice": 0.44,
+      "currentPrice": 0.43,
       "cost": 3.3,
       "size": 6.0,
       "edge": 0,
       "openedAt": "2026-02-18T07:01:05.409452+00:00",
-      "unrealizedPnl": -0.66,
+      "unrealizedPnl": -0.72,
       "url": "https://polymarket.com/market/israel-x-iran-ceasefire-broken-by-march-31-2026-312-682"
     },
     {
@@ -41,12 +41,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.9649,
-      "currentPrice": 0.969,
+      "currentPrice": 0.971,
       "cost": 3.3,
       "size": 3.42,
       "edge": 0,
       "openedAt": "2026-02-18T09:32:56.236134+00:00",
-      "unrealizedPnl": 0.014,
+      "unrealizedPnl": 0.0209,
       "url": "https://polymarket.com/market/will-wesley-hunt-win-the-2026-republican-primary"
     },
     {
@@ -106,12 +106,12 @@
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.135,
-      "currentPrice": 0.001,
+      "currentPrice": 0.135,
       "cost": 6.66,
       "size": 49.33,
       "edge": 0.32,
       "openedAt": "2026-02-20T03:02:22.425737+00:00",
-      "unrealizedPnl": -6.6107,
+      "unrealizedPnl": 0.0,
       "url": ""
     },
     {
@@ -119,12 +119,12 @@
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.085,
-      "currentPrice": 0.03,
+      "currentPrice": 0.003,
       "cost": 6.75,
       "size": 79.41,
       "edge": 0.224,
       "openedAt": "2026-02-20T03:02:48.423726+00:00",
-      "unrealizedPnl": -4.3676,
+      "unrealizedPnl": -6.5118,
       "url": ""
     },
     {
@@ -132,25 +132,12 @@
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.435,
-      "currentPrice": 0.5,
+      "currentPrice": 0.46,
       "cost": 7.51,
       "size": 17.26,
       "edge": 0.382,
       "openedAt": "2026-02-20T09:32:58.089088+00:00",
-      "unrealizedPnl": 1.1222,
-      "url": ""
-    },
-    {
-      "market": "Will Hamas agree to disarm by March 31?",
-      "side": "BUY",
-      "outcome": "BUY",
-      "entryPrice": 0.87,
-      "currentPrice": 0.85,
-      "cost": 7.49,
-      "size": 8.61,
-      "edge": 0.10999999999999999,
-      "openedAt": "2026-02-20T16:05:10.818243+00:00",
-      "unrealizedPnl": -0.1722,
+      "unrealizedPnl": 0.4316,
       "url": ""
     }
   ],
@@ -680,6 +667,18 @@
       "amount": 7.49,
       "pnl": 0,
       "edge": 0.10999999999999999,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-20T17:30:14.271695+00:00",
+      "market": "Will Hamas agree to disarm by March 31?",
+      "side": "SELL",
+      "entryPrice": 0.8358,
+      "exitPrice": 0,
+      "amount": 7.1956,
+      "pnl": 0,
+      "edge": 0,
       "status": "executed",
       "outcome": "-"
     }
@@ -1580,6 +1579,10 @@
     {
       "timestamp": "2026-02-20T16:31:55.839743+00:00",
       "balance": 133.1516
+    },
+    {
+      "timestamp": "2026-02-20T17:30:21.104104+00:00",
+      "balance": 136.9528
     }
   ],
   "alertLog": [
@@ -1986,7 +1989,7 @@
   ],
   "config": {
     "maxTradeFraction": 0.05,
-    "maxTradeSize": 4.19,
+    "maxTradeSize": 4.55,
     "minEdge": 0.05,
     "maxPositions": 10,
     "circuitBreakerFraction": 0.5,
