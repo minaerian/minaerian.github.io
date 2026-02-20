@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-20T00:46:51.720685+00:00",
+  "lastUpdated": "2026-02-20T00:50:22.598720+00:00",
   "metrics": {
-    "balance": 56.217019,
+    "balance": 87.408989,
     "initialBalance": 133.0,
-    "totalPnl": 4.2262,
-    "totalPnlPct": 3.18,
+    "totalPnl": 5.5911,
+    "totalPnlPct": 4.2,
     "daysActive": 3,
-    "totalTrades": 25,
+    "totalTrades": 29,
     "wins": 0,
     "losses": 0,
     "winRate": 0.0,
@@ -17,10 +17,10 @@
     "worstTrade": null,
     "currentStreak": 0,
     "avgHoldingHours": 0,
-    "openPositions": 13,
+    "openPositions": 9,
     "maxPositions": 10,
     "targetBalance": 500.08,
-    "progressToTarget": 11.2
+    "progressToTarget": 17.5
   },
   "positions": [
     {
@@ -37,19 +37,6 @@
       "url": "https://polymarket.com/market/israel-x-iran-ceasefire-broken-by-march-31-2026-312-682"
     },
     {
-      "market": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "side": "BUY",
-      "outcome": "Yes",
-      "entryPrice": 0.9354,
-      "currentPrice": 0.948,
-      "cost": 6.5,
-      "size": 6.91,
-      "edge": 0,
-      "openedAt": "2026-02-18T09:32:53.610774+00:00",
-      "unrealizedPnl": 0.0871,
-      "url": "https://polymarket.com/market/will-the-us-collect-less-than-100b-in-revenue-in-2025"
-    },
-    {
       "market": "Will Wesley Hunt win the 2026 Texas Republican Primary?",
       "side": "BUY",
       "outcome": "No",
@@ -61,32 +48,6 @@
       "openedAt": "2026-02-18T09:32:56.236134+00:00",
       "unrealizedPnl": -0.0339,
       "url": "https://polymarket.com/market/will-wesley-hunt-win-the-2026-republican-primary"
-    },
-    {
-      "market": "Will Wesley Hunt come in 2nd in the 2026 Texas Republican Primary?",
-      "side": "BUY",
-      "outcome": "No",
-      "entryPrice": 0.9056,
-      "currentPrice": 0.916,
-      "cost": 12.15,
-      "size": 13.42,
-      "edge": 0,
-      "openedAt": "2026-02-18T14:39:25.388665+00:00",
-      "unrealizedPnl": 0.1396,
-      "url": "https://polymarket.com/market/will-wesley-hunt-come-in-2nd-in-the-2026-texas-republican-primary"
-    },
-    {
-      "market": "Will there be no change in Fed interest rates after the March 2026 meeting?",
-      "side": "BUY",
-      "outcome": "Yes",
-      "entryPrice": 0.9357,
-      "currentPrice": 0.925,
-      "cost": 6.11,
-      "size": 6.53,
-      "edge": 0,
-      "openedAt": "2026-02-18T14:39:28.565063+00:00",
-      "unrealizedPnl": -0.0699,
-      "url": "https://polymarket.com/market/will-there-be-no-change-in-fed-interest-rates-after-the-march-2026-meeting"
     },
     {
       "market": "Foreign intervention in Gaza by March 31?",
@@ -128,19 +89,6 @@
       "url": "https://polymarket.com/market/will-polymarket-mindshare-hit-90"
     },
     {
-      "market": "Robinhood launches prediction market through MIAXdx by March 31 \u2014 NO",
-      "side": "BUY",
-      "outcome": "BUY",
-      "entryPrice": 0.86,
-      "currentPrice": 0.84,
-      "cost": 6.5,
-      "size": 7.56,
-      "edge": 0.1,
-      "openedAt": "2026-02-19T16:27:18.604977+00:00",
-      "unrealizedPnl": -0.1512,
-      "url": ""
-    },
-    {
       "market": "London Feb 20 \u2014 13\u00b0C or higher YES",
       "side": "BUY",
       "outcome": "YES",
@@ -158,12 +106,12 @@
       "side": "BUY",
       "outcome": "YES",
       "entryPrice": 0.11,
-      "currentPrice": 0.16,
+      "currentPrice": 0.17,
       "cost": 3.85,
       "size": 35.0,
       "edge": 0,
       "openedAt": "",
-      "unrealizedPnl": 1.75,
+      "unrealizedPnl": 2.1,
       "url": ""
     },
     {
@@ -171,12 +119,12 @@
       "side": "BUY",
       "outcome": "YES",
       "entryPrice": 0.17,
-      "currentPrice": 0.27,
+      "currentPrice": 0.29,
       "cost": 3.06,
       "size": 18.0,
       "edge": 0,
       "openedAt": "",
-      "unrealizedPnl": 1.8,
+      "unrealizedPnl": 2.16,
       "url": ""
     },
     {
@@ -184,12 +132,12 @@
       "side": "BUY",
       "outcome": "YES",
       "entryPrice": 0.09,
-      "currentPrice": 0.06,
+      "currentPrice": 0.08,
       "cost": 3.15,
       "size": 35.0,
       "edge": 0,
       "openedAt": "",
-      "unrealizedPnl": -1.05,
+      "unrealizedPnl": -0.35,
       "url": ""
     }
   ],
@@ -503,6 +451,54 @@
       "amount": 3.15,
       "pnl": 0,
       "edge": 0.27,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-20T00:49:58.876283+00:00",
+      "market": "Will the U.S. collect less than $100b in revenue in 2025?",
+      "side": "SELL",
+      "entryPrice": 0.9433,
+      "exitPrice": 0,
+      "amount": 6.5228,
+      "pnl": 0,
+      "edge": 0,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-20T00:50:02.332986+00:00",
+      "market": "Will Wesley Hunt come in 2nd in the 2026 Texas Republican Primary?",
+      "side": "SELL",
+      "entryPrice": 0.9114,
+      "exitPrice": 0,
+      "amount": 12.231,
+      "pnl": 0,
+      "edge": 0,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-20T00:50:04.422670+00:00",
+      "market": "Will there be no change in Fed interest rates after the March 2026 meeting?",
+      "side": "SELL",
+      "entryPrice": 0.9204,
+      "exitPrice": 0,
+      "amount": 6.0102,
+      "pnl": 0,
+      "edge": 0,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-20T00:50:11.813292+00:00",
+      "market": "Robinhood launches prediction market through MIAXdx by March 31 \u2014 NO",
+      "side": "SELL",
+      "entryPrice": 0.8358,
+      "exitPrice": 0,
+      "amount": 6.3171,
+      "pnl": 0,
+      "edge": 0,
       "status": "executed",
       "outcome": "-"
     }
@@ -1697,7 +1693,7 @@
   ],
   "config": {
     "maxTradeFraction": 0.05,
-    "maxTradeSize": 2.81,
+    "maxTradeSize": 4.37,
     "minEdge": 0.05,
     "maxPositions": 10,
     "circuitBreakerFraction": 0.5,
