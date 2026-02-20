@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-02-20T15:01:52.227381+00:00",
+  "lastUpdated": "2026-02-20T16:19:32.699960+00:00",
   "metrics": {
-    "balance": 91.213644,
+    "balance": 83.731644,
     "initialBalance": 133.0,
-    "totalPnl": -1.3754,
-    "totalPnlPct": -1.03,
+    "totalPnl": 1.0264,
+    "totalPnlPct": 0.77,
     "daysActive": 4,
-    "totalTrades": 40,
+    "totalTrades": 41,
     "wins": 0,
     "losses": 0,
     "winRate": 0.0,
-    "avgEstimatedEdge": 61.05,
+    "avgEstimatedEdge": 58.87,
     "avgActualReturn": 0.0,
-    "edgeCalibration": -61.05,
+    "edgeCalibration": -58.87,
     "bestTrade": null,
     "worstTrade": null,
     "currentStreak": 0,
@@ -20,7 +20,7 @@
     "openPositions": 10,
     "maxPositions": 10,
     "targetBalance": 500.08,
-    "progressToTarget": 18.2
+    "progressToTarget": 16.7
   },
   "positions": [
     {
@@ -80,12 +80,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.8618,
-      "currentPrice": 0.85,
+      "currentPrice": 0.836,
       "cost": 12.22,
       "size": 14.18,
       "edge": 0,
       "openedAt": "2026-02-19T02:39:56.542486+00:00",
-      "unrealizedPnl": -0.1673,
+      "unrealizedPnl": -0.3658,
       "url": "https://polymarket.com/market/will-polymarket-mindshare-hit-90"
     },
     {
@@ -93,12 +93,12 @@
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.065,
-      "currentPrice": 0.018,
+      "currentPrice": 0.011,
       "cost": 6.54,
       "size": 100.62,
       "edge": 0.379,
       "openedAt": "2026-02-20T03:02:09.637270+00:00",
-      "unrealizedPnl": -4.7289,
+      "unrealizedPnl": -5.4332,
       "url": ""
     },
     {
@@ -115,29 +115,16 @@
       "url": ""
     },
     {
-      "market": "Seoul 11\u00b0C+ on Feb 20 (1-day forecast, edge 28%)",
-      "side": "BUY",
-      "outcome": "BUY",
-      "entryPrice": 0.25,
-      "currentPrice": 0.25,
-      "cost": 0.35,
-      "size": 1.4,
-      "edge": 0.282,
-      "openedAt": "2026-02-20T03:02:35.616291+00:00",
-      "unrealizedPnl": 0.0,
-      "url": ""
-    },
-    {
       "market": "London 13\u00b0C+ on Feb 20 (1-day forecast, edge 22%)",
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.085,
-      "currentPrice": 0.003,
+      "currentPrice": 0.025,
       "cost": 6.75,
       "size": 79.41,
       "edge": 0.224,
       "openedAt": "2026-02-20T03:02:48.423726+00:00",
-      "unrealizedPnl": -6.5118,
+      "unrealizedPnl": -4.7647,
       "url": ""
     },
     {
@@ -145,12 +132,25 @@
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.435,
-      "currentPrice": 0.39,
+      "currentPrice": 0.51,
       "cost": 7.51,
       "size": 17.26,
       "edge": 0.382,
       "openedAt": "2026-02-20T09:32:58.089088+00:00",
-      "unrealizedPnl": -0.7769,
+      "unrealizedPnl": 1.2948,
+      "url": ""
+    },
+    {
+      "market": "Will Hamas agree to disarm by March 31?",
+      "side": "BUY",
+      "outcome": "BUY",
+      "entryPrice": 0.87,
+      "currentPrice": 0.85,
+      "cost": 7.49,
+      "size": 8.61,
+      "edge": 0.10999999999999999,
+      "openedAt": "2026-02-20T16:05:10.818243+00:00",
+      "unrealizedPnl": -0.1722,
       "url": ""
     }
   ],
@@ -668,6 +668,18 @@
       "amount": 7.51,
       "pnl": 0,
       "edge": 0.382,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-20T16:05:10.811047+00:00",
+      "market": "Will Hamas agree to disarm by March 31?",
+      "side": "BUY",
+      "entryPrice": 0.87,
+      "exitPrice": 0,
+      "amount": 7.49,
+      "pnl": 0,
+      "edge": 0.10999999999999999,
       "status": "executed",
       "outcome": "-"
     }
@@ -1560,6 +1572,10 @@
     {
       "timestamp": "2026-02-20T15:01:50.279879+00:00",
       "balance": 131.6246
+    },
+    {
+      "timestamp": "2026-02-20T16:19:30.668306+00:00",
+      "balance": 134.0264
     }
   ],
   "alertLog": [
@@ -1966,7 +1982,7 @@
   ],
   "config": {
     "maxTradeFraction": 0.05,
-    "maxTradeSize": 4.56,
+    "maxTradeSize": 4.19,
     "minEdge": 0.05,
     "maxPositions": 10,
     "circuitBreakerFraction": 0.5,
