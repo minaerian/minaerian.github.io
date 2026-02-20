@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-20T06:01:53.457482+00:00",
+  "lastUpdated": "2026-02-20T06:22:45.117850+00:00",
   "metrics": {
     "balance": 92.541544,
     "initialBalance": 133.0,
-    "totalPnl": 12.2104,
-    "totalPnlPct": 9.18,
+    "totalPnl": 12.7637,
+    "totalPnlPct": 9.6,
     "daysActive": 4,
     "totalTrades": 38,
     "wins": 0,
@@ -28,12 +28,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.55,
-      "currentPrice": 0.43,
+      "currentPrice": 0.44,
       "cost": 3.3,
       "size": 6.0,
       "edge": 0,
       "openedAt": "2026-02-18T07:01:05.409452+00:00",
-      "unrealizedPnl": -0.72,
+      "unrealizedPnl": -0.66,
       "url": "https://polymarket.com/market/israel-x-iran-ceasefire-broken-by-march-31-2026-312-682"
     },
     {
@@ -106,12 +106,12 @@
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.135,
-      "currentPrice": 0.09,
+      "currentPrice": 0.1,
       "cost": 6.66,
       "size": 49.33,
       "edge": 0.32,
       "openedAt": "2026-02-20T03:02:22.425737+00:00",
-      "unrealizedPnl": -2.22,
+      "unrealizedPnl": -1.7267,
       "url": ""
     },
     {
@@ -1464,6 +1464,10 @@
     {
       "timestamp": "2026-02-20T06:01:51.463393+00:00",
       "balance": 145.2104
+    },
+    {
+      "timestamp": "2026-02-20T06:22:43.112316+00:00",
+      "balance": 145.7637
     }
   ],
   "alertLog": [
