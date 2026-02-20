@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-20T21:01:51.413617+00:00",
+  "lastUpdated": "2026-02-20T21:14:55.739565+00:00",
   "metrics": {
-    "balance": 59.508474,
+    "balance": 58.852961,
     "initialBalance": 133.0,
-    "totalPnl": 16.4791,
-    "totalPnlPct": 12.39,
+    "totalPnl": 11.8928,
+    "totalPnlPct": 8.94,
     "daysActive": 4,
     "totalTrades": 47,
     "wins": 0,
@@ -20,7 +20,7 @@
     "openPositions": 12,
     "maxPositions": 15,
     "targetBalance": 500.08,
-    "progressToTarget": 11.9
+    "progressToTarget": 11.8
   },
   "positions": [
     {
@@ -93,12 +93,12 @@
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.065,
-      "currentPrice": 0.028,
+      "currentPrice": 0.025,
       "cost": 14.01,
       "size": 341.58,
       "edge": 0.379,
       "openedAt": "2026-02-20T03:02:09.637270+00:00",
-      "unrealizedPnl": -12.6386,
+      "unrealizedPnl": -13.6633,
       "url": ""
     },
     {
@@ -119,12 +119,12 @@
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.085,
-      "currentPrice": 0.003,
+      "currentPrice": 0.001,
       "cost": 6.75,
       "size": 79.41,
       "edge": 0.224,
       "openedAt": "2026-02-20T03:02:48.423726+00:00",
-      "unrealizedPnl": -6.5118,
+      "unrealizedPnl": -6.6706,
       "url": ""
     },
     {
@@ -158,12 +158,12 @@
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.055,
-      "currentPrice": 0.06,
+      "currentPrice": 0.059,
       "cost": 8.28,
       "size": 150.55,
       "edge": 0.2454,
       "openedAt": "2026-02-20T20:32:28.376181+00:00",
-      "unrealizedPnl": 0.7527,
+      "unrealizedPnl": 0.6022,
       "url": ""
     },
     {
@@ -171,12 +171,12 @@
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.063,
-      "currentPrice": 0.079,
+      "currentPrice": 0.06,
       "cost": 8.61,
       "size": 136.67,
       "edge": 0.4248,
       "openedAt": "2026-02-20T20:32:41.658717+00:00",
-      "unrealizedPnl": 2.1867,
+      "unrealizedPnl": -0.41,
       "url": ""
     }
   ],
@@ -1798,6 +1798,10 @@
     {
       "timestamp": "2026-02-20T21:01:49.038478+00:00",
       "balance": 149.4791
+    },
+    {
+      "timestamp": "2026-02-20T21:14:53.254660+00:00",
+      "balance": 144.8928
     }
   ],
   "alertLog": [
@@ -2204,7 +2208,7 @@
   ],
   "config": {
     "maxTradeFraction": 0.05,
-    "maxTradeSize": 2.98,
+    "maxTradeSize": 7.86,
     "minEdge": 0.05,
     "maxPositions": 15,
     "circuitBreakerFraction": 0.5,
