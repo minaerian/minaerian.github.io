@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-20T00:31:51.175183+00:00",
+  "lastUpdated": "2026-02-20T00:46:21.734790+00:00",
   "metrics": {
     "balance": 56.217019,
     "initialBalance": 133.0,
-    "totalPnl": 2.8926,
-    "totalPnlPct": 2.17,
+    "totalPnl": 4.2262,
+    "totalPnlPct": 3.18,
     "daysActive": 3,
     "totalTrades": 25,
     "wins": 0,
@@ -18,7 +18,7 @@
     "currentStreak": 0,
     "avgHoldingHours": 0,
     "openPositions": 13,
-    "maxPositions": 15,
+    "maxPositions": 10,
     "targetBalance": 500.08,
     "progressToTarget": 11.2
   },
@@ -67,12 +67,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.9056,
-      "currentPrice": 0.912,
+      "currentPrice": 0.916,
       "cost": 12.15,
       "size": 13.42,
       "edge": 0,
       "openedAt": "2026-02-18T14:39:25.388665+00:00",
-      "unrealizedPnl": 0.0859,
+      "unrealizedPnl": 0.1396,
       "url": "https://polymarket.com/market/will-wesley-hunt-come-in-2nd-in-the-2026-texas-republican-primary"
     },
     {
@@ -171,12 +171,12 @@
       "side": "BUY",
       "outcome": "YES",
       "entryPrice": 0.17,
-      "currentPrice": 0.16,
+      "currentPrice": 0.27,
       "cost": 3.06,
       "size": 18.0,
       "edge": 0,
       "openedAt": "",
-      "unrealizedPnl": -0.18,
+      "unrealizedPnl": 1.8,
       "url": ""
     },
     {
@@ -184,12 +184,12 @@
       "side": "BUY",
       "outcome": "YES",
       "entryPrice": 0.09,
-      "currentPrice": 0.08,
+      "currentPrice": 0.06,
       "cost": 3.15,
       "size": 35.0,
       "edge": 0,
       "openedAt": "",
-      "unrealizedPnl": -0.35,
+      "unrealizedPnl": -1.05,
       "url": ""
     }
   ],
@@ -1287,6 +1287,10 @@
     {
       "timestamp": "2026-02-20T00:31:48.646151+00:00",
       "balance": 135.8926
+    },
+    {
+      "timestamp": "2026-02-20T00:46:19.193823+00:00",
+      "balance": 137.2262
     }
   ],
   "alertLog": [
@@ -1695,7 +1699,7 @@
     "maxTradeFraction": 0.05,
     "maxTradeSize": 2.81,
     "minEdge": 0.05,
-    "maxPositions": 15,
+    "maxPositions": 10,
     "circuitBreakerFraction": 0.5,
     "circuitBreaker": 81.8,
     "scanInterval": "10min"
