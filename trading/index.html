@@ -1115,6 +1115,7 @@
                         <th>Shares</th>
                         <th>Entry</th>
                         <th>Current</th>
+                        <th>Edge</th>
                         <th>Cost</th>
                         <th>Value</th>
                         <th>P&L</th>
@@ -1747,7 +1748,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const container = document.getElementById('positions-table-container');
 
         if (positions.length === 0) {
-            tbody.innerHTML = '<tr><td colspan="10"><div class="empty-state"><div class="empty-icon">📭</div>No open positions</div></td></tr>';
+            tbody.innerHTML = '<tr><td colspan="11"><div class="empty-state"><div class="empty-icon">📭</div>No open positions</div></td></tr>';
             // Clear mobile cards
             var cardsDiv = container.querySelector('.positions-cards');
             if (cardsDiv) cardsDiv.innerHTML = '';
@@ -1786,12 +1787,20 @@ document.addEventListener('DOMContentLoaded', function() {
             const costStr = p.cost ? '$' + p.cost.toFixed(2) : '—';
             const resolvesDate = parseResolvesDate(p.market);
 
+            var edgeStr = '—';
+            var edgeClass = '';
+            if (p.edge && typeof p.edge === 'number' && p.edge > 0) {
+                edgeStr = (p.edge * 100).toFixed(1) + '%';
+                edgeClass = p.edge >= 0.15 ? 'pnl-positive' : '';
+            }
+
             return '<tr>' +
                 '<td class="market-name">' + marketHtml + '</td>' +
                 '<td><span class="' + sideClass + '">' + esc(outcome.toUpperCase()) + '</span></td>' +
                 '<td>' + (shares > 0 ? shares.toFixed(1) : '—') + '</td>' +
                 '<td>' + entryC + '¢</td>' +
                 '<td>' + currentC + '¢</td>' +
+                '<td class="' + edgeClass + '" style="font-family:var(--font-mono);font-size:12px">' + edgeStr + '</td>' +
                 '<td>' + costStr + '</td>' +
                 '<td>$' + currentValue.toFixed(2) + '</td>' +
                 '<td class="' + posPnlClass + '">' + posPnlSign + '$' + Math.abs(positionPnl).toFixed(2) + ' (' + pnlPctSign + pnlPct + '%)</td>' +
@@ -1808,7 +1817,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             var pnlSign = catPnl >= 0 ? '+' : '';
             var pnlColor = catPnl >= 0 ? 'var(--green)' : 'var(--red)';
-            return '<tr><td colspan="10"><div class="category-header">' +
+            return '<tr><td colspan="11"><div class="category-header">' +
                 '<span>' + label + ' (' + items.length + ')</span>' +
                 '<span class="cat-subtotal">Cost: $' + catCost.toFixed(2) + ' · P&L: <span style="color:' + pnlColor + '">' + pnlSign + '$' + Math.abs(catPnl).toFixed(2) + '</span></span>' +
                 '</div></td></tr>';
@@ -1842,7 +1851,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const tPnlPct = totalCost > 0 ? (totalPnl / totalCost * 100).toFixed(1) : '0.0';
         html += '<tr style="border-top:2px solid #333;font-weight:bold">' +
             '<td>If closed now →</td><td></td>' +
-            '<td>' + totalShares.toFixed(1) + '</td><td></td><td></td>' +
+            '<td>' + totalShares.toFixed(1) + '</td><td></td><td></td><td></td>' +
             '<td>$' + totalCost.toFixed(2) + '</td>' +
             '<td>$' + totalValue.toFixed(2) + '</td>' +
             '<td class="' + tPnlClass + '">' + tPnlSign + '$' + Math.abs(totalPnl).toFixed(2) + ' (' + (totalPnl >= 0 ? '+' : '') + tPnlPct + '%)</td>' +
