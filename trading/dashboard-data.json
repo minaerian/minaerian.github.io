@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-20T20:01:51.566073+00:00",
+  "lastUpdated": "2026-02-20T20:24:52.720432+00:00",
   "metrics": {
     "balance": 90.955644,
     "initialBalance": 133.0,
-    "totalPnl": 11.2942,
-    "totalPnlPct": 8.49,
+    "totalPnl": 11.0923,
+    "totalPnlPct": 8.34,
     "daysActive": 4,
     "totalTrades": 42,
     "wins": 0,
@@ -18,7 +18,7 @@
     "currentStreak": 0,
     "avgHoldingHours": 0,
     "openPositions": 9,
-    "maxPositions": 10,
+    "maxPositions": 15,
     "targetBalance": 500.08,
     "progressToTarget": 18.2
   },
@@ -41,12 +41,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.9649,
-      "currentPrice": 0.967,
+      "currentPrice": 0.966,
       "cost": 3.3,
       "size": 3.42,
       "edge": 0,
       "openedAt": "2026-02-18T09:32:56.236134+00:00",
-      "unrealizedPnl": 0.0072,
+      "unrealizedPnl": 0.0038,
       "url": "https://polymarket.com/market/will-wesley-hunt-win-the-2026-republican-primary"
     },
     {
@@ -80,12 +80,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.8618,
-      "currentPrice": 0.835,
+      "currentPrice": 0.821,
       "cost": 12.22,
       "size": 14.18,
       "edge": 0,
       "openedAt": "2026-02-19T02:39:56.542486+00:00",
-      "unrealizedPnl": -0.38,
+      "unrealizedPnl": -0.5785,
       "url": "https://polymarket.com/market/will-polymarket-mindshare-hit-90"
     },
     {
@@ -132,12 +132,12 @@
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.435,
-      "currentPrice": 0.47,
+      "currentPrice": 0.46,
       "cost": 7.51,
       "size": 17.26,
       "edge": 0.382,
       "openedAt": "2026-02-20T09:32:58.089088+00:00",
-      "unrealizedPnl": 0.6043,
+      "unrealizedPnl": 0.4316,
       "url": ""
     }
   ],
@@ -1599,6 +1599,10 @@
     {
       "timestamp": "2026-02-20T20:01:49.648022+00:00",
       "balance": 144.2942
+    },
+    {
+      "timestamp": "2026-02-20T20:24:50.620590+00:00",
+      "balance": 144.0923
     }
   ],
   "alertLog": [
@@ -2007,7 +2011,7 @@
     "maxTradeFraction": 0.05,
     "maxTradeSize": 4.55,
     "minEdge": 0.05,
-    "maxPositions": 10,
+    "maxPositions": 15,
     "circuitBreakerFraction": 0.5,
     "circuitBreaker": 81.8,
     "scanInterval": "10min"
