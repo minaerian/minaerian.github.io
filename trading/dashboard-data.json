@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-20T00:50:22.598720+00:00",
+  "lastUpdated": "2026-02-20T01:31:14.116948+00:00",
   "metrics": {
-    "balance": 87.408989,
+    "balance": 98.927689,
     "initialBalance": 133.0,
-    "totalPnl": 5.5911,
-    "totalPnlPct": 4.2,
+    "totalPnl": -3.8602,
+    "totalPnlPct": -2.9,
     "daysActive": 3,
-    "totalTrades": 29,
+    "totalTrades": 33,
     "wins": 0,
     "losses": 0,
     "winRate": 0.0,
@@ -17,10 +17,10 @@
     "worstTrade": null,
     "currentStreak": 0,
     "avgHoldingHours": 0,
-    "openPositions": 9,
+    "openPositions": 5,
     "maxPositions": 10,
     "targetBalance": 500.08,
-    "progressToTarget": 17.5
+    "progressToTarget": 19.8
   },
   "positions": [
     {
@@ -87,58 +87,6 @@
       "openedAt": "2026-02-19T02:39:56.542486+00:00",
       "unrealizedPnl": -0.0255,
       "url": "https://polymarket.com/market/will-polymarket-mindshare-hit-90"
-    },
-    {
-      "market": "London Feb 20 \u2014 13\u00b0C or higher YES",
-      "side": "BUY",
-      "outcome": "YES",
-      "entryPrice": 0.1,
-      "currentPrice": 0.07,
-      "cost": 10.0,
-      "size": 100.0,
-      "edge": 0,
-      "openedAt": "",
-      "unrealizedPnl": -3.0,
-      "url": ""
-    },
-    {
-      "market": "Seoul Feb 21 \u2014 14\u00b0C or higher YES",
-      "side": "BUY",
-      "outcome": "YES",
-      "entryPrice": 0.11,
-      "currentPrice": 0.17,
-      "cost": 3.85,
-      "size": 35.0,
-      "edge": 0,
-      "openedAt": "",
-      "unrealizedPnl": 2.1,
-      "url": ""
-    },
-    {
-      "market": "Seoul Feb 20 \u2014 11\u00b0C or higher YES",
-      "side": "BUY",
-      "outcome": "YES",
-      "entryPrice": 0.17,
-      "currentPrice": 0.29,
-      "cost": 3.06,
-      "size": 18.0,
-      "edge": 0,
-      "openedAt": "",
-      "unrealizedPnl": 2.16,
-      "url": ""
-    },
-    {
-      "market": "Miami Feb 20 \u2014 79\u00b0F or below YES",
-      "side": "BUY",
-      "outcome": "YES",
-      "entryPrice": 0.09,
-      "currentPrice": 0.08,
-      "cost": 3.15,
-      "size": 35.0,
-      "edge": 0,
-      "openedAt": "",
-      "unrealizedPnl": -0.35,
-      "url": ""
     }
   ],
   "tradeHistory": [
@@ -497,6 +445,54 @@
       "entryPrice": 0.8358,
       "exitPrice": 0,
       "amount": 6.3171,
+      "pnl": 0,
+      "edge": 0,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-20T01:30:28.730339+00:00",
+      "market": "London Feb 20 \u2014 13\u00b0C or higher YES",
+      "side": "SELL",
+      "entryPrice": 0.0697,
+      "exitPrice": 0,
+      "amount": 3.485,
+      "pnl": 0,
+      "edge": 0,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-20T01:30:41.379714+00:00",
+      "market": "Seoul Feb 21 \u2014 14\u00b0C or higher YES",
+      "side": "SELL",
+      "entryPrice": 0.1293,
+      "exitPrice": 0,
+      "amount": 4.4777,
+      "pnl": 0,
+      "edge": 0,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-20T01:30:53.846493+00:00",
+      "market": "Seoul Feb 20 \u2014 11\u00b0C or higher YES",
+      "side": "SELL",
+      "entryPrice": 0.0895,
+      "exitPrice": 0,
+      "amount": 1.611,
+      "pnl": 0,
+      "edge": 0,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-20T01:31:06.250144+00:00",
+      "market": "Miami Feb 20 \u2014 79\u00b0F or below YES",
+      "side": "SELL",
+      "entryPrice": 0.0796,
+      "exitPrice": 0,
+      "amount": 2.786,
       "pnl": 0,
       "edge": 0,
       "status": "executed",
@@ -1287,6 +1283,10 @@
     {
       "timestamp": "2026-02-20T00:46:19.193823+00:00",
       "balance": 137.2262
+    },
+    {
+      "timestamp": "2026-02-20T01:31:12.976142+00:00",
+      "balance": 129.1398
     }
   ],
   "alertLog": [
@@ -1693,7 +1693,7 @@
   ],
   "config": {
     "maxTradeFraction": 0.05,
-    "maxTradeSize": 4.37,
+    "maxTradeSize": 4.95,
     "minEdge": 0.05,
     "maxPositions": 10,
     "circuitBreakerFraction": 0.5,
