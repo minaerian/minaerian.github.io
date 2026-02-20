@@ -7,6 +7,7 @@
     <meta name="robots" content="noindex, nofollow">
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@3.0.1/dist/chartjs-plugin-annotation.min.js"></script>
     <style>
         /* ==========================================================================
            Polymarket Trading Dashboard — Matches minaerian.com theme
@@ -815,153 +816,178 @@
         .fade-in-delay-6 { animation-delay: 0.3s; opacity: 0; }
 
         /* ==========================================================================
-           Market Making Section
+           Additional styles for new features
            ========================================================================== */
 
-        #mm-section { display: none; }
-        #mm-section.active { display: block; }
-
-        .mm-summary-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 16px;
-            margin-bottom: 32px;
-        }
-
-        .mm-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 16px;
-            padding: 20px;
-            transition: all 0.3s var(--ease-smooth);
-        }
-
-        .mm-card:hover {
-            border-color: var(--blue-soft);
-            background: var(--bg-card-hover);
-        }
-
-        .mm-card .summary-label {
+        .side-buy {
             color: var(--blue);
-        }
-
-        .mm-status-dot {
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            margin-right: 6px;
-            vertical-align: middle;
-        }
-
-        .mm-status-dot.active { background: var(--green); animation: pulse 2s ease-in-out infinite; }
-        .mm-status-dot.paused { background: var(--yellow); }
-        .mm-status-dot.stopped { background: var(--red); }
-
-        .mm-section-head {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 16px;
-        }
-
-        .mm-section-head h2 {
-            font-size: 16px;
             font-weight: 600;
-        }
-
-        .mm-section-head .mm-icon {
-            font-size: 18px;
-        }
-
-        .mm-section-head .count {
             font-size: 12px;
-            font-weight: 500;
-            padding: 2px 8px;
-            border-radius: 6px;
-            background: var(--blue-subtle);
-            color: var(--blue);
+        }
+
+        .chart-subtitle {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .last-scan-info {
+            font-size: 11px;
+            color: var(--text-muted);
             font-family: var(--font-mono);
         }
 
-        .mm-sub-head {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin-bottom: 12px;
-            margin-top: 8px;
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
         }
 
-        .mm-sub-head h3 {
-            font-size: 14px;
+        .refresh-spinner {
+            display: none;
+            width: 12px;
+            height: 12px;
+            border: 2px solid var(--border);
+            border-top-color: var(--green);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            vertical-align: middle;
+            margin-left: 6px;
+        }
+
+        .refresh-spinner.active {
+            display: inline-block;
+        }
+
+        .category-header {
+            padding: 10px 16px;
+            background: var(--bg-tertiary);
+            border-bottom: 1px solid var(--border);
+            font-size: 13px;
             font-weight: 600;
             color: var(--text-secondary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        .mm-sub-head .count {
-            font-size: 11px;
-            font-weight: 500;
-            padding: 2px 7px;
-            border-radius: 5px;
-            background: var(--blue-subtle);
-            color: var(--blue);
+        .category-header .cat-subtotal {
             font-family: var(--font-mono);
+            font-size: 12px;
+            font-weight: 500;
         }
 
-        .mm-table-container {
-            background: var(--bg-card);
+        .alert-timestamp-group {
+            padding: 8px 16px 4px;
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--text-muted);
+            font-family: var(--font-mono);
+            background: var(--bg-tertiary);
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+        }
+
+        .tooltip-wrap {
+            position: relative;
+            cursor: help;
+        }
+
+        .tooltip-wrap .tooltip-text {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            bottom: calc(100% + 8px);
+            left: 50%;
+            transform: translateX(-50%);
+            background: #1a1a1a;
+            color: var(--text-secondary);
+            font-size: 11px;
+            font-weight: 400;
+            padding: 6px 10px;
+            border-radius: 8px;
             border: 1px solid var(--border);
-            border-radius: 16px;
-            overflow: hidden;
-            margin-bottom: 24px;
+            white-space: nowrap;
+            z-index: 10;
+            transition: opacity 0.2s, visibility 0.2s;
+            pointer-events: none;
         }
 
-        .mm-table-container table {
-            min-width: 750px;
+        .tooltip-wrap:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
         }
 
-        .mm-fill-table table {
-            min-width: 650px;
+        .resolved-empty {
+            padding: 32px 24px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 13px;
         }
 
-        .inventory-balanced { color: var(--green); font-weight: 600; }
-        .inventory-moderate { color: var(--yellow); font-weight: 600; }
-        .inventory-heavy { color: var(--red); font-weight: 600; }
-
-        .mm-side-bid { color: var(--green); font-weight: 600; font-size: 12px; }
-        .mm-side-ask { color: var(--blue); font-weight: 600; font-size: 12px; }
-
-        .mm-uptime-badge {
-            font-size: 11px;
-            font-weight: 500;
-            padding: 2px 8px;
-            border-radius: 6px;
-            background: var(--blue-subtle);
-            color: var(--blue);
-            font-family: var(--font-mono);
-            margin-left: auto;
-        }
-
-        @media (max-width: 1024px) {
-            .mm-summary-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
+        /* Mobile card layout for positions */
         @media (max-width: 768px) {
-            .mm-summary-grid {
-                grid-template-columns: repeat(2, 1fr);
+            .positions-cards {
+                display: flex;
+                flex-direction: column;
                 gap: 12px;
+                padding: 12px;
             }
 
-            .mm-card {
-                padding: 16px;
+            .position-card {
+                background: var(--bg-tertiary);
+                border: 1px solid var(--border);
+                border-radius: 12px;
+                padding: 14px;
+            }
+
+            .position-card-header {
+                font-size: 13px;
+                font-weight: 600;
+                color: var(--text-primary);
+                margin-bottom: 10px;
+                line-height: 1.3;
+            }
+
+            .position-card-header a {
+                color: var(--green);
+                text-decoration: none;
+            }
+
+            .position-card-metrics {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 8px;
+            }
+
+            .position-card-metric {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .position-card-metric .pcm-label {
+                font-size: 10px;
+                color: var(--text-muted);
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+
+            .position-card-metric .pcm-value {
+                font-size: 13px;
+                font-weight: 600;
+                font-family: var(--font-mono);
+            }
+
+            #positions-table-container .table-scroll {
+                display: none;
+            }
+
+            #positions-table-container .positions-cards {
+                display: flex;
             }
         }
 
-        @media (max-width: 480px) {
-            .mm-summary-grid {
-                grid-template-columns: 1fr 1fr;
+        @media (min-width: 769px) {
+            .positions-cards {
+                display: none !important;
             }
         }
     </style>
@@ -1005,31 +1031,37 @@
                 <span>Live</span>
             </div>
             <span class="last-updated" id="last-updated">Loading…</span>
+            <span class="refresh-spinner" id="refresh-spinner"></span>
+            <span class="last-scan-info" id="last-scan-info"></span>
             <button class="logout-btn" id="logout-btn">Logout</button>
         </div>
     </header>
 
     <!-- Summary Cards -->
     <div class="summary-grid">
-        <div class="summary-card fade-in fade-in-delay-1">
+        <div class="summary-card fade-in fade-in-delay-1 tooltip-wrap">
+            <span class="tooltip-text">USDC.e cash available for trading</span>
             <div class="summary-label">Balance</div>
             <div class="summary-value neutral" id="s-balance">—</div>
             <div class="summary-sub">USDC.e</div>
         </div>
-        <div class="summary-card fade-in fade-in-delay-2">
+        <div class="summary-card fade-in fade-in-delay-2 tooltip-wrap">
+            <span class="tooltip-text">Portfolio value minus total deposits ($133)</span>
             <div class="summary-label">Total P&L</div>
             <div class="summary-value" id="s-pnl">—</div>
             <div class="summary-sub" id="s-pnl-pct"></div>
         </div>
-        <div class="summary-card fade-in fade-in-delay-3">
+        <div class="summary-card fade-in fade-in-delay-3 tooltip-wrap">
+            <span class="tooltip-text">Percentage of resolved trades that were profitable</span>
             <div class="summary-label">Win Rate</div>
             <div class="summary-value neutral" id="s-winrate">—</div>
             <div class="summary-sub" id="s-wl"></div>
         </div>
-        <div class="summary-card fade-in fade-in-delay-4">
+        <div class="summary-card fade-in fade-in-delay-4 tooltip-wrap">
+            <span class="tooltip-text">Active market positions (max 15)</span>
             <div class="summary-label">Open Positions</div>
             <div class="summary-value neutral" id="s-positions">—</div>
-            <div class="summary-sub">active</div>
+            <div class="summary-sub" id="s-positions-sub">active</div>
         </div>
         <div class="summary-card fade-in fade-in-delay-5">
             <div class="summary-label">Days Active</div>
@@ -1046,7 +1078,10 @@
     <!-- Equity Curve -->
     <div class="chart-container fade-in">
         <div class="chart-header">
-            <h2 class="chart-title">Equity Curve</h2>
+            <div>
+                <h2 class="chart-title">Equity Curve</h2>
+                <div class="chart-subtitle">Portfolio Value (cash + positions)</div>
+            </div>
             <span class="chart-value" id="chart-current">$33.00</span>
         </div>
         <div class="chart-canvas-wrap">
@@ -1083,6 +1118,7 @@
                         <th>Cost</th>
                         <th>Value</th>
                         <th>P&L</th>
+                        <th>Resolves</th>
                         <th>Time Held</th>
                     </tr>
                 </thead>
@@ -1091,94 +1127,25 @@
         </div>
     </div>
 
-    <!-- Market Making Section -->
-    <div id="mm-section">
-        <div class="mm-section-head fade-in">
-            <span class="mm-icon">🤖</span>
-            <h2>Market Making</h2>
-            <span class="count" id="mm-markets-count">0</span>
-            <span class="mm-uptime-badge" id="mm-uptime"></span>
-        </div>
-
-        <!-- MM Summary Cards -->
-        <div class="mm-summary-grid">
-            <div class="mm-card fade-in fade-in-delay-1">
-                <div class="summary-label">MM Status</div>
-                <div class="summary-value neutral" id="mm-status">—</div>
-                <div class="summary-sub" id="mm-cycles"></div>
-            </div>
-            <div class="mm-card fade-in fade-in-delay-2">
-                <div class="summary-label">MM P&L</div>
-                <div class="summary-value" id="mm-pnl">—</div>
-                <div class="summary-sub">total</div>
-            </div>
-            <div class="mm-card fade-in fade-in-delay-3">
-                <div class="summary-label">Open Orders</div>
-                <div class="summary-value neutral" id="mm-open-orders">—</div>
-                <div class="summary-sub">live</div>
-            </div>
-            <div class="mm-card fade-in fade-in-delay-4">
-                <div class="summary-label">Fills Today</div>
-                <div class="summary-value neutral" id="mm-fills-today">—</div>
-                <div class="summary-sub">24h</div>
-            </div>
-            <div class="mm-card fade-in fade-in-delay-5">
-                <div class="summary-label">Spread Captured</div>
-                <div class="summary-value neutral" id="mm-spread">—</div>
-                <div class="summary-sub">avg per round-trip</div>
-            </div>
-            <div class="mm-card fade-in fade-in-delay-6">
-                <div class="summary-label">Capital Deployed</div>
-                <div class="summary-value neutral" id="mm-capital">—</div>
-                <div class="summary-sub">USDC</div>
-            </div>
-        </div>
-
-        <!-- Active Markets Table -->
-        <div class="mm-sub-head fade-in">
-            <h3>Active Markets</h3>
-            <span class="count" id="mm-active-count">0</span>
-        </div>
-        <div class="mm-table-container fade-in">
-            <div class="table-scroll">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Market</th>
-                            <th>Our Bid</th>
-                            <th>Our Ask</th>
-                            <th>Spread</th>
-                            <th>Fills (Bid/Ask)</th>
-                            <th>Inventory</th>
-                            <th>P&L</th>
-                        </tr>
-                    </thead>
-                    <tbody id="mm-markets-body"></tbody>
-                </table>
-            </div>
-        </div>
-
-        <!-- MM Fill History -->
-        <div class="mm-sub-head fade-in">
-            <h3>Recent Fills</h3>
-            <span class="count" id="mm-fills-count">0</span>
-        </div>
-        <div class="mm-table-container mm-fill-table fade-in">
-            <div class="table-scroll">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Time</th>
-                            <th>Market</th>
-                            <th>Side</th>
-                            <th>Price</th>
-                            <th>Size</th>
-                            <th>Running P&L</th>
-                        </tr>
-                    </thead>
-                    <tbody id="mm-fills-body"></tbody>
-                </table>
-            </div>
+    <!-- Resolved Positions -->
+    <div class="section-head fade-in">
+        <h2>Resolved Positions</h2>
+        <span class="count" id="resolved-count">0</span>
+    </div>
+    <div class="table-container fade-in" id="resolved-table-container">
+        <div class="table-scroll">
+            <table id="resolved-table">
+                <thead>
+                    <tr>
+                        <th>Market</th>
+                        <th>Entry</th>
+                        <th>Exit</th>
+                        <th>P&L</th>
+                        <th>Hold Time</th>
+                    </tr>
+                </thead>
+                <tbody id="resolved-body"></tbody>
+            </table>
         </div>
     </div>
 
@@ -1198,7 +1165,7 @@
                         <th data-sort="entry">Entry <span class="sort-icon">↕</span></th>
                         <th data-sort="exit">Exit <span class="sort-icon">↕</span></th>
                         <th data-sort="pnl">P&L <span class="sort-icon">↕</span></th>
-                        <th data-sort="cost">Cost <span class="sort-icon">↕</span></th>
+                        <th data-sort="edge">Edge <span class="sort-icon">↕</span></th>
                         <th data-sort="outcome">Outcome <span class="sort-icon">↕</span></th>
                         <th>Running</th>
                     </tr>
@@ -1354,6 +1321,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     async function loadData(retries) {
         retries = retries || 0;
+        var spinner = document.getElementById('refresh-spinner');
+        if (spinner) spinner.classList.add('active');
         try {
             const resp = await fetch(DATA_URL, { cache: 'no-store' });
             if (!resp.ok) {
@@ -1364,6 +1333,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const text = await resp.text();
             dashData = JSON.parse(text);
             lastFetch = new Date();
+            if (spinner) spinner.classList.remove('active');
             try {
                 render();
             } catch (renderErr) {
@@ -1372,6 +1342,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         } catch (err) {
             console.error('Fetch failed:', err);
+            if (spinner) spinner.classList.remove('active');
             if (retries < 2) { setTimeout(function() { loadData(retries + 1); }, 2000); return; }
             document.getElementById('last-updated').textContent = 'Load failed: ' + err.message;
         }
@@ -1407,7 +1378,7 @@ document.addEventListener('DOMContentLoaded', function() {
         renderChart();
         renderPnlChart();
         renderPositions();
-        renderMarketMaking();
+        renderResolvedPositions();
         renderTrades();
         renderMetrics();
         renderAlerts();
@@ -1444,9 +1415,22 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('s-winrate').textContent = totalTrades > 0 ? winRate.toFixed(1) + '%' : '—';
         document.getElementById('s-wl').textContent = wins + 'W / ' + losses + 'L';
 
-        // Positions
+        // Positions — fix #15: show tradeable vs locked breakdown
         const positions = (d.positions || []).filter(p => (p.size || p.shares || 0) > 0);
-        document.getElementById('s-positions').textContent = m.openPositions !== undefined ? m.openPositions : positions.length;
+        const totalPos = m.openPositions !== undefined ? m.openPositions : positions.length;
+        document.getElementById('s-positions').textContent = totalPos;
+        const tempRe = /°[CF]|temperature|highest temp/i;
+        const tradeableCount = positions.filter(p => p.url && p.edge !== 0).length;
+        const lockedCount = positions.filter(p => !p.url || (p.edge === 0 && !tempRe.test(p.market))).length;
+        const weatherCount = positions.filter(p => tempRe.test(p.market)).length;
+        document.getElementById('s-positions-sub').textContent = weatherCount + ' weather · ' + (totalPos - weatherCount) + ' event';
+
+        // Fix #14: Last scan timestamp
+        if (d.lastUpdated) {
+            var scanDate = new Date(d.lastUpdated);
+            var scanStr = scanDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false }) + ' UTC';
+            document.getElementById('last-scan-info').textContent = 'Last scan: ' + scanStr;
+        }
 
         // Days active
         if (m.daysActive) {
@@ -1495,6 +1479,40 @@ document.addEventListener('DOMContentLoaded', function() {
         gradient.addColorStop(0, 'rgba(50, 215, 75, 0.25)');
         gradient.addColorStop(1, 'rgba(50, 215, 75, 0)');
 
+        // Find label indices closest to deposit dates for annotations
+        var depositDates = [
+            { date: new Date('2026-02-16T05:00:00Z'), label: 'Deposit $33' },
+            { date: new Date('2026-02-18T14:00:00Z'), label: 'Deposit $100' }
+        ];
+        var depositAnnotations = {};
+        depositDates.forEach(function(dep, idx) {
+            // Find closest label index
+            var closestIdx = 0;
+            var closestDiff = Infinity;
+            curve.forEach(function(pt, i) {
+                var diff = Math.abs(new Date(pt.timestamp).getTime() - dep.date.getTime());
+                if (diff < closestDiff) { closestDiff = diff; closestIdx = i; }
+            });
+            depositAnnotations['deposit' + idx] = {
+                type: 'line',
+                xMin: closestIdx,
+                xMax: closestIdx,
+                borderColor: 'rgba(255, 214, 10, 0.5)',
+                borderWidth: 1,
+                borderDash: [6, 4],
+                label: {
+                    display: true,
+                    content: dep.label,
+                    position: 'start',
+                    backgroundColor: 'rgba(255, 214, 10, 0.15)',
+                    color: '#ffd60a',
+                    font: { size: 10, family: "'SF Mono', monospace" },
+                    padding: 4,
+                    borderRadius: 4
+                }
+            };
+        });
+
         equityChart = new Chart(ctx, {
             type: 'line',
             data: {
@@ -1538,6 +1556,9 @@ document.addEventListener('DOMContentLoaded', function() {
                                 return '$' + ctx.parsed.y.toFixed(2);
                             }
                         }
+                    },
+                    annotation: {
+                        annotations: depositAnnotations
                     }
                 },
                 scales: {
@@ -1704,179 +1725,231 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // --- Positions ---
+    // Helper: parse resolution date from market name
+    function parseResolvesDate(market) {
+        var months = { jan:'Jan', feb:'Feb', mar:'Mar', apr:'Apr', may:'May', jun:'Jun',
+                       jul:'Jul', aug:'Aug', sep:'Sep', oct:'Oct', nov:'Nov', dec:'Dec',
+                       january:'Jan', february:'Feb', march:'Mar', april:'Apr', june:'Jun',
+                       july:'Jul', august:'Aug', september:'Sep', october:'Oct', november:'Nov', december:'Dec' };
+        // Match patterns like "Feb 21", "March 31", "February 22"
+        var m = market.match(/\b(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+(\d{1,2})\b/i);
+        if (m) {
+            var mon = months[m[1].toLowerCase()] || m[1].substring(0,3);
+            return mon + ' ' + m[2];
+        }
+        return '—';
+    }
+
     function renderPositions() {
         const positions = (dashData.positions || []).filter(p => (p.size || p.shares || 0) > 0);
         document.getElementById('positions-count').textContent = positions.length;
         const tbody = document.getElementById('positions-body');
+        const container = document.getElementById('positions-table-container');
 
         if (positions.length === 0) {
-            tbody.innerHTML = '<tr><td colspan="9"><div class="empty-state"><div class="empty-icon">📭</div>No open positions</div></td></tr>';
+            tbody.innerHTML = '<tr><td colspan="10"><div class="empty-state"><div class="empty-icon">📭</div>No open positions</div></td></tr>';
+            // Clear mobile cards
+            var cardsDiv = container.querySelector('.positions-cards');
+            if (cardsDiv) cardsDiv.innerHTML = '';
             return;
         }
 
-        tbody.innerHTML = positions.map(p => {
-            const unrealizedPnl = p.unrealizedPnl || ((p.currentPrice - p.entryPrice) * (p.shares || p.size || 1));
-            const pnlClass = unrealizedPnl >= 0 ? 'pnl-positive' : 'pnl-negative';
-            const pnlSign = unrealizedPnl >= 0 ? '+' : '';
-            const sideClass = p.side.toUpperCase() === 'YES' ? 'side-yes' : 'side-no';
-            const held = p.openedAt ? formatTimeSince(p.openedAt) : (p.entryTime ? formatTimeSince(p.entryTime) : '—');
-            const marketHtml = p.url
-                ? `<a href="${esc(p.url)}" target="_blank" rel="noopener" style="color:#32d74b;text-decoration:none">${esc(p.market)}</a>`
-                : esc(p.market);
-            const costStr = p.cost ? `$${p.cost.toFixed(2)}` : '—';
+        // Fix #8: Categorize positions
+        const tempRe = /°[CF]|temperature|highest temp/i;
+        const weatherPositions = positions.filter(p => tempRe.test(p.market));
+        const lockedPositions = positions.filter(p => !tempRe.test(p.market) && (!p.url || p.edge === 0));
+        const otherPositions = positions.filter(p => !tempRe.test(p.market) && p.url && p.edge !== 0);
+
+        function renderPositionRow(p) {
             const shares = p.size || p.shares || 0;
-            const displayEntry = Math.round(p.entryPrice * 100) / 100;
-            const displayCurrent = Math.round(p.currentPrice * 100) / 100;
-            const currentValue = shares * displayCurrent;
-            const positionPnl = (displayCurrent - displayEntry) * shares;
+            const entryC = (p.entryPrice * 100).toFixed(1);
+            const currentC = (p.currentPrice * 100).toFixed(1);
+            const currentValue = shares * p.currentPrice;
+            const positionPnl = (p.currentPrice - p.entryPrice) * shares;
             const posPnlClass = positionPnl >= 0 ? 'pnl-positive' : 'pnl-negative';
             const posPnlSign = positionPnl >= 0 ? '+' : '';
-            return `<tr>
-                <td class="market-name">${marketHtml}</td>
-                <td><span class="${sideClass}">${p.outcome ? esc(p.outcome.toUpperCase()) : esc(p.side.toUpperCase())}</span></td>
-                <td>${shares > 0 ? shares.toFixed(1) : '—'}</td>
-                <td>${p.entryPrice.toFixed(2)}¢</td>
-                <td>${p.currentPrice.toFixed(2)}¢</td>
-                <td>${costStr}</td>
-                <td>$${currentValue.toFixed(2)}</td>
-                <td class="${posPnlClass}">${posPnlSign}$${positionPnl.toFixed(2)}</td>
-                <td>${held}</td>
-            </tr>`;
-        }).join('');
+            // Fix #17: P&L as dollar and percentage
+            const pnlPct = p.cost > 0 ? (positionPnl / p.cost * 100).toFixed(1) : '0.0';
+            const pnlPctSign = positionPnl >= 0 ? '+' : '';
+
+            // Fix #2: Handle outcome display
+            var outcome = p.outcome || p.side;
+            var sideClass;
+            if (outcome.toUpperCase() === 'YES') { sideClass = 'side-yes'; }
+            else if (outcome.toUpperCase() === 'NO') { sideClass = 'side-no'; }
+            else { sideClass = 'side-buy'; }
+
+            const held = p.openedAt ? formatTimeSince(p.openedAt) : (p.entryTime ? formatTimeSince(p.entryTime) : '—');
+            const marketHtml = p.url
+                ? '<a href="' + esc(p.url) + '" target="_blank" rel="noopener" style="color:#32d74b;text-decoration:none">' + esc(p.market) + '</a>'
+                : esc(p.market);
+            const costStr = p.cost ? '$' + p.cost.toFixed(2) : '—';
+            const resolvesDate = parseResolvesDate(p.market);
+
+            return '<tr>' +
+                '<td class="market-name">' + marketHtml + '</td>' +
+                '<td><span class="' + sideClass + '">' + esc(outcome.toUpperCase()) + '</span></td>' +
+                '<td>' + (shares > 0 ? shares.toFixed(1) : '—') + '</td>' +
+                '<td>' + entryC + '¢</td>' +
+                '<td>' + currentC + '¢</td>' +
+                '<td>' + costStr + '</td>' +
+                '<td>$' + currentValue.toFixed(2) + '</td>' +
+                '<td class="' + posPnlClass + '">' + posPnlSign + '$' + Math.abs(positionPnl).toFixed(2) + ' (' + pnlPctSign + pnlPct + '%)</td>' +
+                '<td style="font-size:12px">' + resolvesDate + '</td>' +
+                '<td>' + held + '</td>' +
+                '</tr>';
+        }
+
+        function renderCategoryHeader(label, items) {
+            var catCost = 0, catPnl = 0;
+            items.forEach(function(p) {
+                catCost += (p.cost || 0);
+                catPnl += (p.currentPrice - p.entryPrice) * (p.size || p.shares || 0);
+            });
+            var pnlSign = catPnl >= 0 ? '+' : '';
+            var pnlColor = catPnl >= 0 ? 'var(--green)' : 'var(--red)';
+            return '<tr><td colspan="10"><div class="category-header">' +
+                '<span>' + label + ' (' + items.length + ')</span>' +
+                '<span class="cat-subtotal">Cost: $' + catCost.toFixed(2) + ' · P&L: <span style="color:' + pnlColor + '">' + pnlSign + '$' + Math.abs(catPnl).toFixed(2) + '</span></span>' +
+                '</div></td></tr>';
+        }
+
+        var html = '';
+        if (weatherPositions.length > 0) {
+            html += renderCategoryHeader('🌡️ Weather', weatherPositions);
+            html += weatherPositions.map(renderPositionRow).join('');
+        }
+        if (otherPositions.length > 0) {
+            html += renderCategoryHeader('📊 Event', otherPositions);
+            html += otherPositions.map(renderPositionRow).join('');
+        }
+        if (lockedPositions.length > 0) {
+            html += renderCategoryHeader('🔒 Locked', lockedPositions);
+            html += lockedPositions.map(renderPositionRow).join('');
+        }
 
         // Add totals row
-        if (positions.length > 0) {
-            let totalCost = 0, totalValue = 0, totalShares = 0, totalPnl = 0;
-            positions.forEach(p => {
-                const shares = p.size || p.shares || 0;
-                const dEntry = Math.round(p.entryPrice * 100) / 100;
-                const dCurrent = Math.round(p.currentPrice * 100) / 100;
-                totalShares += shares;
-                totalCost += (p.cost || 0);
-                totalValue += shares * dCurrent;
-                totalPnl += (dCurrent - dEntry) * shares;
-            });
-            const tPnlClass = totalPnl >= 0 ? 'pnl-positive' : 'pnl-negative';
-            const tPnlSign = totalPnl >= 0 ? '+' : '';
-            tbody.innerHTML += `<tr style="border-top:2px solid #333;font-weight:bold">
-                <td>If closed now →</td>
-                <td></td>
-                <td>${totalShares.toFixed(1)}</td>
-                <td></td>
-                <td></td>
-                <td>$${totalCost.toFixed(2)}</td>
-                <td>$${totalValue.toFixed(2)}</td>
-                <td class="${tPnlClass}">${tPnlSign}$${totalPnl.toFixed(2)}</td>
-                <td></td>
-            </tr>`;
+        let totalCost = 0, totalValue = 0, totalShares = 0, totalPnl = 0;
+        positions.forEach(function(p) {
+            const shares = p.size || p.shares || 0;
+            totalShares += shares;
+            totalCost += (p.cost || 0);
+            totalValue += shares * p.currentPrice;
+            totalPnl += (p.currentPrice - p.entryPrice) * shares;
+        });
+        const tPnlClass = totalPnl >= 0 ? 'pnl-positive' : 'pnl-negative';
+        const tPnlSign = totalPnl >= 0 ? '+' : '';
+        const tPnlPct = totalCost > 0 ? (totalPnl / totalCost * 100).toFixed(1) : '0.0';
+        html += '<tr style="border-top:2px solid #333;font-weight:bold">' +
+            '<td>If closed now →</td><td></td>' +
+            '<td>' + totalShares.toFixed(1) + '</td><td></td><td></td>' +
+            '<td>$' + totalCost.toFixed(2) + '</td>' +
+            '<td>$' + totalValue.toFixed(2) + '</td>' +
+            '<td class="' + tPnlClass + '">' + tPnlSign + '$' + Math.abs(totalPnl).toFixed(2) + ' (' + (totalPnl >= 0 ? '+' : '') + tPnlPct + '%)</td>' +
+            '<td></td><td></td></tr>';
+
+        tbody.innerHTML = html;
+
+        // Fix #19: Mobile card layout
+        var cardsDiv = container.querySelector('.positions-cards');
+        if (!cardsDiv) {
+            cardsDiv = document.createElement('div');
+            cardsDiv.className = 'positions-cards';
+            container.appendChild(cardsDiv);
         }
+        cardsDiv.innerHTML = positions.map(function(p) {
+            var shares = p.size || p.shares || 0;
+            var entryC = (p.entryPrice * 100).toFixed(1);
+            var currentC = (p.currentPrice * 100).toFixed(1);
+            var positionPnl = (p.currentPrice - p.entryPrice) * shares;
+            var pnlSign = positionPnl >= 0 ? '+' : '';
+            var pnlColor = positionPnl >= 0 ? 'var(--green)' : 'var(--red)';
+            var outcome = p.outcome || p.side;
+            var marketHtml = p.url
+                ? '<a href="' + esc(p.url) + '" target="_blank" rel="noopener">' + esc(p.market) + '</a>'
+                : esc(p.market);
+            return '<div class="position-card">' +
+                '<div class="position-card-header">' + marketHtml + '</div>' +
+                '<div class="position-card-metrics">' +
+                '<div class="position-card-metric"><span class="pcm-label">Bet</span><span class="pcm-value">' + esc(outcome.toUpperCase()) + '</span></div>' +
+                '<div class="position-card-metric"><span class="pcm-label">Entry / Now</span><span class="pcm-value">' + entryC + '¢ → ' + currentC + '¢</span></div>' +
+                '<div class="position-card-metric"><span class="pcm-label">Cost</span><span class="pcm-value">$' + (p.cost || 0).toFixed(2) + '</span></div>' +
+                '<div class="position-card-metric"><span class="pcm-label">P&L</span><span class="pcm-value" style="color:' + pnlColor + '">' + pnlSign + '$' + Math.abs(positionPnl).toFixed(2) + '</span></div>' +
+                '</div></div>';
+        }).join('');
     }
 
-    // --- Market Making ---
-    function renderMarketMaking() {
-        var mmSection = document.getElementById('mm-section');
-        var mm = dashData.marketMaking;
-        if (!mm) {
-            mmSection.classList.remove('active');
+    // --- Resolved Positions (Fix #16) ---
+    function renderResolvedPositions() {
+        var trades = dashData.tradeHistory || [];
+        var tbody = document.getElementById('resolved-body');
+        var countEl = document.getElementById('resolved-count');
+
+        // Match BUY + SELL on same market (by normalized market name)
+        function normalizeMarket(m) {
+            return (m || '').replace(/\s*[—–-]\s*(YES|NO)\s*$/i, '').replace(/\(.*?\)/g, '').trim().toLowerCase();
+        }
+
+        var buysByMarket = {};
+        var sellsByMarket = {};
+        trades.forEach(function(t) {
+            if (t.status === 'failed') return;
+            var key = normalizeMarket(t.market);
+            if (t.side === 'BUY') {
+                if (!buysByMarket[key]) buysByMarket[key] = [];
+                buysByMarket[key].push(t);
+            } else if (t.side === 'SELL') {
+                if (!sellsByMarket[key]) sellsByMarket[key] = [];
+                sellsByMarket[key].push(t);
+            }
+        });
+
+        var resolved = [];
+        Object.keys(buysByMarket).forEach(function(key) {
+            if (sellsByMarket[key]) {
+                var buy = buysByMarket[key][0];
+                var sell = sellsByMarket[key][0];
+                var holdMs = new Date(sell.timestamp).getTime() - new Date(buy.timestamp).getTime();
+                var holdStr = holdMs > 86400000 ? Math.floor(holdMs/86400000) + 'd' : Math.floor(holdMs/3600000) + 'h';
+                var pnl = (sell.entryPrice - buy.entryPrice) * (buy.amount / Math.max(buy.entryPrice, 0.001));
+                resolved.push({
+                    market: buy.market,
+                    entryPrice: buy.entryPrice,
+                    exitPrice: sell.entryPrice,
+                    pnl: pnl,
+                    holdTime: holdStr
+                });
+            }
+        });
+
+        countEl.textContent = resolved.length;
+
+        if (resolved.length === 0) {
+            tbody.innerHTML = '<tr><td colspan="5"><div class="resolved-empty">No fully resolved round-trips yet. Positions that have both a BUY and SELL will appear here.</div></td></tr>';
             return;
         }
-        mmSection.classList.add('active');
 
-        // Status card
-        var statusEl = document.getElementById('mm-status');
-        var statusText = (mm.status || 'stopped').toUpperCase();
-        var statusClass = mm.status === 'active' ? 'active' : mm.status === 'paused' ? 'paused' : 'stopped';
-        statusEl.innerHTML = '<span class="mm-status-dot ' + statusClass + '"></span>' + esc(statusText);
-
-        // Cycles
-        document.getElementById('mm-cycles').textContent = mm.cycleCount ? mm.cycleCount + ' cycles' : '';
-
-        // Uptime
-        document.getElementById('mm-uptime').textContent = mm.uptime ? '⏱ ' + mm.uptime : '';
-
-        // P&L
-        var pnlEl = document.getElementById('mm-pnl');
-        var pnl = mm.totalPnl || 0;
-        var pnlSign = pnl >= 0 ? '+' : '';
-        pnlEl.textContent = pnlSign + '$' + pnl.toFixed(2);
-        pnlEl.className = 'summary-value ' + (pnl >= 0 ? 'positive' : 'negative');
-
-        // Open orders
-        document.getElementById('mm-open-orders').textContent = mm.openOrders || 0;
-
-        // Fills today
-        document.getElementById('mm-fills-today').textContent = mm.fillsToday || 0;
-
-        // Spread captured
-        var spread = mm.avgSpreadCaptured || 0;
-        document.getElementById('mm-spread').textContent = (spread * 100).toFixed(1) + '¢';
-
-        // Capital deployed
-        document.getElementById('mm-capital').textContent = '$' + (mm.capitalDeployed || 0).toFixed(2);
-
-        // Active Markets Table
-        var markets = mm.activeMarkets || [];
-        document.getElementById('mm-markets-count').textContent = markets.length;
-        document.getElementById('mm-active-count').textContent = markets.length;
-        var marketsBody = document.getElementById('mm-markets-body');
-
-        if (markets.length === 0) {
-            marketsBody.innerHTML = '<tr><td colspan="7"><div class="empty-state"><div class="empty-icon">🤖</div>No active markets</div></td></tr>';
-        } else {
-            marketsBody.innerHTML = markets.map(function(m) {
-                var invAbs = Math.abs(m.inventory || 0);
-                var invClass = invAbs < 5 ? 'inventory-balanced' : invAbs < 15 ? 'inventory-moderate' : 'inventory-heavy';
-                var invSign = (m.inventory || 0) > 0 ? '+' : '';
-                var mPnlClass = (m.pnl || 0) >= 0 ? 'pnl-positive' : 'pnl-negative';
-                var mPnlSign = (m.pnl || 0) >= 0 ? '+' : '';
-                var marketHtml = m.url
-                    ? '<a href="' + esc(m.url) + '" target="_blank" rel="noopener" style="color:var(--blue);text-decoration:none">' + esc(m.market) + '</a>'
-                    : esc(m.market);
-                return '<tr>' +
-                    '<td class="market-name">' + marketHtml + '</td>' +
-                    '<td style="font-family:var(--font-mono)">' + (m.bid != null ? m.bid.toFixed(3) : '—') + '</td>' +
-                    '<td style="font-family:var(--font-mono)">' + (m.ask != null ? m.ask.toFixed(3) : '—') + '</td>' +
-                    '<td style="font-family:var(--font-mono)">' + ((m.spread || 0) * 100).toFixed(1) + '¢</td>' +
-                    '<td style="font-family:var(--font-mono)">' + (m.bidFills || 0) + ' / ' + (m.askFills || 0) + '</td>' +
-                    '<td class="' + invClass + '" style="font-family:var(--font-mono)">' + invSign + (m.inventory || 0) + '</td>' +
-                    '<td class="' + mPnlClass + '">' + mPnlSign + '$' + (m.pnl || 0).toFixed(2) + '</td>' +
-                    '</tr>';
-            }).join('');
-        }
-
-        // Recent Fills Table
-        var fills = mm.recentFills || [];
-        var recentFills = fills.slice(-20).reverse();
-        document.getElementById('mm-fills-count').textContent = recentFills.length;
-        var fillsBody = document.getElementById('mm-fills-body');
-
-        if (recentFills.length === 0) {
-            fillsBody.innerHTML = '<tr><td colspan="6"><div class="empty-state"><div class="empty-icon">📋</div>No fills yet</div></td></tr>';
-        } else {
-            fillsBody.innerHTML = recentFills.map(function(f) {
-                var time = new Date(f.time);
-                var timeStr = time.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + ' ' +
-                              time.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
-                var sideClass = f.side === 'BID' ? 'mm-side-bid' : 'mm-side-ask';
-                var rpClass = (f.runningPnl || 0) >= 0 ? 'pnl-positive' : 'pnl-negative';
-                var rpSign = (f.runningPnl || 0) >= 0 ? '+' : '';
-                return '<tr>' +
-                    '<td style="font-family:var(--font-mono);font-size:12px">' + timeStr + '</td>' +
-                    '<td class="market-name">' + esc(f.market) + '</td>' +
-                    '<td><span class="' + sideClass + '">' + esc(f.side) + '</span></td>' +
-                    '<td style="font-family:var(--font-mono)">' + (f.price != null ? f.price.toFixed(3) : '—') + '</td>' +
-                    '<td style="font-family:var(--font-mono)">$' + (f.size || 0).toFixed(2) + '</td>' +
-                    '<td class="' + rpClass + '">' + rpSign + '$' + (f.runningPnl || 0).toFixed(2) + '</td>' +
-                    '</tr>';
-            }).join('');
-        }
+        tbody.innerHTML = resolved.map(function(r) {
+            var pnlClass = r.pnl >= 0 ? 'pnl-positive' : 'pnl-negative';
+            var pnlSign = r.pnl >= 0 ? '+' : '';
+            return '<tr>' +
+                '<td class="market-name">' + esc(r.market) + '</td>' +
+                '<td>' + (r.entryPrice * 100).toFixed(1) + '¢</td>' +
+                '<td>' + (r.exitPrice * 100).toFixed(1) + '¢</td>' +
+                '<td class="' + pnlClass + '">' + pnlSign + '$' + r.pnl.toFixed(4) + '</td>' +
+                '<td>' + r.holdTime + '</td>' +
+                '</tr>';
+        }).join('');
     }
 
     // --- Trades ---
     function renderTrades() {
-        const trades = dashData.tradeHistory || [];
-        document.getElementById('trades-count').textContent = trades.length;
-        const tbody = document.getElementById('trades-body');
+        var allTrades = dashData.tradeHistory || [];
+        // Fix #4: Filter out failed trades
+        var trades = allTrades.filter(function(t) { return t.status !== 'failed'; });
+        var failedCount = allTrades.length - trades.length;
+        document.getElementById('trades-count').textContent = trades.length + (failedCount > 0 ? ' executed' : '');
+        var tbody = document.getElementById('trades-body');
 
         if (trades.length === 0) {
             tbody.innerHTML = '<tr><td colspan="9"><div class="empty-state"><div class="empty-icon">📋</div>No trades yet — waiting for first signal</div></td></tr>';
@@ -1884,8 +1957,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Sort
-        const sorted = [...trades].sort((a, b) => {
-            let va, vb;
+        var sorted = trades.slice().sort(function(a, b) {
+            var va, vb;
             switch (tradeSort.key) {
                 case 'date': va = new Date(a.date || a.timestamp); vb = new Date(b.date || b.timestamp); break;
                 case 'market': va = a.market; vb = b.market; break;
@@ -1893,7 +1966,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 case 'entry': va = a.entryPrice; vb = b.entryPrice; break;
                 case 'exit': va = a.exitPrice; vb = b.exitPrice; break;
                 case 'pnl': va = a.pnl; vb = b.pnl; break;
-                case 'cost': va = a.cost || 0; vb = b.cost || 0; break;
+                case 'edge': va = typeof a.edge === 'number' ? a.edge : 0; vb = typeof b.edge === 'number' ? b.edge : 0; break;
                 case 'outcome': va = a.outcome; vb = b.outcome; break;
                 default: va = 0; vb = 0;
             }
@@ -1902,27 +1975,36 @@ document.addEventListener('DOMContentLoaded', function() {
             return 0;
         });
 
-        let running = dashData.initialBalance || 33;
-        const rows = sorted.map(t => {
+        var running = dashData.initialBalance || 33;
+        var rows = sorted.map(function(t) {
             running += t.pnl;
-            const pnlClass = t.pnl >= 0 ? 'pnl-positive' : 'pnl-negative';
-            const pnlSign = t.pnl >= 0 ? '+' : '';
-            const sideClass = t.side.toUpperCase() === 'YES' ? 'side-yes' : 'side-no';
-            const outcomeClass = t.outcome === 'W' ? 'outcome-win' : 'outcome-loss';
-            const date = new Date(t.date || t.timestamp);
-            const dateStr = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + ' ' +
+            var pnlClass = t.pnl >= 0 ? 'pnl-positive' : 'pnl-negative';
+            var pnlSign = t.pnl >= 0 ? '+' : '';
+            // Fix side display: BUY/SELL with appropriate colors
+            var sideClass = t.side.toUpperCase() === 'SELL' ? 'side-no' : 'side-yes';
+            var outcomeClass = t.outcome === 'W' ? 'outcome-win' : (t.outcome === 'L' ? 'outcome-loss' : '');
+            var date = new Date(t.date || t.timestamp);
+            var dateStr = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + ' ' +
                            date.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
-            return `<tr>
-                <td style="font-family: var(--font-mono); font-size: 12px;">${dateStr}</td>
-                <td class="market-name">${esc(t.market)}</td>
-                <td><span class="${sideClass}">${esc(t.side.toUpperCase())}</span></td>
-                <td>${t.entryPrice.toFixed(2)}¢</td>
-                <td>${t.exitPrice.toFixed(2)}¢</td>
-                <td class="${pnlClass}">${pnlSign}$${t.pnl.toFixed(4)}</td>
-                <td>${t.edge ? (t.edge * 100).toFixed(1) + '%' : '—'}</td>
-                <td><span class="${outcomeClass}">${t.outcome}</span></td>
-                <td style="font-family: var(--font-mono); font-size: 12px;">$${running.toFixed(2)}</td>
-            </tr>`;
+            // Fix #1: Prices are 0-1 dollar fractions, display as cents
+            var entryC = (t.entryPrice * 100).toFixed(1);
+            var exitC = t.exitPrice ? (t.exitPrice * 100).toFixed(1) : '—';
+            // Edge display: handle non-numeric edges gracefully
+            var edgeStr = '—';
+            if (t.edge && typeof t.edge === 'number' && t.edge > 0) {
+                edgeStr = t.edge <= 1 ? (t.edge * 100).toFixed(1) + '%' : t.edge.toFixed(1) + '%';
+            }
+            return '<tr>' +
+                '<td style="font-family: var(--font-mono); font-size: 12px;">' + dateStr + '</td>' +
+                '<td class="market-name">' + esc(t.market) + '</td>' +
+                '<td><span class="' + sideClass + '">' + esc(t.side.toUpperCase()) + '</span></td>' +
+                '<td>' + entryC + '¢</td>' +
+                '<td>' + exitC + (exitC !== '—' ? '¢' : '') + '</td>' +
+                '<td class="' + pnlClass + '">' + pnlSign + '$' + t.pnl.toFixed(4) + '</td>' +
+                '<td>' + edgeStr + '</td>' +
+                '<td>' + (outcomeClass ? '<span class="' + outcomeClass + '">' + t.outcome + '</span>' : t.outcome) + '</td>' +
+                '<td style="font-family: var(--font-mono); font-size: 12px;">$' + running.toFixed(2) + '</td>' +
+                '</tr>';
         });
 
         tbody.innerHTML = rows.join('');
@@ -1947,23 +2029,29 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- Metrics ---
     function renderMetrics() {
-        const m = dashData.metrics;
+        var m = dashData.metrics;
         if (!m) return;
 
-        // Support both schemas: avgEdge or avgActualReturn
-        const actualEdge = m.avgEdge || m.avgActualReturn || 0;
-        const estEdge = m.avgEstimatedEdge || 0;
+        // avgEstimatedEdge and avgActualReturn are already in percentage form from Python
+        var actualEdgePct = m.avgEdge || m.avgActualReturn || 0;
+        var estEdgePct = m.avgEstimatedEdge || 0;
 
-        document.getElementById('m-actual-edge').textContent = (actualEdge * 100).toFixed(2) + '%';
-        document.getElementById('m-actual-edge').className = 'metric-row-value ' + (actualEdge >= 0 ? 'positive' : 'negative');
-        document.getElementById('m-est-edge').textContent = (estEdge * 100).toFixed(2) + '%';
+        document.getElementById('m-actual-edge').textContent = actualEdgePct.toFixed(2) + '%';
+        document.getElementById('m-actual-edge').className = 'metric-row-value ' + (actualEdgePct >= 0 ? 'positive' : 'negative');
+        document.getElementById('m-est-edge').textContent = estEdgePct.toFixed(2) + '%';
 
-        // Calibration
-        const calibration = estEdge > 0 ? Math.min(actualEdge / estEdge, 2) : 0;
-        const calPct = Math.max(0, Math.min(100, calibration * 50)); // scale so 1.0 = 50%
-        document.getElementById('m-calibration-bar').style.width = calPct + '%';
-        document.getElementById('m-calibration-bar').style.background = calibration >= 0.8 && calibration <= 1.2 ? 'var(--green)' : 'var(--yellow)';
-        document.getElementById('m-calibration-pct').textContent = m.totalTrades > 0 ? calibration.toFixed(2) + 'x' : '—';
+        // Fix #21: Calibration bar — need ≥5 resolved trades for meaningful data
+        var resolvedCount = (m.wins || 0) + (m.losses || 0);
+        if (resolvedCount < 5) {
+            document.getElementById('m-calibration-bar').style.width = '0%';
+            document.getElementById('m-calibration-pct').textContent = 'Insufficient data';
+        } else {
+            var calibration = estEdgePct > 0 ? Math.min(actualEdgePct / estEdgePct, 2) : 0;
+            var calPct = Math.max(0, Math.min(100, calibration * 50));
+            document.getElementById('m-calibration-bar').style.width = calPct + '%';
+            document.getElementById('m-calibration-bar').style.background = calibration >= 0.8 && calibration <= 1.2 ? 'var(--green)' : 'var(--yellow)';
+            document.getElementById('m-calibration-pct').textContent = calibration.toFixed(2) + 'x';
+        }
 
         document.getElementById('m-avg-size').textContent = m.avgTradeSize ? '$' + m.avgTradeSize.toFixed(2) : '—';
         document.getElementById('m-avg-hold').textContent = m.avgHoldingHours ? m.avgHoldingHours.toFixed(1) + 'h' : '—';
@@ -1993,9 +2081,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- Alerts ---
     function renderAlerts() {
-        const alerts = dashData.alertLog || [];
+        var alerts = dashData.alertLog || [];
         document.getElementById('alerts-count').textContent = alerts.length;
-        const container = document.getElementById('alerts-body');
+        var container = document.getElementById('alerts-body');
 
         if (alerts.length === 0) {
             container.innerHTML = '<div class="empty-state"><div class="empty-icon">🔔</div>No scanner alerts yet</div>';
@@ -2003,10 +2091,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Show only last 25 alerts to avoid a huge list
-        const recent = alerts.slice(-25).reverse();
-        container.innerHTML = recent.map(a => {
-            // Support both schemas: action string or ledToTrade boolean
-            let status;
+        var recent = alerts.slice(-25).reverse();
+
+        // Fix #10: Group by timestamp
+        var html = '';
+        var lastTs = '';
+        recent.forEach(function(a) {
+            var status;
             if (a.action) {
                 status = a.action;
             } else if (a.ledToTrade === true) {
@@ -2014,29 +2105,37 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 status = 'passed';
             }
-            const dotClass = status === 'traded' ? 'traded' : status === 'watching' ? 'watching' : 'passed';
-            const badgeClass = dotClass;
-            const time = new Date(a.timestamp);
-            const timeStr = time.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + ' ' +
+            var dotClass = status === 'traded' ? 'traded' : status === 'watching' ? 'watching' : 'passed';
+            var badgeClass = dotClass;
+            var time = new Date(a.timestamp);
+            var timeStr = time.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + ' ' +
                            time.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
-            const detailParts = [];
+
+            // Group header by timestamp
+            var tsKey = a.timestamp || '';
+            if (tsKey !== lastTs) {
+                html += '<div class="alert-timestamp-group">🔔 Scan — ' + timeStr + '</div>';
+                lastTs = tsKey;
+            }
+
+            var detailParts = [];
             if (a.type) detailParts.push(a.type.replace(/_/g, ' '));
             if (a.detail) detailParts.push(a.detail);
             if (a.edge) detailParts.push('Edge: ' + (a.edge * 100).toFixed(1) + '%');
             if (a.priceChange) detailParts.push('Δ ' + (a.priceChange > 0 ? '+' : '') + (a.priceChange * 100).toFixed(1) + '%');
-            const marketHtml = a.url
-                ? `<a href="${esc(a.url)}" target="_blank" rel="noopener" style="color:var(--green);text-decoration:none">${esc(a.market)}</a>`
+            var marketHtml = a.url
+                ? '<a href="' + esc(a.url) + '" target="_blank" rel="noopener" style="color:var(--green);text-decoration:none">' + esc(a.market) + '</a>'
                 : esc(a.market);
-            return `<div class="alert-item">
-                <div class="alert-dot ${dotClass}"></div>
-                <div class="alert-content">
-                    <div class="alert-market">${marketHtml}</div>
-                    <div class="alert-detail">${esc(detailParts.join(' · '))}</div>
-                </div>
-                <span class="alert-badge ${badgeClass}">${status.toUpperCase()}</span>
-                <span class="alert-time">${timeStr}</span>
-            </div>`;
-        }).join('');
+            html += '<div class="alert-item">' +
+                '<div class="alert-dot ' + dotClass + '"></div>' +
+                '<div class="alert-content">' +
+                '<div class="alert-market">' + marketHtml + '</div>' +
+                '<div class="alert-detail">' + esc(detailParts.join(' · ')) + '</div>' +
+                '</div>' +
+                '<span class="alert-badge ' + badgeClass + '">' + status.toUpperCase() + '</span>' +
+                '</div>';
+        });
+        container.innerHTML = html;
     }
 
     // =====================================================================
