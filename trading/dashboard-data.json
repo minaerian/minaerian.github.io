@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-20T20:33:19.891745+00:00",
+  "lastUpdated": "2026-02-20T20:53:02.136447+00:00",
   "metrics": {
-    "balance": 75.341384,
+    "balance": 59.508474,
     "initialBalance": 133.0,
-    "totalPnl": 36.9066,
-    "totalPnlPct": 27.75,
+    "totalPnl": 14.5862,
+    "totalPnlPct": 10.97,
     "daysActive": 4,
     "totalTrades": 47,
     "wins": 0,
@@ -20,7 +20,7 @@
     "openPositions": 12,
     "maxPositions": 15,
     "targetBalance": 500.08,
-    "progressToTarget": 15.1
+    "progressToTarget": 11.9
   },
   "positions": [
     {
@@ -28,12 +28,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.55,
-      "currentPrice": 0.41,
+      "currentPrice": 0.44,
       "cost": 3.3,
       "size": 6.0,
       "edge": 0,
       "openedAt": "2026-02-18T07:01:05.409452+00:00",
-      "unrealizedPnl": -0.84,
+      "unrealizedPnl": -0.66,
       "url": "https://polymarket.com/market/israel-x-iran-ceasefire-broken-by-march-31-2026-312-682"
     },
     {
@@ -41,12 +41,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.9649,
-      "currentPrice": 0.966,
+      "currentPrice": 0.969,
       "cost": 3.3,
       "size": 3.42,
       "edge": 0,
       "openedAt": "2026-02-18T09:32:56.236134+00:00",
-      "unrealizedPnl": 0.0038,
+      "unrealizedPnl": 0.014,
       "url": "https://polymarket.com/market/will-wesley-hunt-win-the-2026-republican-primary"
     },
     {
@@ -54,12 +54,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.9147,
-      "currentPrice": 0.95,
+      "currentPrice": 0.96,
       "cost": 6.11,
       "size": 6.68,
       "edge": 0,
       "openedAt": "2026-02-18T14:39:31.587870+00:00",
-      "unrealizedPnl": 0.2358,
+      "unrealizedPnl": 0.3026,
       "url": "https://polymarket.com/market/foreign-intervention-in-gaza-by-march-31"
     },
     {
@@ -67,12 +67,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.9547,
-      "currentPrice": 0.94,
+      "currentPrice": 0.95,
       "cost": 6.11,
       "size": 6.4,
       "edge": 0,
       "openedAt": "2026-02-19T01:09:30.448919+00:00",
-      "unrealizedPnl": -0.0941,
+      "unrealizedPnl": -0.0301,
       "url": "https://polymarket.com/market/ukraine-signs-peace-deal-with-russia-by-march-31"
     },
     {
@@ -80,12 +80,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.8618,
-      "currentPrice": 0.821,
+      "currentPrice": 0.843,
       "cost": 12.22,
       "size": 14.18,
       "edge": 0,
       "openedAt": "2026-02-19T02:39:56.542486+00:00",
-      "unrealizedPnl": -0.5785,
+      "unrealizedPnl": -0.2666,
       "url": "https://polymarket.com/market/will-polymarket-mindshare-hit-90"
     },
     {
@@ -93,12 +93,12 @@
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.065,
-      "currentPrice": 0.027,
+      "currentPrice": 0.02,
       "cost": 14.01,
       "size": 341.58,
       "edge": 0.379,
       "openedAt": "2026-02-20T03:02:09.637270+00:00",
-      "unrealizedPnl": -12.9802,
+      "unrealizedPnl": -15.3712,
       "url": ""
     },
     {
@@ -119,12 +119,12 @@
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.085,
-      "currentPrice": 0.085,
+      "currentPrice": 0.003,
       "cost": 6.75,
       "size": 79.41,
       "edge": 0.224,
       "openedAt": "2026-02-20T03:02:48.423726+00:00",
-      "unrealizedPnl": 0.0,
+      "unrealizedPnl": -6.5118,
       "url": ""
     },
     {
@@ -132,12 +132,12 @@
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.435,
-      "currentPrice": 0.56,
+      "currentPrice": 0.51,
       "cost": 15.39,
       "size": 31.72,
       "edge": 0.382,
       "openedAt": "2026-02-20T09:32:58.089088+00:00",
-      "unrealizedPnl": 3.9654,
+      "unrealizedPnl": 2.3792,
       "url": ""
     },
     {
@@ -145,12 +145,12 @@
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.035,
-      "currentPrice": 0.035,
+      "currentPrice": 0.037,
       "cost": 7.51,
       "size": 214.57,
       "edge": 0.3094,
       "openedAt": "2026-02-20T20:32:02.097104+00:00",
-      "unrealizedPnl": 0.0,
+      "unrealizedPnl": 0.4291,
       "url": ""
     },
     {
@@ -158,12 +158,12 @@
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.055,
-      "currentPrice": 0.055,
+      "currentPrice": 0.06,
       "cost": 8.28,
       "size": 150.55,
       "edge": 0.2454,
       "openedAt": "2026-02-20T20:32:28.376181+00:00",
-      "unrealizedPnl": 0.0,
+      "unrealizedPnl": 0.7527,
       "url": ""
     },
     {
@@ -171,12 +171,12 @@
       "side": "BUY",
       "outcome": "BUY",
       "entryPrice": 0.063,
-      "currentPrice": 0.063,
+      "currentPrice": 0.079,
       "cost": 8.61,
       "size": 136.67,
       "edge": 0.4248,
       "openedAt": "2026-02-20T20:32:41.658717+00:00",
-      "unrealizedPnl": 0.0,
+      "unrealizedPnl": 2.1867,
       "url": ""
     }
   ],
@@ -1790,6 +1790,10 @@
     {
       "timestamp": "2026-02-20T20:33:17.303949+00:00",
       "balance": 169.9066
+    },
+    {
+      "timestamp": "2026-02-20T20:52:59.750647+00:00",
+      "balance": 147.5862
     }
   ],
   "alertLog": [
@@ -2196,7 +2200,7 @@
   ],
   "config": {
     "maxTradeFraction": 0.05,
-    "maxTradeSize": 3.77,
+    "maxTradeSize": 2.98,
     "minEdge": 0.05,
     "maxPositions": 15,
     "circuitBreakerFraction": 0.5,
