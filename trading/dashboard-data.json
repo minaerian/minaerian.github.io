@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-21T04:39:00.860277+00:00",
+  "lastUpdated": "2026-02-21T04:59:17.784247+00:00",
   "metrics": {
     "balance": 32.279449,
     "initialBalance": 133.0,
-    "totalPnl": 47.0086,
-    "totalPnlPct": 35.34,
+    "totalPnl": 43.9009,
+    "totalPnlPct": 33.01,
     "daysActive": 4,
     "totalTrades": 51,
     "wins": 2,
@@ -27,7 +27,7 @@
     "openPositions": 15,
     "maxPositions": 15,
     "targetBalance": 500.08,
-    "progressToTarget": 36.0
+    "progressToTarget": 35.4
   },
   "positions": [
     {
@@ -35,12 +35,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0434,
-      "currentPrice": 0.149,
+      "currentPrice": 0.129,
       "cost": 6.91,
       "size": 159.28,
       "edge": 0,
       "openedAt": "1771633809",
-      "unrealizedPnl": 16.8212,
+      "unrealizedPnl": 13.6356,
       "url": "https://polymarket.com/market/highest-temperature-in-seoul-on-february-22-2026-12corhigher"
     },
     {
@@ -74,12 +74,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.035,
-      "currentPrice": 0.024,
+      "currentPrice": 0.025,
       "cost": 7.51,
       "size": 214.56,
       "edge": 0,
       "openedAt": "1771620027",
-      "unrealizedPnl": -2.3601,
+      "unrealizedPnl": -2.1456,
       "url": "https://polymarket.com/market/highest-temperature-in-ankara-on-february-21-2026-15corhigher"
     },
     {
@@ -100,12 +100,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0608,
-      "currentPrice": 0.06,
+      "currentPrice": 0.059,
       "cost": 8.31,
       "size": 136.65,
       "edge": 0,
       "openedAt": "1771619551",
-      "unrealizedPnl": -0.1119,
+      "unrealizedPnl": -0.2486,
       "url": "https://polymarket.com/market/highest-temperature-in-buenos-aires-on-february-22-2026-27corbelow"
     },
     {
@@ -2052,6 +2052,10 @@
     {
       "timestamp": "2026-02-21T04:38:58.000715+00:00",
       "balance": 180.0086
+    },
+    {
+      "timestamp": "2026-02-21T04:59:15.004069+00:00",
+      "balance": 176.9009
     }
   ],
   "alertLog": [
