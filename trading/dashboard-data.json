@@ -1,18 +1,18 @@
 {
-  "lastUpdated": "2026-02-21T16:42:23.947342+00:00",
+  "lastUpdated": "2026-02-21T17:30:26.868314+00:00",
   "metrics": {
-    "balance": 61.812949,
+    "balance": 63.162709,
     "initialBalance": 133.0,
-    "totalPnl": -11.1314,
-    "totalPnlPct": -8.37,
+    "totalPnl": -59.4309,
+    "totalPnlPct": -44.68,
     "daysActive": 5,
-    "totalTrades": 56,
+    "totalTrades": 57,
     "wins": 3,
-    "losses": 13,
-    "winRate": 18.8,
+    "losses": 14,
+    "winRate": 17.6,
     "avgEstimatedEdge": 23.48,
-    "avgActualReturn": -1.55,
-    "edgeCalibration": -25.03,
+    "avgActualReturn": -2.16,
+    "edgeCalibration": -25.64,
     "bestTrade": {
       "market": "Foreign intervention in Gaza by March 31?",
       "pnl": 0.1354
@@ -21,13 +21,13 @@
       "market": "Seoul Feb 21 \u2014 14\u00b0C or higher YES",
       "pnl": -6.7879
     },
-    "currentStreak": -2,
-    "avgTradeSize": 6.15,
+    "currentStreak": -3,
+    "avgTradeSize": 6.13,
     "avgHoldingHours": 0,
     "openPositions": 3,
     "maxPositions": 10,
     "targetBalance": 500.08,
-    "progressToTarget": 24.4
+    "progressToTarget": 14.7
   },
   "positions": [
     {
@@ -35,12 +35,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0434,
-      "currentPrice": 0.348,
+      "currentPrice": 0.032,
       "cost": 6.91,
       "size": 159.28,
       "edge": 0,
       "openedAt": "1771633809",
-      "unrealizedPnl": 48.518,
+      "unrealizedPnl": -1.8145,
       "url": "https://polymarket.com/market/highest-temperature-in-seoul-on-february-22-2026-12corhigher",
       "endDate": "2026-02-22T12:00:00Z"
     },
@@ -49,12 +49,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0608,
-      "currentPrice": 0.028,
+      "currentPrice": 0.033,
       "cost": 8.31,
       "size": 136.65,
       "edge": 0,
       "openedAt": "1771619551",
-      "unrealizedPnl": -4.4847,
+      "unrealizedPnl": -3.8015,
       "url": "https://polymarket.com/market/highest-temperature-in-buenos-aires-on-february-22-2026-27corbelow",
       "endDate": "2026-02-22T12:00:00Z"
     },
@@ -922,6 +922,18 @@
       "exitPrice": 0,
       "amount": 2.2648,
       "pnl": -1.0297,
+      "edge": 0,
+      "status": "executed",
+      "outcome": "L"
+    },
+    {
+      "timestamp": "2026-02-21T17:30:20.574968+00:00",
+      "market": "Will the highest temperature in Seoul be 12\u00b0C or higher on February 22?",
+      "side": "SELL",
+      "entryPrice": 0.0318,
+      "exitPrice": 0,
+      "amount": 5.0651,
+      "pnl": -1.8464,
       "edge": 0,
       "status": "executed",
       "outcome": "L"
@@ -2035,6 +2047,10 @@
     {
       "timestamp": "2026-02-21T16:42:23.371801+00:00",
       "balance": 121.8686
+    },
+    {
+      "timestamp": "2026-02-21T17:30:26.318320+00:00",
+      "balance": 73.5691
     }
   ],
   "alertLog": [
@@ -2441,7 +2457,7 @@
   ],
   "config": {
     "maxTradeFraction": 0.05,
-    "maxTradeSize": 3.89,
+    "maxTradeSize": 3.95,
     "minEdge": 0.05,
     "maxPositions": 10,
     "circuitBreakerFraction": 0.5,
