@@ -1,33 +1,33 @@
 {
-  "lastUpdated": "2026-02-21T08:31:53.227487+00:00",
+  "lastUpdated": "2026-02-21T09:30:27.113478+00:00",
   "metrics": {
-    "balance": 32.279449,
+    "balance": 49.976299,
     "initialBalance": 133.0,
-    "totalPnl": 11.8329,
-    "totalPnlPct": 8.9,
+    "totalPnl": -11.9687,
+    "totalPnlPct": -9.0,
     "daysActive": 5,
-    "totalTrades": 51,
-    "wins": 2,
-    "losses": 9,
-    "winRate": 18.2,
+    "totalTrades": 56,
+    "wins": 3,
+    "losses": 13,
+    "winRate": 18.8,
     "avgEstimatedEdge": 23.48,
-    "avgActualReturn": -0.75,
-    "edgeCalibration": -24.23,
+    "avgActualReturn": -1.55,
+    "edgeCalibration": -25.03,
     "bestTrade": {
-      "market": "Will Wesley Hunt come in 2nd in the 2026 Texas Republican Primary?",
-      "pnl": 0.0752
+      "market": "Foreign intervention in Gaza by March 31?",
+      "pnl": 0.1354
     },
     "worstTrade": {
       "market": "Seoul Feb 21 \u2014 14\u00b0C or higher YES",
       "pnl": -6.7879
     },
-    "currentStreak": -7,
-    "avgTradeSize": 6.18,
+    "currentStreak": -2,
+    "avgTradeSize": 6.15,
     "avgHoldingHours": 0,
-    "openPositions": 15,
+    "openPositions": 10,
     "maxPositions": 10,
     "targetBalance": 500.08,
-    "progressToTarget": 29.0
+    "progressToTarget": 24.2
   },
   "positions": [
     {
@@ -35,12 +35,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0434,
-      "currentPrice": 0.149,
+      "currentPrice": 0.081,
       "cost": 6.91,
       "size": 159.28,
       "edge": 0,
       "openedAt": "1771633809",
-      "unrealizedPnl": 16.8212,
+      "unrealizedPnl": 5.9902,
       "url": "https://polymarket.com/market/highest-temperature-in-seoul-on-february-22-2026-12corhigher"
     },
     {
@@ -48,12 +48,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0285,
-      "currentPrice": 0.009,
+      "currentPrice": 0.01,
       "cost": 20.59,
       "size": 723.06,
       "edge": 0,
       "openedAt": "1771556518",
-      "unrealizedPnl": -14.0873,
+      "unrealizedPnl": -13.3643,
       "url": "https://polymarket.com/market/highest-temperature-in-buenos-aires-on-february-21-2026-27corbelow"
     },
     {
@@ -61,12 +61,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0642,
-      "currentPrice": 0.031,
+      "currentPrice": 0.03,
       "cost": 5.57,
       "size": 86.67,
       "edge": 0,
       "openedAt": "1771619537",
-      "unrealizedPnl": -2.8799,
+      "unrealizedPnl": -2.9665,
       "url": "https://polymarket.com/market/highest-temperature-in-toronto-on-february-21-2026-4corhigher"
     },
     {
@@ -74,12 +74,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.035,
-      "currentPrice": 0.029,
+      "currentPrice": 0.025,
       "cost": 7.51,
       "size": 214.56,
       "edge": 0,
       "openedAt": "1771620027",
-      "unrealizedPnl": -1.2874,
+      "unrealizedPnl": -2.1456,
       "url": "https://polymarket.com/market/highest-temperature-in-ankara-on-february-21-2026-15corhigher"
     },
     {
@@ -100,12 +100,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0608,
-      "currentPrice": 0.049,
+      "currentPrice": 0.046,
       "cost": 8.31,
       "size": 136.65,
       "edge": 0,
       "openedAt": "1771619551",
-      "unrealizedPnl": -1.6151,
+      "unrealizedPnl": -2.025,
       "url": "https://polymarket.com/market/highest-temperature-in-buenos-aires-on-february-22-2026-27corbelow"
     },
     {
@@ -146,71 +146,6 @@
       "openedAt": "1771524737",
       "unrealizedPnl": 0.0,
       "url": "https://polymarket.com/market/highest-temperature-in-miami-on-february-20-2026-79forbelow"
-    },
-    {
-      "market": "Will Polymarket mindshare hit 90%?",
-      "side": "BUY",
-      "outcome": "No",
-      "entryPrice": 0.857,
-      "currentPrice": 0.843,
-      "cost": 12.14,
-      "size": 14.17,
-      "edge": 0,
-      "openedAt": "1771468796",
-      "unrealizedPnl": -0.1984,
-      "url": "https://polymarket.com/market/will-polymarket-mindshare-hit-90"
-    },
-    {
-      "market": "Ukraine signs peace deal with Russia by March 31?",
-      "side": "BUY",
-      "outcome": "No",
-      "entryPrice": 0.95,
-      "currentPrice": 0.95,
-      "cost": 6.07,
-      "size": 6.39,
-      "edge": 0,
-      "openedAt": "1771463370",
-      "unrealizedPnl": 0.0,
-      "url": "https://polymarket.com/market/ukraine-signs-peace-deal-with-russia-by-march-31"
-    },
-    {
-      "market": "Foreign intervention in Gaza by March 31?",
-      "side": "BUY",
-      "outcome": "No",
-      "entryPrice": 0.91,
-      "currentPrice": 0.96,
-      "cost": 6.07,
-      "size": 6.67,
-      "edge": 0,
-      "openedAt": "1771425571",
-      "unrealizedPnl": 0.3335,
-      "url": "https://polymarket.com/market/foreign-intervention-in-gaza-by-march-31"
-    },
-    {
-      "market": "Will Wesley Hunt win the 2026 Texas Republican Primary?",
-      "side": "BUY",
-      "outcome": "No",
-      "entryPrice": 0.957,
-      "currentPrice": 0.962,
-      "cost": 3.26,
-      "size": 3.41,
-      "edge": 0,
-      "openedAt": "1771407176",
-      "unrealizedPnl": 0.0171,
-      "url": "https://polymarket.com/market/will-wesley-hunt-win-the-2026-republican-primary"
-    },
-    {
-      "market": "Israel x Iran ceasefire broken by March 31, 2026?",
-      "side": "BUY",
-      "outcome": "No",
-      "entryPrice": 0.55,
-      "currentPrice": 0.39,
-      "cost": 3.29,
-      "size": 5.99,
-      "edge": 0,
-      "openedAt": "1771398449",
-      "unrealizedPnl": -0.9584,
-      "url": "https://polymarket.com/market/israel-x-iran-ceasefire-broken-by-march-31-2026-312-682"
     },
     {
       "market": "Will the Fed decrease interest rates by 50+ bps after the March 2026 meeting?",
@@ -1015,6 +950,66 @@
       "exitPrice": 0,
       "amount": 5.9917,
       "pnl": -2.2883,
+      "edge": 0,
+      "status": "executed",
+      "outcome": "L"
+    },
+    {
+      "timestamp": "2026-02-21T09:30:11.145789+00:00",
+      "market": "Will Polymarket mindshare hit 90%?",
+      "side": "SELL",
+      "entryPrice": 0.8209,
+      "exitPrice": 0,
+      "amount": 11.6322,
+      "pnl": -0.5115,
+      "edge": 0,
+      "status": "executed",
+      "outcome": "L"
+    },
+    {
+      "timestamp": "2026-02-21T09:30:12.830245+00:00",
+      "market": "Ukraine signs peace deal with Russia by March 31?",
+      "side": "SELL",
+      "entryPrice": 0.9353,
+      "exitPrice": 0,
+      "amount": 5.9766,
+      "pnl": -0.0939,
+      "edge": 0,
+      "status": "executed",
+      "outcome": "L"
+    },
+    {
+      "timestamp": "2026-02-21T09:30:14.547633+00:00",
+      "market": "Foreign intervention in Gaza by March 31?",
+      "side": "SELL",
+      "entryPrice": 0.9353,
+      "exitPrice": 0,
+      "amount": 6.2385,
+      "pnl": 0.1688,
+      "edge": 0,
+      "status": "executed",
+      "outcome": "W"
+    },
+    {
+      "timestamp": "2026-02-21T09:30:16.593849+00:00",
+      "market": "Will Wesley Hunt win the 2026 Texas Republican Primary?",
+      "side": "SELL",
+      "entryPrice": 0.9602,
+      "exitPrice": 0,
+      "amount": 3.2743,
+      "pnl": 0.0109,
+      "edge": 0,
+      "status": "executed",
+      "outcome": "W"
+    },
+    {
+      "timestamp": "2026-02-21T09:30:18.441825+00:00",
+      "market": "Israel x Iran ceasefire broken by March 31, 2026?",
+      "side": "SELL",
+      "entryPrice": 0.3781,
+      "exitPrice": 0,
+      "amount": 2.2648,
+      "pnl": -1.0297,
       "edge": 0,
       "status": "executed",
       "outcome": "L"
@@ -2084,6 +2079,10 @@
     {
       "timestamp": "2026-02-21T08:31:50.509134+00:00",
       "balance": 144.8329
+    },
+    {
+      "timestamp": "2026-02-21T09:30:25.291172+00:00",
+      "balance": 121.0313
     }
   ],
   "alertLog": [
@@ -2490,7 +2489,7 @@
   ],
   "config": {
     "maxTradeFraction": 0.05,
-    "maxTradeSize": 7.43,
+    "maxTradeSize": 6.78,
     "minEdge": 0.05,
     "maxPositions": 10,
     "circuitBreakerFraction": 0.5,
