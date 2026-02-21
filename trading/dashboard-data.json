@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-21T02:31:49.415120+00:00",
+  "lastUpdated": "2026-02-21T02:55:21.042041+00:00",
   "metrics": {
     "balance": 32.279449,
     "initialBalance": 133.0,
-    "totalPnl": 33.1223,
-    "totalPnlPct": 24.9,
+    "totalPnl": 40.2249,
+    "totalPnlPct": 30.24,
     "daysActive": 4,
     "totalTrades": 51,
     "wins": 0,
@@ -24,7 +24,7 @@
     "openPositions": 13,
     "maxPositions": 15,
     "targetBalance": 500.08,
-    "progressToTarget": 33.2
+    "progressToTarget": 34.6
   },
   "positions": [
     {
@@ -136,12 +136,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.435,
-      "currentPrice": 0.82,
+      "currentPrice": 0.88,
       "cost": 23.4,
       "size": 48.77,
       "edge": 0.382,
       "openedAt": "2026-02-20T09:32:58.089088+00:00",
-      "unrealizedPnl": 18.7748,
+      "unrealizedPnl": 21.7007,
       "url": "https://polymarket.com/event/highest-temperature-in-seoul-on-february-21-2026/highest-temperature-in-seoul-on-february-21-2026-14corhigher"
     },
     {
@@ -149,12 +149,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.035,
-      "currentPrice": 0.021,
+      "currentPrice": 0.039,
       "cost": 7.51,
       "size": 214.57,
       "edge": 0.3094,
       "openedAt": "2026-02-20T20:32:02.097104+00:00",
-      "unrealizedPnl": -3.004,
+      "unrealizedPnl": 0.8583,
       "url": "https://polymarket.com/event/highest-temperature-in-ankara-on-february-21-2026/highest-temperature-in-ankara-on-february-21-2026-15corhigher"
     },
     {
@@ -188,12 +188,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.045,
-      "currentPrice": 0.137,
+      "currentPrice": 0.136,
       "cost": 7.8,
       "size": 173.33,
       "edge": 0.33,
       "openedAt": "2026-02-21T00:30:20.870869+00:00",
-      "unrealizedPnl": 15.9467,
+      "unrealizedPnl": 15.7733,
       "url": ""
     }
   ],
@@ -1987,6 +1987,10 @@
     {
       "timestamp": "2026-02-21T02:31:47.046136+00:00",
       "balance": 166.1223
+    },
+    {
+      "timestamp": "2026-02-21T02:55:18.658067+00:00",
+      "balance": 173.2249
     }
   ],
   "alertLog": [
@@ -2397,7 +2401,7 @@
     "minEdge": 0.05,
     "maxPositions": 15,
     "circuitBreakerFraction": 0.5,
-    "circuitBreaker": 85.68,
+    "circuitBreaker": 86.61,
     "scanInterval": "10min"
   }
 }
