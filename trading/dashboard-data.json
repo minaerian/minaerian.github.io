@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-21T03:48:13.186146+00:00",
+  "lastUpdated": "2026-02-21T04:04:35.533927+00:00",
   "metrics": {
     "balance": 32.279449,
     "initialBalance": 133.0,
-    "totalPnl": 44.5064,
-    "totalPnlPct": 33.46,
+    "totalPnl": 52.4822,
+    "totalPnlPct": 39.46,
     "daysActive": 4,
     "totalTrades": 51,
     "wins": 0,
@@ -24,7 +24,7 @@
     "openPositions": 15,
     "maxPositions": 15,
     "targetBalance": 500.08,
-    "progressToTarget": 35.5
+    "progressToTarget": 37.1
   },
   "positions": [
     {
@@ -32,12 +32,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0434,
-      "currentPrice": 0.169,
+      "currentPrice": 0.18,
       "cost": 6.91,
       "size": 159.28,
       "edge": 0,
       "openedAt": "1771633809",
-      "unrealizedPnl": 20.0068,
+      "unrealizedPnl": 21.7589,
       "url": "https://polymarket.com/market/highest-temperature-in-seoul-on-february-22-2026-12corhigher"
     },
     {
@@ -84,12 +84,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.4689,
-      "currentPrice": 0.999,
+      "currentPrice": 0.998,
       "cost": 22.86,
       "size": 48.75,
       "edge": 0,
       "openedAt": "1771524686",
-      "unrealizedPnl": 25.8432,
+      "unrealizedPnl": 25.7944,
       "url": "https://polymarket.com/market/highest-temperature-in-seoul-on-february-21-2026-14corhigher"
     },
     {
@@ -123,12 +123,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.08,
-      "currentPrice": 0.001,
+      "currentPrice": 0.08,
       "cost": 6.35,
       "size": 79.4,
       "edge": 0,
       "openedAt": "1771524591",
-      "unrealizedPnl": -6.2724,
+      "unrealizedPnl": 0.0,
       "url": "https://polymarket.com/market/highest-temperature-in-london-on-february-20-2026-13corhigher"
     },
     {
@@ -2033,6 +2033,10 @@
     {
       "timestamp": "2026-02-21T03:47:46.806609+00:00",
       "balance": 181.6923
+    },
+    {
+      "timestamp": "2026-02-21T04:04:00.674496+00:00",
+      "balance": 185.4334
     }
   ],
   "alertLog": [
@@ -2443,7 +2447,7 @@
     "minEdge": 0.05,
     "maxPositions": 15,
     "circuitBreakerFraction": 0.5,
-    "circuitBreaker": 90.85,
+    "circuitBreaker": 92.72,
     "scanInterval": "10min"
   }
 }
