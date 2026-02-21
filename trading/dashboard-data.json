@@ -1,27 +1,30 @@
 {
-  "lastUpdated": "2026-02-21T01:23:30.446961+00:00",
+  "lastUpdated": "2026-02-21T01:30:43.584334+00:00",
   "metrics": {
-    "balance": 32.822049,
+    "balance": 33.666849,
     "initialBalance": 133.0,
-    "totalPnl": 37.8636,
-    "totalPnlPct": 28.47,
+    "totalPnl": 34.9109,
+    "totalPnlPct": 26.25,
     "daysActive": 4,
-    "totalTrades": 50,
+    "totalTrades": 51,
     "wins": 0,
-    "losses": 0,
+    "losses": 1,
     "winRate": 0.0,
     "avgEstimatedEdge": 23.48,
-    "avgActualReturn": 0.0,
-    "edgeCalibration": -23.48,
+    "avgActualReturn": -0.75,
+    "edgeCalibration": -24.23,
     "bestTrade": null,
-    "worstTrade": null,
-    "currentStreak": 0,
+    "worstTrade": {
+      "market": "Will the highest temperature in Toronto be 4\u00b0C or higher on February 21?",
+      "pnl": -2.2883
+    },
+    "currentStreak": -1,
     "avgTradeSize": 6.18,
     "avgHoldingHours": 0,
     "openPositions": 13,
     "maxPositions": 15,
     "targetBalance": 500.08,
-    "progressToTarget": 34.2
+    "progressToTarget": 33.6
   },
   "positions": [
     {
@@ -42,12 +45,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.9649,
-      "currentPrice": 0.961,
+      "currentPrice": 0.959,
       "cost": 3.3,
       "size": 3.42,
       "edge": 0,
       "openedAt": "2026-02-18T09:32:56.236134+00:00",
-      "unrealizedPnl": -0.0133,
+      "unrealizedPnl": -0.0202,
       "url": "https://polymarket.com/market/will-wesley-hunt-win-the-2026-republican-primary"
     },
     {
@@ -133,12 +136,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.435,
-      "currentPrice": 0.74,
+      "currentPrice": 0.73,
       "cost": 23.4,
       "size": 48.77,
       "edge": 0.382,
       "openedAt": "2026-02-20T09:32:58.089088+00:00",
-      "unrealizedPnl": 14.8735,
+      "unrealizedPnl": 14.3859,
       "url": "https://polymarket.com/event/highest-temperature-in-seoul-on-february-21-2026/highest-temperature-in-seoul-on-february-21-2026-14corhigher"
     },
     {
@@ -159,12 +162,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.055,
-      "currentPrice": 0.07,
+      "currentPrice": 0.04,
       "cost": 8.28,
       "size": 150.55,
       "edge": 0.2454,
       "openedAt": "2026-02-20T20:32:28.376181+00:00",
-      "unrealizedPnl": 2.2582,
+      "unrealizedPnl": -2.2582,
       "url": "https://polymarket.com/event/highest-temperature-in-toronto-on-february-21-2026/highest-temperature-in-toronto-on-february-21-2026-4corhigher"
     },
     {
@@ -185,12 +188,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.045,
-      "currentPrice": 0.12,
+      "currentPrice": 0.137,
       "cost": 7.8,
       "size": 173.33,
       "edge": 0.33,
       "openedAt": "2026-02-21T00:30:20.870869+00:00",
-      "unrealizedPnl": 13.0,
+      "unrealizedPnl": 15.9467,
       "url": ""
     }
   ],
@@ -974,6 +977,18 @@
       "edge": 0.33,
       "status": "executed",
       "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-21T01:30:29.117216+00:00",
+      "market": "Will the highest temperature in Toronto be 4\u00b0C or higher on February 21?",
+      "side": "SELL",
+      "entryPrice": 0.0398,
+      "exitPrice": 0,
+      "amount": 5.9917,
+      "pnl": -2.2883,
+      "edge": 0,
+      "status": "executed",
+      "outcome": "L"
     }
   ],
   "equityCurve": [
@@ -1956,6 +1971,10 @@
     {
       "timestamp": "2026-02-21T01:19:07.092398+00:00",
       "balance": 171.3513
+    },
+    {
+      "timestamp": "2026-02-21T01:30:41.229752+00:00",
+      "balance": 167.9109
     }
   ],
   "alertLog": [
@@ -2362,7 +2381,7 @@
   ],
   "config": {
     "maxTradeFraction": 0.05,
-    "maxTradeSize": 7.73,
+    "maxTradeSize": 7.77,
     "minEdge": 0.05,
     "maxPositions": 15,
     "circuitBreakerFraction": 0.5,
