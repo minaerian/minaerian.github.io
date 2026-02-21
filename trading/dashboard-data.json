@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-21T15:31:47.234375+00:00",
+  "lastUpdated": "2026-02-21T16:42:23.947342+00:00",
   "metrics": {
     "balance": 61.812949,
     "initialBalance": 133.0,
-    "totalPnl": 60.5028,
-    "totalPnlPct": 45.49,
+    "totalPnl": -11.1314,
+    "totalPnlPct": -8.37,
     "daysActive": 5,
     "totalTrades": 56,
     "wins": 3,
@@ -27,7 +27,7 @@
     "openPositions": 3,
     "maxPositions": 10,
     "targetBalance": 500.08,
-    "progressToTarget": 38.7
+    "progressToTarget": 24.4
   },
   "positions": [
     {
@@ -35,26 +35,28 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0434,
-      "currentPrice": 0.772,
+      "currentPrice": 0.348,
       "cost": 6.91,
       "size": 159.28,
       "edge": 0,
       "openedAt": "1771633809",
-      "unrealizedPnl": 116.0527,
-      "url": "https://polymarket.com/market/highest-temperature-in-seoul-on-february-22-2026-12corhigher"
+      "unrealizedPnl": 48.518,
+      "url": "https://polymarket.com/market/highest-temperature-in-seoul-on-february-22-2026-12corhigher",
+      "endDate": "2026-02-22T12:00:00Z"
     },
     {
       "market": "Will the highest temperature in Buenos Aires be 27\u00b0C or below on February 22?",
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0608,
-      "currentPrice": 0.058,
+      "currentPrice": 0.028,
       "cost": 8.31,
       "size": 136.65,
       "edge": 0,
       "openedAt": "1771619551",
-      "unrealizedPnl": -0.3852,
-      "url": "https://polymarket.com/market/highest-temperature-in-buenos-aires-on-february-22-2026-27corbelow"
+      "unrealizedPnl": -4.4847,
+      "url": "https://polymarket.com/market/highest-temperature-in-buenos-aires-on-february-22-2026-27corbelow",
+      "endDate": "2026-02-22T12:00:00Z"
     },
     {
       "market": "Will the Fed decrease interest rates by 50+ bps after the March 2026 meeting?",
@@ -67,7 +69,8 @@
       "edge": 0,
       "openedAt": "1771332663",
       "unrealizedPnl": 0.1,
-      "url": "https://polymarket.com/market/will-the-fed-decrease-interest-rates-by-50-bps-after-the-march-2026-meeting"
+      "url": "https://polymarket.com/market/will-the-fed-decrease-interest-rates-by-50-bps-after-the-march-2026-meeting",
+      "endDate": "2026-03-18T00:00:00Z"
     }
   ],
   "tradeHistory": [
@@ -1619,7 +1622,7 @@
     },
     {
       "timestamp": "2026-02-19T16:06:49.759436+00:00",
-      "balance": 163.5994
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-19T16:16:48.858649+00:00",
@@ -1727,7 +1730,7 @@
     },
     {
       "timestamp": "2026-02-20T04:31:48.594668+00:00",
-      "balance": 143.5994
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T05:01:49.125923+00:00",
@@ -1735,23 +1738,23 @@
     },
     {
       "timestamp": "2026-02-20T05:31:47.861299+00:00",
-      "balance": 142.0924
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T06:01:51.463393+00:00",
-      "balance": 145.2104
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T06:22:43.112316+00:00",
-      "balance": 145.7637
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T06:31:47.298268+00:00",
-      "balance": 147.5445
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T07:01:46.847550+00:00",
-      "balance": 142.6146
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T07:31:47.652882+00:00",
@@ -1771,7 +1774,7 @@
     },
     {
       "timestamp": "2026-02-20T10:01:45.161755+00:00",
-      "balance": 141.353
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T10:31:47.467171+00:00",
@@ -1835,159 +1838,159 @@
     },
     {
       "timestamp": "2026-02-20T19:31:50.597884+00:00",
-      "balance": 143.4242
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T20:01:49.648022+00:00",
-      "balance": 144.2942
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T20:24:50.620590+00:00",
-      "balance": 144.0923
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T20:33:17.303949+00:00",
-      "balance": 169.9066
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T20:52:59.750647+00:00",
-      "balance": 147.5862
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T21:01:49.038478+00:00",
-      "balance": 149.4791
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T21:14:53.254660+00:00",
-      "balance": 144.8928
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T21:23:03.019800+00:00",
-      "balance": 143.0622
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T21:31:51.240414+00:00",
-      "balance": 145.1872
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T21:37:45.839428+00:00",
-      "balance": 143.3402
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T22:01:47.626236+00:00",
-      "balance": 140.3012
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T22:08:45.426277+00:00",
-      "balance": 142.1482
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T22:31:49.553376+00:00",
-      "balance": 151.7048
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T23:01:49.605281+00:00",
-      "balance": 155.703
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-20T23:31:49.563085+00:00",
-      "balance": 154.3907
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T00:01:49.226142+00:00",
-      "balance": 147.0792
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T00:31:46.670914+00:00",
-      "balance": 167.7847
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T01:19:07.092398+00:00",
-      "balance": 171.3513
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T01:30:41.229752+00:00",
-      "balance": 167.9109
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T01:45:53.980577+00:00",
-      "balance": 166.6827
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T02:01:49.970490+00:00",
-      "balance": 168.0856
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T02:31:47.046136+00:00",
-      "balance": 166.1223
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T02:55:18.658067+00:00",
-      "balance": 173.2249
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T03:01:52.823724+00:00",
-      "balance": 173.7125
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T03:07:14.914707+00:00",
-      "balance": 175.6631
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T03:31:49.451208+00:00",
-      "balance": 179.6062
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T03:47:46.806609+00:00",
-      "balance": 181.6923
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T04:04:00.674496+00:00",
-      "balance": 185.4334
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T04:15:03.889478+00:00",
-      "balance": 183.7823
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T04:31:48.581212+00:00",
-      "balance": 180.2231
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T04:38:58.000715+00:00",
-      "balance": 180.0086
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T04:59:15.004069+00:00",
-      "balance": 176.9009
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T05:31:53.240175+00:00",
-      "balance": 178.055
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T05:51:53.862782+00:00",
-      "balance": 181.2406
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T06:00:36.183252+00:00",
-      "balance": 158.8155
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T06:31:47.326482+00:00",
-      "balance": 161.1778
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T07:31:47.931781+00:00",
-      "balance": 154.1286
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T08:01:52.269555+00:00",
-      "balance": 154.9529
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T08:31:50.509134+00:00",
-      "balance": 144.8329
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T09:30:25.291172+00:00",
@@ -2003,7 +2006,7 @@
     },
     {
       "timestamp": "2026-02-21T11:31:49.959554+00:00",
-      "balance": 153.7858
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T12:31:47.814409+00:00",
@@ -2023,11 +2026,15 @@
     },
     {
       "timestamp": "2026-02-21T15:01:50.037877+00:00",
-      "balance": 155.4573
+      "balance": 140.0
     },
     {
       "timestamp": "2026-02-21T15:31:46.720723+00:00",
-      "balance": 193.5028
+      "balance": 140.0
+    },
+    {
+      "timestamp": "2026-02-21T16:42:23.371801+00:00",
+      "balance": 121.8686
     }
   ],
   "alertLog": [
@@ -2438,7 +2445,7 @@
     "minEdge": 0.05,
     "maxPositions": 10,
     "circuitBreakerFraction": 0.5,
-    "circuitBreaker": 96.75,
+    "circuitBreaker": 70.0,
     "scanInterval": "10min"
   }
 }
