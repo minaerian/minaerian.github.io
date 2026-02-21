@@ -798,6 +798,81 @@
             background: rgba(255, 255, 255, 0.25);
         }
 
+        /* If-resolves column */
+        .if-resolves-yes {
+            color: var(--green);
+            font-family: var(--font-mono);
+            font-size: 12px;
+            font-weight: 600;
+        }
+        .if-resolves-neg {
+            color: var(--red);
+            font-family: var(--font-mono);
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        /* Liquidity warning */
+        .liquidity-warn {
+            display: inline-flex;
+            align-items: center;
+            gap: 3px;
+            font-size: 10px;
+            color: var(--yellow);
+            margin-left: 4px;
+            cursor: help;
+        }
+
+        /* Resolving soon badge */
+        .resolving-soon {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--red);
+            white-space: nowrap;
+        }
+
+        .resolving-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--red);
+            display: inline-block;
+            animation: resolvePulse 1.2s ease-in-out infinite;
+        }
+
+        @keyframes resolvePulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(0.8); }
+        }
+
+        .resolution-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 600;
+            background: var(--yellow-soft);
+            color: var(--yellow);
+            white-space: nowrap;
+        }
+
+        /* Summary sub-line for resolution value */
+        .summary-resolve-sub {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 2px;
+            font-family: var(--font-mono);
+        }
+        .summary-resolve-sub .resolve-val {
+            color: var(--green);
+            font-weight: 600;
+        }
+
         /* Fade-in animation */
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(12px); }
@@ -1197,6 +1272,7 @@
                         <th>Cost</th>
                         <th>Value</th>
                         <th>P&L</th>
+                        <th>If Resolves</th>
                         <th>Resolves</th>
                         <th>Time Held</th>
                     </tr>
@@ -1531,6 +1607,25 @@ document.addEventListener('DOMContentLoaded', function() {
             healthEl.className = 'health-badge health-danger';
         }
 
+        // ── Calculate "if all resolve YES" totals ──
+        var totalIfResolvesValue = 0;
+        positions.forEach(function(p) {
+            var shares = p.size || p.shares || 0;
+            totalIfResolvesValue += shares * 1.0;  // each share pays $1 if resolves YES
+        });
+        var ifAllResolvePortfolio = balance + totalIfResolvesValue;
+        var ifAllResolvePnl = ifAllResolvePortfolio - initialBalance;
+
+        // ── Portfolio Value sub-line: if all resolve YES ──
+        var portfolioResolveSub = document.getElementById('s-portfolio-resolve');
+        if (!portfolioResolveSub) {
+            portfolioResolveSub = document.createElement('div');
+            portfolioResolveSub.id = 's-portfolio-resolve';
+            portfolioResolveSub.className = 'summary-resolve-sub';
+            portfolioSub.parentNode.insertBefore(portfolioResolveSub, portfolioSub.nextSibling);
+        }
+        portfolioResolveSub.innerHTML = 'If all resolve YES: <span class="resolve-val">$' + ifAllResolvePortfolio.toFixed(2) + '</span>';
+
         // ── Total P&L ──
         const pnlEl = document.getElementById('s-pnl');
         const pnlPctEl = document.getElementById('s-pnl-pct');
@@ -1539,6 +1634,17 @@ document.addEventListener('DOMContentLoaded', function() {
         pnlEl.className = 'summary-value ' + (totalPnl >= 0 ? 'positive' : 'negative');
         const pnlPct = initialBalance ? ((totalPnl / initialBalance) * 100).toFixed(1) : '0.0';
         pnlPctEl.textContent = pnlSign + pnlPct + '% ROI';
+
+        // ── Total P&L sub-line: if all resolve YES ──
+        var pnlResolveSub = document.getElementById('s-pnl-resolve');
+        if (!pnlResolveSub) {
+            pnlResolveSub = document.createElement('div');
+            pnlResolveSub.id = 's-pnl-resolve';
+            pnlResolveSub.className = 'summary-resolve-sub';
+            pnlPctEl.parentNode.insertBefore(pnlResolveSub, pnlPctEl.nextSibling);
+        }
+        var ifResPnlSign = ifAllResolvePnl >= 0 ? '+' : '';
+        pnlResolveSub.innerHTML = 'If all resolve YES: <span class="resolve-val">' + ifResPnlSign + '$' + Math.abs(ifAllResolvePnl).toFixed(2) + '</span>';
 
         // ── Today's P&L (from equity curve) ──
         var todayPnl = 0;
@@ -1903,7 +2009,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const container = document.getElementById('positions-table-container');
 
         if (positions.length === 0) {
-            tbody.innerHTML = '<tr><td colspan="11"><div class="empty-state"><div class="empty-icon">📭</div>No open positions</div></td></tr>';
+            tbody.innerHTML = '<tr><td colspan="12"><div class="empty-state"><div class="empty-icon">📭</div>No open positions</div></td></tr>';
             // Clear mobile cards
             var cardsDiv = container.querySelector('.positions-cards');
             if (cardsDiv) cardsDiv.innerHTML = '';
@@ -1949,6 +2055,32 @@ document.addEventListener('DOMContentLoaded', function() {
                 edgeClass = p.edge >= 0.15 ? 'pnl-positive' : '';
             }
 
+            // "If Resolves YES" calculation: what you'd get if position resolves in your favor
+            var ifResolvesVal = (shares * 1.0) - (p.cost || 0);
+            var ifResolvesClass = ifResolvesVal >= 0 ? 'if-resolves-yes' : 'if-resolves-neg';
+            var ifResolvesSign = ifResolvesVal >= 0 ? '+' : '';
+            var ifResolvesLabel = outcome.toUpperCase() === 'NO' ? 'If NO' : 'If YES';
+            var ifResolvesHtml = '<span class="' + ifResolvesClass + '">' + ifResolvesLabel + ' ➜ ' + ifResolvesSign + '$' + Math.abs(ifResolvesVal).toFixed(2) + '</span>';
+
+            // Liquidity warning: currentPrice > 0.50 but entryPrice < 0.10 indicates thin orderbook
+            var liquidityWarnHtml = '';
+            if (p.currentPrice > 0.50 && p.entryPrice < 0.10) {
+                liquidityWarnHtml = '<span class="liquidity-warn" title="Thin liquidity — displayed price may not be achievable">⚠️ thin</span>';
+            }
+
+            // Resolving soon: check endDate within 24 hours
+            var resolvingSoonHtml = '';
+            if (p.endDate) {
+                var endMs = new Date(p.endDate).getTime();
+                var nowMs = Date.now();
+                var hoursUntil = (endMs - nowMs) / 3600000;
+                if (hoursUntil > 0 && hoursUntil <= 24) {
+                    resolvingSoonHtml = '<br><span class="resolving-soon"><span class="resolving-dot"></span> Resolving soon</span>';
+                } else if (hoursUntil > 24 && hoursUntil <= 48) {
+                    resolvingSoonHtml = '<br><span class="resolution-badge">⏰ ' + Math.floor(hoursUntil) + 'h</span>';
+                }
+            }
+
             // Row tinting: green for profitable, red for losing, star for big winners
             var rowClass = '';
             if (Math.abs(positionPnl) > 10) {
@@ -1968,7 +2100,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 '<td class="' + edgeClass + '" style="font-family:var(--font-mono);font-size:12px">' + edgeStr + '</td>' +
                 '<td>' + costStr + '</td>' +
                 '<td>$' + currentValue.toFixed(2) + '</td>' +
-                '<td class="' + posPnlClass + '">' + posPnlSign + '$' + Math.abs(positionPnl).toFixed(2) + ' (' + pnlPctSign + pnlPct + '%)</td>' +
+                '<td class="' + posPnlClass + '">' + posPnlSign + '$' + Math.abs(positionPnl).toFixed(2) + ' (' + pnlPctSign + pnlPct + '%)' + liquidityWarnHtml + '</td>' +
+                '<td>' + ifResolvesHtml + resolvingSoonHtml + '</td>' +
                 '<td style="font-size:12px">' + resolvesDate + '</td>' +
                 '<td>' + held + '</td>' +
                 '</tr>';
@@ -1982,7 +2115,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             var pnlSign = catPnl >= 0 ? '+' : '';
             var pnlColor = catPnl >= 0 ? 'var(--green)' : 'var(--red)';
-            return '<tr><td colspan="11"><div class="category-header">' +
+            return '<tr><td colspan="12"><div class="category-header">' +
                 '<span>' + label + ' (' + items.length + ')</span>' +
                 '<span class="cat-subtotal">Cost: $' + catCost.toFixed(2) + ' · P&L: <span style="color:' + pnlColor + '">' + pnlSign + '$' + Math.abs(catPnl).toFixed(2) + '</span></span>' +
                 '</div></td></tr>';
@@ -2003,23 +2136,27 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Add totals row
-        let totalCost = 0, totalValue = 0, totalShares = 0, totalPnl = 0;
+        let totalCost = 0, totalValue = 0, totalShares = 0, totalPnl = 0, totalIfResolves = 0;
         positions.forEach(function(p) {
             const shares = p.size || p.shares || 0;
             totalShares += shares;
             totalCost += (p.cost || 0);
             totalValue += shares * p.currentPrice;
             totalPnl += (p.currentPrice - p.entryPrice) * shares;
+            totalIfResolves += (shares * 1.0) - (p.cost || 0);
         });
         const tPnlClass = totalPnl >= 0 ? 'pnl-positive' : 'pnl-negative';
         const tPnlSign = totalPnl >= 0 ? '+' : '';
         const tPnlPct = totalCost > 0 ? (totalPnl / totalCost * 100).toFixed(1) : '0.0';
+        const tIfResClass = totalIfResolves >= 0 ? 'if-resolves-yes' : 'if-resolves-neg';
+        const tIfResSign = totalIfResolves >= 0 ? '+' : '';
         html += '<tr style="border-top:2px solid #333;font-weight:bold">' +
             '<td>If closed now →</td><td></td>' +
             '<td>' + totalShares.toFixed(1) + '</td><td></td><td></td><td></td>' +
             '<td>$' + totalCost.toFixed(2) + '</td>' +
             '<td>$' + totalValue.toFixed(2) + '</td>' +
             '<td class="' + tPnlClass + '">' + tPnlSign + '$' + Math.abs(totalPnl).toFixed(2) + ' (' + (totalPnl >= 0 ? '+' : '') + tPnlPct + '%)</td>' +
+            '<td class="' + tIfResClass + '">' + tIfResSign + '$' + Math.abs(totalIfResolves).toFixed(2) + '</td>' +
             '<td></td><td></td></tr>';
 
         tbody.innerHTML = html;
