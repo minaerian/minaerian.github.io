@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-21T15:03:46.540848+00:00",
+  "lastUpdated": "2026-02-21T15:05:47.051466+00:00",
   "metrics": {
     "balance": 61.812949,
     "initialBalance": 133.0,
-    "totalPnl": 70.52,
-    "totalPnlPct": 53.02,
+    "totalPnl": 80.8906,
+    "totalPnlPct": 60.82,
     "daysActive": 5,
     "totalTrades": 56,
     "wins": 3,
@@ -24,10 +24,10 @@
     "currentStreak": -2,
     "avgTradeSize": 6.15,
     "avgHoldingHours": 0,
-    "openPositions": 10,
+    "openPositions": 3,
     "maxPositions": 10,
     "targetBalance": 500.08,
-    "progressToTarget": 40.7
+    "progressToTarget": 42.8
   },
   "positions": [
     {
@@ -35,65 +35,13 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0434,
-      "currentPrice": 0.557,
+      "currentPrice": 0.9,
       "cost": 6.91,
       "size": 159.28,
       "edge": 0,
       "openedAt": "1771633809",
-      "unrealizedPnl": 81.8075,
+      "unrealizedPnl": 136.4405,
       "url": "https://polymarket.com/market/highest-temperature-in-seoul-on-february-22-2026-12corhigher"
-    },
-    {
-      "market": "Will the highest temperature in Buenos Aires be 27\u00b0C or below on February 21?",
-      "side": "BUY",
-      "outcome": "Yes",
-      "entryPrice": 0.0285,
-      "currentPrice": 0.001,
-      "cost": 20.59,
-      "size": 723.06,
-      "edge": 0,
-      "openedAt": "1771556518",
-      "unrealizedPnl": -19.8718,
-      "url": "https://polymarket.com/market/highest-temperature-in-buenos-aires-on-february-21-2026-27corbelow"
-    },
-    {
-      "market": "Will the highest temperature in Toronto be 4\u00b0C or higher on February 21?",
-      "side": "BUY",
-      "outcome": "Yes",
-      "entryPrice": 0.0642,
-      "currentPrice": 0.075,
-      "cost": 5.57,
-      "size": 86.67,
-      "edge": 0,
-      "openedAt": "1771619537",
-      "unrealizedPnl": 0.9336,
-      "url": "https://polymarket.com/market/highest-temperature-in-toronto-on-february-21-2026-4corhigher"
-    },
-    {
-      "market": "Will the highest temperature in Ankara be 15\u00b0C or higher on February 21?",
-      "side": "BUY",
-      "outcome": "Yes",
-      "entryPrice": 0.035,
-      "currentPrice": 0.002,
-      "cost": 7.51,
-      "size": 214.56,
-      "edge": 0,
-      "openedAt": "1771620027",
-      "unrealizedPnl": -7.0804,
-      "url": "https://polymarket.com/market/highest-temperature-in-ankara-on-february-21-2026-15corhigher"
-    },
-    {
-      "market": "Will the highest temperature in Seoul be 14\u00b0C or higher on February 21?",
-      "side": "BUY",
-      "outcome": "Yes",
-      "entryPrice": 0.4689,
-      "currentPrice": 0.4689,
-      "cost": 22.86,
-      "size": 48.75,
-      "edge": 0,
-      "openedAt": "1771524686",
-      "unrealizedPnl": 0.0,
-      "url": "https://polymarket.com/market/highest-temperature-in-seoul-on-february-21-2026-14corhigher"
     },
     {
       "market": "Will the highest temperature in Buenos Aires be 27\u00b0C or below on February 22?",
@@ -107,45 +55,6 @@
       "openedAt": "1771619551",
       "unrealizedPnl": -0.3852,
       "url": "https://polymarket.com/market/highest-temperature-in-buenos-aires-on-february-22-2026-27corbelow"
-    },
-    {
-      "market": "Will the highest temperature in Seoul be 11\u00b0C or higher on February 20?",
-      "side": "BUY",
-      "outcome": "Yes",
-      "entryPrice": 0,
-      "currentPrice": 0,
-      "cost": 0.0,
-      "size": 1.4,
-      "edge": 0,
-      "openedAt": "1771525864",
-      "unrealizedPnl": 0,
-      "url": "https://polymarket.com/market/highest-temperature-in-seoul-on-february-20-2026-11corhigher"
-    },
-    {
-      "market": "Will the highest temperature in London be 13\u00b0C or higher on February 20?",
-      "side": "BUY",
-      "outcome": "Yes",
-      "entryPrice": 0.08,
-      "currentPrice": 0.08,
-      "cost": 6.35,
-      "size": 79.4,
-      "edge": 0,
-      "openedAt": "1771524591",
-      "unrealizedPnl": 0.0,
-      "url": "https://polymarket.com/market/highest-temperature-in-london-on-february-20-2026-13corhigher"
-    },
-    {
-      "market": "Will the highest temperature in Miami be 79\u00b0F or below on February 20?",
-      "side": "BUY",
-      "outcome": "Yes",
-      "entryPrice": 0.1371,
-      "currentPrice": 0.1371,
-      "cost": 6.76,
-      "size": 49.33,
-      "edge": 0,
-      "openedAt": "1771524737",
-      "unrealizedPnl": 0.0,
-      "url": "https://polymarket.com/market/highest-temperature-in-miami-on-february-20-2026-79forbelow"
     },
     {
       "market": "Will the Fed decrease interest rates by 50+ bps after the March 2026 meeting?",
@@ -2521,7 +2430,7 @@
   ],
   "config": {
     "maxTradeFraction": 0.05,
-    "maxTradeSize": 7.37,
+    "maxTradeSize": 3.89,
     "minEdge": 0.05,
     "maxPositions": 10,
     "circuitBreakerFraction": 0.5,
