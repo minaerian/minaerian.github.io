@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-21T00:34:56.131026+00:00",
+  "lastUpdated": "2026-02-21T01:19:09.481200+00:00",
   "metrics": {
-    "balance": 38.738849,
+    "balance": 32.822049,
     "initialBalance": 133.0,
-    "totalPnl": 33.574,
-    "totalPnlPct": 25.24,
+    "totalPnl": 38.3513,
+    "totalPnlPct": 28.84,
     "daysActive": 4,
     "totalTrades": 50,
     "wins": 0,
@@ -21,7 +21,7 @@
     "openPositions": 13,
     "maxPositions": 15,
     "targetBalance": 500.08,
-    "progressToTarget": 33.3
+    "progressToTarget": 34.3
   },
   "positions": [
     {
@@ -29,12 +29,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.55,
-      "currentPrice": 0.42,
+      "currentPrice": 0.43,
       "cost": 3.3,
       "size": 6.0,
       "edge": 0,
       "openedAt": "2026-02-18T07:01:05.409452+00:00",
-      "unrealizedPnl": -0.78,
+      "unrealizedPnl": -0.72,
       "url": "https://polymarket.com/market/israel-x-iran-ceasefire-broken-by-march-31-2026-312-682"
     },
     {
@@ -55,12 +55,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.9147,
-      "currentPrice": 0.95,
+      "currentPrice": 0.96,
       "cost": 6.11,
       "size": 6.68,
       "edge": 0,
       "openedAt": "2026-02-18T14:39:31.587870+00:00",
-      "unrealizedPnl": 0.2358,
+      "unrealizedPnl": 0.3026,
       "url": "https://polymarket.com/market/foreign-intervention-in-gaza-by-march-31"
     },
     {
@@ -94,12 +94,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.065,
-      "currentPrice": 0.025,
+      "currentPrice": 0.021,
       "cost": 21.64,
       "size": 723.08,
       "edge": 0.379,
       "openedAt": "2026-02-20T03:02:09.637270+00:00",
-      "unrealizedPnl": -28.9233,
+      "unrealizedPnl": -31.8157,
       "url": "https://polymarket.com/event/highest-temperature-in-buenos-aires-on-february-21-2026/highest-temperature-in-buenos-aires-on-february-21-2026-27corbelow"
     },
     {
@@ -133,12 +133,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.435,
-      "currentPrice": 0.72,
+      "currentPrice": 0.75,
       "cost": 23.4,
       "size": 48.77,
       "edge": 0.382,
       "openedAt": "2026-02-20T09:32:58.089088+00:00",
-      "unrealizedPnl": 13.8982,
+      "unrealizedPnl": 15.3612,
       "url": "https://polymarket.com/event/highest-temperature-in-seoul-on-february-21-2026/highest-temperature-in-seoul-on-february-21-2026-14corhigher"
     },
     {
@@ -172,12 +172,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.063,
-      "currentPrice": 0.06,
+      "currentPrice": 0.059,
       "cost": 8.61,
       "size": 136.67,
       "edge": 0.4248,
       "openedAt": "2026-02-20T20:32:41.658717+00:00",
-      "unrealizedPnl": -0.41,
+      "unrealizedPnl": -0.5467,
       "url": "https://polymarket.com/event/highest-temperature-in-buenos-aires-on-february-22-2026/highest-temperature-in-buenos-aires-on-february-22-2026-27corbelow"
     },
     {
@@ -185,12 +185,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.045,
-      "currentPrice": 0.06,
+      "currentPrice": 0.13,
       "cost": 7.8,
       "size": 173.33,
       "edge": 0.33,
       "openedAt": "2026-02-21T00:30:20.870869+00:00",
-      "unrealizedPnl": 2.6,
+      "unrealizedPnl": 14.7333,
       "url": ""
     }
   ],
@@ -1952,6 +1952,10 @@
     {
       "timestamp": "2026-02-21T00:31:46.670914+00:00",
       "balance": 167.7847
+    },
+    {
+      "timestamp": "2026-02-21T01:19:07.092398+00:00",
+      "balance": 171.3513
     }
   ],
   "alertLog": [
@@ -2358,11 +2362,11 @@
   ],
   "config": {
     "maxTradeFraction": 0.05,
-    "maxTradeSize": 8.02,
+    "maxTradeSize": 7.73,
     "minEdge": 0.05,
     "maxPositions": 15,
     "circuitBreakerFraction": 0.5,
-    "circuitBreaker": 84.95,
+    "circuitBreaker": 85.68,
     "scanInterval": "10min"
   }
 }
