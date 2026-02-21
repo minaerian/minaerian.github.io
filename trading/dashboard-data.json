@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-02-21T04:59:17.784247+00:00",
+  "lastUpdated": "2026-02-21T05:01:31.465700+00:00",
   "metrics": {
     "balance": 32.279449,
     "initialBalance": 133.0,
-    "totalPnl": 43.9009,
-    "totalPnlPct": 33.01,
-    "daysActive": 4,
+    "totalPnl": 44.1154,
+    "totalPnlPct": 33.17,
+    "daysActive": 5,
     "totalTrades": 51,
     "wins": 2,
     "losses": 9,
@@ -74,12 +74,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.035,
-      "currentPrice": 0.025,
+      "currentPrice": 0.026,
       "cost": 7.51,
       "size": 214.56,
       "edge": 0,
       "openedAt": "1771620027",
-      "unrealizedPnl": -2.1456,
+      "unrealizedPnl": -1.931,
       "url": "https://polymarket.com/market/highest-temperature-in-ankara-on-february-21-2026-15corhigher"
     },
     {
