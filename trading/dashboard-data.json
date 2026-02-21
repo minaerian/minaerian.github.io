@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-21T03:34:01.938082+00:00",
+  "lastUpdated": "2026-02-21T03:47:49.247798+00:00",
   "metrics": {
     "balance": 32.279449,
     "initialBalance": 133.0,
-    "totalPnl": 44.8728,
-    "totalPnlPct": 33.74,
+    "totalPnl": 48.6923,
+    "totalPnlPct": 36.61,
     "daysActive": 4,
     "totalTrades": 51,
     "wins": 0,
@@ -24,7 +24,7 @@
     "openPositions": 13,
     "maxPositions": 15,
     "targetBalance": 500.08,
-    "progressToTarget": 35.6
+    "progressToTarget": 36.3
   },
   "positions": [
     {
@@ -45,12 +45,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.9649,
-      "currentPrice": 0.958,
+      "currentPrice": 0.959,
       "cost": 3.3,
       "size": 3.42,
       "edge": 0,
       "openedAt": "2026-02-18T09:32:56.236134+00:00",
-      "unrealizedPnl": -0.0236,
+      "unrealizedPnl": -0.0202,
       "url": "https://polymarket.com/market/will-wesley-hunt-win-the-2026-republican-primary"
     },
     {
@@ -84,12 +84,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.8618,
-      "currentPrice": 0.842,
+      "currentPrice": 0.843,
       "cost": 12.22,
       "size": 14.18,
       "edge": 0,
       "openedAt": "2026-02-19T02:39:56.542486+00:00",
-      "unrealizedPnl": -0.2808,
+      "unrealizedPnl": -0.2666,
       "url": "https://polymarket.com/market/will-polymarket-mindshare-hit-90"
     },
     {
@@ -97,12 +97,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.065,
-      "currentPrice": 0.019,
+      "currentPrice": 0.02,
       "cost": 21.64,
       "size": 723.08,
       "edge": 0.379,
       "openedAt": "2026-02-20T03:02:09.637270+00:00",
-      "unrealizedPnl": -33.2618,
+      "unrealizedPnl": -32.5387,
       "url": "https://polymarket.com/event/highest-temperature-in-buenos-aires-on-february-21-2026/highest-temperature-in-buenos-aires-on-february-21-2026-27corbelow"
     },
     {
@@ -149,12 +149,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.035,
-      "currentPrice": 0.028,
+      "currentPrice": 0.027,
       "cost": 7.51,
       "size": 214.57,
       "edge": 0.3094,
       "openedAt": "2026-02-20T20:32:02.097104+00:00",
-      "unrealizedPnl": -1.502,
+      "unrealizedPnl": -1.7166,
       "url": "https://polymarket.com/event/highest-temperature-in-ankara-on-february-21-2026/highest-temperature-in-ankara-on-february-21-2026-15corhigher"
     },
     {
@@ -188,12 +188,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.045,
-      "currentPrice": 0.15,
+      "currentPrice": 0.169,
       "cost": 7.8,
       "size": 173.33,
       "edge": 0.33,
       "openedAt": "2026-02-21T00:30:20.870869+00:00",
-      "unrealizedPnl": 18.2,
+      "unrealizedPnl": 21.4933,
       "url": ""
     }
   ],
@@ -2003,6 +2003,10 @@
     {
       "timestamp": "2026-02-21T03:31:49.451208+00:00",
       "balance": 179.6062
+    },
+    {
+      "timestamp": "2026-02-21T03:47:46.806609+00:00",
+      "balance": 181.6923
     }
   ],
   "alertLog": [
@@ -2413,7 +2417,7 @@
     "minEdge": 0.05,
     "maxPositions": 15,
     "circuitBreakerFraction": 0.5,
-    "circuitBreaker": 89.8,
+    "circuitBreaker": 90.85,
     "scanInterval": "10min"
   }
 }
