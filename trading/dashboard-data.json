@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-21T07:31:50.709519+00:00",
+  "lastUpdated": "2026-02-21T08:01:55.019754+00:00",
   "metrics": {
     "balance": 32.279449,
     "initialBalance": 133.0,
-    "totalPnl": 21.1286,
-    "totalPnlPct": 15.89,
+    "totalPnl": 21.9529,
+    "totalPnlPct": 16.51,
     "daysActive": 5,
     "totalTrades": 51,
     "wins": 2,
@@ -27,7 +27,7 @@
     "openPositions": 15,
     "maxPositions": 10,
     "targetBalance": 500.08,
-    "progressToTarget": 30.8
+    "progressToTarget": 31.0
   },
   "positions": [
     {
@@ -48,12 +48,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0285,
-      "currentPrice": 0.019,
+      "currentPrice": 0.009,
       "cost": 20.59,
       "size": 723.06,
       "edge": 0,
       "openedAt": "1771556518",
-      "unrealizedPnl": -6.8567,
+      "unrealizedPnl": -14.0873,
       "url": "https://polymarket.com/market/highest-temperature-in-buenos-aires-on-february-21-2026-27corbelow"
     },
     {
@@ -61,12 +61,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0642,
-      "currentPrice": 0.04,
+      "currentPrice": 0.128,
       "cost": 5.57,
       "size": 86.67,
       "edge": 0,
       "openedAt": "1771619537",
-      "unrealizedPnl": -2.0998,
+      "unrealizedPnl": 5.5271,
       "url": "https://polymarket.com/market/highest-temperature-in-toronto-on-february-21-2026-4corhigher"
     },
     {
@@ -74,12 +74,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.035,
-      "currentPrice": 0.03,
+      "currentPrice": 0.039,
       "cost": 7.51,
       "size": 214.56,
       "edge": 0,
       "openedAt": "1771620027",
-      "unrealizedPnl": -1.0728,
+      "unrealizedPnl": 0.8582,
       "url": "https://polymarket.com/market/highest-temperature-in-ankara-on-february-21-2026-15corhigher"
     },
     {
@@ -100,12 +100,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0608,
-      "currentPrice": 0.058,
+      "currentPrice": 0.047,
       "cost": 8.31,
       "size": 136.65,
       "edge": 0,
       "openedAt": "1771619551",
-      "unrealizedPnl": -0.3852,
+      "unrealizedPnl": -1.8884,
       "url": "https://polymarket.com/market/highest-temperature-in-buenos-aires-on-february-22-2026-27corbelow"
     },
     {
@@ -2076,209 +2076,13 @@
     {
       "timestamp": "2026-02-21T07:31:47.931781+00:00",
       "balance": 154.1286
+    },
+    {
+      "timestamp": "2026-02-21T08:01:52.269555+00:00",
+      "balance": 154.9529
     }
   ],
   "alertLog": [
-    {
-      "timestamp": "2026-02-21T06:31:36.534456+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will Harvey Weinstein be sentenced to between 20 and 30 years in prison?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/harvey-weinstein-prison-time/will-harvey-weinstein-be-sentenced-to-between-20-and-30-years-in-prison"
-    },
-    {
-      "timestamp": "2026-02-21T06:31:36.534456+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will the Toronto Raptors win the NBA Eastern Conference Finals?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-eastern-conference-champion-442/will-the-toronto-raptors-win-the-nba-eastern-conference-finals"
-    },
-    {
-      "timestamp": "2026-02-21T06:31:36.534456+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will Oviedo win the 2025\u201326 La Liga?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/la-liga-winner-114/will-oviedo-win-the-202526-la-liga"
-    },
-    {
-      "timestamp": "2026-02-21T06:31:36.534456+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Carolina Hurricanes win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-carolina-hurricanes-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-21T06:31:36.534456+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Edmonton Oilers win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-edmonton-oilers-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-21T06:31:36.534456+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Dallas Stars win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-dallas-stars-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-21T06:31:36.534456+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Vegas Golden Knights win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-vegas-golden-knights-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-21T06:31:36.534456+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Tampa Bay Lightning win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-tampa-bay-lightning-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-21T06:31:36.534456+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "2026 Balance of Power: R Senate, R House",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/balance-of-power-2026-midterms/2026-balance-of-power-r-senate-r-house-537"
-    },
-    {
-      "timestamp": "2026-02-21T06:31:36.534456+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the New York Knicks win the NBA Eastern Conference Finals?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-eastern-conference-champion-442/will-the-new-york-knicks-win-the-nba-eastern-conference-finals"
-    },
-    {
-      "timestamp": "2026-02-21T06:31:36.534456+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Philadelphia 76ers win the NBA Eastern Conference Finals?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-eastern-conference-champion-442/will-the-philadelphia-76ers-win-the-nba-eastern-conference-finals"
-    },
-    {
-      "timestamp": "2026-02-21T06:31:36.534456+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Houston Rockets win the NBA Western Conference Finals?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-western-conference-champion-933/will-the-houston-rockets-win-the-nba-western-conference-finals"
-    },
-    {
-      "timestamp": "2026-02-21T06:31:36.534456+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will Trump pardon Ghislaine Maxwell by end of 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/will-trump-pardon-ghislaine-maxwell/will-trump-pardon-ghislaine-maxwell"
-    },
-    {
-      "timestamp": "2026-02-21T07:31:36.886230+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Mika Biereth be the top goal scorer in the 2025-26 Ligue 1 season?",
-      "priceChange": 0.371,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/ligue-1-top-goalscorer/will-mika-biereth-be-the-top-goal-scorer-in-the-2025-26-ligue-1-season"
-    },
-    {
-      "timestamp": "2026-02-21T07:31:36.886230+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Wesley Said be the top goal scorer in the 2025-26 Ligue 1 season?",
-      "priceChange": 0.342,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/ligue-1-top-goalscorer/will-wesley-said-be-the-top-goal-scorer-in-the-2025-26-ligue-1-season"
-    },
-    {
-      "timestamp": "2026-02-21T07:31:36.886230+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Khvicha Kvaratskhelia be the top goal scorer in the 2025-26 Ligue 1 season?",
-      "priceChange": 0.34,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/ligue-1-top-goalscorer/will-khvicha-kvaratskhelia-be-the-top-goal-scorer-in-the-2025-26-ligue-1-season"
-    },
-    {
-      "timestamp": "2026-02-21T07:31:36.886230+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Bradley Barcola be the top goal scorer in the 2025-26 Ligue 1 season?",
-      "priceChange": 0.334,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/ligue-1-top-goalscorer/will-bradley-barcola-be-the-top-goal-scorer-in-the-2025-26-ligue-1-season"
-    },
-    {
-      "timestamp": "2026-02-21T07:31:36.886230+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Emanuel Emegha be the top goal scorer in the 2025-26 Ligue 1 season?",
-      "priceChange": 0.334,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/ligue-1-top-goalscorer/will-emanuel-emegha-be-the-top-goal-scorer-in-the-2025-26-ligue-1-season"
-    },
-    {
-      "timestamp": "2026-02-21T07:31:36.886230+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Pierre-Emerick Aubameyang be the top goal scorer in the 2025-26 Ligue 1 season?",
-      "priceChange": 0.332,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/ligue-1-top-goalscorer/will-pierre-emerick-aubameyang-be-the-top-goal-scorer-in-the-2025-26-ligue-1-season"
-    },
-    {
-      "timestamp": "2026-02-21T07:31:36.886230+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Breel Embolo be the top goal scorer in the 2025-26 Ligue 1 season?",
-      "priceChange": 0.3275,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/ligue-1-top-goalscorer/will-breel-embolo-be-the-top-goal-scorer-in-the-2025-26-ligue-1-season"
-    },
-    {
-      "timestamp": "2026-02-21T07:31:36.886230+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Jean Philippe Krasso be the top goal scorer in the 2025-26 Ligue 1 season?",
-      "priceChange": 0.324,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/ligue-1-top-goalscorer/will-jean-philippe-krasso-be-the-top-goal-scorer-in-the-2025-26-ligue-1-season"
-    },
-    {
-      "timestamp": "2026-02-21T07:31:36.886230+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Terem Moffi be the top goal scorer in the 2025-26 Ligue 1 season?",
-      "priceChange": 0.321,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/ligue-1-top-goalscorer/will-terem-moffi-be-the-top-goal-scorer-in-the-2025-26-ligue-1-season"
-    },
-    {
-      "timestamp": "2026-02-21T07:31:36.886230+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Lorenzo Lucca be the top goal scorer in the 2025-26 Serie A season?",
-      "priceChange": 0.234,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/serie-a-top-goalscorer/will-lorenzo-lucca-be-the-top-goal-scorer-in-the-2025-26-serie-a-season"
-    },
-    {
-      "timestamp": "2026-02-21T07:31:36.886230+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Nantes finish in the top 4 of the Ligue 1 2025\u201326 standings?",
-      "priceChange": 0.1865,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/ligue-1-top-4-finish/will-nantes-finish-in-the-top-4-of-the-ligue-1-202526-standings"
-    },
-    {
-      "timestamp": "2026-02-21T07:31:36.886230+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Hoffenheim finish in the top 4 of the Bundesliga 2025\u201326 standings?",
-      "priceChange": 0.175,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/bundesliga-top-4-finish/will-hoffenheim-finish-in-the-top-4-of-the-bundesliga-202526-standings"
-    },
     {
       "timestamp": "2026-02-21T07:31:36.886230+00:00",
       "type": "PRICE_SWING_LARGE",
@@ -2478,6 +2282,206 @@
       "priceChange": 0,
       "ledToTrade": false,
       "url": "https://polymarket.com/event/erdoan-out-before-2027/erdoan-out-before-2027"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Auburn win the 2025-2026 SEC Men's Basketball regular season championship?",
+      "priceChange": 0.357,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/sec-mens-college-basketball-2025-2026-regular-season-champion/will-auburn-win-the-2025-2026-sec-mens-basketball-regular-season-championship"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Georgia win the 2025-2026 SEC Men's Basketball regular season championship?",
+      "priceChange": 0.3525,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/sec-mens-college-basketball-2025-2026-regular-season-champion/will-georgia-win-the-2025-2026-sec-mens-basketball-regular-season-championship"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Xavier win the 2025-2026 Big East Men\u2019s Basketball regular season championship?",
+      "priceChange": 0.3125,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/big-east-mens-college-basketball-2025-2026-regular-season-champion/will-xavier-win-the-2025-2026-big-east-mens-basketball-regular-season-championship"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Mark Baisley be the Republican nominee for Senate in Colorado?",
+      "priceChange": 0.17,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/colorado-republican-senate-primary-winner/will-mark-baisley-be-the-republican-nominee-for-senate-in-colorado"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Pierre-Emerick Aubameyang be the top goal scorer in the 2025-26 Ligue 1 season?",
+      "priceChange": 0.119,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/ligue-1-top-goalscorer/will-pierre-emerick-aubameyang-be-the-top-goal-scorer-in-the-2025-26-ligue-1-season"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Harvey Weinstein be sentenced to less than 5 years in prison?",
+      "priceChange": 0.1105,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/harvey-weinstein-prison-time/will-harvey-weinstein-be-sentenced-to-less-than-5-years-in-prison"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Mike Johnson out as Speaker by December 31?",
+      "priceChange": 0.11,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/mike-johnson-out-as-speaker-by/mike-johnson-out-as-speaker-by-december-31"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Jean Philippe Krasso be the top goal scorer in the 2025-26 Ligue 1 season?",
+      "priceChange": 0.1065,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/ligue-1-top-goalscorer/will-jean-philippe-krasso-be-the-top-goal-scorer-in-the-2025-26-ligue-1-season"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Trump pardon Bob Menendez before 2027?",
+      "priceChange": 0.105,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/who-will-trump-pardon-before-2027/will-trump-pardon-bob-menendez-before-2027"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Pump.fun reach $0.0058 by December 31, 2026?",
+      "priceChange": 0.105,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/what-price-will-pumpfun-hit-before-2027/will-pumpfun-reach-0pt0058-by-december-31-2026"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "GTA VI released before June 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/gta-vi-released-before-june-2026/gta-vi-released-before-june-2026"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will Harvey Weinstein be sentenced to between 10 and 20 years in prison?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/harvey-weinstein-prison-time/will-harvey-weinstein-be-sentenced-to-between-10-and-20-years-in-prison"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will Harvey Weinstein be sentenced to between 20 and 30 years in prison?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/harvey-weinstein-prison-time/will-harvey-weinstein-be-sentenced-to-between-20-and-30-years-in-prison"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will the Toronto Raptors win the NBA Eastern Conference Finals?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-eastern-conference-champion-442/will-the-toronto-raptors-win-the-nba-eastern-conference-finals"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will Oviedo win the 2025\u201326 La Liga?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/la-liga-winner-114/will-oviedo-win-the-202526-la-liga"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Carolina Hurricanes win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-carolina-hurricanes-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Edmonton Oilers win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-edmonton-oilers-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Dallas Stars win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-dallas-stars-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Vegas Golden Knights win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-vegas-golden-knights-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Tampa Bay Lightning win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-tampa-bay-lightning-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Houston Rockets win the NBA Western Conference Finals?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-western-conference-champion-933/will-the-houston-rockets-win-the-nba-western-conference-finals"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Trump pardon Ghislaine Maxwell by end of 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/will-trump-pardon-ghislaine-maxwell/will-trump-pardon-ghislaine-maxwell"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Erdo\u011fan out by end of 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/erdoan-out-before-2027/erdoan-out-before-2027"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Trump impeached by end of 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/will-trump-be-impeached-by-december-31-2026/will-trump-be-impeached-by-december-31-2026"
+    },
+    {
+      "timestamp": "2026-02-21T08:01:36.880716+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Trump resign by December 31, 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/will-trump-resign-by-december-31-2026/will-trump-resign-by-december-31-2026"
     }
   ],
   "config": {
