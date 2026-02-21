@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-21T05:51:56.577333+00:00",
+  "lastUpdated": "2026-02-21T06:00:38.918903+00:00",
   "metrics": {
     "balance": 32.279449,
     "initialBalance": 133.0,
-    "totalPnl": 48.2406,
-    "totalPnlPct": 36.27,
+    "totalPnl": 25.8155,
+    "totalPnlPct": 19.41,
     "daysActive": 5,
     "totalTrades": 51,
     "wins": 2,
@@ -25,9 +25,9 @@
     "avgTradeSize": 6.18,
     "avgHoldingHours": 0,
     "openPositions": 15,
-    "maxPositions": 15,
+    "maxPositions": 10,
     "targetBalance": 500.08,
-    "progressToTarget": 36.2
+    "progressToTarget": 31.8
   },
   "positions": [
     {
@@ -61,12 +61,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0642,
-      "currentPrice": 0.04,
+      "currentPrice": 0.08,
       "cost": 5.57,
       "size": 86.67,
       "edge": 0,
       "openedAt": "1771619537",
-      "unrealizedPnl": -2.0998,
+      "unrealizedPnl": 1.367,
       "url": "https://polymarket.com/market/highest-temperature-in-toronto-on-february-21-2026-4corhigher"
     },
     {
@@ -87,12 +87,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.4689,
-      "currentPrice": 1.0,
+      "currentPrice": 0.4689,
       "cost": 22.86,
       "size": 48.75,
       "edge": 0,
       "openedAt": "1771524686",
-      "unrealizedPnl": 25.8919,
+      "unrealizedPnl": 0.0,
       "url": "https://polymarket.com/market/highest-temperature-in-seoul-on-february-21-2026-14corhigher"
     },
     {
@@ -2064,6 +2064,10 @@
     {
       "timestamp": "2026-02-21T05:51:53.862782+00:00",
       "balance": 181.2406
+    },
+    {
+      "timestamp": "2026-02-21T06:00:36.183252+00:00",
+      "balance": 158.8155
     }
   ],
   "alertLog": [
@@ -2472,7 +2476,7 @@
     "maxTradeFraction": 0.05,
     "maxTradeSize": 7.43,
     "minEdge": 0.05,
-    "maxPositions": 15,
+    "maxPositions": 10,
     "circuitBreakerFraction": 0.5,
     "circuitBreaker": 92.72,
     "scanInterval": "10min"
