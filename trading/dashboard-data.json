@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-21T20:31:49.191867+00:00",
+  "lastUpdated": "2026-02-21T21:57:35.445846+00:00",
   "metrics": {
     "balance": 66.909909,
     "initialBalance": 133.0,
-    "totalPnl": -21.5525,
-    "totalPnlPct": -16.2,
+    "totalPnl": -41.1683,
+    "totalPnlPct": -30.95,
     "daysActive": 5,
     "totalTrades": 57,
     "wins": 3,
@@ -27,7 +27,7 @@
     "openPositions": 3,
     "maxPositions": 10,
     "targetBalance": 500.08,
-    "progressToTarget": 22.3
+    "progressToTarget": 18.4
   },
   "positions": [
     {
@@ -35,12 +35,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0434,
-      "currentPrice": 0.248,
+      "currentPrice": 0.136,
       "cost": 6.91,
       "size": 159.28,
       "edge": 0,
       "openedAt": "1771633809",
-      "unrealizedPnl": 32.59,
+      "unrealizedPnl": 14.7506,
       "url": "https://polymarket.com/market/highest-temperature-in-seoul-on-february-22-2026-12corhigher",
       "endDate": "2026-02-22T12:00:00Z"
     },
@@ -49,12 +49,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0608,
-      "currentPrice": 0.031,
+      "currentPrice": 0.018,
       "cost": 8.31,
       "size": 136.65,
       "edge": 0,
       "openedAt": "1771619551",
-      "unrealizedPnl": -4.0748,
+      "unrealizedPnl": -5.8512,
       "url": "https://polymarket.com/market/highest-temperature-in-buenos-aires-on-february-22-2026-27corbelow",
       "endDate": "2026-02-22T12:00:00Z"
     },
@@ -2067,6 +2067,10 @@
     {
       "timestamp": "2026-02-21T20:31:48.614013+00:00",
       "balance": 111.4475
+    },
+    {
+      "timestamp": "2026-02-21T21:57:34.907922+00:00",
+      "balance": 91.8317
     }
   ],
   "alertLog": [
