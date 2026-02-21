@@ -293,7 +293,7 @@
 
         .summary-grid {
             display: grid;
-            grid-template-columns: repeat(6, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 16px;
             margin-bottom: 32px;
         }
@@ -369,7 +369,7 @@
 
         .chart-canvas-wrap {
             position: relative;
-            height: 280px;
+            height: 360px;
         }
 
         .chart-canvas-wrap canvas {
@@ -718,7 +718,7 @@
 
         @media (max-width: 1024px) {
             .summary-grid {
-                grid-template-columns: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .metrics-section {
@@ -750,7 +750,7 @@
             }
 
             .chart-canvas-wrap {
-                height: 200px;
+                height: 260px;
             }
 
             .chart-container {
@@ -923,6 +923,68 @@
             font-size: 13px;
         }
 
+        /* Position row tinting based on P&L */
+        tr.row-positive td {
+            background: rgba(50, 215, 75, 0.04);
+        }
+        tr.row-positive:hover td {
+            background: rgba(50, 215, 75, 0.08);
+        }
+        tr.row-negative td {
+            background: rgba(255, 69, 58, 0.04);
+        }
+        tr.row-negative:hover td {
+            background: rgba(255, 69, 58, 0.08);
+        }
+        tr.row-star td {
+            background: rgba(50, 215, 75, 0.08);
+        }
+        tr.row-star:hover td {
+            background: rgba(50, 215, 75, 0.12);
+        }
+
+        /* Portfolio health badge */
+        .health-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .health-badge.health-ath {
+            background: var(--green-subtle);
+            border: 1px solid var(--green-soft);
+            color: var(--green);
+        }
+        .health-badge.health-ok {
+            background: var(--blue-subtle);
+            border: 1px solid rgba(10, 132, 255, 0.3);
+            color: var(--blue);
+        }
+        .health-badge.health-warn {
+            background: var(--yellow-soft);
+            border: 1px solid rgba(255, 214, 10, 0.3);
+            color: var(--yellow);
+        }
+        .health-badge.health-danger {
+            background: var(--red-subtle);
+            border: 1px solid rgba(255, 69, 58, 0.3);
+            color: var(--red);
+        }
+
+        /* Summary card border glow for Portfolio Value */
+        .summary-card.card-glow-green {
+            border-color: rgba(50, 215, 75, 0.3);
+            box-shadow: 0 0 20px rgba(50, 215, 75, 0.08);
+        }
+        .summary-card.card-glow-red {
+            border-color: rgba(255, 69, 58, 0.3);
+            box-shadow: 0 0 20px rgba(255, 69, 58, 0.08);
+        }
+
         /* Mobile card layout for positions */
         @media (max-width: 768px) {
             .positions-cards {
@@ -1030,6 +1092,7 @@
                 <span class="status-dot"></span>
                 <span>Live</span>
             </div>
+            <span class="health-badge" id="health-badge">—</span>
             <span class="last-updated" id="last-updated">Loading…</span>
             <span class="refresh-spinner" id="refresh-spinner"></span>
             <span class="last-scan-info" id="last-scan-info"></span>
@@ -1037,13 +1100,13 @@
         </div>
     </header>
 
-    <!-- Summary Cards -->
+    <!-- Summary Cards — Row 1: The Big Numbers -->
     <div class="summary-grid">
-        <div class="summary-card fade-in fade-in-delay-1 tooltip-wrap">
-            <span class="tooltip-text">USDC.e cash available for trading</span>
-            <div class="summary-label">Balance</div>
-            <div class="summary-value neutral" id="s-balance">—</div>
-            <div class="summary-sub">USDC.e</div>
+        <div class="summary-card fade-in fade-in-delay-1 tooltip-wrap" id="card-portfolio">
+            <span class="tooltip-text">Cash + mark-to-market value of all positions</span>
+            <div class="summary-label">Portfolio Value</div>
+            <div class="summary-value neutral" id="s-portfolio">—</div>
+            <div class="summary-sub" id="s-portfolio-sub"></div>
         </div>
         <div class="summary-card fade-in fade-in-delay-2 tooltip-wrap">
             <span class="tooltip-text">Portfolio value minus total deposits ($133)</span>
@@ -1052,26 +1115,41 @@
             <div class="summary-sub" id="s-pnl-pct"></div>
         </div>
         <div class="summary-card fade-in fade-in-delay-3 tooltip-wrap">
-            <span class="tooltip-text">Percentage of resolved trades that were profitable</span>
+            <span class="tooltip-text">Profit/loss since midnight UTC today</span>
+            <div class="summary-label">Today's P&L</div>
+            <div class="summary-value" id="s-today-pnl">—</div>
+            <div class="summary-sub" id="s-today-pnl-sub"></div>
+        </div>
+        <div class="summary-card fade-in fade-in-delay-4 tooltip-wrap">
+            <span class="tooltip-text">Percentage of resolved round-trips that were profitable</span>
             <div class="summary-label">Win Rate</div>
             <div class="summary-value neutral" id="s-winrate">—</div>
             <div class="summary-sub" id="s-wl"></div>
         </div>
-        <div class="summary-card fade-in fade-in-delay-4 tooltip-wrap">
+        <!-- Row 2: Operational Metrics -->
+        <div class="summary-card fade-in fade-in-delay-5 tooltip-wrap">
+            <span class="tooltip-text">Capital deployed in positions vs. idle cash</span>
+            <div class="summary-label">Deployed</div>
+            <div class="summary-value neutral" id="s-deployed">—</div>
+            <div class="summary-sub" id="s-deployed-sub"></div>
+        </div>
+        <div class="summary-card fade-in fade-in-delay-5 tooltip-wrap">
+            <span class="tooltip-text">USDC.e cash available for trading</span>
+            <div class="summary-label">Cash</div>
+            <div class="summary-value neutral" id="s-balance">—</div>
+            <div class="summary-sub">USDC.e idle</div>
+        </div>
+        <div class="summary-card fade-in fade-in-delay-6 tooltip-wrap">
             <span class="tooltip-text">Active market positions (max 15)</span>
-            <div class="summary-label">Open Positions</div>
+            <div class="summary-label">Positions</div>
             <div class="summary-value neutral" id="s-positions">—</div>
             <div class="summary-sub" id="s-positions-sub">active</div>
         </div>
-        <div class="summary-card fade-in fade-in-delay-5">
-            <div class="summary-label">Days Active</div>
-            <div class="summary-value neutral" id="s-days">—</div>
-            <div class="summary-sub" id="s-start-date"></div>
-        </div>
-        <div class="summary-card fade-in fade-in-delay-6">
-            <div class="summary-label">Total Trades</div>
+        <div class="summary-card fade-in fade-in-delay-6 tooltip-wrap">
+            <span class="tooltip-text">Trading activity summary</span>
+            <div class="summary-label">Trades / Days</div>
             <div class="summary-value neutral" id="s-trades">—</div>
-            <div class="summary-sub" id="s-avg-size"></div>
+            <div class="summary-sub" id="s-trades-sub"></div>
         </div>
     </div>
 
@@ -1245,7 +1323,7 @@
 
     <!-- Footer -->
     <div class="dash-footer">
-        Private Dashboard · Auto-refreshes every 60s · Not financial advice
+        Private Dashboard · Data syncs every 5–10 min · Auto-refreshes every 60s · Not financial advice
     </div>
 </div>
 
@@ -1400,56 +1478,133 @@ document.addEventListener('DOMContentLoaded', function() {
         const losses = m.losses || 0;
         const avgTradeSize = m.avgTradeSize || 0;
 
-        // Balance
-        document.getElementById('s-balance').textContent = '$' + balance.toFixed(2);
+        // Calculate portfolio value = cash + MTM of all positions
+        const positions = (d.positions || []).filter(function(p) { return (p.size || p.shares || 0) > 0; });
+        var totalDeployedCost = 0;
+        var totalMTM = 0;
+        var totalUnrealizedPnl = 0;
+        positions.forEach(function(p) {
+            var shares = p.size || p.shares || 0;
+            totalDeployedCost += (p.cost || 0);
+            totalMTM += shares * (p.currentPrice || 0);
+            totalUnrealizedPnl += (p.unrealizedPnl || ((p.currentPrice - p.entryPrice) * shares));
+        });
+        var portfolioValue = balance + totalMTM;
+        var utilizationPct = portfolioValue > 0 ? (totalDeployedCost / portfolioValue * 100) : 0;
 
-        // P&L
+        // ── Portfolio Value (THE #1 number) ──
+        var portfolioEl = document.getElementById('s-portfolio');
+        portfolioEl.textContent = '$' + portfolioValue.toFixed(2);
+        var portfolioCard = document.getElementById('card-portfolio');
+        var portfolioSub = document.getElementById('s-portfolio-sub');
+        // ATH tracking from equity curve
+        var ath = 0;
+        (d.equityCurve || []).forEach(function(pt) { if (pt.balance > ath) ath = pt.balance; });
+        if (portfolioValue >= ath * 0.99) {
+            portfolioSub.textContent = '↑ Near ATH ($' + ath.toFixed(0) + ')';
+            portfolioCard.classList.add('card-glow-green');
+            portfolioCard.classList.remove('card-glow-red');
+        } else {
+            var dd = ((ath - portfolioValue) / ath * 100).toFixed(1);
+            portfolioSub.textContent = dd + '% from ATH ($' + ath.toFixed(0) + ')';
+            if (parseFloat(dd) > 10) {
+                portfolioCard.classList.add('card-glow-red');
+                portfolioCard.classList.remove('card-glow-green');
+            } else {
+                portfolioCard.classList.remove('card-glow-green', 'card-glow-red');
+            }
+        }
+
+        // ── Health Badge ──
+        var healthEl = document.getElementById('health-badge');
+        if (portfolioValue >= ath * 0.99) {
+            healthEl.textContent = '🟢 ATH';
+            healthEl.className = 'health-badge health-ath';
+        } else if (portfolioValue >= ath * 0.95) {
+            healthEl.textContent = '🔵 Healthy';
+            healthEl.className = 'health-badge health-ok';
+        } else if (portfolioValue >= ath * 0.90) {
+            healthEl.textContent = '🟡 -' + ((ath - portfolioValue) / ath * 100).toFixed(0) + '%';
+            healthEl.className = 'health-badge health-warn';
+        } else {
+            healthEl.textContent = '🔴 -' + ((ath - portfolioValue) / ath * 100).toFixed(0) + '%';
+            healthEl.className = 'health-badge health-danger';
+        }
+
+        // ── Total P&L ──
         const pnlEl = document.getElementById('s-pnl');
         const pnlPctEl = document.getElementById('s-pnl-pct');
         const pnlSign = totalPnl >= 0 ? '+' : '';
         pnlEl.textContent = pnlSign + '$' + totalPnl.toFixed(2);
         pnlEl.className = 'summary-value ' + (totalPnl >= 0 ? 'positive' : 'negative');
-        const pnlPct = initialBalance ? ((totalPnl / initialBalance) * 100).toFixed(2) : '0.00';
-        pnlPctEl.textContent = pnlSign + pnlPct + '%';
+        const pnlPct = initialBalance ? ((totalPnl / initialBalance) * 100).toFixed(1) : '0.0';
+        pnlPctEl.textContent = pnlSign + pnlPct + '% ROI';
 
-        // Win rate — metrics.winRate is already 0-100 (percentage)
-        document.getElementById('s-winrate').textContent = totalTrades > 0 ? winRate.toFixed(1) + '%' : '—';
-        document.getElementById('s-wl').textContent = wins + 'W / ' + losses + 'L';
+        // ── Today's P&L (from equity curve) ──
+        var todayPnl = 0;
+        var curve = d.equityCurve || [];
+        if (curve.length > 1) {
+            var todayStart = new Date();
+            todayStart.setUTCHours(0, 0, 0, 0);
+            var todayStartMs = todayStart.getTime();
+            // Find first point of today
+            var firstTodayVal = null;
+            for (var ci = 0; ci < curve.length; ci++) {
+                if (new Date(curve[ci].timestamp).getTime() >= todayStartMs) {
+                    firstTodayVal = curve[ci].balance;
+                    break;
+                }
+            }
+            if (firstTodayVal !== null) {
+                todayPnl = curve[curve.length - 1].balance - firstTodayVal;
+            }
+        }
+        var todayPnlEl = document.getElementById('s-today-pnl');
+        var todaySign = todayPnl >= 0 ? '+' : '';
+        todayPnlEl.textContent = todaySign + '$' + todayPnl.toFixed(2);
+        todayPnlEl.className = 'summary-value ' + (todayPnl >= 0 ? 'positive' : 'negative');
+        var todayPctStr = portfolioValue > 0 ? (todayPnl / (portfolioValue - todayPnl) * 100).toFixed(1) : '0.0';
+        document.getElementById('s-today-pnl-sub').textContent = todaySign + todayPctStr + '% today';
 
-        // Positions — fix #15: show tradeable vs locked breakdown
-        const positions = (d.positions || []).filter(p => (p.size || p.shares || 0) > 0);
+        // ── Win Rate ──
+        var resolvedCount = wins + losses;
+        document.getElementById('s-winrate').textContent = resolvedCount > 0 ? winRate.toFixed(0) + '%' : '—';
+        document.getElementById('s-wl').textContent = wins + 'W / ' + losses + 'L · ' + resolvedCount + ' resolved';
+
+        // ── Deployed Capital ──
+        document.getElementById('s-deployed').textContent = '$' + totalDeployedCost.toFixed(0);
+        document.getElementById('s-deployed-sub').textContent = utilizationPct.toFixed(0) + '% utilized';
+
+        // ── Cash Balance ──
+        document.getElementById('s-balance').textContent = '$' + balance.toFixed(2);
+
+        // ── Positions ──
         const totalPos = m.openPositions !== undefined ? m.openPositions : positions.length;
-        document.getElementById('s-positions').textContent = totalPos;
+        document.getElementById('s-positions').textContent = totalPos + '/' + (m.maxPositions || 15);
         const tempRe = /°[CF]|temperature|highest temp/i;
-        const tradeableCount = positions.filter(p => p.url && p.edge !== 0).length;
-        const lockedCount = positions.filter(p => !p.url || (p.edge === 0 && !tempRe.test(p.market))).length;
-        const weatherCount = positions.filter(p => tempRe.test(p.market)).length;
+        const weatherCount = positions.filter(function(p) { return tempRe.test(p.market); }).length;
         document.getElementById('s-positions-sub').textContent = weatherCount + ' weather · ' + (totalPos - weatherCount) + ' event';
 
-        // Fix #14: Last scan timestamp
+        // ── Trades / Days ──
+        var daysActive = m.daysActive || 1;
+        if (!m.daysActive && d.equityCurve && d.equityCurve.length > 0) {
+            var start = new Date(d.equityCurve[0].timestamp);
+            var now = new Date(d.lastUpdated);
+            daysActive = Math.max(1, Math.ceil((now - start) / 86400000));
+        }
+        document.getElementById('s-trades').textContent = totalTrades + ' / ' + daysActive + 'd';
+        var startDateStr = '';
+        if (d.equityCurve && d.equityCurve.length > 0) {
+            startDateStr = 'since ' + new Date(d.equityCurve[0].timestamp).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+        }
+        document.getElementById('s-trades-sub').textContent = startDateStr + (avgTradeSize ? ' · avg $' + avgTradeSize.toFixed(2) : '');
+
+        // ── Last scan timestamp ──
         if (d.lastUpdated) {
             var scanDate = new Date(d.lastUpdated);
             var scanStr = scanDate.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false }) + ' UTC';
-            document.getElementById('last-scan-info').textContent = 'Last scan: ' + scanStr;
+            document.getElementById('last-scan-info').textContent = 'Scan: ' + scanStr;
         }
-
-        // Days active
-        if (m.daysActive) {
-            document.getElementById('s-days').textContent = m.daysActive;
-        } else if (d.equityCurve && d.equityCurve.length > 0) {
-            const start = new Date(d.equityCurve[0].timestamp);
-            const now = new Date(d.lastUpdated);
-            const days = Math.max(1, Math.ceil((now - start) / 86400000));
-            document.getElementById('s-days').textContent = days;
-        }
-        if (d.equityCurve && d.equityCurve.length > 0) {
-            const start = new Date(d.equityCurve[0].timestamp);
-            document.getElementById('s-start-date').textContent = 'since ' + start.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
-        }
-
-        // Total trades
-        document.getElementById('s-trades').textContent = totalTrades;
-        document.getElementById('s-avg-size').textContent = avgTradeSize ? 'avg $' + avgTradeSize.toFixed(2) : '';
     }
 
     // --- Chart ---
@@ -1476,7 +1631,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
-        const gradient = ctx.createLinearGradient(0, 0, 0, 280);
+        const gradient = ctx.createLinearGradient(0, 0, 0, 360);
         gradient.addColorStop(0, 'rgba(50, 215, 75, 0.25)');
         gradient.addColorStop(1, 'rgba(50, 215, 75, 0)');
 
@@ -1631,7 +1786,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Create gradient that goes green above zero, red below
-        var gradientGreen = ctx.createLinearGradient(0, 0, 0, 280);
+        var gradientGreen = ctx.createLinearGradient(0, 0, 0, 360);
         gradientGreen.addColorStop(0, 'rgba(50, 215, 75, 0.3)');
         gradientGreen.addColorStop(1, 'rgba(50, 215, 75, 0)');
 
@@ -1794,7 +1949,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 edgeClass = p.edge >= 0.15 ? 'pnl-positive' : '';
             }
 
-            return '<tr>' +
+            // Row tinting: green for profitable, red for losing, star for big winners
+            var rowClass = '';
+            if (Math.abs(positionPnl) > 10) {
+                rowClass = positionPnl >= 0 ? 'row-star' : 'row-negative';
+            } else if (positionPnl >= 0.01) {
+                rowClass = 'row-positive';
+            } else if (positionPnl < -0.01) {
+                rowClass = 'row-negative';
+            }
+
+            return '<tr class="' + rowClass + '">' +
                 '<td class="market-name">' + marketHtml + '</td>' +
                 '<td><span class="' + sideClass + '">' + esc(outcome.toUpperCase()) + '</span></td>' +
                 '<td>' + (shares > 0 ? shares.toFixed(1) : '—') + '</td>' +
@@ -2159,7 +2324,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function formatTimeSince(isoStr) {
-        const diff = Date.now() - new Date(isoStr).getTime();
+        // Handle Unix epoch timestamps (pure digits, 10-13 chars)
+        var ts;
+        if (/^\d{9,13}$/.test(String(isoStr))) {
+            var epoch = parseInt(isoStr, 10);
+            // If 10 digits, it's seconds — convert to ms
+            if (epoch < 1e12) epoch *= 1000;
+            ts = epoch;
+        } else {
+            ts = new Date(isoStr).getTime();
+        }
+        if (isNaN(ts)) return '—';
+        const diff = Date.now() - ts;
+        if (diff < 0) return 'soon';
         const hours = Math.floor(diff / 3600000);
         const mins = Math.floor((diff % 3600000) / 60000);
         if (hours > 24) return Math.floor(hours / 24) + 'd ' + (hours % 24) + 'h';
