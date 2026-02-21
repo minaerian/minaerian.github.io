@@ -1,30 +1,33 @@
 {
-  "lastUpdated": "2026-02-21T04:04:35.533927+00:00",
+  "lastUpdated": "2026-02-21T04:15:06.669230+00:00",
   "metrics": {
     "balance": 32.279449,
     "initialBalance": 133.0,
-    "totalPnl": 52.4822,
-    "totalPnlPct": 39.46,
+    "totalPnl": 50.7823,
+    "totalPnlPct": 38.18,
     "daysActive": 4,
     "totalTrades": 51,
-    "wins": 0,
-    "losses": 1,
-    "winRate": 0.0,
+    "wins": 2,
+    "losses": 9,
+    "winRate": 18.2,
     "avgEstimatedEdge": 23.48,
     "avgActualReturn": -0.75,
     "edgeCalibration": -24.23,
-    "bestTrade": null,
-    "worstTrade": {
-      "market": "Will the highest temperature in Toronto be 4\u00b0C or higher on February 21?",
-      "pnl": -2.2883
+    "bestTrade": {
+      "market": "Will Wesley Hunt come in 2nd in the 2026 Texas Republican Primary?",
+      "pnl": 0.0752
     },
-    "currentStreak": -1,
+    "worstTrade": {
+      "market": "Seoul Feb 21 \u2014 14\u00b0C or higher YES",
+      "pnl": -6.7879
+    },
+    "currentStreak": -7,
     "avgTradeSize": 6.18,
     "avgHoldingHours": 0,
     "openPositions": 15,
     "maxPositions": 15,
     "targetBalance": 500.08,
-    "progressToTarget": 37.1
+    "progressToTarget": 36.8
   },
   "positions": [
     {
@@ -32,12 +35,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0434,
-      "currentPrice": 0.18,
+      "currentPrice": 0.169,
       "cost": 6.91,
       "size": 159.28,
       "edge": 0,
       "openedAt": "1771633809",
-      "unrealizedPnl": 21.7589,
+      "unrealizedPnl": 20.0068,
       "url": "https://polymarket.com/market/highest-temperature-in-seoul-on-february-22-2026-12corhigher"
     },
     {
@@ -84,12 +87,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.4689,
-      "currentPrice": 0.998,
+      "currentPrice": 0.999,
       "cost": 22.86,
       "size": 48.75,
       "edge": 0,
       "openedAt": "1771524686",
-      "unrealizedPnl": 25.7944,
+      "unrealizedPnl": 25.8432,
       "url": "https://polymarket.com/market/highest-temperature-in-seoul-on-february-21-2026-14corhigher"
     },
     {
@@ -188,12 +191,12 @@
       "side": "BUY",
       "outcome": "No",
       "entryPrice": 0.957,
-      "currentPrice": 0.959,
+      "currentPrice": 0.96,
       "cost": 3.26,
       "size": 3.41,
       "edge": 0,
       "openedAt": "1771407176",
-      "unrealizedPnl": 0.0068,
+      "unrealizedPnl": 0.0102,
       "url": "https://polymarket.com/market/will-wesley-hunt-win-the-2026-republican-primary"
     },
     {
@@ -423,10 +426,10 @@
       "entryPrice": 0.8358,
       "exitPrice": 0,
       "amount": 5.9342,
-      "pnl": 0,
+      "pnl": -0.6132,
       "edge": 0,
       "status": "executed",
-      "outcome": "-"
+      "outcome": "L"
     },
     {
       "timestamp": "2026-02-19T16:26:25.528859+00:00",
@@ -483,10 +486,10 @@
       "entryPrice": 0.87,
       "exitPrice": 0,
       "amount": 6.2118,
-      "pnl": 0,
+      "pnl": -0.2972,
       "edge": 0,
       "status": "executed",
-      "outcome": "-"
+      "outcome": "L"
     },
     {
       "timestamp": "2026-02-19T18:14:33.350554+00:00",
@@ -543,10 +546,10 @@
       "entryPrice": 0.9433,
       "exitPrice": 0,
       "amount": 6.5228,
-      "pnl": 0,
+      "pnl": 0.0414,
       "edge": 0,
       "status": "executed",
-      "outcome": "-"
+      "outcome": "W"
     },
     {
       "timestamp": "2026-02-20T00:50:02.332986+00:00",
@@ -555,10 +558,10 @@
       "entryPrice": 0.9114,
       "exitPrice": 0,
       "amount": 12.231,
-      "pnl": 0,
+      "pnl": 0.0752,
       "edge": 0,
       "status": "executed",
-      "outcome": "-"
+      "outcome": "W"
     },
     {
       "timestamp": "2026-02-20T00:50:04.422670+00:00",
@@ -567,10 +570,10 @@
       "entryPrice": 0.9204,
       "exitPrice": 0,
       "amount": 6.0102,
-      "pnl": 0,
+      "pnl": -0.0953,
       "edge": 0,
       "status": "executed",
-      "outcome": "-"
+      "outcome": "L"
     },
     {
       "timestamp": "2026-02-20T00:50:11.813292+00:00",
@@ -579,10 +582,10 @@
       "entryPrice": 0.8358,
       "exitPrice": 0,
       "amount": 6.3171,
-      "pnl": 0,
+      "pnl": -0.6132,
       "edge": 0,
       "status": "executed",
-      "outcome": "-"
+      "outcome": "L"
     },
     {
       "timestamp": "2026-02-20T01:30:28.730339+00:00",
@@ -591,10 +594,10 @@
       "entryPrice": 0.0697,
       "exitPrice": 0,
       "amount": 3.485,
-      "pnl": 0,
+      "pnl": -1.183,
       "edge": 0,
       "status": "executed",
-      "outcome": "-"
+      "outcome": "L"
     },
     {
       "timestamp": "2026-02-20T01:30:41.379714+00:00",
@@ -603,10 +606,10 @@
       "entryPrice": 0.1293,
       "exitPrice": 0,
       "amount": 4.4777,
-      "pnl": 0,
+      "pnl": -6.7879,
       "edge": 0,
       "status": "executed",
-      "outcome": "-"
+      "outcome": "L"
     },
     {
       "timestamp": "2026-02-20T01:30:53.846493+00:00",
@@ -615,10 +618,10 @@
       "entryPrice": 0.0895,
       "exitPrice": 0,
       "amount": 1.611,
-      "pnl": 0,
+      "pnl": -2.3052,
       "edge": 0,
       "status": "executed",
-      "outcome": "-"
+      "outcome": "L"
     },
     {
       "timestamp": "2026-02-20T01:31:06.250144+00:00",
@@ -627,10 +630,10 @@
       "entryPrice": 0.0796,
       "exitPrice": 0,
       "amount": 2.786,
-      "pnl": 0,
+      "pnl": -1.2853,
       "edge": 0,
       "status": "executed",
-      "outcome": "-"
+      "outcome": "L"
     },
     {
       "timestamp": "2026-02-20T03:01:55.112605+00:00",
@@ -723,10 +726,10 @@
       "entryPrice": 0.8258,
       "exitPrice": 0,
       "amount": 6.2415,
-      "pnl": 0,
+      "pnl": -0.6132,
       "edge": 0,
       "status": "executed",
-      "outcome": "-"
+      "outcome": "L"
     },
     {
       "timestamp": "2026-02-20T09:32:58.086780+00:00",
@@ -759,10 +762,10 @@
       "entryPrice": 0.8358,
       "exitPrice": 0,
       "amount": 7.1956,
-      "pnl": 0,
+      "pnl": -0.2944,
       "edge": 0,
       "status": "executed",
-      "outcome": "-"
+      "outcome": "L"
     },
     {
       "timestamp": "2026-02-20T20:29:08.053688+00:00",
@@ -2037,6 +2040,10 @@
     {
       "timestamp": "2026-02-21T04:04:00.674496+00:00",
       "balance": 185.4334
+    },
+    {
+      "timestamp": "2026-02-21T04:15:03.889478+00:00",
+      "balance": 183.7823
     }
   ],
   "alertLog": [
