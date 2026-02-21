@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-21T05:31:55.981728+00:00",
+  "lastUpdated": "2026-02-21T05:51:56.577333+00:00",
   "metrics": {
     "balance": 32.279449,
     "initialBalance": 133.0,
-    "totalPnl": 45.055,
-    "totalPnlPct": 33.88,
+    "totalPnl": 48.2406,
+    "totalPnlPct": 36.27,
     "daysActive": 5,
     "totalTrades": 51,
     "wins": 2,
@@ -27,7 +27,7 @@
     "openPositions": 15,
     "maxPositions": 15,
     "targetBalance": 500.08,
-    "progressToTarget": 35.6
+    "progressToTarget": 36.2
   },
   "positions": [
     {
@@ -35,12 +35,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0434,
-      "currentPrice": 0.13,
+      "currentPrice": 0.15,
       "cost": 6.91,
       "size": 159.28,
       "edge": 0,
       "openedAt": "1771633809",
-      "unrealizedPnl": 13.7949,
+      "unrealizedPnl": 16.9805,
       "url": "https://polymarket.com/market/highest-temperature-in-seoul-on-february-22-2026-12corhigher"
     },
     {
@@ -2060,6 +2060,10 @@
     {
       "timestamp": "2026-02-21T05:31:53.240175+00:00",
       "balance": 178.055
+    },
+    {
+      "timestamp": "2026-02-21T05:51:53.862782+00:00",
+      "balance": 181.2406
     }
   ],
   "alertLog": [
