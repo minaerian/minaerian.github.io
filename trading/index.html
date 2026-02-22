@@ -2292,7 +2292,19 @@ document.addEventListener('DOMContentLoaded', function() {
             var pnlClass = t.pnl >= 0 ? 'pnl-positive' : 'pnl-negative';
             var pnlSign = t.pnl >= 0 ? '+' : '';
             // Fix side display: BUY/SELL with appropriate colors
-            var sideClass = t.side.toUpperCase() === 'SELL' ? 'side-no' : 'side-yes';
+            // Show distinct label for rebalance_add trades
+            var tradeType = t.tradeType || 'new';
+            var sideLabel, sideClass;
+            if (tradeType === 'rebalance_add') {
+                sideLabel = '📊 Rebalance Add';
+                sideClass = 'side-yes';
+            } else if (t.side.toUpperCase() === 'SELL') {
+                sideLabel = '🔴 ' + t.side.toUpperCase();
+                sideClass = 'side-no';
+            } else {
+                sideLabel = '🟢 ' + t.side.toUpperCase();
+                sideClass = 'side-yes';
+            }
             var outcomeClass = t.outcome === 'W' ? 'outcome-win' : (t.outcome === 'L' ? 'outcome-loss' : '');
             var date = new Date(t.date || t.timestamp);
             var dateStr = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + ' ' +
@@ -2308,7 +2320,7 @@ document.addEventListener('DOMContentLoaded', function() {
             return '<tr>' +
                 '<td style="font-family: var(--font-mono); font-size: 12px;">' + dateStr + '</td>' +
                 '<td class="market-name">' + esc(t.market) + '</td>' +
-                '<td><span class="' + sideClass + '">' + esc(t.side.toUpperCase()) + '</span></td>' +
+                '<td><span class="' + sideClass + '">' + sideLabel + '</span></td>' +
                 '<td>' + entryC + '¢</td>' +
                 '<td>' + exitC + (exitC !== '—' ? '¢' : '') + '</td>' +
                 '<td class="' + pnlClass + '">' + pnlSign + '$' + t.pnl.toFixed(4) + '</td>' +
