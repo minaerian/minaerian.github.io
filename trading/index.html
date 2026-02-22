@@ -424,6 +424,11 @@
             width: 100%;
             border-collapse: collapse;
             min-width: 700px;
+            table-layout: fixed;
+        }
+
+        table.auto-layout {
+            table-layout: auto;
         }
 
         th {
@@ -439,6 +444,26 @@
             user-select: none;
             white-space: nowrap;
             transition: color 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Column resize handle */
+        th .col-resize-handle {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 5px;
+            cursor: col-resize;
+            background: transparent;
+            z-index: 2;
+            transition: background 0.15s;
+        }
+
+        th .col-resize-handle:hover,
+        th .col-resize-handle.resizing {
+            background: var(--green);
         }
 
         th:hover {
@@ -2160,6 +2185,7 @@ document.addEventListener('DOMContentLoaded', function() {
             '<td></td><td></td></tr>';
 
         tbody.innerHTML = html;
+        setTimeout(applyColumnResize, 50);
 
         // Fix #19: Mobile card layout
         var cardsDiv = container.querySelector('.positions-cards');
@@ -2459,6 +2485,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 '</div>';
         });
         container.innerHTML = html;
+        setTimeout(applyColumnResize, 50);
     }
 
     // =====================================================================
@@ -2471,6 +2498,59 @@ document.addEventListener('DOMContentLoaded', function() {
         d.textContent = s;
         return d.innerHTML;
     }
+
+    // =====================================================================
+    // Column Resize
+    // =====================================================================
+
+    function applyColumnResize() {
+        document.querySelectorAll('table').forEach(function(table) {
+            var headers = table.querySelectorAll('th');
+            headers.forEach(function(th) {
+                if (!th.querySelector('.col-resize-handle')) {
+                    if (!th.style.width) th.style.width = th.offsetWidth + 'px';
+                    var handle = document.createElement('div');
+                    handle.className = 'col-resize-handle';
+                    th.appendChild(handle);
+                }
+            });
+        });
+    }
+
+    (function initColumnResize() {
+        var startX, startWidth, currentTh, currentHandle;
+
+        document.addEventListener('mousedown', function(e) {
+            if (!e.target.classList.contains('col-resize-handle')) return;
+            e.preventDefault();
+            e.stopPropagation();
+            currentHandle = e.target;
+            currentTh = currentHandle.parentElement;
+            startX = e.pageX;
+            startWidth = currentTh.offsetWidth;
+            currentHandle.classList.add('resizing');
+            document.body.style.cursor = 'col-resize';
+            document.body.style.userSelect = 'none';
+        });
+
+        document.addEventListener('mousemove', function(e) {
+            if (!currentTh) return;
+            var newWidth = Math.max(40, startWidth + (e.pageX - startX));
+            currentTh.style.width = newWidth + 'px';
+        });
+
+        document.addEventListener('mouseup', function() {
+            if (!currentTh) return;
+            if (currentHandle) currentHandle.classList.remove('resizing');
+            currentTh = null;
+            currentHandle = null;
+            document.body.style.cursor = '';
+            document.body.style.userSelect = '';
+        });
+
+        // Initial apply + re-apply after dynamic renders
+        setTimeout(applyColumnResize, 500);
+    })();
 
     function formatTimeSince(isoStr) {
         // Handle Unix epoch timestamps (pure digits, 10-13 chars)
