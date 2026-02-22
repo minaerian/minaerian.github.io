@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-22T14:31:46.807337+00:00",
+  "lastUpdated": "2026-02-22T15:01:44.620350+00:00",
   "metrics": {
     "balance": 66.909909,
     "initialBalance": 133.0,
-    "totalPnl": -64.3109,
-    "totalPnlPct": -48.35,
+    "totalPnl": -64.9942,
+    "totalPnlPct": -48.87,
     "daysActive": 6,
     "totalTrades": 57,
     "wins": 3,
@@ -27,7 +27,7 @@
     "openPositions": 3,
     "maxPositions": 10,
     "targetBalance": 500.08,
-    "progressToTarget": 13.7
+    "progressToTarget": 13.6
   },
   "positions": [
     {
@@ -49,12 +49,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0608,
-      "currentPrice": 0.006,
+      "currentPrice": 0.001,
       "cost": 8.31,
       "size": 136.65,
       "edge": 0,
       "openedAt": "1771619551",
-      "unrealizedPnl": -7.491,
+      "unrealizedPnl": -8.1743,
       "url": "https://polymarket.com/market/highest-temperature-in-buenos-aires-on-february-22-2026-27corbelow",
       "endDate": "2026-02-22T12:00:00Z"
     },
@@ -1106,959 +1106,959 @@
     },
     {
       "timestamp": "2026-02-18T14:24:41.328215+00:00",
-      "balance": 125.5068
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T14:51:29.195192+00:00",
-      "balance": 138.2942
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T15:07:25.584619+00:00",
-      "balance": 138.2942
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T15:22:25.197172+00:00",
-      "balance": 138.2942
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T15:37:25.357239+00:00",
-      "balance": 138.2942
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T15:52:25.788215+00:00",
-      "balance": 138.2942
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T16:07:24.890275+00:00",
-      "balance": 138.2942
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T16:22:26.016587+00:00",
-      "balance": 138.2942
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T16:37:25.623897+00:00",
-      "balance": 138.3592
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T16:52:25.572754+00:00",
-      "balance": 138.3592
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T17:07:25.007561+00:00",
-      "balance": 138.3592
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T17:22:25.124652+00:00",
-      "balance": 138.3592
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T17:37:26.009441+00:00",
-      "balance": 138.3592
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T17:52:25.325173+00:00",
-      "balance": 138.3592
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T18:07:26.187374+00:00",
-      "balance": 138.3592
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T18:22:25.417885+00:00",
-      "balance": 138.3592
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T18:37:44.118583+00:00",
-      "balance": 132.302
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T18:52:27.087453+00:00",
-      "balance": 132.302
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T19:07:25.392329+00:00",
-      "balance": 132.302
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T19:22:25.864168+00:00",
-      "balance": 129.0526
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T19:37:25.290890+00:00",
-      "balance": 129.0526
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T19:45:25.351960+00:00",
-      "balance": 129.0526
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T19:52:25.959580+00:00",
-      "balance": 129.0526
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T20:07:26.442654+00:00",
-      "balance": 129.0526
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T20:22:25.417641+00:00",
-      "balance": 129.0526
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T20:37:26.247542+00:00",
-      "balance": 129.0526
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T20:52:26.111507+00:00",
-      "balance": 129.0526
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T21:07:25.465513+00:00",
-      "balance": 129.0526
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T21:22:25.283940+00:00",
-      "balance": 129.0526
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T21:37:24.978763+00:00",
-      "balance": 129.0526
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T21:52:25.061365+00:00",
-      "balance": 129.0526
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T22:22:25.615597+00:00",
-      "balance": 129.0526
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T22:37:25.137501+00:00",
-      "balance": 129.0526
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T22:52:25.383943+00:00",
-      "balance": 132.3526
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T23:07:25.667561+00:00",
-      "balance": 132.3526
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T23:22:26.273527+00:00",
-      "balance": 132.3526
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T23:37:25.649778+00:00",
-      "balance": 132.3526
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-18T23:52:25.214114+00:00",
-      "balance": 132.3526
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T00:07:25.572708+00:00",
-      "balance": 132.7226
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T00:22:25.343970+00:00",
-      "balance": 132.7226
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T00:37:26.098701+00:00",
-      "balance": 132.7226
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T00:52:25.260788+00:00",
-      "balance": 132.7629
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T01:07:26.336735+00:00",
-      "balance": 132.7629
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T01:22:25.393090+00:00",
-      "balance": 132.8024
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T01:37:25.552463+00:00",
-      "balance": 132.8024
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T01:52:25.381712+00:00",
-      "balance": 132.8024
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T02:07:25.380948+00:00",
-      "balance": 132.8024
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T02:22:25.843823+00:00",
-      "balance": 132.8024
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T02:37:25.607254+00:00",
-      "balance": 132.8024
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T02:52:28.115572+00:00",
-      "balance": 132.8574
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T03:07:25.286634+00:00",
-      "balance": 132.8574
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T03:22:24.911488+00:00",
-      "balance": 138.7446
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T03:37:26.651248+00:00",
-      "balance": 138.7446
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T05:07:25.585752+00:00",
-      "balance": 138.7446
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T05:14:17.168391+00:00",
-      "balance": 138.7446
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T05:22:25.857420+00:00",
-      "balance": 138.7446
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T05:37:26.648713+00:00",
-      "balance": 138.7446
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T05:46:44.653229+00:00",
-      "balance": 138.7446
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T05:56:45.857179+00:00",
-      "balance": 138.7446
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T06:01:45.956733+00:00",
-      "balance": 138.7446
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T06:06:46.339423+00:00",
-      "balance": 138.7446
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T06:16:44.845860+00:00",
-      "balance": 138.7446
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T06:21:45.028338+00:00",
-      "balance": 138.7446
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T06:31:45.251464+00:00",
-      "balance": 138.7446
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T06:36:49.091013+00:00",
-      "balance": 138.7446
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T06:42:25.728492+00:00",
-      "balance": 138.7446
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T06:48:50.073833+00:00",
-      "balance": 138.7446
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T06:55:15.691159+00:00",
-      "balance": 137.0667
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T07:01:50.678919+00:00",
-      "balance": 137.01
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T07:06:51.833474+00:00",
-      "balance": 137.0305
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T07:15:04.555855+00:00",
-      "balance": 138.7446
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T07:21:47.279311+00:00",
-      "balance": 136.652
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T07:31:47.158814+00:00",
-      "balance": 136.6334
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T07:41:47.855909+00:00",
-      "balance": 136.7038
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T07:51:47.040797+00:00",
-      "balance": 136.7583
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T08:01:48.324499+00:00",
-      "balance": 136.7358
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T08:11:47.400435+00:00",
-      "balance": 136.7459
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T08:21:50.835938+00:00",
-      "balance": 136.6525
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T08:31:47.586540+00:00",
-      "balance": 136.7051
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T08:41:46.900314+00:00",
-      "balance": 136.7458
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T08:46:49.119434+00:00",
-      "balance": 136.7458
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T08:56:48.332956+00:00",
-      "balance": 136.6709
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T09:06:53.731372+00:00",
-      "balance": 136.6993
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T09:16:49.127213+00:00",
-      "balance": 136.7068
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T09:26:46.949495+00:00",
-      "balance": 136.7878
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T09:31:47.135055+00:00",
-      "balance": 136.7594
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T09:36:47.798179+00:00",
-      "balance": 136.7796
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T09:41:47.947689+00:00",
-      "balance": 136.7026
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T09:46:48.404735+00:00",
-      "balance": 136.7702
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T09:56:47.312602+00:00",
-      "balance": 136.7944
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T10:01:47.421066+00:00",
-      "balance": 136.7134
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T10:06:48.879226+00:00",
-      "balance": 136.7944
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T10:16:47.004394+00:00",
-      "balance": 136.7539
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T10:21:47.933472+00:00",
-      "balance": 136.7539
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T10:31:47.912345+00:00",
-      "balance": 136.6976
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T10:41:50.092108+00:00",
-      "balance": 136.7253
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T10:51:50.121998+00:00",
-      "balance": 136.7395
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T10:56:52.759633+00:00",
-      "balance": 136.7537
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T11:06:47.129333+00:00",
-      "balance": 136.8286
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T11:11:48.138023+00:00",
-      "balance": 136.8083
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T11:21:51.852924+00:00",
-      "balance": 136.722
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T11:31:47.321866+00:00",
-      "balance": 136.7557
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T11:36:48.114501+00:00",
-      "balance": 136.6215
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T11:46:55.754378+00:00",
-      "balance": 136.6215
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T11:56:47.460485+00:00",
-      "balance": 136.6215
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T12:01:47.802514+00:00",
-      "balance": 136.6916
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T12:06:48.224188+00:00",
-      "balance": 136.8817
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T12:16:47.267324+00:00",
-      "balance": 136.8358
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T12:21:47.662913+00:00",
-      "balance": 136.79
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T12:31:47.782611+00:00",
-      "balance": 136.8207
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T12:36:48.682021+00:00",
-      "balance": 136.8207
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T12:46:51.989561+00:00",
-      "balance": 136.7209
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T12:56:47.270869+00:00",
-      "balance": 136.7163
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T13:01:47.285830+00:00",
-      "balance": 136.7294
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T13:06:48.349014+00:00",
-      "balance": 136.6031
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T13:11:49.100840+00:00",
-      "balance": 136.6638
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T13:21:47.844609+00:00",
-      "balance": 136.5802
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T13:31:50.988348+00:00",
-      "balance": 136.4404
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T13:41:47.401472+00:00",
-      "balance": 136.3129
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T13:51:48.121829+00:00",
-      "balance": 136.3003
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T13:56:53.739926+00:00",
-      "balance": 136.4077
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T14:06:50.905545+00:00",
-      "balance": 136.424
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T14:16:47.134018+00:00",
-      "balance": 136.3869
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T14:21:48.666213+00:00",
-      "balance": 136.3465
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T14:31:48.013475+00:00",
-      "balance": 136.26
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T14:41:49.201919+00:00",
-      "balance": 136.3208
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T14:46:49.733802+00:00",
-      "balance": 136.26
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T14:56:48.334247+00:00",
-      "balance": 136.26
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T15:01:52.984536+00:00",
-      "balance": 136.26
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T15:11:50.739874+00:00",
-      "balance": 136.2941
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T15:21:47.879990+00:00",
-      "balance": 136.3244
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T15:26:48.628575+00:00",
-      "balance": 136.321
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T15:31:49.081870+00:00",
-      "balance": 136.321
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T15:36:49.640731+00:00",
-      "balance": 136.3002
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T15:46:48.695049+00:00",
-      "balance": 136.3102
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T16:06:49.759436+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T16:16:48.858649+00:00",
-      "balance": 130.3688
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T16:27:49.509731+00:00",
-      "balance": 130.1464
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T16:36:49.427573+00:00",
-      "balance": 130.0999
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T16:46:48.444040+00:00",
-      "balance": 130.087
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T16:51:51.593369+00:00",
-      "balance": 130.1538
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T17:31:48.362876+00:00",
-      "balance": 130.3062
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T18:01:46.657800+00:00",
-      "balance": 130.222
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T18:14:40.827298+00:00",
-      "balance": 135.2966
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T18:31:50.781861+00:00",
-      "balance": 132.0888
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T19:01:47.035921+00:00",
-      "balance": 138.982
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T19:31:49.784600+00:00",
-      "balance": 136.1602
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T20:01:51.254262+00:00",
-      "balance": 133.7643
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T20:31:52.105818+00:00",
-      "balance": 136.3988
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T21:01:49.408736+00:00",
-      "balance": 136.4498
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T21:31:50.355194+00:00",
-      "balance": 136.2332
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T22:01:46.378259+00:00",
-      "balance": 137.7598
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T22:31:50.253984+00:00",
-      "balance": 137.4719
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T23:01:51.433984+00:00",
-      "balance": 137.163
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-19T23:31:48.547723+00:00",
-      "balance": 137.1942
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T00:01:49.045822+00:00",
-      "balance": 137.2012
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T00:31:48.646151+00:00",
-      "balance": 135.8926
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T00:46:19.193823+00:00",
-      "balance": 137.2262
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T01:31:12.976142+00:00",
-      "balance": 129.1398
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T02:01:47.716026+00:00",
-      "balance": 130.043
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T02:31:47.670328+00:00",
-      "balance": 130.103
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T03:31:47.882651+00:00",
-      "balance": 127.8987
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T04:31:48.594668+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T05:01:49.125923+00:00",
-      "balance": 139.6257
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T05:31:47.861299+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T06:01:51.463393+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T06:22:43.112316+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T06:31:47.298268+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T07:01:46.847550+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T07:31:47.652882+00:00",
-      "balance": 138.4
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T08:01:51.971782+00:00",
-      "balance": 136.656
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T08:31:47.490364+00:00",
-      "balance": 138.1633
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T09:30:22.849703+00:00",
-      "balance": 137.1676
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T10:01:45.161755+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T10:31:47.467171+00:00",
-      "balance": 134.833
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T11:01:47.239628+00:00",
-      "balance": 135.6105
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T11:31:46.624866+00:00",
-      "balance": 135.7844
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T12:01:47.328976+00:00",
-      "balance": 132.7806
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T12:31:48.383391+00:00",
-      "balance": 134.9559
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T13:01:44.633494+00:00",
-      "balance": 134.2266
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T13:31:47.212986+00:00",
-      "balance": 130.9255
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T14:01:47.372581+00:00",
-      "balance": 131.2844
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T14:31:49.801244+00:00",
-      "balance": 131.0426
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T15:01:50.279879+00:00",
-      "balance": 131.6246
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T16:19:30.668306+00:00",
-      "balance": 134.0264
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T16:31:55.839743+00:00",
-      "balance": 133.1516
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T17:30:21.104104+00:00",
-      "balance": 136.9528
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T18:01:51.219428+00:00",
-      "balance": 136.5412
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T18:31:50.788505+00:00",
-      "balance": 137.0592
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T19:31:50.597884+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T20:01:49.648022+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T20:24:50.620590+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T20:33:17.303949+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T20:52:59.750647+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T21:01:49.038478+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T21:14:53.254660+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T21:23:03.019800+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T21:31:51.240414+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T21:37:45.839428+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T22:01:47.626236+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T22:08:45.426277+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T22:31:49.553376+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T23:01:49.605281+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-20T23:31:49.563085+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T00:01:49.226142+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T00:31:46.670914+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T01:19:07.092398+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T01:30:41.229752+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T01:45:53.980577+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T02:01:49.970490+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T02:31:47.046136+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T02:55:18.658067+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T03:01:52.823724+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T03:07:14.914707+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T03:31:49.451208+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T03:47:46.806609+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T04:04:00.674496+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T04:15:03.889478+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T04:31:48.581212+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T04:38:58.000715+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T04:59:15.004069+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T05:31:53.240175+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T05:51:53.862782+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T06:00:36.183252+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T06:31:47.326482+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T07:31:47.931781+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T08:01:52.269555+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T08:31:50.509134+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T09:30:25.291172+00:00",
-      "balance": 121.0313
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T10:01:44.931639+00:00",
-      "balance": 125.1011
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T11:01:51.226795+00:00",
-      "balance": 126.164
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T11:31:49.959554+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T12:31:47.814409+00:00",
-      "balance": 126.3798
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T13:31:48.696914+00:00",
-      "balance": 131.6777
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T14:01:46.579973+00:00",
-      "balance": 126.8219
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T14:31:47.594996+00:00",
-      "balance": 128.9972
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T15:01:50.037877+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T15:31:46.720723+00:00",
-      "balance": 140.0
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T16:42:23.371801+00:00",
-      "balance": 121.8686
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T17:30:26.318320+00:00",
@@ -2070,23 +2070,23 @@
     },
     {
       "timestamp": "2026-02-21T19:31:47.008218+00:00",
-      "balance": 86.6451
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T20:01:53.647041+00:00",
-      "balance": 97.2942
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T20:31:48.614013+00:00",
-      "balance": 111.4475
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T21:57:34.907922+00:00",
-      "balance": 91.8317
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T23:01:48.746622+00:00",
-      "balance": 87.8732
+      "balance": 82.83
     },
     {
       "timestamp": "2026-02-21T23:31:49.571298+00:00",
@@ -2111,169 +2111,17 @@
     {
       "timestamp": "2026-02-22T14:31:46.260732+00:00",
       "balance": 68.6891
+    },
+    {
+      "timestamp": "2026-02-22T14:35:00.404852+00:00",
+      "balance": 82.83
+    },
+    {
+      "timestamp": "2026-02-22T15:01:44.083860+00:00",
+      "balance": 68.0058
     }
   ],
   "alertLog": [
-    {
-      "timestamp": "2026-02-22T05:01:36.790576+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will Trump pardon Ghislaine Maxwell by end of 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/will-trump-pardon-ghislaine-maxwell/will-trump-pardon-ghislaine-maxwell"
-    },
-    {
-      "timestamp": "2026-02-22T14:31:38.209451+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will David Valadao advance from the CA-22 Primary?",
-      "priceChange": 0.33,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/ca-22-primary-winners/will-david-valadao-advance-from-the-ca-22-primary"
-    },
-    {
-      "timestamp": "2026-02-22T14:31:38.209451+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Seton Hall win the 2025-2026 Big East Men\u2019s Basketball regular season championship?",
-      "priceChange": 0.3175,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/big-east-mens-college-basketball-2025-2026-regular-season-champion/will-seton-hall-win-the-2025-2026-big-east-mens-basketball-regular-season-championship"
-    },
-    {
-      "timestamp": "2026-02-22T14:31:38.209451+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Virginia win the 2025-2026 ACC Men\u2019s Basketball regular season championship?",
-      "priceChange": 0.275,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/acc-mens-college-basketball-2025-2026-regular-season-champion/will-virginia-win-the-2025-2026-acc-mens-basketball-regular-season-championship"
-    },
-    {
-      "timestamp": "2026-02-22T14:31:38.209451+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Todd Graham be the Republican nominee for AZ-01?",
-      "priceChange": 0.275,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/az-01-republican-primary-winner/will-todd-graham-be-the-republican-nominee-for-az-01"
-    },
-    {
-      "timestamp": "2026-02-22T14:31:38.209451+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Harvey Weinstein be sentenced to less than 5 years in prison?",
-      "priceChange": 0.2555,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/harvey-weinstein-prison-time/will-harvey-weinstein-be-sentenced-to-less-than-5-years-in-prison"
-    },
-    {
-      "timestamp": "2026-02-22T14:31:38.209451+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Arizona win the 2025-2026 Big 12 Men's Basketball regular season championship?",
-      "priceChange": 0.245,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/big-12-mens-college-basketball-2025-2026-regular-season-champion/will-arizona-win-the-2025-2026-big-12-mens-basketball-regular-season-championship"
-    },
-    {
-      "timestamp": "2026-02-22T14:31:38.209451+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Iran Nuke before 2027?",
-      "priceChange": 0.24,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/iran-nuke-before-2027/iran-nuke-before-2027"
-    },
-    {
-      "timestamp": "2026-02-22T14:31:38.209451+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will George Washington Markert be the Republican nominee for Senate in Colorado?",
-      "priceChange": 0.24,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/colorado-republican-senate-primary-winner/will-george-washington-markert-be-the-republican-nominee-for-senate-in-colorado"
-    },
-    {
-      "timestamp": "2026-02-22T14:31:38.209451+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Trump pardon Stefan Brodie before 2027?",
-      "priceChange": 0.23,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/who-will-trump-pardon-before-2027/will-trump-pardon-stefan-brodie-before-2027"
-    },
-    {
-      "timestamp": "2026-02-22T14:31:38.209451+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Donald Trump visit Wyoming in 2026?",
-      "priceChange": 0.21,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/which-states-will-donald-trump-visit-in-2026/will-donald-trump-visit-wyoming-in-2026"
-    },
-    {
-      "timestamp": "2026-02-22T14:31:38.209451+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Muchelle Ugenti-Rita be the Republican nominee for AZ-01?",
-      "priceChange": 0.204,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/az-01-republican-primary-winner/will-muchelle-ugenti-rita-be-the-republican-nominee-for-az-01"
-    },
-    {
-      "timestamp": "2026-02-22T14:31:38.209451+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Donald Trump visit Illinois in 2026?",
-      "priceChange": 0.18,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/which-states-will-donald-trump-visit-in-2026/will-donald-trump-visit-illinois-in-2026"
-    },
-    {
-      "timestamp": "2026-02-22T14:31:38.209451+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Naz Reid win the 2025\u20132026 NBA Sixth Man of the Year?",
-      "priceChange": 0.1705,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-2025-26-sixth-man-of-the-year/nba-2025-26-sixth-man-of-the-year-naz-reid"
-    },
-    {
-      "timestamp": "2026-02-22T14:31:38.209451+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Donald Trump visit Italy in 2026?",
-      "priceChange": 0.17,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/which-countries-will-donald-trump-visit-in-2026/will-donald-trump-visit-italy-in-2026"
-    },
-    {
-      "timestamp": "2026-02-22T14:31:38.209451+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Donald Trump visit Utah in 2026?",
-      "priceChange": 0.165,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/which-states-will-donald-trump-visit-in-2026/will-donald-trump-visit-utah-in-2026"
-    },
-    {
-      "timestamp": "2026-02-22T14:31:38.209451+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Harvey Weinstein be sentenced to no prison time?",
-      "priceChange": 0.159,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/harvey-weinstein-prison-time/will-harvey-weinstein-be-sentenced-to-no-prison-time"
-    },
-    {
-      "timestamp": "2026-02-22T14:31:38.209451+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will the Miami Heat win the 2025\u20132026 NBA Southeast Division?",
-      "priceChange": 0.14,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-2025-26-southeast-division-winner/nba-2025-26-southeast-division-winner-miami-heat"
-    },
-    {
-      "timestamp": "2026-02-22T14:31:38.209451+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will the San Antonio Spurs finish as the #1 seed in the 2025\u20132026 NBA Western Conference?",
-      "priceChange": 0.1305,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-western-conference-1-seed/will-the-san-antonio-spurs-finish-as-the-1-seed-in-the-20252026-nba-western-conference"
-    },
-    {
-      "timestamp": "2026-02-22T14:31:38.209451+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Mark Baisley be the Republican nominee for Senate in Colorado?",
-      "priceChange": 0.125,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/colorado-republican-senate-primary-winner/will-mark-baisley-be-the-republican-nominee-for-senate-in-colorado"
-    },
     {
       "timestamp": "2026-02-22T14:31:38.209451+00:00",
       "type": "PRICE_SWING_LARGE",
@@ -2513,6 +2361,166 @@
       "priceChange": 0,
       "ledToTrade": false,
       "url": "https://polymarket.com/event/will-trump-be-impeached-by-december-31-2026/will-trump-be-impeached-by-december-31-2026"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will George Washington Markert be the Republican nominee for Senate in Colorado?",
+      "priceChange": 0.205,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/colorado-republican-senate-primary-winner/will-george-washington-markert-be-the-republican-nominee-for-senate-in-colorado"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Stephen Curry lead the NBA in three pointers made during the 2025\u201326 NBA season?",
+      "priceChange": 0.175,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-2025-26-3pm-leader/nba-2025-26-3pm-leader-stephen-curry"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will the maximum Arctic sea ice extent this winter be between 14.2m & 14.4m square kilometers?",
+      "priceChange": 0.175,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/max-arctic-sea-ice-extent-this-winter/will-the-maximum-arctic-sea-ice-extent-this-winter-be-between-14pt2m-14pt4m-square-kilometers"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Mark Baisley be the Republican nominee for Senate in Colorado?",
+      "priceChange": 0.155,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/colorado-republican-senate-primary-winner/will-mark-baisley-be-the-republican-nominee-for-senate-in-colorado"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Trump pardon Donald Brodie before 2027?",
+      "priceChange": 0.14,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/who-will-trump-pardon-before-2027/will-trump-pardon-donald-brodie-before-2027"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "GTA VI released before June 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/gta-vi-released-before-june-2026/gta-vi-released-before-june-2026"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will the Colorado Avalanche win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-colorado-avalanche-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will Lens win the 2025\u201326 French Ligue 1?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/french-ligue-1-winner/will-lens-win-the-202526-french-ligue-1"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will the next Prime Minister of Hungary be L\u00e1szl\u00f3 Toroczkai?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/next-prime-minister-of-hungary/will-the-next-prime-minister-of-hungary-be-lszl-toroczkai"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will Xander Schauffele win the 2026 Masters tournament?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/the-masters-winner/will-xander-schauffele-win-the-2026-masters-tournament"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Carolina Hurricanes win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-carolina-hurricanes-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Edmonton Oilers win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-edmonton-oilers-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Vegas Golden Knights win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-vegas-golden-knights-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Tampa Bay Lightning win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-tampa-bay-lightning-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "2026 Balance of Power: R Senate, R House",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/balance-of-power-2026-midterms/2026-balance-of-power-r-senate-r-house-537"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the New York Knicks win the NBA Eastern Conference Finals?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-eastern-conference-champion-442/will-the-new-york-knicks-win-the-nba-eastern-conference-finals"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Houston Rockets win the NBA Western Conference Finals?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-western-conference-champion-933/will-the-houston-rockets-win-the-nba-western-conference-finals"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Trump pardon Ghislaine Maxwell by end of 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/will-trump-pardon-ghislaine-maxwell/will-trump-pardon-ghislaine-maxwell"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Erdo\u011fan out by end of 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/erdoan-out-before-2027/erdoan-out-before-2027"
+    },
+    {
+      "timestamp": "2026-02-22T15:01:35.976458+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Trump impeached by end of 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/will-trump-be-impeached-by-december-31-2026/will-trump-be-impeached-by-december-31-2026"
     }
   ],
   "config": {
@@ -2521,7 +2529,7 @@
     "minEdge": 0.05,
     "maxPositions": 10,
     "circuitBreakerFraction": 0.5,
-    "circuitBreaker": 70.0,
+    "circuitBreaker": 41.41,
     "scanInterval": "10min"
   }
 }
