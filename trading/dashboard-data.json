@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-02-22T19:31:46.675696+00:00",
+  "lastUpdated": "2026-02-22T19:41:29.647876+00:00",
   "metrics": {
     "balance": 63.552909,
     "initialBalance": 133.0,
-    "totalPnl": -50.4034,
-    "totalPnlPct": -37.9,
+    "totalPnl": -65.6258,
+    "totalPnlPct": -49.34,
     "daysActive": 6,
-    "totalTrades": 58,
+    "totalTrades": 60,
     "wins": 3,
     "losses": 14,
     "winRate": 17.6,
@@ -22,42 +22,14 @@
       "pnl": -6.7879
     },
     "currentStreak": -3,
-    "avgTradeSize": 6.09,
+    "avgTradeSize": 5.89,
     "avgHoldingHours": 0,
-    "openPositions": 4,
+    "openPositions": 2,
     "maxPositions": 10,
     "targetBalance": 500.08,
-    "progressToTarget": 16.5
+    "progressToTarget": 13.5
   },
   "positions": [
-    {
-      "market": "Will the highest temperature in Seoul be 12\u00b0C or higher on February 22?",
-      "side": "BUY",
-      "outcome": "Yes",
-      "entryPrice": 0.0434,
-      "currentPrice": 0.0434,
-      "cost": 6.91,
-      "size": 159.28,
-      "edge": 0,
-      "openedAt": "1771633809",
-      "unrealizedPnl": 0.0,
-      "url": "https://polymarket.com/market/highest-temperature-in-seoul-on-february-22-2026-12corhigher",
-      "endDate": "2026-02-22T12:00:00Z"
-    },
-    {
-      "market": "Will the highest temperature in Buenos Aires be 27\u00b0C or below on February 22?",
-      "side": "BUY",
-      "outcome": "Yes",
-      "entryPrice": 0.0608,
-      "currentPrice": 0.0608,
-      "cost": 8.31,
-      "size": 136.65,
-      "edge": 0,
-      "openedAt": "1771619551",
-      "unrealizedPnl": 0.0,
-      "url": "https://polymarket.com/market/highest-temperature-in-buenos-aires-on-february-22-2026-27corbelow",
-      "endDate": "2026-02-22T12:00:00Z"
-    },
     {
       "market": "Will the Fed decrease interest rates by 50+ bps after the March 2026 meeting?",
       "side": "BUY",
@@ -973,6 +945,30 @@
       "amount": 3.73,
       "pnl": 0,
       "edge": 0.075,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-22T19:41:17.696152+00:00",
+      "market": "Seoul 12\u00b0C+ Feb 22",
+      "side": "BUY",
+      "entryPrice": 0,
+      "exitPrice": 0,
+      "amount": 0,
+      "pnl": -6.9115,
+      "edge": 0,
+      "status": "executed",
+      "outcome": "-"
+    },
+    {
+      "timestamp": "2026-02-22T19:41:17.696171+00:00",
+      "market": "BA \u226427\u00b0C Feb 22",
+      "side": "BUY",
+      "entryPrice": 0,
+      "exitPrice": 0,
+      "amount": 0,
+      "pnl": -8.311,
+      "edge": 0,
       "status": "executed",
       "outcome": "-"
     }
@@ -2181,6 +2177,10 @@
     {
       "timestamp": "2026-02-22T19:31:45.948679+00:00",
       "balance": 82.5966
+    },
+    {
+      "timestamp": "2026-02-22T19:41:29.220241+00:00",
+      "balance": 67.3742
     }
   ],
   "alertLog": [
@@ -2587,7 +2587,7 @@
   ],
   "config": {
     "maxTradeFraction": 0.05,
-    "maxTradeSize": 4.16,
+    "maxTradeSize": 3.4,
     "minEdge": 0.05,
     "maxPositions": 10,
     "circuitBreakerFraction": 0.5,
