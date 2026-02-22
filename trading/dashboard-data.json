@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-22T00:01:47.064737+00:00",
+  "lastUpdated": "2026-02-22T00:27:38.946291+00:00",
   "metrics": {
     "balance": 66.909909,
     "initialBalance": 133.0,
-    "totalPnl": -56.3678,
-    "totalPnlPct": -42.38,
+    "totalPnl": -56.5045,
+    "totalPnlPct": -42.48,
     "daysActive": 5,
     "totalTrades": 57,
     "wins": 3,
@@ -49,12 +49,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 0.0608,
-      "currentPrice": 0.021,
+      "currentPrice": 0.02,
       "cost": 8.31,
       "size": 136.65,
       "edge": 0,
       "openedAt": "1771619551",
-      "unrealizedPnl": -5.4413,
+      "unrealizedPnl": -5.5779,
       "url": "https://polymarket.com/market/highest-temperature-in-buenos-aires-on-february-22-2026-27corbelow",
       "endDate": "2026-02-22T12:00:00Z"
     },
@@ -937,6 +937,18 @@
       "edge": 0,
       "status": "executed",
       "outcome": "L"
+    },
+    {
+      "timestamp": "2026-02-22T00:27:01.257214+00:00",
+      "market": "Test market",
+      "side": "BUY",
+      "entryPrice": 0,
+      "exitPrice": 0,
+      "amount": 0,
+      "pnl": 0,
+      "edge": 0,
+      "status": "failed",
+      "outcome": "-"
     }
   ],
   "equityCurve": [
@@ -2083,6 +2095,10 @@
     {
       "timestamp": "2026-02-22T00:01:46.530330+00:00",
       "balance": 76.6322
+    },
+    {
+      "timestamp": "2026-02-22T00:27:38.415112+00:00",
+      "balance": 76.4955
     }
   ],
   "alertLog": [
