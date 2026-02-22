@@ -1,0 +1,850 @@
+{
+  "lastUpdated": "2026-02-22T20:03:06.256574Z",
+  "goal": {
+    "target": 10,
+    "confirmed": 3,
+    "gpu_candidates": 7
+  },
+  "pipeline": {
+    "stages": [
+      {
+        "name": "GPU Parameter Sweep",
+        "status": "complete",
+        "detail": "1.3M+ combos tested across 7 strategies"
+      },
+      {
+        "name": "Walk-Forward Validation",
+        "status": "complete",
+        "detail": "5yr 70/30 train/test on 5-min RTH data"
+      },
+      {
+        "name": "NinjaTrader 3yr Validation",
+        "status": "in_progress",
+        "detail": "3/10 confirmed, testing more"
+      },
+      {
+        "name": "Paper Trading",
+        "status": "pending",
+        "detail": "Awaiting NinjaScript port of GPU winners"
+      },
+      {
+        "name": "Apex Eval Deployment",
+        "status": "pending",
+        "detail": "After 1-2 weeks paper trading"
+      }
+    ]
+  },
+  "ninjatrader_strategies": [
+    {
+      "name": "MNQConfluenceMomentum",
+      "profit": 3147,
+      "status": "confirmed",
+      "type": "Confluence/Confirmation",
+      "validation": "3yr NinjaTrader",
+      "trades_approx": 95
+    },
+    {
+      "name": "SuperScalping",
+      "profit": 3035,
+      "status": "confirmed",
+      "type": "Consolidation Breakout",
+      "validation": "3yr NinjaTrader",
+      "trades_approx": 24
+    },
+    {
+      "name": "A_ClosingRange",
+      "profit": 2284,
+      "status": "confirmed",
+      "type": "Time-Based Structural",
+      "validation": "3yr NinjaTrader",
+      "trades_approx": 218
+    },
+    {
+      "name": "A_MarketProfileVA",
+      "profit": -1166,
+      "status": "demoted",
+      "type": "Standard TA",
+      "validation": "3yr NinjaTrader - Overfitted"
+    },
+    {
+      "name": "A_MultiTFMomentum",
+      "profit": -3770,
+      "status": "demoted",
+      "type": "Standard TA",
+      "validation": "3yr NinjaTrader - Overfitted"
+    },
+    {
+      "name": "ThreeBarReversal",
+      "profit": -3121,
+      "status": "demoted",
+      "type": "Standard TA",
+      "validation": "3yr NinjaTrader - Overfitted"
+    },
+    {
+      "name": "WolfMethod",
+      "profit": -2437,
+      "status": "killed",
+      "type": "Standard TA",
+      "validation": "3yr NinjaTrader"
+    },
+    {
+      "name": "EMACrossoverTrend",
+      "profit": -2047,
+      "status": "killed",
+      "type": "Standard TA",
+      "validation": "Cross-contract"
+    },
+    {
+      "name": "MorningMomentum",
+      "profit": -1158,
+      "status": "killed",
+      "type": "Standard TA",
+      "validation": "Cross-contract"
+    }
+  ],
+  "gpu_strategies": [
+    {
+      "name": "Combined Fade+Breakout (Iman Hybrid)",
+      "total_combos": 68040,
+      "profitable_combos": 65938,
+      "profitable_pct": 96.9,
+      "best": {
+        "combined_pnl": 116099.94,
+        "train_pnl": 72807.49,
+        "test_pnl": 43292.46,
+        "train_trades": 2848,
+        "test_trades": 1158,
+        "train_wr": 57.1,
+        "test_wr": 54.7,
+        "train_pf": 6.86,
+        "test_pf": 6.58,
+        "params": "lb=12, consol=3.0, fade_sl=0.2, break_tp=0.01"
+      },
+      "top5": [
+        {
+          "combined_pnl": 116099.94,
+          "train_pf": 6.86,
+          "test_pf": 6.58,
+          "params": "lb=12, consol=3.0, fade_sl=0.2, break_tp=0.01"
+        },
+        {
+          "combined_pnl": 112347.78,
+          "train_pf": 6.05,
+          "test_pf": 6.41,
+          "params": "lb=12, consol=2.5, fade_sl=0.2, break_tp=0.01"
+        },
+        {
+          "combined_pnl": 110756.18,
+          "train_pf": 6.04,
+          "test_pf": 5.38,
+          "params": "lb=12, consol=3.0, fade_sl=0.2, break_tp=0.01"
+        },
+        {
+          "combined_pnl": 109866.12,
+          "train_pf": 6.52,
+          "test_pf": 6.23,
+          "params": "lb=12, consol=3.0, fade_sl=0.2, break_tp=0.01"
+        },
+        {
+          "combined_pnl": 109478.94,
+          "train_pf": 6.71,
+          "test_pf": 6.59,
+          "params": "lb=12, consol=3.0, fade_sl=0.2, break_tp=0.02"
+        }
+      ]
+    },
+    {
+      "name": "SuperScalping Massive Sweep",
+      "total_combos": 361317,
+      "profitable_combos": 361317,
+      "profitable_pct": 100.0,
+      "best": {
+        "combined_pnl": 24522.5,
+        "train_pnl": 11679.5,
+        "test_pnl": 12843.0,
+        "train_trades": 204,
+        "test_trades": 60,
+        "train_wr": 26.5,
+        "test_wr": 35.0,
+        "train_pf": 1.4,
+        "test_pf": 2.25,
+        "params": "lb=21, buf=0.0, sl=0.01, tp=0.05"
+      },
+      "top5": [
+        {
+          "combined_pnl": 24522.5,
+          "train_pf": 1.4,
+          "test_pf": 2.25,
+          "params": "lb=21, buf=0.0, sl=0.01, tp=0.05"
+        },
+        {
+          "combined_pnl": 22642.5,
+          "train_pf": 1.44,
+          "test_pf": 1.81,
+          "params": "lb=21, buf=0.0, sl=0.01, tp=0.05"
+        },
+        {
+          "combined_pnl": 21865.25,
+          "train_pf": 1.43,
+          "test_pf": 1.81,
+          "params": "lb=21, buf=0.0, sl=0.01, tp=0.05"
+        },
+        {
+          "combined_pnl": 21651.25,
+          "train_pf": 1.8,
+          "test_pf": 1.91,
+          "params": "lb=36, buf=0.2, sl=0.005, tp=0.05"
+        },
+        {
+          "combined_pnl": 21609.25,
+          "train_pf": 1.63,
+          "test_pf": 1.99,
+          "params": "lb=36, buf=0.25, sl=0.005, tp=0.05"
+        }
+      ]
+    },
+    {
+      "name": "Opening Range Breakout (ORB)",
+      "total_combos": 180,
+      "profitable_combos": 88,
+      "profitable_pct": 48.9,
+      "best": {
+        "combined_pnl": 101400.0,
+        "train_pnl": 98265.0,
+        "test_pnl": 3135.0,
+        "train_trades": 897,
+        "test_trades": 373,
+        "train_wr": 47.7,
+        "test_wr": 42.4,
+        "train_pf": 1.21,
+        "test_pf": 1.01,
+        "params": "range=12, buf=0.0, target=2.5, stop=1.0"
+      },
+      "top5": [
+        {
+          "combined_pnl": 101400.0,
+          "train_pf": 1.21,
+          "test_pf": 1.01,
+          "params": "range=12, buf=0.0, target=2.5, stop=1.0"
+        },
+        {
+          "combined_pnl": 100205.0,
+          "train_pf": 1.2,
+          "test_pf": 1.02,
+          "params": "range=12, buf=0.0, target=3.0, stop=1.0"
+        },
+        {
+          "combined_pnl": 95555.0,
+          "train_pf": 1.2,
+          "test_pf": 1.0,
+          "params": "range=12, buf=0.0, target=2.0, stop=1.0"
+        },
+        {
+          "combined_pnl": 93152.5,
+          "train_pf": 1.19,
+          "test_pf": 1.02,
+          "params": "range=18, buf=0.0, target=2.0, stop=1.5"
+        },
+        {
+          "combined_pnl": 90490.0,
+          "train_pf": 1.16,
+          "test_pf": 1.08,
+          "params": "range=18, buf=0.0, target=1.5, stop=1.5"
+        }
+      ]
+    },
+    {
+      "name": "EMA Momentum",
+      "total_combos": 2000,
+      "profitable_combos": 398,
+      "profitable_pct": 19.9,
+      "best": {
+        "combined_pnl": 28447.44,
+        "train_pnl": 29481.64,
+        "test_pnl": -1034.2,
+        "train_trades": 488,
+        "test_trades": 179,
+        "train_wr": 48.2,
+        "test_wr": 48.6,
+        "train_pf": 1.17,
+        "test_pf": 0.99,
+        "params": "fast=10, slow=30, sl=0.008, tp=0.03"
+      },
+      "top5": [
+        {
+          "combined_pnl": 28447.44,
+          "train_pf": 1.17,
+          "test_pf": 0.99,
+          "params": "fast=10, slow=30, sl=0.008, tp=0.03"
+        },
+        {
+          "combined_pnl": 27848.14,
+          "train_pf": 1.17,
+          "test_pf": 0.99,
+          "params": "fast=10, slow=30, sl=0.008, tp=0.02"
+        },
+        {
+          "combined_pnl": 24378.26,
+          "train_pf": 1.18,
+          "test_pf": 0.92,
+          "params": "fast=10, slow=30, sl=0.006, tp=0.03"
+        },
+        {
+          "combined_pnl": 24272.6,
+          "train_pf": 1.16,
+          "test_pf": 0.96,
+          "params": "fast=10, slow=30, sl=0.01, tp=0.03"
+        },
+        {
+          "combined_pnl": 23778.96,
+          "train_pf": 1.18,
+          "test_pf": 0.92,
+          "params": "fast=10, slow=30, sl=0.006, tp=0.02"
+        }
+      ]
+    },
+    {
+      "name": "Volume Spike Fade",
+      "total_combos": 720,
+      "profitable_combos": 155,
+      "profitable_pct": 21.5,
+      "best": {
+        "combined_pnl": 44370.0,
+        "train_pnl": 30085.0,
+        "test_pnl": 14285.0,
+        "train_trades": 1202,
+        "test_trades": 538,
+        "train_wr": 37.4,
+        "test_wr": 32.5,
+        "train_pf": 1.14,
+        "test_pf": 1.12,
+        "params": "vol_mult=2.0, sma=10, confirm=1, sl=20, tp=150"
+      },
+      "top5": [
+        {
+          "combined_pnl": 44370.0,
+          "train_pf": 1.14,
+          "test_pf": 1.12,
+          "params": "vol_mult=2.0, sma=10, confirm=1"
+        },
+        {
+          "combined_pnl": 42990.0,
+          "train_pf": 1.0,
+          "test_pf": 1.31,
+          "params": "vol_mult=1.5, sma=10, confirm=3"
+        },
+        {
+          "combined_pnl": 39840.0,
+          "train_pf": 1.08,
+          "test_pf": 1.13,
+          "params": "vol_mult=2.0, sma=10, confirm=3"
+        },
+        {
+          "combined_pnl": 32800.0,
+          "train_pf": 1.06,
+          "test_pf": 1.08,
+          "params": "vol_mult=2.0, sma=10, confirm=1"
+        },
+        {
+          "combined_pnl": 31235.0,
+          "train_pf": 1.06,
+          "test_pf": 1.08,
+          "params": "vol_mult=2.0, sma=10, confirm=2"
+        }
+      ]
+    }
+  ],
+  "validation_5yr": [
+    {
+      "strategy": "CLB25_Original",
+      "total_pnl": 263765.79,
+      "trades": 802,
+      "win_rate": 21.9,
+      "profit_factor": 1.43,
+      "sharpe": 2.15,
+      "max_dd_pct": -28.6,
+      "pos_months": 39,
+      "neg_months": 23
+    },
+    {
+      "strategy": "GPU_v1_LB18_TP03",
+      "total_pnl": 508060.63,
+      "trades": 889,
+      "win_rate": 14.2,
+      "profit_factor": 1.69,
+      "sharpe": 2.77,
+      "max_dd_pct": -24.5,
+      "pos_months": 46,
+      "neg_months": 16
+    },
+    {
+      "strategy": "GPU_v2_LB18_MR002",
+      "total_pnl": 481378.93,
+      "trades": 882,
+      "win_rate": 13.9,
+      "profit_factor": 1.66,
+      "sharpe": 2.66,
+      "max_dd_pct": -22.0,
+      "pos_months": 45,
+      "neg_months": 17
+    },
+    {
+      "strategy": "GPU_v3_LB12_SL002",
+      "total_pnl": 498391.78,
+      "trades": 1277,
+      "win_rate": 10.0,
+      "profit_factor": 1.68,
+      "sharpe": 2.68,
+      "max_dd_pct": -19.8,
+      "pos_months": 42,
+      "neg_months": 20
+    },
+    {
+      "strategy": "GPU_v4_LB30_MR003",
+      "total_pnl": 538298.27,
+      "trades": 1416,
+      "win_rate": 14.3,
+      "profit_factor": 1.69,
+      "sharpe": 3.03,
+      "max_dd_pct": -14.4,
+      "pos_months": 50,
+      "neg_months": 12
+    }
+  ],
+  "yearly_breakdown": {
+    "CLB25_Original": [
+      {
+        "year": 2021,
+        "pnl": 24655.62,
+        "trades": 139,
+        "win_rate": 20.1,
+        "pf": 1.26
+      },
+      {
+        "year": 2022,
+        "pnl": 50128.83,
+        "trades": 200,
+        "win_rate": 22.0,
+        "pf": 1.43
+      },
+      {
+        "year": 2023,
+        "pnl": 26854.59,
+        "trades": 159,
+        "win_rate": 20.1,
+        "pf": 1.25
+      },
+      {
+        "year": 2024,
+        "pnl": 74311.79,
+        "trades": 140,
+        "win_rate": 24.3,
+        "pf": 1.61
+      },
+      {
+        "year": 2025,
+        "pnl": 96996.17,
+        "trades": 146,
+        "win_rate": 24.7,
+        "pf": 1.67
+      },
+      {
+        "year": 2026,
+        "pnl": -9181.2,
+        "trades": 18,
+        "win_rate": 11.1,
+        "pf": 0.62
+      }
+    ],
+    "GPU_v1_LB18_TP03": [
+      {
+        "year": 2021,
+        "pnl": 29465.66,
+        "trades": 140,
+        "win_rate": 11.4,
+        "pf": 1.28
+      },
+      {
+        "year": 2022,
+        "pnl": 118527.98,
+        "trades": 261,
+        "win_rate": 14.2,
+        "pf": 1.7
+      },
+      {
+        "year": 2023,
+        "pnl": 64501.82,
+        "trades": 183,
+        "win_rate": 13.1,
+        "pf": 1.48
+      },
+      {
+        "year": 2024,
+        "pnl": 85910.25,
+        "trades": 143,
+        "win_rate": 14.0,
+        "pf": 1.6
+      },
+      {
+        "year": 2025,
+        "pnl": 185135.58,
+        "trades": 144,
+        "win_rate": 18.1,
+        "pf": 2.18
+      },
+      {
+        "year": 2026,
+        "pnl": 24519.36,
+        "trades": 18,
+        "win_rate": 16.7,
+        "pf": 2.14
+      }
+    ],
+    "GPU_v2_LB18_MR002": [
+      {
+        "year": 2021,
+        "pnl": 28016.4,
+        "trades": 141,
+        "win_rate": 11.3,
+        "pf": 1.26
+      },
+      {
+        "year": 2022,
+        "pnl": 102767.7,
+        "trades": 261,
+        "win_rate": 13.4,
+        "pf": 1.6
+      },
+      {
+        "year": 2023,
+        "pnl": 66258.12,
+        "trades": 181,
+        "win_rate": 13.3,
+        "pf": 1.5
+      },
+      {
+        "year": 2024,
+        "pnl": 102047.09,
+        "trades": 139,
+        "win_rate": 15.1,
+        "pf": 1.74
+      },
+      {
+        "year": 2025,
+        "pnl": 157770.27,
+        "trades": 142,
+        "win_rate": 16.9,
+        "pf": 2.01
+      },
+      {
+        "year": 2026,
+        "pnl": 24519.36,
+        "trades": 18,
+        "win_rate": 16.7,
+        "pf": 2.14
+      }
+    ],
+    "GPU_v3_LB12_SL002": [
+      {
+        "year": 2021,
+        "pnl": 71325.01,
+        "trades": 209,
+        "win_rate": 10.0,
+        "pf": 1.67
+      },
+      {
+        "year": 2022,
+        "pnl": 143310.34,
+        "trades": 400,
+        "win_rate": 10.5,
+        "pf": 1.79
+      },
+      {
+        "year": 2023,
+        "pnl": 28984.55,
+        "trades": 252,
+        "win_rate": 7.5,
+        "pf": 1.22
+      },
+      {
+        "year": 2024,
+        "pnl": 127229.28,
+        "trades": 169,
+        "win_rate": 12.4,
+        "pf": 2.12
+      },
+      {
+        "year": 2025,
+        "pnl": 148341.38,
+        "trades": 210,
+        "win_rate": 11.4,
+        "pf": 1.9
+      },
+      {
+        "year": 2026,
+        "pnl": -20798.78,
+        "trades": 37,
+        "win_rate": 2.7,
+        "pf": 0.43
+      }
+    ],
+    "GPU_v4_LB30_MR003": [
+      {
+        "year": 2021,
+        "pnl": 79398.11,
+        "trades": 263,
+        "win_rate": 13.7,
+        "pf": 1.61
+      },
+      {
+        "year": 2022,
+        "pnl": 130775.5,
+        "trades": 409,
+        "win_rate": 14.7,
+        "pf": 1.73
+      },
+      {
+        "year": 2023,
+        "pnl": 31360.8,
+        "trades": 257,
+        "win_rate": 11.3,
+        "pf": 1.25
+      },
+      {
+        "year": 2024,
+        "pnl": 165961.8,
+        "trades": 223,
+        "win_rate": 17.9,
+        "pf": 2.18
+      },
+      {
+        "year": 2025,
+        "pnl": 150981.45,
+        "trades": 222,
+        "win_rate": 16.2,
+        "pf": 1.92
+      },
+      {
+        "year": 2026,
+        "pnl": -20179.39,
+        "trades": 42,
+        "win_rate": 4.8,
+        "pf": 0.5
+      }
+    ]
+  },
+  "walkforward_windows": [
+    {
+      "window": 1,
+      "train_period": "2021-01 \u2192 2022-01",
+      "test_period": "2022-01 \u2192 2022-04",
+      "best_params": "lb=12, bp=0.0, sl=0.003, tp=0.015",
+      "train_pnl": 134933.27,
+      "oos_pnl": 35167.5,
+      "oos_trades": 133,
+      "oos_wr": 21.8,
+      "oos_profitable": true
+    },
+    {
+      "window": 2,
+      "train_period": "2021-04 \u2192 2022-04",
+      "test_period": "2022-04 \u2192 2022-07",
+      "best_params": "lb=30, bp=0.1, sl=0.002, tp=0.02",
+      "train_pnl": 159613.86,
+      "oos_pnl": 22549.13,
+      "oos_trades": 67,
+      "oos_wr": 14.9,
+      "oos_profitable": true
+    },
+    {
+      "window": 3,
+      "train_period": "2021-07 \u2192 2022-07",
+      "test_period": "2022-07 \u2192 2022-10",
+      "best_params": "lb=30, bp=0.1, sl=0.002, tp=0.02",
+      "train_pnl": 169921.54,
+      "oos_pnl": 18505.08,
+      "oos_trades": 67,
+      "oos_wr": 14.9,
+      "oos_profitable": true
+    },
+    {
+      "window": 4,
+      "train_period": "2021-10 \u2192 2022-10",
+      "test_period": "2022-10 \u2192 2023-01",
+      "best_params": "lb=12, bp=0.0, sl=0.002, tp=0.03",
+      "train_pnl": 204441.21,
+      "oos_pnl": 35260.79,
+      "oos_trades": 117,
+      "oos_wr": 11.1,
+      "oos_profitable": true
+    },
+    {
+      "window": 5,
+      "train_period": "2022-01 \u2192 2023-01",
+      "test_period": "2023-01 \u2192 2023-04",
+      "best_params": "lb=12, bp=0.0, sl=0.002, tp=0.03",
+      "train_pnl": 194841.88,
+      "oos_pnl": 4189.72,
+      "oos_trades": 103,
+      "oos_wr": 6.8,
+      "oos_profitable": true
+    },
+    {
+      "window": 6,
+      "train_period": "2022-04 \u2192 2023-04",
+      "test_period": "2023-04 \u2192 2023-07",
+      "best_params": "lb=12, bp=0.0, sl=0.003, tp=0.02",
+      "train_pnl": 183617.75,
+      "oos_pnl": -14722.49,
+      "oos_trades": 50,
+      "oos_wr": 10.0,
+      "oos_profitable": false
+    },
+    {
+      "window": 7,
+      "train_period": "2022-07 \u2192 2023-07",
+      "test_period": "2023-07 \u2192 2023-10",
+      "best_params": "lb=18, bp=0.0, sl=0.002, tp=0.02",
+      "train_pnl": 146390.25,
+      "oos_pnl": 252.54,
+      "oos_trades": 66,
+      "oos_wr": 9.1,
+      "oos_profitable": true
+    },
+    {
+      "window": 8,
+      "train_period": "2022-10 \u2192 2023-10",
+      "test_period": "2023-10 \u2192 2024-01",
+      "best_params": "lb=12, bp=0.25, sl=0.002, tp=0.02",
+      "train_pnl": 101444.24,
+      "oos_pnl": 23222.93,
+      "oos_trades": 38,
+      "oos_wr": 18.4,
+      "oos_profitable": true
+    },
+    {
+      "window": 9,
+      "train_period": "2023-01 \u2192 2024-01",
+      "test_period": "2024-01 \u2192 2024-04",
+      "best_params": "lb=25, bp=0.25, sl=0.002, tp=0.03",
+      "train_pnl": 111436.47,
+      "oos_pnl": 31463.42,
+      "oos_trades": 21,
+      "oos_wr": 23.8,
+      "oos_profitable": true
+    },
+    {
+      "window": 10,
+      "train_period": "2023-04 \u2192 2024-04",
+      "test_period": "2024-04 \u2192 2024-07",
+      "best_params": "lb=25, bp=0.25, sl=0.002, tp=0.03",
+      "train_pnl": 114882.66,
+      "oos_pnl": 16868.84,
+      "oos_trades": 24,
+      "oos_wr": 12.5,
+      "oos_profitable": true
+    },
+    {
+      "window": 11,
+      "train_period": "2023-07 \u2192 2024-07",
+      "test_period": "2024-07 \u2192 2024-10",
+      "best_params": "lb=25, bp=0.0, sl=0.003, tp=0.03",
+      "train_pnl": 143721.1,
+      "oos_pnl": 7249.07,
+      "oos_trades": 49,
+      "oos_wr": 10.2,
+      "oos_profitable": true
+    },
+    {
+      "window": 12,
+      "train_period": "2023-10 \u2192 2024-10",
+      "test_period": "2024-10 \u2192 2025-01",
+      "best_params": "lb=12, bp=0.0, sl=0.003, tp=0.03",
+      "train_pnl": 172792.4,
+      "oos_pnl": 11934.73,
+      "oos_trades": 28,
+      "oos_wr": 14.3,
+      "oos_profitable": true
+    },
+    {
+      "window": 13,
+      "train_period": "2024-01 \u2192 2025-01",
+      "test_period": "2025-01 \u2192 2025-04",
+      "best_params": "lb=30, bp=0.0, sl=0.002, tp=0.02",
+      "train_pnl": 155375.38,
+      "oos_pnl": 44277.36,
+      "oos_trades": 61,
+      "oos_wr": 18.0,
+      "oos_profitable": true
+    },
+    {
+      "window": 14,
+      "train_period": "2024-04 \u2192 2025-04",
+      "test_period": "2025-04 \u2192 2025-07",
+      "best_params": "lb=12, bp=0.0, sl=0.002, tp=0.03",
+      "train_pnl": 211330.22,
+      "oos_pnl": 29980.98,
+      "oos_trades": 75,
+      "oos_wr": 9.3,
+      "oos_profitable": true
+    },
+    {
+      "window": 15,
+      "train_period": "2024-07 \u2192 2025-07",
+      "test_period": "2025-07 \u2192 2025-10",
+      "best_params": "lb=25, bp=0.0, sl=0.003, tp=0.03",
+      "train_pnl": 192799.93,
+      "oos_pnl": 37069.29,
+      "oos_trades": 21,
+      "oos_wr": 23.8,
+      "oos_profitable": true
+    },
+    {
+      "window": 16,
+      "train_period": "2024-10 \u2192 2025-10",
+      "test_period": "2025-10 \u2192 2026-01",
+      "best_params": "lb=30, bp=0.0, sl=0.003, tp=0.02",
+      "train_pnl": 230045.26,
+      "oos_pnl": 5133.22,
+      "oos_trades": 44,
+      "oos_wr": 15.9,
+      "oos_profitable": true
+    }
+  ],
+  "infrastructure": {
+    "gpu_3090ti": {
+      "name": "RTX 3090 Ti",
+      "vram": "24GB",
+      "status": "active",
+      "throughput": "~24K combos/sec (numba)"
+    },
+    "gpu_2070": {
+      "name": "RTX 2070",
+      "vram": "8GB",
+      "status": "active",
+      "throughput": "secondary"
+    },
+    "ninjatrader": {
+      "name": "NinjaTrader 8",
+      "host": "Windows VM",
+      "status": "idle"
+    },
+    "data": {
+      "bars_5min_5yr": 87742,
+      "bars_1min_5yr": 1817494,
+      "period": "Jan 2021 \u2192 Feb 2026"
+    }
+  },
+  "combos_tested": {
+    "total": 982384,
+    "breakdown": {
+      "SS Massive": 895230,
+      "Combined Fade+Breakout": 68040,
+      "ORB Deep Grid": 10080,
+      "EMA Momentum": 2000,
+      "Volume Spike": 720,
+      "Iman MR": 1214,
+      "New Strategies": 5100
+    }
+  }
+}
