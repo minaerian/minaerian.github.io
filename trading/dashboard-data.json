@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-23T19:31:53.280292+00:00",
+  "lastUpdated": "2026-02-23T20:01:58.128718+00:00",
   "metrics": {
     "balance": 46.645479,
     "initialBalance": 133.0,
-    "totalPnl": -69.8478,
-    "totalPnlPct": -52.52,
+    "totalPnl": -69.8446,
+    "totalPnlPct": -52.51,
     "daysActive": 7,
     "totalTrades": 65,
     "wins": 3,
@@ -105,12 +105,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 1.0417,
-      "currentPrice": 0.954,
+      "currentPrice": 0.955,
       "cost": 3.38,
       "size": 3.24,
       "edge": 0.03,
       "openedAt": "2026-02-23T07:03:55.765860+00:00",
-      "unrealizedPnl": -0.2845,
+      "unrealizedPnl": -0.2812,
       "url": "",
       "endDate": ""
     }
@@ -2579,233 +2579,13 @@
     {
       "timestamp": "2026-02-23T19:31:52.105681+00:00",
       "balance": 63.1522
+    },
+    {
+      "timestamp": "2026-02-23T20:01:56.917352+00:00",
+      "balance": 63.1554
     }
   ],
   "alertLog": [
-    {
-      "timestamp": "2026-02-23T19:01:38.311118+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Celta Vigo finish in the top 4 of the La Liga 2025\u201326 standings?",
-      "priceChange": 0.12,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/la-liga-top-4-finish/will-celta-vigo-finish-in-the-top-4-of-the-la-liga-202526-standings"
-    },
-    {
-      "timestamp": "2026-02-23T19:01:38.311118+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Al Najmah Saudi Club vs. Al Nassr Saudi Club end in a draw?",
-      "priceChange": 0.11,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/spl-njm-nsr-2025-12-21/spl-njm-nsr-2025-12-21-draw"
-    },
-    {
-      "timestamp": "2026-02-23T19:01:38.311118+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Al Nassr Saudi Club win on 2025-12-21?",
-      "priceChange": 0.11,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/spl-njm-nsr-2025-12-21/spl-njm-nsr-2025-12-21-nsr"
-    },
-    {
-      "timestamp": "2026-02-23T19:01:38.311118+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Aster reach $1.80 by December 31, 2026?",
-      "priceChange": 0.11,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/what-price-will-aster-hit-before-2027/will-aster-reach-1pt80-by-december-31-2026"
-    },
-    {
-      "timestamp": "2026-02-23T19:01:38.311118+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "GTA VI released before June 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/gta-vi-released-before-june-2026/gta-vi-released-before-june-2026"
-    },
-    {
-      "timestamp": "2026-02-23T19:01:38.311118+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will the Colorado Avalanche win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-colorado-avalanche-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-23T19:01:38.311118+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will the Los Angeles Clippers win the 2026 NBA Finals?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nba-champion/will-the-los-angeles-clippers-win-the-2026-nba-finals"
-    },
-    {
-      "timestamp": "2026-02-23T19:01:38.311118+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will the Toronto Raptors win the NBA Eastern Conference Finals?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-eastern-conference-champion-442/will-the-toronto-raptors-win-the-nba-eastern-conference-finals"
-    },
-    {
-      "timestamp": "2026-02-23T19:01:38.311118+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will Inter win the 2025\u201326 Champions League?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/uefa-champions-league-winner/will-inter-win-the-202526-champions-league"
-    },
-    {
-      "timestamp": "2026-02-23T19:01:38.311118+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Carolina Hurricanes win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-carolina-hurricanes-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-23T19:01:38.311118+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Edmonton Oilers win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-edmonton-oilers-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-23T19:01:38.311118+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Dallas Stars win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-dallas-stars-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-23T19:01:38.311118+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Vegas Golden Knights win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-vegas-golden-knights-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-23T19:01:38.311118+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Tampa Bay Lightning win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-tampa-bay-lightning-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-23T19:01:38.311118+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "2026 Balance of Power: R Senate, R House",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/balance-of-power-2026-midterms/2026-balance-of-power-r-senate-r-house-537"
-    },
-    {
-      "timestamp": "2026-02-23T19:01:38.311118+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the New York Knicks win the NBA Eastern Conference Finals?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-eastern-conference-champion-442/will-the-new-york-knicks-win-the-nba-eastern-conference-finals"
-    },
-    {
-      "timestamp": "2026-02-23T19:01:38.311118+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Houston Rockets win the NBA Western Conference Finals?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-western-conference-champion-933/will-the-houston-rockets-win-the-nba-western-conference-finals"
-    },
-    {
-      "timestamp": "2026-02-23T19:01:38.311118+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will Trump pardon Ghislaine Maxwell by end of 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/will-trump-pardon-ghislaine-maxwell/will-trump-pardon-ghislaine-maxwell"
-    },
-    {
-      "timestamp": "2026-02-23T19:01:38.311118+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Erdo\u011fan out by end of 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/erdoan-out-before-2027/erdoan-out-before-2027"
-    },
-    {
-      "timestamp": "2026-02-23T19:31:39.594725+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Al Qadisiyah Saudi Club vs. Al Ettifaq Saudi Club end in a draw?",
-      "priceChange": 0.575,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/spl-qad-ett-2025-12-19/spl-qad-ett-2025-12-19-draw"
-    },
-    {
-      "timestamp": "2026-02-23T19:31:39.594725+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Al Qadisiyah Saudi Club win on 2025-12-19?",
-      "priceChange": 0.255,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/spl-qad-ett-2025-12-19/spl-qad-ett-2025-12-19-qad"
-    },
-    {
-      "timestamp": "2026-02-23T19:31:39.594725+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Illinois win the 2025-2026 Big 10 Men's Basketball regular season championship?",
-      "priceChange": 0.2305,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/big-10-mens-college-basketball-2025-2026-regular-season-champion/will-illinois-win-the-2025-2026-big-10-mens-basketball-regular-season-championship"
-    },
-    {
-      "timestamp": "2026-02-23T19:31:39.594725+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Damac Saudi Club win on 2025-12-19?",
-      "priceChange": 0.2085,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/spl-dam-ahl-2025-12-19/spl-dam-ahl-2025-12-19-dam"
-    },
-    {
-      "timestamp": "2026-02-23T19:31:39.594725+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Al Shabab Saudi Club vs. Al Riyadh Saudi Club end in a draw?",
-      "priceChange": 0.18,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/spl-sha-riy-2025-12-20/spl-sha-riy-2025-12-20-draw"
-    },
-    {
-      "timestamp": "2026-02-23T19:31:39.594725+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Al Fateh Saudi Club vs. Al Okhdood SC end in a draw?",
-      "priceChange": 0.18,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/spl-fat-okh-2025-12-20/spl-fat-okh-2025-12-20-draw"
-    },
-    {
-      "timestamp": "2026-02-23T19:31:39.594725+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Al Shabab Saudi Club win on 2025-12-20?",
-      "priceChange": 0.1725,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/spl-sha-riy-2025-12-20/spl-sha-riy-2025-12-20-sha"
-    },
-    {
-      "timestamp": "2026-02-23T19:31:39.594725+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Al Riyadh Saudi Club win on 2025-12-20?",
-      "priceChange": 0.16,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/spl-sha-riy-2025-12-20/spl-sha-riy-2025-12-20-riy"
-    },
-    {
-      "timestamp": "2026-02-23T19:31:39.594725+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Pizza Hut be acquired before 2027?",
-      "priceChange": 0.155,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/which-companies-will-be-acquired-before-2027/will-pizza-hut-be-acquired-before-2027-514"
-    },
     {
       "timestamp": "2026-02-23T19:31:39.594725+00:00",
       "type": "PRICE_SWING_LARGE",
@@ -2976,6 +2756,230 @@
     },
     {
       "timestamp": "2026-02-23T19:31:39.594725+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Erdo\u011fan out by end of 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/erdoan-out-before-2027/erdoan-out-before-2027"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Al Riyadh Saudi Club win on 2025-12-20?",
+      "priceChange": 0.3345,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/spl-sha-riy-2025-12-20/spl-sha-riy-2025-12-20-riy"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Al Okhdood SC win on 2025-12-20?",
+      "priceChange": 0.33,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/spl-fat-okh-2025-12-20/spl-fat-okh-2025-12-20-okh"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Al Shabab Saudi Club vs. Al Riyadh Saudi Club end in a draw?",
+      "priceChange": 0.3,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/spl-sha-riy-2025-12-20/spl-sha-riy-2025-12-20-draw"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Illinois win the 2025-2026 Big 10 Men's Basketball regular season championship?",
+      "priceChange": 0.218,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/big-10-mens-college-basketball-2025-2026-regular-season-champion/will-illinois-win-the-2025-2026-big-10-mens-basketball-regular-season-championship"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Al Ahli Saudi Club win on 2025-12-19?",
+      "priceChange": 0.19,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/spl-dam-ahl-2025-12-19/spl-dam-ahl-2025-12-19-ahl"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Al Shabab Saudi Club win on 2025-12-20?",
+      "priceChange": 0.1885,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/spl-sha-riy-2025-12-20/spl-sha-riy-2025-12-20-sha"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Al Fateh Saudi Club win on 2025-12-20?",
+      "priceChange": 0.175,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/spl-fat-okh-2025-12-20/spl-fat-okh-2025-12-20-fat"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Francesco Camarda be the top goal scorer in the 2025-26 Serie A season?",
+      "priceChange": 0.1415,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/serie-a-top-goalscorer/will-francesco-camarda-be-the-top-goal-scorer-in-the-2025-26-serie-a-season"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Keldon Johnson win the 2025\u20132026 NBA Sixth Man of the Year?",
+      "priceChange": 0.139,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-2025-26-sixth-man-of-the-year/nba-2025-26-sixth-man-of-the-year-keldon-johnson"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Kirill Kaprizov win the 2025\u20132026 NHL Maurice 'Rocket' Richard Trophy?",
+      "priceChange": 0.116,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nhl-2025-26-rocket-richard-trophy/nhl-2025-26-rocket-richard-trophy-kirill-kaprizov"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will the 10-year Treasury yield dip below 3.6% before 2027?",
+      "priceChange": 0.115,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/how-low-will-10-year-treasury-yield-get-before-2027/will-the-10-year-treasury-yield-dip-below-3pt6-before-2027-662"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Aster reach $1.80 by December 31, 2026?",
+      "priceChange": 0.115,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/what-price-will-aster-hit-before-2027/will-aster-reach-1pt80-by-december-31-2026"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Donald Trump visit Nebraska in 2026?",
+      "priceChange": 0.1,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/which-states-will-donald-trump-visit-in-2026/will-donald-trump-visit-nebraska-in-2026"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "GTA VI released before June 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/gta-vi-released-before-june-2026/gta-vi-released-before-june-2026"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will the Colorado Avalanche win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-colorado-avalanche-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will the Los Angeles Clippers win the 2026 NBA Finals?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nba-champion/will-the-los-angeles-clippers-win-the-2026-nba-finals"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will Luka Doncic win the 2025\u20132026 NBA MVP?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-mvp-694/will-luka-doncic-win-the-20252026-nba-mvp"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will the Toronto Raptors win the NBA Eastern Conference Finals?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-eastern-conference-champion-442/will-the-toronto-raptors-win-the-nba-eastern-conference-finals"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Carolina Hurricanes win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-carolina-hurricanes-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Edmonton Oilers win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-edmonton-oilers-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Dallas Stars win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-dallas-stars-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Vegas Golden Knights win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-vegas-golden-knights-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Tampa Bay Lightning win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-tampa-bay-lightning-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "2026 Balance of Power: R Senate, R House",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/balance-of-power-2026-midterms/2026-balance-of-power-r-senate-r-house-537"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the New York Knicks win the NBA Eastern Conference Finals?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-eastern-conference-champion-442/will-the-new-york-knicks-win-the-nba-eastern-conference-finals"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Houston Rockets win the NBA Western Conference Finals?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-western-conference-champion-933/will-the-houston-rockets-win-the-nba-western-conference-finals"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Trump pardon Ghislaine Maxwell by end of 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/will-trump-pardon-ghislaine-maxwell/will-trump-pardon-ghislaine-maxwell"
+    },
+    {
+      "timestamp": "2026-02-23T20:01:39.885522+00:00",
       "type": "NICHE_MISPRICING",
       "market": "Erdo\u011fan out by end of 2026?",
       "priceChange": 0,
