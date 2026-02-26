@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-26T22:36:56.438886+00:00",
+  "lastUpdated": "2026-02-26T23:06:58.227704+00:00",
   "metrics": {
     "balance": 44.328879,
     "initialBalance": 133.0,
@@ -3105,249 +3105,13 @@
     {
       "timestamp": "2026-02-26T22:36:54.974173+00:00",
       "balance": 62.703
+    },
+    {
+      "timestamp": "2026-02-26T23:06:56.671745+00:00",
+      "balance": 62.703
     }
   ],
   "alertLog": [
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will James Talarico be the Democratic nominee for Senate in Texas?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/texas-democratic-senate-primary-winner/will-james-talarico-be-the-democratic-nominee-for-senate-in-texas"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Backpack FDV above $1B one day after launch?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/backpack-fdv-above-one-day-after-launch/backpack-fdv-above-1b-one-day-after-launch-512-337-259"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will John Ternus be the next CEO of Apple?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/next-ceo-of-apple/will-john-ternus-be-the-next-ceo-of-apple"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "USD.AI FDV above $300M one day after launch?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/usdai-fdv-above-one-day-after-launch/usdai-fdv-above-300m-one-day-after-launch-673-643"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "AI Industry Downturn by December 31, 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/ai-bubble-burst-by/ai-industry-downturn-by-december-31-2026-857"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "MicroStrategy sells any Bitcoin by March 31, 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/microstrategy-sell-any-bitcoin-in-2025/microstrategy-sells-any-bitcoin-by-march-31-2026"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "MicroStrategy sells any Bitcoin by June 30, 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/microstrategy-sell-any-bitcoin-in-2025/microstrategy-sells-any-bitcoin-by-june-30-2026"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will Nebius Group be acquired before 2027?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/which-companies-will-be-acquired-before-2027/will-nebius-group-be-acquired-before-2027-514"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will BP be acquired before 2027?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/which-companies-will-be-acquired-before-2027/will-bp-be-acquired-before-2027-549"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will Viking Therapeutics be acquired before 2027?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/which-companies-will-be-acquired-before-2027/will-viking-therapeutics-be-acquired-before-2027-542"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will GitLab be acquired before 2027?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/which-companies-will-be-acquired-before-2027/will-gitlab-be-acquired-before-2027-944"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will Pizza Hut be acquired before 2027?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/which-companies-will-be-acquired-before-2027/will-pizza-hut-be-acquired-before-2027-514"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will Lovable be acquired before 2027?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/which-companies-will-be-acquired-before-2027/will-lovable-be-acquired-before-2027-423"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will Perplexity AI be acquired before 2027?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/which-companies-will-be-acquired-before-2027/will-perplexity-ai-be-acquired-before-2027-776"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will OpenAI be acquired before 2027?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/which-companies-will-be-acquired-before-2027/will-openai-be-acquired-before-2027-859"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will China invade Taiwan by March 31, 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/will-china-invade-taiwan-by-march-31-2026/will-china-invade-taiwan-by-march-31-2026"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will Bitcoin reach $200,000 by December 31, 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-reach-200000-by-december-31-2026-752-232-389"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will Bitcoin reach $150,000 by December 31, 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-reach-150000-by-december-31-2026-557-246-971"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will Bitcoin reach $140,000 by December 31, 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-reach-140000-by-december-31-2026-131-829-299"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will Bitcoin reach $130,000 by December 31, 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-reach-130000-by-december-31-2026-756-151-855"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will Bitcoin reach $100,000 by December 31, 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-reach-100000-by-december-31-2026-571-361-361"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will Bitcoin dip to $55,000 by December 31, 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-dip-to-55000-by-december-31-2026-527-627-868-745-188-361-314-673-612-946-821-624-855-557-684-381"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will Bitcoin dip to $45,000 by December 31, 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-dip-to-45000-by-december-31-2026-674-923-755-971-998-525-926-245-316-517-544-589-965-923-986-841-815-224"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will Bitcoin dip to $35,000 by December 31, 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/what-price-will-bitcoin-hit-before-2027/will-bitcoin-dip-to-35000-by-december-31-2026-744-877-748-219-467-465-646-211-122-947-537-552-555-361-972-954-635-887"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will the US confirm that aliens exist before 2027?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/will-the-us-confirm-that-aliens-exist-before-2027/will-the-us-confirm-that-aliens-exist-before-2027"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will Jesus Christ return before 2027?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/will-jesus-christ-return-before-2027/will-jesus-christ-return-before-2027"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Will there be at least 10000 measles cases in the U.S. in 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/measles-cases-in-us-in-2026/will-there-be-at-least-10000-measles-cases-in-the-us-in-2026-418-668-617"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Backpack FDV above $700M one day after launch?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/backpack-fdv-above-one-day-after-launch/backpack-fdv-above-700m-one-day-after-launch-883-479"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Israel strikes Iran by June 30, 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/israel-strikes-iran-by-june-30-2026/israel-strikes-iran-by-june-30-2026"
-    },
-    {
-      "timestamp": "2026-02-26T22:36:32.292213+00:00",
-      "type": "NEW_MARKET",
-      "market": "Israel strikes Iran by March 31, 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/israel-strikes-iran-by-march-31-2026/israel-strikes-iran-by-march-31-2026"
-    },
     {
       "timestamp": "2026-02-26T22:36:32.292213+00:00",
       "type": "NEW_MARKET",
@@ -3507,6 +3271,246 @@
       "priceChange": 0,
       "ledToTrade": false,
       "url": "https://polymarket.com/event/will-trump-be-impeached-by-december-31-2026/will-trump-be-impeached-by-december-31-2026"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Jeff Blashill win the 2025\u20132026 NHL Jack Adams Award?",
+      "priceChange": 0.3525,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nhl-2025-26-jack-adams-award/nhl-2025-26-jack-adams-award-jeff-blashill"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will the Dallas Stars win the 2025\u20132026 NHL Presidents' Trophy?",
+      "priceChange": 0.2,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nhl-2025-26-presidents-trophy-winner/nhl-2025-26-presidents-trophy-winner-dallas-stars"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will another team win the 2025-2026 Big East Men\u2019s Basketball regular season championship?",
+      "priceChange": 0.1725,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/big-east-mens-college-basketball-2025-2026-regular-season-champion/will-another-team-win-the-2025-2026-big-east-mens-basketball-regular-season-championship"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Jonathan David be the top goal scorer in the 2025-26 Serie A season?",
+      "priceChange": 0.1625,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/serie-a-top-goalscorer/will-jonathan-david-be-the-top-goal-scorer-in-the-2025-26-serie-a-season"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Deniz Undav be the top goal scorer in the 2025\u201326 Bundesliga season?",
+      "priceChange": 0.145,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/bundesliga-top-goalscorer/will-deniz-undav-be-the-top-goal-scorer-in-the-202526-bundesliga-season"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Donald Trump visit South Dakota in 2026?",
+      "priceChange": 0.14,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/which-states-will-donald-trump-visit-in-2026/will-donald-trump-visit-south-dakota-in-2026"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will the Colorado Avalanche win the 2025\u20132026 NHL Presidents' Trophy?",
+      "priceChange": 0.12,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nhl-2025-26-presidents-trophy-winner/nhl-2025-26-presidents-trophy-winner-colorado-avalanche"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will Harvey Weinstein be sentenced to between 20 and 30 years in prison?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/harvey-weinstein-prison-time/will-harvey-weinstein-be-sentenced-to-between-20-and-30-years-in-prison"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will the Indiana Pacers win the 2026 NBA Finals?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nba-champion/will-the-indiana-pacers-win-the-2026-nba-finals"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will Uzbekistan win the 2026 FIFA World Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-fifa-world-cup-winner-595/will-uzbekistan-win-the-2026-fifa-world-cup-773"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will Luka Doncic win the 2025\u20132026 NBA MVP?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-mvp-694/will-luka-doncic-win-the-20252026-nba-mvp"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will Lens win the 2025\u201326 French Ligue 1?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/french-ligue-1-winner/will-lens-win-the-202526-french-ligue-1"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "RESOLUTION_IMMINENT",
+      "market": "Will GTA 6 cost $100+?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/will-gta-6-cost-100/will-gta-6-cost-100"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "RESOLUTION_IMMINENT",
+      "market": "Will the U.S. collect less than $100b in revenue in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/how-much-revenue-will-the-us-raise-from-tariffs-in-2025/will-the-us-collect-less-than-100b-in-revenue-in-2025"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "RESOLUTION_IMMINENT",
+      "market": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/how-much-revenue-will-the-us-raise-from-tariffs-in-2025/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "RESOLUTION_IMMINENT",
+      "market": "Will the U.S. collect between $200b and $500b in revenue in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/how-much-revenue-will-the-us-raise-from-tariffs-in-2025/will-the-us-collect-between-200b-and-500b-in-revenue-in-2025"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "RESOLUTION_IMMINENT",
+      "market": "Will the U.S. collect between $500b and $1t in revenue in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/how-much-revenue-will-the-us-raise-from-tariffs-in-2025/will-the-us-collect-between-500b-and-1t-in-revenue-in-2025"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "RESOLUTION_IMMINENT",
+      "market": "Will the U.S. collect between $1t and $2t in revenue in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/how-much-revenue-will-the-us-raise-from-tariffs-in-2025/will-the-us-collect-between-1t-and-2t-in-revenue-in-2025"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "RESOLUTION_IMMINENT",
+      "market": "Will the U.S. collect more than $2t in revenue in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/how-much-revenue-will-the-us-raise-from-tariffs-in-2025/will-the-us-collect-more-than-2t-in-revenue-in-2025"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "RESOLUTION_IMMINENT",
+      "market": "Will tariffs generate >$250b in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025/will-tariffs-generate-250b-in-2025"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Carolina Hurricanes win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-carolina-hurricanes-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Edmonton Oilers win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-edmonton-oilers-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Vegas Golden Knights win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-vegas-golden-knights-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "2026 Balance of Power: R Senate, R House",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/balance-of-power-2026-midterms/2026-balance-of-power-r-senate-r-house-537"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the New York Knicks win the NBA Eastern Conference Finals?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-eastern-conference-champion-442/will-the-new-york-knicks-win-the-nba-eastern-conference-finals"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Houston Rockets win the NBA Western Conference Finals?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-western-conference-champion-933/will-the-houston-rockets-win-the-nba-western-conference-finals"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Trump pardon Ghislaine Maxwell by end of 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/will-trump-pardon-ghislaine-maxwell/will-trump-pardon-ghislaine-maxwell"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Erdo\u011fan out by end of 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/erdoan-out-before-2027/erdoan-out-before-2027"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Trump impeached by end of 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/will-trump-be-impeached-by-december-31-2026/will-trump-be-impeached-by-december-31-2026"
+    },
+    {
+      "timestamp": "2026-02-26T23:06:33.316864+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will Trump resign by December 31, 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/will-trump-resign-by-december-31-2026/will-trump-resign-by-december-31-2026"
     }
   ],
   "config": {
