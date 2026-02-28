@@ -1,10 +1,10 @@
 {
-  "lastUpdated": "2026-02-28T07:37:12.896616+00:00",
+  "lastUpdated": "2026-02-28T08:07:02.320927+00:00",
   "metrics": {
     "balance": 44.328879,
     "initialBalance": 133.0,
-    "totalPnl": -70.5482,
-    "totalPnlPct": -53.04,
+    "totalPnl": -70.5717,
+    "totalPnlPct": -53.06,
     "daysActive": 12,
     "totalTrades": 66,
     "wins": 3,
@@ -49,12 +49,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 1.1111,
-      "currentPrice": 0.9,
+      "currentPrice": 0.89,
       "cost": 3.73,
       "size": 3.36,
       "edge": 0.075,
       "openedAt": "2026-02-22T16:00:42.934443+00:00",
-      "unrealizedPnl": -0.7087,
+      "unrealizedPnl": -0.7423,
       "url": "",
       "endDate": ""
     },
@@ -105,12 +105,12 @@
       "side": "BUY",
       "outcome": "Yes",
       "entryPrice": 1.0417,
-      "currentPrice": 0.969,
+      "currentPrice": 0.97,
       "cost": 3.38,
       "size": 3.24,
       "edge": 0.03,
       "openedAt": "2026-02-23T07:03:55.765860+00:00",
-      "unrealizedPnl": -0.2358,
+      "unrealizedPnl": -0.2325,
       "url": "",
       "endDate": ""
     },
@@ -1250,10 +1250,6 @@
     }
   ],
   "equityCurve": [
-    {
-      "timestamp": "2026-02-16T11:32:24.299401+00:00",
-      "balance": 32.9948
-    },
     {
       "timestamp": "2026-02-16T12:32:32.885590+00:00",
       "balance": 32.9948
@@ -3249,241 +3245,13 @@
     {
       "timestamp": "2026-02-28T07:37:11.587127+00:00",
       "balance": 62.4518
+    },
+    {
+      "timestamp": "2026-02-28T08:07:01.022627+00:00",
+      "balance": 62.4283
     }
   ],
   "alertLog": [
-    {
-      "timestamp": "2026-02-28T06:36:41.127635+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Carolina Hurricanes win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-carolina-hurricanes-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-28T06:36:41.127635+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Edmonton Oilers win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-edmonton-oilers-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-28T06:36:41.127635+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Dallas Stars win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-dallas-stars-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-28T06:36:41.127635+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Vegas Golden Knights win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-vegas-golden-knights-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-28T06:36:41.127635+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Tampa Bay Lightning win the 2026 NHL Stanley Cup?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-tampa-bay-lightning-win-the-2026-nhl-stanley-cup"
-    },
-    {
-      "timestamp": "2026-02-28T06:36:41.127635+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "2026 Balance of Power: R Senate, R House",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/balance-of-power-2026-midterms/2026-balance-of-power-r-senate-r-house-537"
-    },
-    {
-      "timestamp": "2026-02-28T06:36:41.127635+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the New York Knicks win the NBA Eastern Conference Finals?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-eastern-conference-champion-442/will-the-new-york-knicks-win-the-nba-eastern-conference-finals"
-    },
-    {
-      "timestamp": "2026-02-28T06:36:41.127635+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will the Houston Rockets win the NBA Western Conference Finals?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-western-conference-champion-933/will-the-houston-rockets-win-the-nba-western-conference-finals"
-    },
-    {
-      "timestamp": "2026-02-28T06:36:41.127635+00:00",
-      "type": "NICHE_MISPRICING",
-      "market": "Will PSG win the 2025\u201326 French Ligue 1?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/french-ligue-1-winner/will-psg-win-the-202526-french-ligue-1"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "ARBITRAGE",
-      "market": "Will UNI reach $9.50 by December 31, 2026?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/what-price-will-uniswap-hit-before-2027/will-uni-reach-9pt50-by-december-31-2026"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Iraq recognize Israel by June 30?",
-      "priceChange": 0.37,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/which-countries-will-recognize-israel-by-june-30/will-iraq-recognize-israel-by-june-30"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Chris Mathys advance from the CA-22 Primary?",
-      "priceChange": 0.37,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/ca-22-primary-winners/will-chris-mathys-advance-from-the-ca-22-primary"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Christian Pulisic be the top goal scorer in the 2025-26 Serie A season?",
-      "priceChange": 0.358,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/serie-a-top-goalscorer/will-christian-pulisic-be-the-top-goal-scorer-in-the-2025-26-serie-a-season"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Nantes finish in the top 4 of the Ligue 1 2025\u201326 standings?",
-      "priceChange": 0.2685,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/ligue-1-top-4-finish/will-nantes-finish-in-the-top-4-of-the-ligue-1-202526-standings"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will the 10-year Treasury yield dip below 3.6% before 2027?",
-      "priceChange": 0.16,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/how-low-will-10-year-treasury-yield-get-before-2027/will-the-10-year-treasury-yield-dip-below-3pt6-before-2027-662"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will the New York Knicks win more than 53.5 regular season games in 2025\u201326?",
-      "priceChange": 0.155,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/nba-win-totals-over-or-under/will-the-new-york-knicks-win-more-than-53pt5-regular-season-games-in-202526"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Ethena dip to $0.08 by December 31, 2026?",
-      "priceChange": 0.155,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/what-price-will-ethena-hit-before-2027/will-ethena-dip-to-0pt08-by-december-31-2026"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Khamenei out as Supreme Leader of Iran in 2026?",
-      "priceChange": 0.15,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/khamenei-out-as-supreme-leader-of-iran-by-december-31-2026/khamenei-out-as-supreme-leader-of-iran-by-december-31-2026"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Israel launch a major ground offensive in Lebanon by March 31?",
-      "priceChange": 0.135,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/will-israel-launch-a-major-ground-offensive-in-lebanon-by-march-31/will-israel-launch-a-major-ground-offensive-in-lebanon-by-march-31"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Iran close the Strait of Hormuz before 2027?",
-      "priceChange": 0.11,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/will-iran-close-the-strait-of-hormuz-by-2027/will-iran-close-the-strait-of-hormuz-by-2027-969-911-654-431-667"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will the 10-year Treasury yield dip below 3.7% before 2027?",
-      "priceChange": 0.11,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/how-low-will-10-year-treasury-yield-get-before-2027/will-the-10-year-treasury-yield-dip-below-3pt7-before-2027-737"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Waymo operate in 5 cities or less on June 30 2026?",
-      "priceChange": 0.1095,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/how-many-cities-will-waymo-operate-in-by-june-30-2026/will-waymo-operate-in-less-than-5-cities-on-june-30-2026"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Applied Intuition IPO before 2027?",
-      "priceChange": 0.105,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/ipos-before-2027/applied-intuition-ipo-before-2027"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Hezbollah strike on Israel by March 31?",
-      "priceChange": 0.105,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/hezbollah-strike-on-israel-by-march-31/hezbollah-strike-on-israel-by-march-31-737-523"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "PRICE_SWING_LARGE",
-      "market": "Will Israel strike 2 countries in 2026?",
-      "priceChange": 0.1015,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/how-many-different-countries-will-israel-strike-in-2026/will-israel-strike-2-countries-in-2026"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "PRICE_SWING",
-      "market": "Khamenei out as Supreme Leader of Iran by June 30?",
-      "priceChange": 0.075,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/khamenei-out-as-supreme-leader-of-iran-by-june-30-747/khamenei-out-as-supreme-leader-of-iran-by-june-30-747"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "PRICE_SWING",
-      "market": "Will the Iranian regime fall before 2027?",
-      "priceChange": 0.075,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/will-the-iranian-regime-fall-by-the-end-of-2026/will-the-iranian-regime-fall-by-the-end-of-2026"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will GTA 6 cost $100+?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/will-gta-6-cost-100/will-gta-6-cost-100"
-    },
-    {
-      "timestamp": "2026-02-28T07:36:41.243644+00:00",
-      "type": "VOLUME_SPIKE",
-      "market": "Will the U.S. collect less than $100b in revenue in 2025?",
-      "priceChange": 0,
-      "ledToTrade": false,
-      "url": "https://polymarket.com/event/how-much-revenue-will-the-us-raise-from-tariffs-in-2025/will-the-us-collect-less-than-100b-in-revenue-in-2025"
-    },
     {
       "timestamp": "2026-02-28T07:36:41.243644+00:00",
       "type": "VOLUME_SPIKE",
@@ -3651,6 +3419,238 @@
       "priceChange": 0,
       "ledToTrade": false,
       "url": "https://polymarket.com/event/nba-western-conference-champion-933/will-the-minnesota-timberwolves-win-the-nba-western-conference-finals"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Francesco Camarda be the top goal scorer in the 2025-26 Serie A season?",
+      "priceChange": 0.4015,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/serie-a-top-goalscorer/will-francesco-camarda-be-the-top-goal-scorer-in-the-2025-26-serie-a-season"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Kraken IPO closing market cap above $26B?",
+      "priceChange": 0.25,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/kraken-ipo-closing-market-cap-above/kraken-ipo-closing-market-cap-above-26b"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Ethena dip to $0.08 by December 31, 2026?",
+      "priceChange": 0.155,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/what-price-will-ethena-hit-before-2027/will-ethena-dip-to-0pt08-by-december-31-2026"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will the New York Knicks win more than 53.5 regular season games in 2025\u201326?",
+      "priceChange": 0.145,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-win-totals-over-or-under/will-the-new-york-knicks-win-more-than-53pt5-regular-season-games-in-202526"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Waymo launch in Nashville by June 30 2026?",
+      "priceChange": 0.115,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/which-cities-will-waymo-launch-in-by-june-30/will-waymo-launch-in-nashville-by-june-30-2026"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "PRICE_SWING_LARGE",
+      "market": "Will Pump.fun dip to $0.0014 by December 31, 2026?",
+      "priceChange": 0.115,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/what-price-will-pumpfun-hit-before-2027/will-pumpfun-dip-to-0pt0014-by-december-31-2026"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will GTA 6 cost $100+?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/will-gta-6-cost-100/will-gta-6-cost-100"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will the U.S. collect less than $100b in revenue in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/how-much-revenue-will-the-us-raise-from-tariffs-in-2025/will-the-us-collect-less-than-100b-in-revenue-in-2025"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will the U.S. collect between $200b and $500b in revenue in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/how-much-revenue-will-the-us-raise-from-tariffs-in-2025/will-the-us-collect-between-200b-and-500b-in-revenue-in-2025"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "GTA VI released before June 2026?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/gta-vi-released-before-june-2026/gta-vi-released-before-june-2026"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "VOLUME_SPIKE",
+      "market": "Will MegaETH perform an airdrop by June 30? ",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/megaeth-airdrop-by/will-megaeth-perform-an-airdrop-by-june-30-143-229-513-574-212-254"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "RESOLUTION_IMMINENT",
+      "market": "Will GTA 6 cost $100+?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/will-gta-6-cost-100/will-gta-6-cost-100"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "RESOLUTION_IMMINENT",
+      "market": "Will the U.S. collect less than $100b in revenue in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/how-much-revenue-will-the-us-raise-from-tariffs-in-2025/will-the-us-collect-less-than-100b-in-revenue-in-2025"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "RESOLUTION_IMMINENT",
+      "market": "Will the U.S. collect between $100b and $200b in revenue in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/how-much-revenue-will-the-us-raise-from-tariffs-in-2025/will-the-us-collect-between-100b-and-200b-in-revenue-in-2025"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "RESOLUTION_IMMINENT",
+      "market": "Will the U.S. collect between $200b and $500b in revenue in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/how-much-revenue-will-the-us-raise-from-tariffs-in-2025/will-the-us-collect-between-200b-and-500b-in-revenue-in-2025"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "RESOLUTION_IMMINENT",
+      "market": "Will the U.S. collect between $500b and $1t in revenue in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/how-much-revenue-will-the-us-raise-from-tariffs-in-2025/will-the-us-collect-between-500b-and-1t-in-revenue-in-2025"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "RESOLUTION_IMMINENT",
+      "market": "Will the U.S. collect between $1t and $2t in revenue in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/how-much-revenue-will-the-us-raise-from-tariffs-in-2025/will-the-us-collect-between-1t-and-2t-in-revenue-in-2025"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "RESOLUTION_IMMINENT",
+      "market": "Will the U.S. collect more than $2t in revenue in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/how-much-revenue-will-the-us-raise-from-tariffs-in-2025/will-the-us-collect-more-than-2t-in-revenue-in-2025"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "RESOLUTION_IMMINENT",
+      "market": "Will tariffs generate >$250b in 2025?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/will-tariffs-generate-250b-in-2025/will-tariffs-generate-250b-in-2025"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Carolina Hurricanes win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-carolina-hurricanes-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Edmonton Oilers win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-edmonton-oilers-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Dallas Stars win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-dallas-stars-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Vegas Golden Knights win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-vegas-golden-knights-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Tampa Bay Lightning win the 2026 NHL Stanley Cup?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/2026-nhl-stanley-cup-champion/will-the-tampa-bay-lightning-win-the-2026-nhl-stanley-cup"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "2026 Balance of Power: R Senate, R House",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/balance-of-power-2026-midterms/2026-balance-of-power-r-senate-r-house-537"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the New York Knicks win the NBA Eastern Conference Finals?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-eastern-conference-champion-442/will-the-new-york-knicks-win-the-nba-eastern-conference-finals"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Houston Rockets win the NBA Western Conference Finals?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-western-conference-champion-933/will-the-houston-rockets-win-the-nba-western-conference-finals"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will the Minnesota Timberwolves win the NBA Western Conference Finals?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/nba-western-conference-champion-933/will-the-minnesota-timberwolves-win-the-nba-western-conference-finals"
+    },
+    {
+      "timestamp": "2026-02-28T08:06:41.455412+00:00",
+      "type": "NICHE_MISPRICING",
+      "market": "Will PSG win the 2025\u201326 French Ligue 1?",
+      "priceChange": 0,
+      "ledToTrade": false,
+      "url": "https://polymarket.com/event/french-ligue-1-winner/will-psg-win-the-202526-french-ligue-1"
     }
   ],
   "config": {
