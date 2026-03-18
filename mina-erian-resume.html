@@ -436,7 +436,7 @@
     <section>
         <h2>Summary</h2>
         <p class="summary-text">
-            14+ years designing enterprise Azure infrastructure across healthcare, entertainment, and financial services. Specialized in Azure platform engineering, building reusable IaC frameworks with Azure Verified Modules (AVM), multi-environment deployment architectures, and production-grade safety guardrails. Led migration of 200+ workloads to Azure with 99.9%+ uptime, managing 1,200+ Bicep files across 4 environments and 8 subscriptions while reducing infrastructure costs by 25-40%.
+            14+ years designing enterprise Azure infrastructure across healthcare, entertainment, and financial services. Specialized in Azure platform engineering, hybrid identity architecture (Self-Managed AD, Entra ID, Entra ID Domain Services), and building reusable IaC frameworks with Bicep/Terraform and Azure Verified Modules (AVM). Expert in Azure Landing Zone design, enterprise-scale subscription architecture, and hybrid authentication models. Led migration of 200+ workloads to Azure with 99.9%+ uptime, managing 1,200+ Bicep files across 4 environments and 8 subscriptions while reducing infrastructure costs by 25-40%.
         </p>
     </section>
 
@@ -470,6 +470,14 @@
                 <li>Multi-region DR: <strong>RPO &lt;1h, RTO &lt;4h</strong> with Site Recovery, SQL Always-On — validated through 6 DR drills</li>
                 <li>Cut Azure spend by <strong>$320K annually</strong> via Reserved Instances, automated scheduling, right-sizing 200+ VMs</li>
             </ul>
+
+            <h4>Identity & Hybrid Architecture</h4>
+            <ul>
+                <li>Architected <strong>hybrid identity</strong> with Self-Managed Active Directory and Entra ID integration — Entra Connect sync, conditional access, and domain trust configuration</li>
+                <li>Designed <strong>DNS architecture</strong> spanning on-premises and Azure Private DNS zones with split-horizon resolution and conditional forwarding</li>
+                <li>Implemented <strong>hybrid authentication models</strong> including pass-through authentication, password hash sync, and SAML/OIDC federation</li>
+                <li>Configured <strong>Azure RBAC</strong> and Azure Policy governance across enterprise-scale subscription hierarchy with management group inheritance</li>
+            </ul>
         </div>
 
         <div class="job page-break">
@@ -479,9 +487,10 @@
             </div>
             <p class="job-company">Orange Crew MSP</p>
             
-            <h4>Azure Virtual Desktop</h4>
+            <h4>Azure Virtual Desktop & Identity</h4>
             <ul>
-                <li>Architected AVD for <strong>800+ users across 15 countries</strong> — FSLogix on NetApp Files, scaling automation, 40% productivity gain</li>
+                <li>Architected AVD for <strong>800+ users across 15 countries</strong> — FSLogix on NetApp Files, AD-integrated authentication, scaling automation, 40% productivity gain</li>
+                <li>Configured <strong>Azure SQL Managed Instance with AD authentication</strong> for enterprise workloads; integrated Entra ID Domain Services for legacy app support</li>
                 <li>Built ARM Template library reducing provisioning <strong>3 days → 2 hours</strong>; golden image pipelines with Azure Image Builder</li>
             </ul>
             
@@ -506,9 +515,11 @@
                 <li>Drove <strong>20% revenue growth ($2.4M)</strong>; reduced turnover 40% → 8%; improved NPS 65% → 95%</li>
             </ul>
             
-            <h4>Early Azure Adoption</h4>
+            <h4>Infrastructure & Identity</h4>
             <ul>
-                <li>Cloud pioneer (2016): Azure AD, Exchange Online for 2,000+ users, Azure Backup — before most healthcare orgs considered cloud</li>
+                <li>Managed <strong>Self-Managed Active Directory</strong> across multi-site healthcare environments — domain trusts, Group Policy, DNS, DHCP, certificate services</li>
+                <li>Cloud pioneer (2016): Azure AD integration, Exchange Online hybrid for 2,000+ users, Azure Backup — before most healthcare orgs considered cloud</li>
+                <li>Designed <strong>hybrid authentication flows</strong> bridging on-premises AD with Azure AD (now Entra ID) — ADFS federation, password writeback, SSO</li>
                 <li>Maintained <strong>HIPAA/HITECH compliance</strong> with zero critical findings across 6 years; reduced downtime 70%</li>
             </ul>
         </div>
@@ -518,28 +529,28 @@
         <h2>Core Competencies</h2>
         <div class="skills-grid">
             <div class="skill-card">
+                <h3>Identity & Hybrid AD</h3>
+                <p>Self-Managed AD, Entra ID, Entra ID Domain Services, Domain Trusts, DNS, Hybrid Auth, Conditional Access, PIM</p>
+            </div>
+            <div class="skill-card">
                 <h3>Cloud & Infrastructure</h3>
-                <p>Azure Virtual WAN, Hub-Spoke, ExpressRoute, VPN Gateway, Firewall Premium, Front Door, Private Link</p>
+                <p>Azure Landing Zones, Virtual WAN, Hub-Spoke, ExpressRoute, Firewall Premium, Front Door, Private Link, AVD</p>
             </div>
             <div class="skill-card">
                 <h3>Infrastructure as Code</h3>
-                <p>Bicep, ARM Templates, Azure Verified Modules, Azure DevOps, CI/CD, GitOps, Multi-Environment</p>
+                <p>Bicep, Terraform, ARM Templates, Azure Verified Modules, Azure DevOps, CI/CD, GitOps</p>
             </div>
             <div class="skill-card">
-                <h3>Security & Compliance</h3>
-                <p>Zero Trust, Sentinel, Defender, Entra ID, Azure Policy, HIPAA, PCI-DSS, SOC 2</p>
+                <h3>Security & Governance</h3>
+                <p>Zero Trust, Sentinel, Defender, Azure Policy, RBAC, HIPAA, PCI-DSS, SOC 2</p>
             </div>
             <div class="skill-card">
-                <h3>Disaster Recovery</h3>
-                <p>Site Recovery, Multi-region failover, BCP, RPO/RTO Architecture, High Availability</p>
-            </div>
-            <div class="skill-card">
-                <h3>Operations & FinOps</h3>
-                <p>Azure Monitor, Log Analytics, Cost Management, Reserved Instances, Safety Guardrails</p>
+                <h3>Data & DR</h3>
+                <p>Azure SQL MI, Site Recovery, Multi-region failover, RPO/RTO Architecture, High Availability</p>
             </div>
             <div class="skill-card">
                 <h3>Leadership</h3>
-                <p>Enterprise Architecture, Team Development, $3.5M+ Budget, Stakeholder Communication</p>
+                <p>Enterprise Architecture, Reference Architecture Design, Team Development, Stakeholder Communication</p>
             </div>
         </div>
     </section>
