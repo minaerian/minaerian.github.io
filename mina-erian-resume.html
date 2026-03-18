@@ -41,8 +41,8 @@
         /* Header */
         header {
             text-align: center;
-            margin-bottom: 24px;
-            padding-bottom: 20px;
+            margin-bottom: 18px;
+            padding-bottom: 16px;
             border-bottom: 1px solid var(--border);
         }
         
@@ -111,8 +111,8 @@
         .metrics-bar {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            margin-bottom: 20px;
+            gap: 8px;
+            margin-bottom: 16px;
         }
         
         .metric-item {
@@ -375,7 +375,7 @@
             }
             
             @page {
-                margin: 0.35in;
+                margin: 0.3in;
                 size: letter;
             }
             
@@ -403,8 +403,46 @@
             }
             
             header {
-                margin-bottom: 16px;
-                padding-bottom: 14px;
+                margin-bottom: 8px;
+                padding-bottom: 8px;
+            }
+            
+            .status-badge {
+                margin-bottom: 6px;
+                padding: 2px 10px;
+            }
+            
+            .title-label {
+                margin-bottom: 4px;
+                font-size: 9pt;
+            }
+            
+            h1 {
+                font-size: 26pt;
+                margin-bottom: 4px;
+            }
+            
+            .tagline {
+                font-size: 10pt;
+                margin-bottom: 8px;
+            }
+            
+            .metrics-bar {
+                gap: 6px;
+                margin-bottom: 10px;
+            }
+            
+            .metric-item {
+                padding: 8px 6px;
+            }
+            
+            .metric-num {
+                font-size: 14pt;
+            }
+            
+            .summary-text {
+                font-size: 8.5pt;
+                line-height: 1.45;
             }
             
             .print-btn,
